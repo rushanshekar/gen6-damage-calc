@@ -21,10 +21,12 @@ th {
     font-size: 0.8em;
 }
 .big-text {
-    display: block;
     font-weight: bold;
     font-size: 1.1em;
     margin: 0.5em 0;
+}
+.small-text {
+    font-size: 0.8em;
 }
 .panel {
     float: left;
@@ -132,7 +134,7 @@ th {
     margin-right: 1em;
 }
 .main-result-group {
-    margin: 2em 0;
+    margin: 2em 0 1em;
 }
 .result-move-header {
     font-size: 0.8em;
