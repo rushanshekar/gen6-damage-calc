@@ -60,6 +60,9 @@ th {
     width: 8em;
 }
 .btn-xxwide {
+    width: 9em;
+}
+.btn-xxxwide {
     width: 10em;
 }
 .btn-small {

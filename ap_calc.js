@@ -459,6 +459,8 @@ function Field() {
     var spikes = [~~$("input:radio[name='spikesL']:checked").val(), ~~$("input:radio[name='spikesR']:checked").val()];
     var isReflect = [$("#reflectL").prop("checked"), $("#reflectR").prop("checked")];
     var isLightScreen = [$("#lightScreenL").prop("checked"), $("#lightScreenR").prop("checked")];
+    var isForesight = [$("#foresightL").prop("checked"), $("#foresightR").prop("checked")];
+    var isHelpingHand = [$("#helpingHandR").prop("checked"), $("#helpingHandL").prop("checked")]; // affects attacks against opposite side
     
     this.getWeather = function() {
         return weather;
@@ -467,11 +469,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i]);
+        return new Side(format, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i]);
     };
 }
 
-function Side(format, weather, isGravity, isSR, spikes, isReflect, isLightScreen) {
+function Side(format, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand) {
     this.format = format;
     this.weather = weather;
     this.isGravity = isGravity;
@@ -479,6 +481,8 @@ function Side(format, weather, isGravity, isSR, spikes, isReflect, isLightScreen
     this.spikes = spikes;
     this.isReflect = isReflect;
     this.isLightScreen = isLightScreen;
+    this.isForesight = isForesight;
+    this.isHelpingHand = isHelpingHand;
 }
 
 $(document).ready(function() {

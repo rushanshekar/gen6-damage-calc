@@ -83,8 +83,8 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
     }
     
-    var typeEffectiveness = getMoveEffectiveness(move, defender.type1, attacker.ability === 'Scrappy', field.isGravity) * 
-                getMoveEffectiveness(move, defender.type2, attacker.ability === 'Scrappy', field.isGravity);
+    var typeEffectiveness = getMoveEffectiveness(move, defender.type1, attacker.ability === 'Scrappy' || field.isForesight, field.isGravity) *
+                getMoveEffectiveness(move, defender.type2, attacker.ability === 'Scrappy' || field.isForesight, field.isGravity);
     
     if (typeEffectiveness === 0) {
         return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
@@ -109,6 +109,9 @@ function getDamageResult(attacker, defender, move, field) {
     
     if (move.name === 'Seismic Toss' || move.name === 'Night Shade') {
         var lv = attacker.level;
+        if (attacker.ability === 'Parental Bond') {
+            lv = Math.floor(lv * 3/2);
+        }
         return {"damage":[lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv], "description":buildDescription(description)};
     }
     
@@ -191,8 +194,8 @@ function getDamageResult(attacker, defender, move, field) {
     var bpMods = [];
     if ((attacker.ability === 'Technician' && basePower <= 60) ||
             (attacker.ability === 'Flare Boost' && attacker.status === 'Burned' && move.category === 'Special') ||
-            (attacker.ability === 'Toxic Boost' && (attacker.status === 'Poisoned' || attacker.status === 'Badly Poisoned')
-                    && move.category === 'Physical')) {
+            (attacker.ability === 'Toxic Boost' && (attacker.status === 'Poisoned' || attacker.status === 'Badly Poisoned') &&
+                    move.category === 'Physical')) {
         bpMods.push(0x1800);
         description.attackerAbility = attacker.ability;
     } else if (attacker.ability === 'Analytic' && turnOrder !== 'FIRST') {
@@ -253,6 +256,11 @@ function getDamageResult(attacker, defender, move, field) {
             (defender.name.indexOf('Arceus') !== -1 && defender.item.indexOf('Plate') !== -1))) {
         bpMods.push(0x1800);
         description.moveBP = move.bp * 1.5;
+    }
+    
+    if (field.isHelpingHand) {
+        bpMods.push(0x1800);
+        description.isHelpingHand = true;
     }
     
     if (isAerilate || isPixilate || isRefrigerate || (attacker.ability === 'Tough Claws' && isContactMove(move))) {
@@ -506,7 +514,11 @@ function buildDescription(description) {
     if (description.isBurned) {
         output += "burned ";
     }
-    output += description.attackerName + " " + description.moveName + " ";
+    output += description.attackerName + " ";
+    if (description.isHelpingHand) {
+        output += "Helping Hand ";
+    }
+    output += description.moveName + " ";
     if (description.moveBP && description.moveType) {
         output += "(" + description.moveBP + " BP " + description.moveType + ") ";
     } else if (description.moveBP) {
