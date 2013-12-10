@@ -115,6 +115,9 @@ function getDamageResult(attacker, defender, move, field) {
         return {"damage":[lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv], "description":buildDescription(description)};
     }
     
+    if (move.hits > 1) {
+        description.hits = move.hits;
+    }
     var turnOrder = attacker.stats[SP] > defender.stats[SP] ? 'FIRST' : 'LAST';
     
     ////////////////////////////////
@@ -491,7 +494,7 @@ function getDamageResult(attacker, defender, move, field) {
         }
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
-        if (attacker.ability === 'Parental Bond') {
+        if (attacker.ability === 'Parental Bond' && move.hits === 1) {
             damage[i] = Math.floor(damage[i] * 3/2);
             description.attackerAbility = attacker.ability;
         }
@@ -525,6 +528,9 @@ function buildDescription(description) {
         output += "(" + description.moveBP + " BP) ";
     } else if (description.moveType) {
         output += "(" + description.moveType + ") ";
+    }
+    if (description.hits) {
+        output += "(" + description.hits + " hits) ";
     }
     output += "vs. ";
     if (description.defenseBoost) {

@@ -166,8 +166,17 @@ th {
 select.toxic-counter {
     width: 4.5em;
 }
+.move-selector, .move-bp, .move-type, .move-cat, .move-hits {
+    font-size: 0.9em;
+}
 .move-selector {
-    width: 9em;
+    width: 9.5em;
+}
+.poke-info input.move-bp {
+    width: 2em;
+}
+.move-cat, .move-hits {
+    width: 4em;
 }
 .poke-info .crit-btn {
     font-size: 0.8em;

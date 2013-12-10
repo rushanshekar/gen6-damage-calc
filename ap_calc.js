@@ -99,6 +99,10 @@ $(".percent-hp").keyup(function() {
     calcCurrentHP($(this).parent(), max, percent);
 });
 
+$(".ability").bind("keyup change", function() {
+    $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
+});
+
 $(".status").bind("keyup change", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
@@ -109,13 +113,20 @@ $(".status").bind("keyup change", function() {
 
 // auto-update move details on select
 $(".move-selector").bind("keyup change", function() {
-    var move = MOVES[$(this).val()];
+    var moveName = $(this).val();
+    var move = MOVES[moveName];
     if (move) {
-        $(this).parent().children(".move-bp").val(move[0]);
-        $(this).parent().children(".move-type").val(move[1]);
-        $(this).parent().children(".move-cat").val(move[2]);
-        var isAlwaysCritMove = $(this).val() === 'Frost Breath' || $(this).val() === 'Storm Throw';
-        $(this).parent().children(".move-crit").prop("checked", isAlwaysCritMove);
+        var moveGroupObj = $(this).parent();
+        moveGroupObj.children(".move-bp").val(move[0]);
+        moveGroupObj.children(".move-type").val(move[1]);
+        moveGroupObj.children(".move-cat").val(move[2]);
+        moveGroupObj.children(".move-crit").prop("checked", moveName === 'Frost Breath' || moveName === 'Storm Throw');
+        if (isMultiHitMove(moveName)) {
+            moveGroupObj.children(".move-hits").show();
+            moveGroupObj.children(".move-hits").val($(this).closest(".poke-info").find(".ability").val() === 'Skill Link' ? 5 : 3);
+        } else {
+            moveGroupObj.children(".move-hits").hide();
+        }
     }
 });
 
@@ -154,16 +165,18 @@ function calculate() {
     var p2 = new Pokemon($("#p2"));
     var field = new Field();
     damageResults = getDamageResults(p1, p2, field);
-    var result, minPercent, maxPercent, percentText;
+    var result, minDamage, maxDamage, minPercent, maxPercent, percentText;
     var highestMaxPercent = -1;
     var bestResult;
     for (var i = 0; i < 4; i++) {
         result = damageResults[0][i];
-        minPercent = Math.floor(result.damage[0] * 1000 / p2.maxHP) / 10;
-        maxPercent = Math.floor(result.damage[15] * 1000 / p2.maxHP) / 10;
-        result.damageText = result.damage[0] + "-" + result.damage[15] + " (" + minPercent + " - " + maxPercent + "%)";
+        minDamage = result.damage[0] * p1.moves[i].hits;
+        maxDamage = result.damage[15] * p1.moves[i].hits;
+        minPercent = Math.floor(minDamage * 1000 / p2.maxHP) / 10;
+        maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
+        result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
         result.koChanceText = p1.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p2, field.getSide(1), p1.ability === 'Bad Dreams');
+                : getKOChanceText(result.damage, p2, field.getSide(1), p1.moves[i].hits, p1.ability === 'Bad Dreams');
         $(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
         $(resultLocations[0][i].damage).text(minPercent + " - " + maxPercent + "%");
         if (maxPercent > highestMaxPercent) {
@@ -172,11 +185,13 @@ function calculate() {
         }
         
         result = damageResults[1][i];
-        minPercent = Math.floor(result.damage[0] * 1000 / p1.maxHP) / 10;
-        maxPercent = Math.floor(result.damage[15] * 1000 / p1.maxHP) / 10;
-        result.damageText = result.damage[0] + "-" + result.damage[15] + " (" + minPercent + " - " + maxPercent + "%)";
+        minDamage = result.damage[0] * p2.moves[i].hits;
+        maxDamage = result.damage[15] * p2.moves[i].hits;
+        minPercent = Math.floor(minDamage * 1000 / p1.maxHP) / 10;
+        maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
+        result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
         result.koChanceText = p2.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p1, field.getSide(0), p2.ability === 'Bad Dreams');
+                : getKOChanceText(result.damage, p1, field.getSide(0), p2.moves[i].hits, p2.ability === 'Bad Dreams');
         $(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
         $(resultLocations[1][i].damage).text(minPercent + " - " + maxPercent + "%");
         if (maxPercent > highestMaxPercent) {
@@ -211,7 +226,7 @@ function findDamageResult(resultMoveObj) {
     }
 }
 
-function getKOChanceText(damage, defender, field, isBadDreams) {
+function getKOChanceText(damage, defender, field, hits, isBadDreams) {
     if (damage[damage.length-1] === 0) {
         return 'aim for the horn next time';
     }
@@ -316,12 +331,21 @@ function getKOChanceText(damage, defender, field, isBadDreams) {
         eotText.push('Bad Dreams');
     }
     
+    // multi-hit moves have too many possibilities for brute-forcing to work, so reduce it to a 16-point distribution
+    var qualifier = '';
+    if (hits > 1) {
+        qualifier = 'approx. ';
+        console.log("Reducing " + hits + " hits for " + damage);
+        damage = getDistribution(damage, hits);
+        console.log("Reduced to " + damage);
+    }
+    
     var c = getKOChance(damage, defender.maxHP - hazards, 0, 1, defender.maxHP, toxicCounter);
     var afterText = hazardText.length > 0 ? ' after ' + serializeText(hazardText) : '';
     if (c === 1) {
         return 'guaranteed OHKO' + afterText;
     } else if (c > 0) {
-        return Math.round(c * 1000) / 10 + '% chance to OHKO' + afterText;
+        return qualifier + Math.round(c * 1000) / 10 + '% chance to OHKO' + afterText;
     }
     
     afterText = hazardText.length > 0 || eotText.length > 0 ? ' after ' + serializeText(hazardText.concat(eotText)) : '';
@@ -331,11 +355,11 @@ function getKOChanceText(damage, defender, field, isBadDreams) {
         if (c === 1) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (c > 0) {
-            return Math.round(c * 1000) / 10 + '% chance to ' + i + 'HKO' + afterText;
+            return qualifier + Math.round(c * 1000) / 10 + '% chance to ' + i + 'HKO' + afterText;
         }
     }
     
-    for (i = 5; i <= 10; i++) {
+    for (i = 5; i <= 9; i++) {
         if (predictTotal(damage[0], eot, i, toxicCounter, defender.maxHP) >= defender.maxHP - hazards) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (predictTotal(damage[damage.length-1], eot, i, toxicCounter, defender.maxHP) >= defender.maxHP - hazards) {
@@ -396,6 +420,32 @@ function predictTotal(damage, eot, hits, toxicCounter, maxHP) {
     return total;
 }
 
+function getDistribution(d, h) {
+    if (h === 2) {
+        return [
+            d[0]*h, squash(d,1,4,h), squash(d,2,5,h), squash(d,3,6,h),
+            squash(d,4,7,h), squash(d,5,7,h), squash(d,5,8,h), squash(d,6,8,h),
+            squash(d,7,9,h), squash(d,7,10,h), squash(d,8,10,h), squash(d,8,11,h),
+            squash(d,9,12,h), squash(d,10,13,h), squash(d,11,14,h), d[15]*h
+        ];
+    } else {
+        return [
+            d[0]*h, squash(d,1,7,h), squash(d,3,7,h), squash(d,4,7,h),
+            squash(d,5,7,h), squash(d,5,8,h), squash(d,5,9,h), squash(d,6,9,h),
+            squash(d,6,9,h), squash(d,6,10,h), squash(d,7,10,h), squash(d,8,10,h),
+            squash(d,8,11,h), squash(d,8,12,h), squash(d,8,14,h), d[15]*h
+        ];
+    }
+}
+
+function squash(arr, startIndex, endIndex, multiplier) {
+    var sum = 0;
+    for (var i = startIndex; i <= endIndex; i++) {
+        sum += arr[i];
+    }
+    return Math.round(sum * multiplier / (1 + endIndex - startIndex));
+}
+
 function serializeText(arr) {
     if (arr.length === 0) {
         return '';
@@ -449,6 +499,8 @@ function Move(moveInfo) {
     this.type = moveInfo.find(".move-type").val();
     this.category = moveInfo.find(".move-cat").val();
     this.isCrit = moveInfo.find(".move-crit").prop("checked");
+    this.hits = isMultiHitMove(this.name) ? ~~moveInfo.find(".move-hits").val()
+            : isTwoHitMove(this.name) ? 2 : 1;
 }
 
 function Field() {
@@ -491,6 +543,7 @@ $(document).ready(function() {
     calcStats($("#p1"));
     calcStats($("#p2"));
     $(".status").change();
+    $(".move-selector").change();
     $(".calc-trigger").bind("keyup change", calculate);
     calculate();
 });

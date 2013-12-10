@@ -586,3 +586,11 @@ function isSpreadMove(moveName) {
             'Muddy Water', 'Nature Power', 'Relic Song', 'Rock Slide', 'Searing Shot', 'Self-Destruct',
             'Sludge Wave', 'Snarl', 'Surf', 'Swift', 'Water Spout'].indexOf(moveName) !== -1;
 }
+
+function isMultiHitMove(moveName) {
+    return ['Arm Thrust', 'Bullet Seed', 'Icicle Spear', 'Pin Missile', 'Rock Blast', 'Tail Slap'].indexOf(moveName) !== -1;
+}
+
+function isTwoHitMove(moveName) {
+    return ['Bonemerang', 'Double Hit', 'Dual Chop', 'Gear Grind'].indexOf(moveName) !== -1;
+}
