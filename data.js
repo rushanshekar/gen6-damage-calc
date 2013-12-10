@@ -286,6 +286,7 @@ var MOVES = {
     'Acrobatics':[55,'Flying','Physical'],
     'Aerial Ace':[60,'Flying','Physical'],
     'Aeroblast':[100,'Flying','Special'],
+    'Air Cutter':[60,'Flying','Special'],
     'Air Slash':[75,'Flying','Special'],
     'Ancient Power':[60,'Rock','Special'],
     'Aqua Jet':[40,'Water','Physical'],
@@ -580,7 +581,7 @@ function isContactMove(move) {
 }
 
 function isSpreadMove(moveName) {
-    return ['Blizzard', 'Boomburst', 'Bulldoze', 'Dazzling Gleam', 'Discharge', 'Earthquake', 'Eruption',
+    return ['Air Cutter', 'Blizzard', 'Boomburst', 'Bulldoze', 'Dazzling Gleam', 'Discharge', 'Earthquake', 'Eruption',
             'Explosion', 'Glaciate', 'Heat Wave', 'Hyper Voice', 'Icy Wind', 'Incinerate', 'Lava Plume',
             'Muddy Water', 'Nature Power', 'Relic Song', 'Rock Slide', 'Searing Shot', 'Self-Destruct',
             'Sludge Wave', 'Snarl', 'Surf', 'Swift', 'Water Spout'].indexOf(moveName) !== -1;
