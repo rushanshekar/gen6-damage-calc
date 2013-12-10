@@ -136,7 +136,7 @@ function getDamageResult(attacker, defender, move, field) {
             description.moveBP = basePower;
             break;
         case 'Punishment':
-            basePower = Math.min(200, 60 + 20 * sumPositive(defender.boosts));
+            basePower = Math.min(200, 60 + 20 * countBoosts(defender.boosts));
             description.moveBP = basePower;
             break;
         case 'Low Kick':
@@ -156,7 +156,7 @@ function getDamageResult(attacker, defender, move, field) {
             description.moveBP = basePower;
             break;
         case 'Stored Power':
-            basePower = 20 + 20 * sumPositive(attacker.boosts);
+            basePower = 20 + 20 * countBoosts(attacker.boosts);
             description.moveBP = basePower;
             break;
         case 'Acrobatics':
@@ -672,11 +672,11 @@ function checkInfiltrator(attacker, defenderSide) {
     }
 }
 
-function sumPositive(arr) {
+function countBoosts(boosts) {
     var sum = 0;
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            sum += arr[i];
+    for (var i = 0; i < STATS.length; i++) {
+        if (boosts[STATS[i]] > 0) {
+            sum += boosts[STATS[i]];
         }
     }
     return sum;

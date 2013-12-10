@@ -7,7 +7,7 @@ var bounds = {
     "base":[1,255],
     "evs":[0,252],
     "ivs":[0,31],
-    "move-bp":[0,250]
+    "move-bp":[0,999]
 };
 for (var bounded in bounds) {
     if (bounds.hasOwnProperty(bounded)) {
