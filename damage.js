@@ -110,7 +110,7 @@ function getDamageResult(attacker, defender, move, field) {
     if (move.name === 'Seismic Toss' || move.name === 'Night Shade') {
         var lv = attacker.level;
         if (attacker.ability === 'Parental Bond') {
-            lv = Math.floor(lv * 3/2);
+            lv *= 2;
         }
         return {"damage":[lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv], "description":buildDescription(description)};
     }
