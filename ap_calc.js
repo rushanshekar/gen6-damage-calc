@@ -115,8 +115,8 @@ $(".status").bind("keyup change", function() {
 $(".move-selector").bind("keyup change", function() {
     var moveName = $(this).val();
     var move = MOVES[moveName];
+    var moveGroupObj = $(this).parent();
     if (move) {
-        var moveGroupObj = $(this).parent();
         moveGroupObj.children(".move-bp").val(move[0]);
         moveGroupObj.children(".move-type").val(move[1]);
         moveGroupObj.children(".move-cat").val(move[2]);
@@ -127,6 +127,12 @@ $(".move-selector").bind("keyup change", function() {
         } else {
             moveGroupObj.children(".move-hits").hide();
         }
+    } else {
+        moveGroupObj.children(".move-bp").val(0);
+        moveGroupObj.children(".move-type").val("Normal");
+        moveGroupObj.children(".move-cat").val("Physical");
+        moveGroupObj.children(".move-crit").prop("checked", false);
+        moveGroupObj.children(".move-hits").hide();
     }
 });
 
@@ -142,10 +148,32 @@ $(".set-selector").bind("keyup change", function() {
             pokeObj.find("." + STATS[i] + " .base").val(pokemon.bs[STATS[i]]);
         }
         pokeObj.find(".weight").val(pokemon.w);
+        if ($(this).val() in SETDEX) {
+            var set = SETDEX[$(this).val()]["Usage"];
+            if (set) {
+                pokeObj.find(".level").val(set.level);
+                pokeObj.find(".hp .evs").val(set.evs.hp);
+                for (var j = 0; j < STATS.length; j++) {
+                    pokeObj.find("." + STATS[j] + " .evs").val(set.evs[STATS[j]]);
+                }
+                setSelectValueIfValid(pokeObj.find(".nature"), set.nature, "");
+                setSelectValueIfValid(pokeObj.find(".ability"), set.ability, "");
+                setSelectValueIfValid(pokeObj.find(".item"), set.item, "");
+                for (var k = 0; k < 4; k++) {
+                    var moveObj = pokeObj.find(".move" + (k+1) + " .move-selector");
+                    setSelectValueIfValid(moveObj, set.moves[k], "(Move " + (k+1) + ")");
+                    moveObj.change();
+                }
+            }
+        }
         calcHP(pokeObj);
         calcStats(pokeObj);
     }
 });
+
+function setSelectValueIfValid(select, value, fallback) {
+    select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
+}
 
 var resultLocations = [[],[]];
 for (var i = 0; i < 4; i++) {
@@ -416,7 +444,7 @@ function predictTotal(damage, eot, hits, toxicCounter, maxHP) {
         }
     }
     var total = (damage * hits) - (eot * (hits - 1)) + toxicDamage;
-    console.log("Predicted for damage " + damage + ", hits " + hits + ": " + total);
+//    console.log("Predicted for damage " + damage + ", hits " + hits + ": " + total);
     return total;
 }
 
@@ -538,6 +566,7 @@ function Side(format, weather, isGravity, isSR, spikes, isReflect, isLightScreen
 }
 
 $(document).ready(function() {
+    $(".set-selector").change();
     calcHP($("#p1"));
     calcHP($("#p2"));
     calcStats($("#p1"));
