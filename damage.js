@@ -44,11 +44,13 @@ function getDamageResult(attacker, defender, move, field) {
         return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
     }
     
+    var defAbility = defender.ability;
     if (['Mold Breaker', 'Teravolt', 'Turboblaze'].indexOf(attacker.ability) !== -1) {
-        defender.ability = '';
+        defAbility = '';
         description.attackerAbility = attacker.ability;
     }
-    var isCritical = move.isCrit && ['Battle Armor', 'Shell Armor'].indexOf(defender.ability) === -1;
+    
+    var isCritical = move.isCrit && ['Battle Armor', 'Shell Armor'].indexOf(defAbility) === -1;
     
     if (move.name === 'Weather Ball') {
         move.type = field.weather === 'Sun' ? 'Fire'
@@ -89,15 +91,15 @@ function getDamageResult(attacker, defender, move, field) {
     if (typeEffectiveness === 0) {
         return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
     }
-    if ((defender.ability === 'Wonder Guard' && typeEffectiveness <= 1) ||
-            (move.type === 'Grass' && defender.ability === 'Sap Sipper') ||
-            (move.type === 'Fire' && defender.ability === 'Flash Fire') ||
-            (move.type === 'Water' && ['Dry Skin', 'Storm Drain', 'Water Absorb'].indexOf(defender.ability) !== -1) ||
-            (move.type === 'Electric' && ['Lightning Rod', 'Motor Drive', 'Volt Absorb'].indexOf(defender.ability) !== -1) ||
-            (move.type === 'Ground' && !field.isGravity && defender.ability === 'Levitate') ||
-            (isBulletMove(move.name) && defender.ability === 'Bulletproof') ||
-            (isSoundMove(move.name) && defender.ability === 'Soundproof')) {
-        description.defenderAbility = defender.ability;
+    if ((defAbility === 'Wonder Guard' && typeEffectiveness <= 1) ||
+            (move.type === 'Grass' && defAbility === 'Sap Sipper') ||
+            (move.type === 'Fire' && defAbility === 'Flash Fire') ||
+            (move.type === 'Water' && ['Dry Skin', 'Storm Drain', 'Water Absorb'].indexOf(defAbility) !== -1) ||
+            (move.type === 'Electric' && ['Lightning Rod', 'Motor Drive', 'Volt Absorb'].indexOf(defAbility) !== -1) ||
+            (move.type === 'Ground' && !field.isGravity && defAbility === 'Levitate') ||
+            (isBulletMove(move.name) && defAbility === 'Bulletproof') ||
+            (isSoundMove(move.name) && defAbility === 'Soundproof')) {
+        description.defenderAbility = defAbility;
         return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
     }
     if (move.type === 'Ground' && !field.isGravity && defender.item === 'Air Balloon') {
@@ -214,12 +216,12 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
     }
     
-    if (defender.ability === 'Heatproof' && move.type === 'Fire') {
+    if (defAbility === 'Heatproof' && move.type === 'Fire') {
         bpMods.push(0x800);
-        description.defenderAbility = defender.ability;
-    } else if (defender.ability === 'Dry Skin' && move.type === 'Fire') {
+        description.defenderAbility = defAbility;
+    } else if (defAbility === 'Dry Skin' && move.type === 'Fire') {
         bpMods.push(0x1400);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     
     if (attacker.ability === 'Sheer Force' && isSheerForceMove(move.name)) {
@@ -277,23 +279,23 @@ function getDamageResult(attacker, defender, move, field) {
     
     if ((attacker.ability === 'Dark Aura' && move.type === 'Dark') ||
             (attacker.ability === 'Fairy Aura' && move.type === 'Fairy')) {
-        if (defender.ability === 'Aura Break') {
+        if (defAbility === 'Aura Break') {
             bpMods.push(0xAAA);
-            description.defenderAbility = defender.ability;
+            description.defenderAbility = defAbility;
         } else {
             bpMods.push(0x1555);
         }
         description.attackerAbility = attacker.ability;
     }
-    if ((defender.ability === 'Dark Aura' && move.type === 'Dark') ||
-            (defender.ability === 'Fairy Aura' && move.type === 'Fairy')) {
+    if ((defAbility === 'Dark Aura' && move.type === 'Dark') ||
+            (defAbility === 'Fairy Aura' && move.type === 'Fairy')) {
         if (attacker.ability === 'Aura Break') {
             bpMods.push(0xAAA);
             description.attackerAbility = attacker.ability;
         } else {
             bpMods.push(0x1555);
         }
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
@@ -309,9 +311,9 @@ function getDamageResult(attacker, defender, move, field) {
             toSmogonStat(attackStat);
     if (attackSource.boosts[attackStat] === 0 || (isCritical && attackSource.boosts[attackStat] < 0)) {
         attack = attackSource.rawStats[attackStat];
-    } else if (defender.ability === 'Unaware') {
+    } else if (defAbility === 'Unaware') {
         attack = attackSource.rawStats[attackStat];
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     } else {
         attack = attackSource.stats[attackStat];
         description.attackBoost = attackSource.boosts[attackStat];
@@ -324,9 +326,9 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     var atMods = [];
-    if (defender.ability === 'Thick Fat' && (move.type === 'Fire' || move.type === 'Ice')) {
+    if (defAbility === 'Thick Fat' && (move.type === 'Fire' || move.type === 'Ice')) {
         atMods.push(0x800);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     
     if ((attacker.ability === 'Guts' && attacker.status !== 'Healthy' && move.category === 'Physical') ||
@@ -391,12 +393,12 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     var dfMods = [];
-    if (defender.ability === 'Marvel Scale' && defender.status !== 'Healthy' && hitsPhysical) {
+    if (defAbility === 'Marvel Scale' && defender.status !== 'Healthy' && hitsPhysical) {
         dfMods.push(0x1800);
-        description.defenderAbility = defender.ability;
-    } else if (defender.ability === 'Flower Gift' && field.weather === 'Sun' && !hitsPhysical) {
+        description.defenderAbility = defAbility;
+    } else if (defAbility === 'Flower Gift' && field.weather === 'Sun' && !hitsPhysical) {
         dfMods.push(0x1800);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
         description.weather = field.weather;
     }
     
@@ -451,9 +453,9 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(field.format !== 'Singles' ? 0xA8F : 0x800);
         description.isLightScreen = true;
     }
-    if (defender.ability === 'Multiscale' && defender.curHP === defender.maxHP) {
+    if (defAbility === 'Multiscale' && defender.curHP === defender.maxHP) {
         finalMods.push(0x800);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     if (attacker.ability === 'Tinted Lens' && typeEffectiveness < 1) {
         finalMods.push(0x2000);
@@ -462,9 +464,9 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x1800);
         description.attackerAbility = attacker.ability;
     }
-    if ((defender.ability === 'Solid Rock' || defender.ability === 'Filter') && typeEffectiveness > 1) {
+    if ((defAbility === 'Solid Rock' || defAbility === 'Filter') && typeEffectiveness > 1) {
         finalMods.push(0xC00);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     if (attacker.item === 'Expert Belt' && typeEffectiveness > 1) {
         finalMods.push(0x1333);
@@ -478,9 +480,9 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x800);
         description.defenderItem = defender.item;
     }
-    if (defender.ability === 'Fur Coat' && hitsPhysical) {
+    if (defAbility === 'Fur Coat' && hitsPhysical) {
         finalMods.push(0x800);
-        description.defenderAbility = defender.ability;
+        description.defenderAbility = defAbility;
     }
     var finalMod = chainMods(finalMods);
     
