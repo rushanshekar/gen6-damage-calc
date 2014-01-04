@@ -223,31 +223,39 @@ function calculate() {
         result = damageResults[0][i];
         minDamage = result.damage[0] * p1.moves[i].hits;
         maxDamage = result.damage[15] * p1.moves[i].hits;
-        minPercent = Math.floor(minDamage * 1000 / p2.maxHP) / 10;
-        maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
-        result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
-        result.koChanceText = p1.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p2, field.getSide(1), p1.moves[i].hits, p1.ability === 'Bad Dreams');
-        $(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
-        $(resultLocations[0][i].damage).text(minPercent + " - " + maxPercent + "%");
-        if (maxPercent > highestMaxPercent) {
-            highestMaxPercent = maxPercent;
-            bestResult = $(resultLocations[0][i].move);
+        if (isNaN(minDamage)) {
+            console.log("NaN on p1 m" + i);
+        } else {
+            minPercent = Math.floor(minDamage * 1000 / p2.maxHP) / 10;
+            maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
+            result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
+            result.koChanceText = p1.moves[i].bp === 0 ? 'nice move'
+                    : getKOChanceText(result.damage, p2, field.getSide(1), p1.moves[i].hits, p1.ability === 'Bad Dreams');
+            $(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
+            $(resultLocations[0][i].damage).text(minPercent + " - " + maxPercent + "%");
+            if (maxPercent > highestMaxPercent) {
+                highestMaxPercent = maxPercent;
+                bestResult = $(resultLocations[0][i].move);
+            }
         }
         
         result = damageResults[1][i];
         minDamage = result.damage[0] * p2.moves[i].hits;
         maxDamage = result.damage[15] * p2.moves[i].hits;
-        minPercent = Math.floor(minDamage * 1000 / p1.maxHP) / 10;
-        maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
-        result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
-        result.koChanceText = p2.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p1, field.getSide(0), p2.moves[i].hits, p2.ability === 'Bad Dreams');
-        $(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
-        $(resultLocations[1][i].damage).text(minPercent + " - " + maxPercent + "%");
-        if (maxPercent > highestMaxPercent) {
-            highestMaxPercent = maxPercent;
-            bestResult = $(resultLocations[1][i].move);
+        if (isNaN(minDamage)) {
+            console.log("NaN on p2 m" + i);
+        } else {
+            minPercent = Math.floor(minDamage * 1000 / p1.maxHP) / 10;
+            maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
+            result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
+            result.koChanceText = p2.moves[i].bp === 0 ? 'nice move'
+                    : getKOChanceText(result.damage, p1, field.getSide(0), p2.moves[i].hits, p2.ability === 'Bad Dreams');
+            $(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
+            $(resultLocations[1][i].damage).text(minPercent + " - " + maxPercent + "%");
+            if (maxPercent > highestMaxPercent) {
+                highestMaxPercent = maxPercent;
+                bestResult = $(resultLocations[1][i].move);
+            }
         }
     }
     bestResult.prop("checked", true);
