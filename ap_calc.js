@@ -179,7 +179,7 @@ $(".set-selector").bind("keyup change", function() {
                 pokeObj.find("." + STATS[i] + " .ivs").val(31);
             }
             pokeObj.find(".nature").val("Hardy");
-            pokeObj.find(".ability").val(pokemon.ab ? pokemon.ab : "");
+            setSelectValueIfValid(pokeObj.find(".ability"), pokemon.ab, "");
             pokeObj.find(".item").val("");
             for (i = 0; i < 4; i++) {
                 moveObj = pokeObj.find(".move" + (i+1) + " .move-selector");
