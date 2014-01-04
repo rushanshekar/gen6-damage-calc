@@ -20,7 +20,11 @@
             ['Magic Guard', 'Levitate'].indexOf(defender.ability) === -1 && defender.item !== 'Air Balloon') {
         if (field.spikes === 1) {
             hazards += Math.floor(defender.maxHP / 8);
-            hazardText.push('1 layer of Spikes');
+            if (gen === 2) {
+                hazardText.push('Spikes');
+            } else {
+                hazardText.push('1 layer of Spikes');
+            }
         } else if (field.spikes === 2) {
             hazards += Math.floor(defender.maxHP / 6);
             hazardText.push('2 layers of Spikes');

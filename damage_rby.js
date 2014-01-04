@@ -1,32 +1,42 @@
-﻿function CALCULATE_DAMAGE_RBY(attacker, defender, move, field) {
+﻿function CALCULATE_ALL_MOVES_RBY(p1, p2, field) {
+    p1.stats[AT] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[AT], p1.boosts[AT])));
+    p1.stats[DF] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[DF], p1.boosts[DF])));
+    p1.stats[SL] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[SL], p1.boosts[SL])));
+    p2.stats[AT] = Math.min(999, Math.max(1, getModifiedStat(p2.rawStats[AT], p2.boosts[AT])));
+    p2.stats[DF] = Math.min(999, Math.max(1, getModifiedStat(p2.rawStats[DF], p2.boosts[DF])));
+    p2.stats[SL] = Math.min(999, Math.max(1, getModifiedStat(p2.rawStats[SL], p2.boosts[SL])));
+    var side1 = field.getSide(1);
+    var side2 = field.getSide(0);
+    var results = [[],[]];
+    for (var i = 0; i < 4; i++) {
+        results[0][i] = CALCULATE_DAMAGE_RBY(p1, p2, p1.moves[i], side1);
+        results[1][i] = CALCULATE_DAMAGE_RBY(p2, p1, p2.moves[i], side2);
+    }
+    return results;
+}
+
+function CALCULATE_DAMAGE_RBY(attacker, defender, move, field) {
     var description = {
         "attackerName": attacker.name,
         "moveName": move.name,
         "defenderName": defender.name
     };
     
-    var EMPTY_RESULT = [
-        0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,
-        0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,
-        0,0,0,0, 0,0,0
-    ];
     if (move.bp === 0) {
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     
     var lv = attacker.level;
     if (move.name === "Seismic Toss" || move.name === "Night Shade") {
-        return {"damage":[
-                    lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv,
-                    lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv,
-                    lv,lv,lv,lv, lv,lv,lv
-                ], "description":buildDescription(description)};
-    
-    var typeEffectiveness = typeChart[move.type][defender.type1] *
-            defender.type2 ? typeChart[move.type][defender.type2] : 1;
+        return {"damage":[lv], "description":buildDescription(description)};
+    }
+
+    var typeEffect1 = typeChart[move.type][defender.type1];
+    var typeEffect2 = defender.type2 ? typeChart[move.type][defender.type2] : 1;
+    var typeEffectiveness = typeEffect1 * typeEffect2;
     
     if (typeEffectiveness === 0) {
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     
     if (move.hits > 1) {
@@ -41,14 +51,14 @@
     
     if (move.isCrit) {
         lv *= 2;
+        at = attacker.rawStats[attackStat];
+        df = defender.rawStats[defenseStat];
         description.isCritical = true;
     } else {
         if (attacker.boosts[attackStat] !== 0) {
-            at = getModifiedStat(at, attacker.boosts[attackStat]);
             description.attackBoost = attacker.boosts[attackStat];
         }
         if (defender.boosts[defenseStat] !== 0) {
-            df = getModifiedStat(df, defender.boosts[defenseStat]);
             description.defenseBoost = defender.boosts[defenseStat];
         }
         if (isPhysical && attacker.status === "Burned") {
@@ -89,10 +99,4 @@
         damage[i-217] = Math.floor(baseDamage * i / 255);
     }
     return {"damage":damage, "description":buildDescription(description)};
-}
-
-function getModifiedStat(stat, mod) {
-    return mod > 0 ? Math.min(999, Math.floor(stat * (2 + mod) / 2))
-            : mod < 0 ? Math.max(1, Math.floor(stat * 2 / (2 - mod)))
-            : stat;
 }

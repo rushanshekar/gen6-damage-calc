@@ -33,7 +33,6 @@ var ITEMS_ADV = ITEMS_GSC.concat([
     'DeepSeaScale',
     'DeepSeaTooth',
     'Oran Berry',
-    'Sea Incense',
     'Silk Scarf',
     'Sitrus Berry',
     'Soul Dew'
@@ -102,6 +101,7 @@ var ITEMS_DPP = ITEMS_ADV.concat([
     'Rose Incense',
     'Rowap Berry',
     'Salac Berry',
+    'Sea Incense',
     'Shuca Berry',
     'Sky Plate',
     'Splash Plate',
@@ -163,6 +163,7 @@ function getItemBoostType(item) {
         case 'Dragon Fang':
             return 'Dragon';
         case 'Dread Plate':
+        case 'BlackGlasses':
         case 'Black Glasses':
             return 'Dark';
         case 'Earth Plate':
@@ -175,9 +176,11 @@ function getItemBoostType(item) {
         case 'Charcoal':
             return 'Fire';
         case 'Icicle Plate':
+        case 'NeverMeltIce':
         case 'Never-Melt Ice':
             return 'Ice';
         case 'Insect Plate':
+        case 'SilverPowder':
         case 'Silver Powder':
             return 'Bug';
         case 'Iron Plate':
@@ -189,6 +192,7 @@ function getItemBoostType(item) {
             return 'Grass';
         case 'Mind Plate':
         case 'Odd Incense':
+        case 'TwistedSpoon':
         case 'Twisted Spoon':
             return 'Psychic';
         case 'Pixie Plate':
@@ -215,6 +219,8 @@ function getItemBoostType(item) {
         case 'Magnet':
             return 'Electric';
         case 'Silk Scarf':
+        case 'Pink Bow':
+        case 'Polkadot Bow':
             return 'Normal';
         default:
             return '';

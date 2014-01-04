@@ -494,6 +494,12 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         type: 'Dark',
         category: 'Physical',
         makesContact: true
+    },
+    'Zap Cannon': {
+        bp: 100,
+        type: 'Electric',
+        category: 'Special',
+        hasSecondaryEffect: true
     }
 });
 
@@ -1201,6 +1207,7 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
 
 delete MOVES_DPP['Razor Leaf'];
 delete MOVES_DPP['Twineedle'];
+delete MOVES_DPP['Zap Cannon'];
 
 var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
     'Acid Spray': {
