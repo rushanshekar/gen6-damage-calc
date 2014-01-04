@@ -284,6 +284,14 @@ var TYPE_CHART_GSC = $.extend(true, {}, TYPE_CHART_RBY, {
         Dark: 1,
         Steel: 2
     },
+    Water: {
+        Dark: 1,
+        Steel: 1
+    },
+    Electric: {
+        Dark: 1,
+        Steel: 1
+    },
     Ice: {
         Fire: 0.5,
         Dark: 1,
@@ -378,6 +386,12 @@ var TYPE_CHART_XY = $.extend(true, {}, TYPE_CHART_GSC, {
         Fairy: 1
     },
     Fire: {
+        Fairy: 1
+    },
+    Water: {
+        Fairy: 1
+    },
+    Electric: {
         Fairy: 1
     },
     Ice: {
