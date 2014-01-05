@@ -291,7 +291,7 @@ function getKOChanceText(damage, defender, field, hits, isBadDreams) {
     var hazards = 0;
     var hazardText = [];
     if (field.isSR && defender.ability !== 'Magic Guard') {
-        var effectiveness = getTypeEffectiveness('Rock', defender.type1) * getTypeEffectiveness('Rock', defender.type2);
+        var effectiveness = typeChart['Rock'][defender.type1] * (defender.type2 ? typeChart['Rock'][defender.type2] : 1);
         hazards += Math.floor(effectiveness * defender.maxHP / 8);
         hazardText.push('Stealth Rock');
     }
@@ -307,6 +307,10 @@ function getKOChanceText(damage, defender, field, hits, isBadDreams) {
             hazards += Math.floor(defender.maxHP / 4);
             hazardText.push('3 layers of Spikes');
         }
+    }
+    if (isNaN(hazards)) {
+        hazards = 0;
+        console.log("NaN hazards");
     }
     
     var eot = 0;
@@ -699,7 +703,7 @@ function getSelectOptions(arr, sort) {
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $("input.calc-trigger").bind("keyup", calculate);
+    $("input.calc-trigger").bind("change", calculate);
     $("select.calc-trigger").bind("change keyup", calculate);
     calculate();
 });
