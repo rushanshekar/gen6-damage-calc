@@ -152,6 +152,8 @@ $(".set-selector").bind("keyup change", function() {
         pokeObj.find(".weight").val(pokemon.w);
         pokeObj.find(".boost").val(0);
         pokeObj.find(".percent-hp").val(100);
+        pokeObj.find(".status").val("Healthy");
+        $(".status").change();
         var moveObj;
         if (pokemonName in setdex && setName in setdex[pokemonName]) {
             var set = setdex[pokemonName][setName];
@@ -189,7 +191,6 @@ $(".set-selector").bind("keyup change", function() {
         }
         calcHP(pokeObj);
         calcStats(pokeObj);
-        $(".status").change();
     }
 });
 
@@ -698,6 +699,7 @@ function getSelectOptions(arr, sort) {
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $(".calc-trigger").bind("keyup change", calculate);
+    $("input.calc-trigger").bind("keyup", calculate);
+    $("select.calc-trigger").bind("change keyup", calculate);
     calculate();
 });
