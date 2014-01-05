@@ -703,7 +703,6 @@ function getSelectOptions(arr, sort) {
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $("input.calc-trigger").bind("change", calculate);
-    $("select.calc-trigger").bind("change keyup", calculate);
+    $(".calc-trigger").bind("change keyup", calculate);
     calculate();
 });
