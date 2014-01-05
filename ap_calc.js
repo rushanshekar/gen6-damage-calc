@@ -190,7 +190,6 @@ $(".set-selector").bind("keyup change", function() {
         calcHP(pokeObj);
         calcStats(pokeObj);
         $(".status").change();
-        $(".move-selector").change();
     }
 });
 
@@ -698,7 +697,7 @@ function getSelectOptions(arr, sort) {
 
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
-    $(".gen").change();
+    $("#gen6").change();
     $(".calc-trigger").bind("keyup change", calculate);
     calculate();
 });
