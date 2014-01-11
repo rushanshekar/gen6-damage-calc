@@ -8,6 +8,7 @@ var ABILITIES_ADV = [
     'Drizzle',
     'Drought',
     'Flash Fire',
+    'Flash Fire (activated)',
     'Forecast',
     'Guts',
     'Huge Power',

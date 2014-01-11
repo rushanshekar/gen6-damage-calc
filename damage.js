@@ -93,7 +93,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     if ((defAbility === 'Wonder Guard' && typeEffectiveness <= 1) ||
             (move.type === 'Grass' && defAbility === 'Sap Sipper') ||
-            (move.type === 'Fire' && defAbility === 'Flash Fire') ||
+            (move.type === 'Fire' && defAbility.indexOf('Flash Fire') !== -1) ||
             (move.type === 'Water' && ['Dry Skin', 'Storm Drain', 'Water Absorb'].indexOf(defAbility) !== -1) ||
             (move.type === 'Electric' && ['Lightning Rod', 'Motor Drive', 'Volt Absorb'].indexOf(defAbility) !== -1) ||
             (move.type === 'Ground' && !field.isGravity && defAbility === 'Levitate') ||
@@ -335,10 +335,12 @@ function getDamageResult(attacker, defender, move, field) {
             (attacker.ability === 'Overgrow' && attacker.curHP <= attacker.maxHP / 3 && move.type === 'Grass') ||
             (attacker.ability === 'Blaze' && attacker.curHP <= attacker.maxHP / 3 && move.type === 'Fire') ||
             (attacker.ability === 'Torrent' && attacker.curHP <= attacker.maxHP / 3 && move.type === 'Water') ||
-            (attacker.ability === 'Swarm' && attacker.curHP <= attacker.maxHP / 3 && move.type === 'Bug') ||
-            (attacker.ability === 'Flash Fire' && move.type === 'Fire')) {
+            (attacker.ability === 'Swarm' && attacker.curHP <= attacker.maxHP / 3 && move.type === 'Bug')) {
         atMods.push(0x1800);
         description.attackerAbility = attacker.ability;
+    } else if (attacker.ability === 'Flash Fire (activated)' && move.type === 'Fire') {
+        atMods.push(0x1800);
+        description.attackerAbility = 'Flash Fire';
     } else if ((attacker.ability === 'Solar Power' && field.weather === 'Sun' && move.category === 'Special') ||
             (attacker.ability === 'Flower Gift' && field.weather === 'Sun' && move.category === 'Physical')) {
         atMods.push(0x1800);
