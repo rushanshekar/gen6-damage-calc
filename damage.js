@@ -498,7 +498,9 @@ function getDamageResult(attacker, defender, move, field) {
         }
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
-        if (attacker.ability === 'Parental Bond' && move.hits === 1) {
+
+        // is 2nd hit half BP? half attack? half damage range? keeping it as a flat 1.5x until I know the specifics
+        if (attacker.ability === 'Parental Bond' && move.hits === 1 && (field.format === 'Singles' || !move.isSpread)) {
             damage[i] = Math.floor(damage[i] * 3/2);
             description.attackerAbility = attacker.ability;
         }
