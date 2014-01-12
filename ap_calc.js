@@ -222,7 +222,7 @@ function calculate() {
     for (var i = 0; i < 4; i++) {
         result = damageResults[0][i];
         minDamage = result.damage[0] * p1.moves[i].hits;
-        maxDamage = result.damage[15] * p1.moves[i].hits;
+        maxDamage = result.damage[result.damage.length-1] * p1.moves[i].hits;
         minPercent = Math.floor(minDamage * 1000 / p2.maxHP) / 10;
         maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
@@ -237,7 +237,7 @@ function calculate() {
         
         result = damageResults[1][i];
         minDamage = result.damage[0] * p2.moves[i].hits;
-        maxDamage = result.damage[15] * p2.moves[i].hits;
+        maxDamage = result.damage[result.damage.length-1] * p2.moves[i].hits;
         minPercent = Math.floor(minDamage * 1000 / p1.maxHP) / 10;
         maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
@@ -310,7 +310,6 @@ function getKOChanceText(damage, defender, field, hits, isBadDreams) {
     }
     if (isNaN(hazards)) {
         hazards = 0;
-        console.log("NaN hazards");
     }
     
     var eot = 0;
@@ -391,11 +390,9 @@ function getKOChanceText(damage, defender, field, hits, isBadDreams) {
     
     // multi-hit moves have too many possibilities for brute-forcing to work, so reduce it to a 16-point distribution
     var qualifier = '';
-    if (hits > 1) {
+    if (hits > 1 && damage.length === 16) {
         qualifier = 'approx. ';
-        console.log("Reducing " + hits + " hits for " + damage);
         damage = getDistribution(damage, hits);
-        console.log("Reduced to " + damage);
     }
     
     var c = getKOChance(damage, defender.maxHP - hazards, 0, 1, defender.maxHP, toxicCounter);
@@ -474,7 +471,6 @@ function predictTotal(damage, eot, hits, toxicCounter, maxHP) {
         }
     }
     var total = (damage * hits) - (eot * (hits - 1)) + toxicDamage;
-//    console.log("Predicted for damage " + damage + ", hits " + hits + ": " + total);
     return total;
 }
 

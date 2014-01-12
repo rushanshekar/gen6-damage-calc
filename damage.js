@@ -38,9 +38,8 @@ function getDamageResult(attacker, defender, move, field) {
         "defenderName": defender.name
     };
     
-    var EMPTY_RESULT = [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0];
     if (move.bp === 0) {
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     
     var defAbility = defender.ability;
@@ -89,7 +88,7 @@ function getDamageResult(attacker, defender, move, field) {
     var typeEffectiveness = typeEffect1 * typeEffect2;
     
     if (typeEffectiveness === 0) {
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     if ((defAbility === 'Wonder Guard' && typeEffectiveness <= 1) ||
             (move.type === 'Grass' && defAbility === 'Sap Sipper') ||
@@ -100,11 +99,11 @@ function getDamageResult(attacker, defender, move, field) {
             (move.isBullet && defAbility === 'Bulletproof') ||
             (move.isSound && defAbility === 'Soundproof')) {
         description.defenderAbility = defAbility;
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     if (move.type === 'Ground' && !field.isGravity && defender.item === 'Air Balloon') {
         description.defenderItem = defender.item;
-        return {"damage":EMPTY_RESULT, "description":buildDescription(description)};
+        return {"damage":[0], "description":buildDescription(description)};
     }
     
     description.HPEVs = defender.HPEVs + ' HP';
@@ -114,7 +113,7 @@ function getDamageResult(attacker, defender, move, field) {
         if (attacker.ability === 'Parental Bond') {
             lv *= 2;
         }
-        return {"damage":[lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv, lv,lv,lv,lv], "description":buildDescription(description)};
+        return {"damage":[lv], "description":buildDescription(description)};
     }
     
     if (move.hits > 1) {
@@ -505,7 +504,6 @@ function getDamageResult(attacker, defender, move, field) {
             description.attackerAbility = attacker.ability;
         }
     }
-    console.log(move.name + " -- BP: " + basePower + ", AT: " + attack + ", DF: " + defense + ", DAMAGE: " + damage);
     return {"damage":damage, "description":buildDescription(description)};
 }
 
