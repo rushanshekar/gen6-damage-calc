@@ -30,22 +30,22 @@ $(".level").keyup(function() {
 $(".nature").bind("keyup change", function() {
     calcStats($(this).closest(".poke-info"));
 });
-$(".hp .base, .hp .evs, .hp .ivs").keyup(function() {
+$(".hp .base, .hp .evs, .hp .ivs").bind("keyup change", function() {
     calcHP($(this).closest(".poke-info"));
 });
-$(".at .base, .at .evs, .at .ivs").keyup(function() {
+$(".at .base, .at .evs, .at .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'at');
 });
-$(".df .base, .df .evs, .df .ivs").keyup(function() {
+$(".df .base, .df .evs, .df .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'df');
 });
-$(".sa .base, .sa .evs, .sa .ivs").keyup(function() {
+$(".sa .base, .sa .evs, .sa .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'sa');
 });
-$(".sd .base, .sd .evs, .sd .ivs").keyup(function() {
+$(".sd .base, .sd .evs, .sd .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'sd');
 });
-$(".sp .base, .sp .evs, .sp .ivs").keyup(function() {
+$(".sp .base, .sp .evs, .sp .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'sp');
 });
 $(".sl .base").keyup(function() {

@@ -153,6 +153,10 @@ th {
     display: inline-block;
     width: 2.5em;
 }
+.poke-info input[type="number"] {
+    display: inline-block;
+    width: 3em;
+}
 .info-group {
     margin: 1em 0;
 }
