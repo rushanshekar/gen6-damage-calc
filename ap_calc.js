@@ -122,6 +122,71 @@ $(".ability").bind("keyup change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
 });
 
+$("#p1 .ability").bind("keyup change", function() {
+    autosetWeather($(this).val(), 0);
+});
+$("#p2 .ability").bind("keyup change", function() {
+    autosetWeather($(this).val(), 1);
+});
+
+var lastManualWeather = "";
+var lastAutoWeather = ["", ""];
+function autosetWeather(ability, i) {
+    var currentWeather = $("input:radio[name='weather']:checked").val();
+    if (lastAutoWeather.indexOf(currentWeather) === -1) {
+        lastManualWeather = currentWeather;
+        lastAutoWeather[1-i] = "";
+    }
+    if (ability === "Drought") {
+        lastAutoWeather[i] = "Sun";
+        $("#sun").prop("checked", true);
+    } else if (ability === "Drizzle") {
+        lastAutoWeather[i] = "Rain";
+        $("#rain").prop("checked", true);
+    } else if (ability === "Sand Stream") {
+        lastAutoWeather[i] = "Sand";
+        $("#sand").prop("checked", true);
+    } else if (ability === "Snow Warning") {
+        lastAutoWeather[i] = "Hail";
+        $("#hail").prop("checked", true);
+    } else {
+        lastAutoWeather[i] = "";
+        var newWeather = lastAutoWeather[1-i] !== "" ? lastAutoWeather[1-i] : lastManualWeather;
+        $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
+    }
+}
+
+$("#p1 .item").bind("keyup change", function() {
+    autosetStatus("#p1", $(this).val());
+});
+$("#p2 .item").bind("keyup change", function() {
+    autosetStatus("#p2", $(this).val());
+});
+
+var lastManualStatus = {"#p1":"Healthy", "#p2":"Healthy"};
+var lastAutoStatus = {"#p1":"Healthy", "#p2":"Healthy"};
+function autosetStatus(p, item) {
+    var currentStatus = $(p + " .status").val();
+    if (currentStatus !== lastAutoStatus[p]) {
+        lastManualStatus[p] = currentStatus;
+    }
+    if (item === "Flame Orb") {
+        lastAutoStatus[p] = "Burned";
+        $(p + " .status").val("Burned");
+        $(p + " .status").change();
+    } else if (item === "Toxic Orb") {
+        lastAutoStatus[p] = "Badly Poisoned";
+        $(p + " .status").val("Badly Poisoned");
+        $(p + " .status").change();
+    } else {
+        lastAutoStatus[p] = "Healthy";
+        if (currentStatus !== lastManualStatus[p]) {
+            $(p + " .status").val(lastManualStatus[p]);
+            $(p + " .status").change();
+        }
+    }
+}
+
 $(".status").bind("keyup change", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
@@ -174,6 +239,8 @@ $(".set-selector").bind("keyup change", function() {
         pokeObj.find(".status").val("Healthy");
         $(".status").change();
         var moveObj;
+        var abilityObj = pokeObj.find(".ability");
+        var itemObj = pokeObj.find(".item");
         if (pokemonName in setdex && setName in setdex[pokemonName]) {
             var set = setdex[pokemonName][setName];
             pokeObj.find(".level").val(set.level);
@@ -186,8 +253,8 @@ $(".set-selector").bind("keyup change", function() {
                 pokeObj.find("." + STATS[i] + " .dvs").val((set.dvs && typeof set.dvs[STATS[i]] !== "undefined") ? set.dvs[STATS[i]] : 15);
             }
             setSelectValueIfValid(pokeObj.find(".nature"), set.nature, "Hardy");
-            setSelectValueIfValid(pokeObj.find(".ability"), pokemon.ab ? pokemon.ab : set.ability, "");
-            setSelectValueIfValid(pokeObj.find(".item"), set.item, "");
+            setSelectValueIfValid(abilityObj, pokemon.ab ? pokemon.ab : set.ability, "");
+            setSelectValueIfValid(itemObj, set.item, "");
             for (i = 0; i < 4; i++) {
                 moveObj = pokeObj.find(".move" + (i+1) + " .move-selector");
                 setSelectValueIfValid(moveObj, set.moves[i], "(No Move)");
@@ -204,8 +271,8 @@ $(".set-selector").bind("keyup change", function() {
                 pokeObj.find("." + STATS[i] + " .dvs").val(15);
             }
             pokeObj.find(".nature").val("Hardy");
-            setSelectValueIfValid(pokeObj.find(".ability"), pokemon.ab, "");
-            pokeObj.find(".item").val("");
+            setSelectValueIfValid(abilityObj, pokemon.ab, "");
+            itemObj.val("");
             for (i = 0; i < 4; i++) {
                 moveObj = pokeObj.find(".move" + (i+1) + " .move-selector");
                 moveObj.val("(No Move)");
@@ -214,6 +281,8 @@ $(".set-selector").bind("keyup change", function() {
         }
         calcHP(pokeObj);
         calcStats(pokeObj);
+        abilityObj.change();
+        itemObj.change();
     }
 });
 
