@@ -202,6 +202,12 @@ function predictTotal(damage, eot, hits, toxicCounter, maxHP) {
 function squashMultihit(d, hits) {
     if (d.length === 1) {
         return [d[0] * hits];
+    } else if (gen === 1) {
+        var r = [];
+        for (var i = 0; i < d.length; i++) {
+            r[i] = d[i] * hits;
+        }
+        return r;
     } else if (d.length === 16) {
         switch (hits) {
             case 2:
