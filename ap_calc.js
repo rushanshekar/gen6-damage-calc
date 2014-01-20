@@ -196,7 +196,7 @@ $(".status").bind("keyup change", function() {
 });
 
 // auto-update move details on select
-$(".move-selector").bind("keyup change", function() {
+$(".move-selector").change(function() {
     var moveName = $(this).val();
     var move = moves[moveName] || moves['(No Move)'];
     var moveGroupObj = $(this).parent();
@@ -213,16 +213,11 @@ $(".move-selector").bind("keyup change", function() {
 });
 
 // auto-update set details on select
-$(".set-selector").bind("keyup change", function() {
+$(".set-selector").change(function() {
     var fullSetName = $(this).val();
     var pokemonName, setName;
-    if (fullSetName.indexOf("(") !== -1) {
-        pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
-        setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
-    } else {
-        pokemonName = fullSetName;
-        setName = "Usage";
-    }
+    pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
+    setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
     var pokemon = pokedex[pokemonName];
     if (pokemon) {
         var pokeObj = $(this).closest(".poke-info");
@@ -256,7 +251,7 @@ $(".set-selector").bind("keyup change", function() {
             setSelectValueIfValid(abilityObj, pokemon.ab ? pokemon.ab : set.ability, "");
             setSelectValueIfValid(itemObj, set.item, "");
             for (i = 0; i < 4; i++) {
-                moveObj = pokeObj.find(".move" + (i+1) + " .move-selector");
+                moveObj = pokeObj.find(".move" + (i+1) + " select.move-selector");
                 setSelectValueIfValid(moveObj, set.moves[i], "(No Move)");
                 moveObj.change();
             }
@@ -274,7 +269,7 @@ $(".set-selector").bind("keyup change", function() {
             setSelectValueIfValid(abilityObj, pokemon.ab, "");
             itemObj.val("");
             for (i = 0; i < 4; i++) {
-                moveObj = pokeObj.find(".move" + (i+1) + " .move-selector");
+                moveObj = pokeObj.find(".move" + (i+1) + " select.move-selector");
                 moveObj.val("(No Move)");
                 moveObj.change();
             }
@@ -370,7 +365,7 @@ function findDamageResult(resultMoveObj) {
 }
 
 function Pokemon(pokeInfo) {
-    var setName = pokeInfo.find(".set-selector").val();
+    var setName = pokeInfo.find("select.set-selector").val();
     if (setName.indexOf("(") === -1) {
         this.name = setName;
     } else {
@@ -406,7 +401,7 @@ function Pokemon(pokeInfo) {
 }
 
 function getMoveDetails(moveInfo) {
-    var moveName = moveInfo.find(".move-selector").val();
+    var moveName = moveInfo.find("select.move-selector").val();
     var defaultDetails = moves[moveName];
     return $.extend({}, defaultDetails, {
         name: moveName,
@@ -540,7 +535,7 @@ $(".gen").change(function () {
     $(".gen-specific.g" + gen).show();
     $(".gen-specific").not(".g" + gen).hide();
     var setOptions = getSetOptions();
-    $("select.set-selector").find("option").remove().end().append(setOptions);
+    $("select.set-selector").find("optgroup").remove().end().append(setOptions);
     var typeOptions = getSelectOptions(Object.keys(typeChart));
     $("select.type1, select.move-type").find("option").remove().end().append(typeOptions);
     $("select.type2").find("option").remove().end().append("<option value=\"\">(none)</option>" + typeOptions);
@@ -585,17 +580,22 @@ function getSetOptions() {
     var r = '';
     for (var i = 0; i < pokeOptions.length; i++) {
         var pokemon = pokeOptions[i];
+        r += "<optgroup label=\"" + pokemon + "\">";
         if (pokemon in setdex) {
             var setOptions = Object.keys(setdex[pokemon]);
             for (var j = 0; j < setOptions.length; j++) {
-                var setOptionName = pokemon + (setOptions[j] === 'Usage' ? '' : ' (' + setOptions[j] + ')');
-                r += '<option value="' + setOptionName + '">' + setOptionName + '</option>';
+                r += createSetOption(pokemon, setOptions[j]);
             }
-        } else {
-            r += '<option value="' + pokemon + '">' + pokemon + '</option>';
         }
+        r += createSetOption(pokemon, "Blank Set");
+        r += "</optgroup>";
     }
     return r;
+}
+
+function createSetOption(pokemon, setName) {
+    var fullSetName = pokemon + " (" + setName + ")";
+    return "<option value=\"" + fullSetName + "\" data-pokemon=\"" + pokemon + "\" data-set=\"" + setName + "\">" + fullSetName + "</option>";
 }
 
 function getSelectOptions(arr, sort) {
@@ -610,6 +610,23 @@ function getSelectOptions(arr, sort) {
 }
 
 $(document).ready(function() {
+    $(".set-selector").select2({
+        formatResult: function(object) {
+            return $(object.element).is("option") ? $(object.element).data("set") : object.text;
+        },
+        matcher: function(term, text, option) {
+            var pokeName = option.data("pokemon").toUpperCase();
+            // 2nd condition is for Megas; remove when Megas are merged
+            return pokeName.indexOf(term.toUpperCase()) === 0 || pokeName.indexOf(" " + term.toUpperCase()) >= 0;
+        }
+    });
+    $(".move-selector").select2({
+        dropdownAutoWidth:true,
+        matcher: function(term, text) {
+            // 2nd condition is for Hidden Power
+            return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
+        }
+    });
     $("#gen6").prop("checked", true);
     $("#gen6").change();
     $(".calc-trigger").bind("change keyup", calculate);

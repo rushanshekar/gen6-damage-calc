@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>A Pokemon Calculator</title>
+    <link type="text/css" rel="stylesheet" href="./select2/select2.css" />
     <link type="text/css" rel="stylesheet" href="./ap_calc.css" />
 </head>
 <body>
@@ -94,7 +95,7 @@
                 <input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
             </div>
             <div class="move1">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -102,7 +103,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move2">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -110,7 +111,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move3">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -118,7 +119,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move4">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -265,7 +266,7 @@
                 <input class="current-hp calc-trigger" value="341" />/<span class="max-hp">341</span> (<input class="percent-hp calc-trigger" value="100" />%)
             </div>
             <div class="move1">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -273,7 +274,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move2">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -281,7 +282,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move3">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -289,7 +290,7 @@
                 <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
             </div>
             <div class="move4">
-                <select class="move-selector calc-trigger"></select>
+                <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
@@ -299,6 +300,7 @@
         </fieldset>
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="./select2/select2.min.js"></script>
     <script type="text/javascript" src="./pokedex.js"></script>
     <script type="text/javascript" src="./setdex_xy.js"></script>
     <script type="text/javascript" src="./setdex_bw.js"></script>

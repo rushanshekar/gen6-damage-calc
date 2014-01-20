@@ -1681,7 +1681,8 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
     'Water Shuriken': {
         bp: 15,
         type: 'Water',
-        category: 'Physical'
+        category: 'Physical',
+        isMultiHit: true
     }
 });
 

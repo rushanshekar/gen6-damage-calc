@@ -161,7 +161,7 @@ th {
     margin: 1em 0;
 }
 .set-selector {
-    width: 28em;
+    width: 100%;
 }
 .info-selectors select {
     width: 8em;
@@ -195,4 +195,20 @@ select.toxic-counter {
 
 .hide {
     display: none;
+}
+
+/* select2 overrides */
+.select2-container .select2-choice > .select2-chosen {
+    width: 100%;
+}
+.small-select.select2-container .select2-choice {
+    font-size: 0.9em;
+    height: 18px;
+    line-height: 18px;
+}
+.small-select.select2-container .select2-choice .select2-arrow b {
+    background-position: 0 -4px;
+}
+.small-select.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px -4px;
 }
