@@ -618,7 +618,8 @@ $(document).ready(function() {
             var pokeName = option.data("pokemon").toUpperCase();
             // 2nd condition is for Megas; remove when Megas are merged
             return pokeName.indexOf(term.toUpperCase()) === 0 || pokeName.indexOf(" " + term.toUpperCase()) >= 0;
-        }
+        },
+        minimumInputLength: 1 // temporary solution to the lag until I get around to adding paging
     });
     $(".move-selector").select2({
         dropdownAutoWidth:true,
