@@ -276,25 +276,22 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
     }
     
-    if ((attacker.ability === "Dark Aura" && move.type === "Dark") ||
-            (attacker.ability === "Fairy Aura" && move.type === "Fairy")) {
-        if (defAbility === "Aura Break") {
+    var isAttackerAura = attacker.ability === (move.type + " Aura");
+    var isDefenderAura = defAbility === (move.type + " Aura");
+    if (isAttackerAura || isDefenderAura) {
+        if (attacker.ability === "Aura Break" || defAbility === "Aura Break") {
             bpMods.push(0xAAA);
+            description.attackerAbility = attacker.ability;
             description.defenderAbility = defAbility;
         } else {
             bpMods.push(0x1555);
+            if (isAttackerAura) {
+                description.attackerAbility = attacker.ability;
+            }
+            if (isDefenderAura) {
+                description.defenderAbility = defAbility;
+            }
         }
-        description.attackerAbility = attacker.ability;
-    }
-    if ((defAbility === "Dark Aura" && move.type === "Dark") ||
-            (defAbility === "Fairy Aura" && move.type === "Fairy")) {
-        if (attacker.ability === "Aura Break") {
-            bpMods.push(0xAAA);
-            description.attackerAbility = attacker.ability;
-        } else {
-            bpMods.push(0x1555);
-        }
-        description.defenderAbility = defAbility;
     }
     
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
