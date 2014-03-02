@@ -9052,6 +9052,20 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "w": 35.3,
     "ab": "Mega Launcher"
   },
+  "Diancie": {
+    "t1": "Rock",
+    "t2": "Fairy",
+    "bs": {
+      "hp": 50,
+      "at": 100,
+      "df": 150,
+      "sa": 100,
+      "sd": 150,
+      "sp": 50
+    },
+    "w": 8.8,
+    "ab": "Clear Body"
+  },
   "Dedenne": {
     "t1": "Electric",
     "t2": "Fairy",
@@ -9191,6 +9205,19 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 52
     },
     "w": 0.9
+  },
+  "Floette-E": {
+    "t1": "Fairy",
+    "bs": {
+      "hp": 74,
+      "at": 65,
+      "df": 67,
+      "sa": 125,
+      "sd": 128,
+      "sp": 92
+    },
+    "w": 0.9,
+    "ab": "Flower Veil"
   },
   "Florges": {
     "t1": "Fairy",
@@ -9692,6 +9719,34 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 100.0,
     "ab": "Parental Bond"
+  },
+  "Mega Latias": {
+    "t1": "Dragon",
+    "t2": "Psychic",
+    "bs": {
+      "hp": 80,
+      "at": 100,
+      "df": 120,
+      "sa": 140,
+      "sd": 150,
+      "sp": 110
+    },
+    "w": 40.0,
+    "ab": "Levitate"
+  },
+  "Mega Latios": {
+    "t1": "Dragon",
+    "t2": "Psychic",
+    "bs": {
+      "hp": 80,
+      "at": 130,
+      "df": 100,
+      "sa": 160,
+      "sd": 120,
+      "sp": 110
+    },
+    "w": 60.0,
+    "ab": "Levitate"
   },
   "Mega Lucario": {
     "t1": "Fighting",

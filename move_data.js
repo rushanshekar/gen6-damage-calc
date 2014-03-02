@@ -1589,6 +1589,12 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         category: 'Special',
         isSpread: true
     },
+    'Diamond Storm': {
+        bp: 100,
+        type: 'Rock',
+        category: 'Physical',
+        hasSecondaryEffect: true
+    },
     'Draco Meteor': { bp: 130 },
     'Dragon Pulse': { bp: 85 },
     'Energy Ball': { bp: 90 },
@@ -1631,7 +1637,18 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
     'Ice Beam': { bp: 90 },
     'Incinerate': { bp: 60 },
     'Knock Off': { bp: 65 },
+    'Land\'s Wrath': {
+        bp: 90,
+        type: 'Ground',
+        category: 'Physical',
+        isSpread: true
+    },
     'Leaf Storm': { bp: 130 },
+    'Light of Ruin': {
+        bp: 140,
+        type: 'Fairy',
+        category: 'Special'
+    },
     'Low Sweep': { bp: 65 },
     'Magma Storm': { bp: 100 },
     'Meteor Mash': { bp: 90 },
@@ -1655,6 +1672,12 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         category: 'Special'
     },
     'Overheat': { bp: 130 },
+    'Phantom Force': {
+        bp: 90,
+        type: 'Ghost',
+        category: 'Physical',
+        makesContact: true
+    },
     'Pin Missile': { bp: 25 },
     'Play Rough': {
         bp: 90,
