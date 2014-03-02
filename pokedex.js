@@ -8942,11 +8942,11 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
   "Bergmite": {
     "t1": "Ice",
     "bs": {
-      "hp": 56,
+      "hp": 55,
       "at": 69,
-      "df": 86,
+      "df": 85,
       "sa": 32,
-      "sd": 36,
+      "sd": 35,
       "sp": 28
     },
     "w": 99.5
@@ -9047,7 +9047,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "df": 88,
       "sa": 120,
       "sd": 89,
-      "sp": 63
+      "sp": 59
     },
     "w": 35.3,
     "ab": "Mega Launcher"
@@ -9236,7 +9236,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "bs": {
       "hp": 41,
       "at": 56,
-      "df": 41,
+      "df": 40,
       "sa": 62,
       "sd": 44,
       "sp": 71
@@ -9375,7 +9375,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "bs": {
       "hp": 78,
       "at": 92,
-      "df": 77,
+      "df": 75,
       "sa": 74,
       "sd": 63,
       "sp": 118
@@ -9421,6 +9421,19 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 2.0,
     "ab": "No Guard"
+  },
+  "Hoopa": {
+    "t1": "Psychic",
+    "t2": "Ghost",
+    "bs": {
+      "hp": 80,
+      "at": 105,
+      "df": 59,
+      "sa": 151,
+      "sd": 130,
+      "sp": 75
+    },
+    "w": 9.0
   },
   "Inkay": {
     "t1": "Dark",
@@ -9731,7 +9744,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sd": 150,
       "sp": 110
     },
-    "w": 40.0,
+    "w": 52.0,
     "ab": "Levitate"
   },
   "Mega Latios": {
@@ -9745,7 +9758,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sd": 120,
       "sp": 110
     },
-    "w": 60.0,
+    "w": 70.0,
     "ab": "Levitate"
   },
   "Mega Lucario": {
@@ -10212,6 +10225,19 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 89
     },
     "w": 17.0
+  },
+  "Volcanion": {
+    "t1": "Fire",
+    "t2": "Water",
+    "bs": {
+      "hp": 70,
+      "at": 109,
+      "df": 120,
+      "sa": 121,
+      "sd": 110,
+      "sp": 70
+    },
+    "w": 195.0
   },
   "Xerneas": {
     "t1": "Fairy",
