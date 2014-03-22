@@ -657,6 +657,12 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         category: 'Physical',
         isMultiHit: true
     },
+    'Rock Tomb': {
+        bp: 50,
+        type: 'Rock',
+        category: 'Physical',
+        hasSecondaryEffect: true
+    },
     'Shadow Punch': {
         bp: 60,
         type: 'Ghost',
@@ -1695,6 +1701,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         hasSecondaryEffect: true,
         isPunch: true
     },
+    'Rock Tomb': { bp: 60 },
     'Storm Throw': { bp: 60 },
     'Surf': { bp: 90 },
     'Thief': { bp: 60 },
