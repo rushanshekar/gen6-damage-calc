@@ -280,6 +280,14 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         isBite: true
     },
     'Double-Edge': { bp: 120 },
+    'DynamicPunch': {
+        bp: 100,
+        type: 'Fighting',
+        category: 'Physical',
+        makesContact: true,
+        hasSecondaryEffect: true,
+        isPunch: true
+    },
     'Explosion': { bp: 250 },
     'ExtremeSpeed': {
         bp: 80,
@@ -1292,14 +1300,6 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         category: 'Physical',
         makesContact: true,
         isTwoHit: true
-    },
-    'DynamicPunch': {
-        bp: 100,
-        type: 'Fighting',
-        category: 'Physical',
-        makesContact: true,
-        hasSecondaryEffect: true,
-        isPunch: true
     },
     'Electro Ball': {
         bp: 1,
