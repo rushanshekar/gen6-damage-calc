@@ -267,12 +267,15 @@ function getDamageResult(attacker, defender, move, field) {
         description.isHelpingHand = true;
     }
     
-    if (isAerilate || isPixilate || isRefrigerate || (attacker.ability === "Tough Claws" && move.makesContact)) {
+    if (isAerilate || isPixilate || isRefrigerate) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
     } else if ((attacker.ability === "Mega Launcher" && move.isPulse) ||
             (attacker.ability === "Strong Jaw" && move.isBite)) {
         bpMods.push(0x1800);
+        description.attackerAbility = attacker.ability;
+    } else if (attacker.ability === "Tough Claws" && move.makesContact) {
+        bpMods.push(0x1547);
         description.attackerAbility = attacker.ability;
     }
     
