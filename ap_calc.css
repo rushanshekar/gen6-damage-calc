@@ -3,6 +3,7 @@ body {
     font: 10pt Verdana, sans-serif;
     background-color: #bbeedd;
     padding: 0 1em;
+    min-width: 100em;
 }
 fieldset {
     float: left;
