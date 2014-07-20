@@ -21,8 +21,8 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     p2.stats[SA] = getModifiedStat(p2.rawStats[SA], p2.boosts[SA]);
     var side1 = field.getSide(1);
     var side2 = field.getSide(0);
-    checkInfiltrator(p1, side2);
-    checkInfiltrator(p2, side1);
+    checkInfiltrator(p1, side1);
+    checkInfiltrator(p2, side2);
     var results = [[],[]];
     for (var i = 0; i < 4; i++) {
         results[0][i] = getDamageResult(p1, p2, p1.moves[i], side1);
@@ -671,10 +671,10 @@ function checkDownload(source, target) {
         }
     }
 }
-function checkInfiltrator(attacker, defenderSide) {
+function checkInfiltrator(attacker, affectedSide) {
     if (attacker.ability === "Infiltrator") {
-        defenderSide.isReflect = false;
-        defenderSide.isLightScreen = false;
+        affectedSide.isReflect = false;
+        affectedSide.isLightScreen = false;
     }
 }
 
