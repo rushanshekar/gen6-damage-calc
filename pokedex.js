@@ -6328,7 +6328,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
   },
   "Rotom-C": {
     "t1": "Electric",
-    "t2": "Grass",
+    "t2": "Ghost",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6342,7 +6342,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
   },
   "Rotom-F": {
     "t1": "Electric",
-    "t2": "Ice",
+    "t2": "Ghost",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6356,7 +6356,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
   },
   "Rotom-H": {
     "t1": "Electric",
-    "t2": "Fire",
+    "t2": "Ghost",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6370,7 +6370,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
   },
   "Rotom-S": {
     "t1": "Electric",
-    "t2": "Flying",
+    "t2": "Ghost",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6384,7 +6384,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
   },
   "Rotom-W": {
     "t1": "Electric",
-    "t2": "Water",
+    "t2": "Ghost",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6721,6 +6721,11 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
 });
 
 var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
+  "Rotom-C": { "t2": "Grass" },
+  "Rotom-F": { "t2": "Ice" },
+  "Rotom-H": { "t2": "Fire" },
+  "Rotom-S": { "t2": "Flying" },
+  "Rotom-W": { "t2": "Water" },
   "Accelgor": {
     "t1": "Bug",
     "bs": {
