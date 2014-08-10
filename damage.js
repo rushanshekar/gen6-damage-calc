@@ -652,22 +652,22 @@ function checkKlutz(pokemon) {
 function checkIntimidate(source, target) {
     if (source.ability === "Intimidate") {
         if (target.ability === "Contrary" || target.ability === "Defiant") {
-            target.boosts[AT] += 1;
+            target.boosts[AT] = Math.min(6, target.boosts[AT] + 1);
         } else if (["Clear Body", "White Smoke", "Hyper Cutter"].indexOf(target.ability) !== -1) {
             // no effect
         } else if (target.ability === "Simple") {
-            target.boosts[AT] -= 2;
+            target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
         } else {
-            target.boosts[AT] -= 1;
+            target.boosts[AT] = Math.max(-6, target.boosts[AT] - 1);
         }
     }
 }
 function checkDownload(source, target) {
     if (source.ability === "Download") {
         if (target.stats[SD] <= target.stats[DF]) {
-            source.boosts[SA] += 1;
+            source.boosts[SA] = Math.min(6, source.boosts[SA] + 1);
         } else {
-            source.boosts[AT] += 1;
+            source.boosts[AT] = Math.min(6, source.boosts[AT] + 1);
         }
     }
 }
