@@ -365,7 +365,7 @@ function findDamageResult(resultMoveObj) {
 }
 
 function Pokemon(pokeInfo) {
-    var setName = pokeInfo.find("select.set-selector").val();
+    var setName = pokeInfo.find("input.set-selector").val();
     if (setName.indexOf("(") === -1) {
         this.name = setName;
     } else {
@@ -534,8 +534,6 @@ $(".gen").change(function () {
     clearField();
     $(".gen-specific.g" + gen).show();
     $(".gen-specific").not(".g" + gen).hide();
-    var setOptions = getSetOptions();
-    $("select.set-selector").find("optgroup").remove().end().append(setOptions);
     var typeOptions = getSelectOptions(Object.keys(typeChart));
     $("select.type1, select.move-type").find("option").remove().end().append(typeOptions);
     $("select.type2").find("option").remove().end().append("<option value=\"\">(none)</option>" + typeOptions);
@@ -546,10 +544,7 @@ $(".gen").change(function () {
     var itemOptions = getSelectOptions(items, true);
     $("select.item").find("option").remove().end().append("<option value=\"\">(none)</option>" + itemOptions);
     
-    if (gen < 4) {
-        $(".set-selector").prop("selectedIndex", 1); // Abra is boring
-    }
-    
+    $(".set-selector").val(getSetOptions()[gen < 4 ? 3 : 1].id);
     $(".set-selector").change();
 });
 
@@ -575,27 +570,36 @@ function clearField() {
 }
 
 function getSetOptions() {
-    var pokeOptions = Object.keys(pokedex);
-    pokeOptions.sort();
-    var r = '';
-    for (var i = 0; i < pokeOptions.length; i++) {
-        var pokemon = pokeOptions[i];
-        r += "<optgroup label=\"" + pokemon + "\">";
-        if (pokemon in setdex) {
-            var setOptions = Object.keys(setdex[pokemon]);
-            for (var j = 0; j < setOptions.length; j++) {
-                r += createSetOption(pokemon, setOptions[j]);
+    var pokeNames = Object.keys(pokedex);
+    pokeNames.sort();
+    var setOptions = [];
+    var idNum = 0;
+    for (var i = 0; i < pokeNames.length; i++) {
+        var pokeName = pokeNames[i];
+        setOptions.push({
+            pokemon: pokeName,
+            text: pokeName
+        });
+        if (pokeName in setdex) {
+            var setNames = Object.keys(setdex[pokeName]);
+            for (var j = 0; j < setNames.length; j++) {
+                var setName = setNames[j];
+                setOptions.push({
+                    pokemon: pokeName,
+                    set: setName,
+                    text: pokeName + " (" + setName + ")",
+                    id: pokeName + " (" + setName + ")"
+                });
             }
         }
-        r += createSetOption(pokemon, "Blank Set");
-        r += "</optgroup>";
+        setOptions.push({
+            pokemon: pokeName,
+            set: "Blank Set",
+            text: pokeName + " (Blank Set)",
+            id: pokeName + " (Blank Set)"
+        });
     }
-    return r;
-}
-
-function createSetOption(pokemon, setName) {
-    var fullSetName = pokemon + " (" + setName + ")";
-    return "<option value=\"" + fullSetName + "\" data-pokemon=\"" + pokemon + "\" data-set=\"" + setName + "\">" + fullSetName + "</option>";
+    return setOptions;
 }
 
 function getSelectOptions(arr, sort) {
@@ -610,16 +614,29 @@ function getSelectOptions(arr, sort) {
 }
 
 $(document).ready(function() {
+    $("#gen6").prop("checked", true);
+    $("#gen6").change();
+    $(".calc-trigger").bind("change keyup", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
-            return $(object.element).is("option") ? $(object.element).data("set") : object.text;
+            return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
         },
-        matcher: function(term, text, option) {
-            var pokeName = option.data("pokemon").toUpperCase();
-            // 2nd condition is for Megas; remove when Megas are merged
-            return pokeName.indexOf(term.toUpperCase()) === 0 || pokeName.indexOf(" " + term.toUpperCase()) >= 0;
+        query: function(query) {
+            var pageSize = 30;
+            var results = _.filter(getSetOptions(), function(option) {
+                var pokeName = option.pokemon.toUpperCase();
+                // 2nd condition is for Megas; remove when Megas are merged
+                return !query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf(" " + query.term.toUpperCase()) >= 0;
+            });
+            query.callback({
+                results: results.slice((query.page - 1) * pageSize, query.page * pageSize),
+                more: results.length >= query.page * pageSize
+            });
         },
-        minimumInputLength: 1 // temporary solution to the lag until I get around to adding paging
+        initSelection: function(element, callback) {
+            var data = getSetOptions()[gen < 4 ? 3 : 1];
+            callback(data);
+        }
     });
     $(".move-selector").select2({
         dropdownAutoWidth:true,
@@ -628,8 +645,6 @@ $(document).ready(function() {
             return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
         }
     });
-    $("#gen6").prop("checked", true);
-    $("#gen6").change();
-    $(".calc-trigger").bind("change keyup", calculate);
-    calculate();
+    $(".set-selector").val(getSetOptions()[gen < 4 ? 3 : 1].id);
+    $(".set-selector").change();
 });
