@@ -648,6 +648,14 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         type: 'Fire',
         category: 'Special'
     },
+    'Poison Fang': {
+        bp: 50,
+        type: 'Poison',
+        category: 'Physical',
+        makesContact: true,
+        hasSecondaryEffect: true,
+        isBite: true
+    },
     'Psycho Boost': {
         bp: 140,
         type: 'Psychic',
