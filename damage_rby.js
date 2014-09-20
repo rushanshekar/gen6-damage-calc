@@ -71,29 +71,27 @@ function CALCULATE_DAMAGE_RBY(attacker, defender, move, field) {
         df = Math.floor(df / 2);
     }
     
-    if (at > 255 || df > 255) {
-        at = Math.floor(at / 4);
-        df = Math.floor(df / 4);
-    }
-    
     if (!move.isCrit) {
         if (isPhysical && field.isReflect) {
-            at = Math.floor(at / 4);
-            df = Math.floor(df / 2);
+            df *= 2;
             description.isReflect = true;
         } else if (!isPhysical && field.isLightScreen) {
-            at = Math.floor(at / 4);
-            df = Math.floor(df / 2);
+            df *= 2;
             description.isLightScreen = true;
         }
     }
     
+    if (at > 255 || df > 255) {
+        at = Math.floor(at / 4) % 256;
+        df = Math.floor(df / 4) % 256;
+    }
+
     var baseDamage = Math.min(997, Math.floor(Math.floor(Math.floor(2 * lv / 5 + 2) * Math.max(1, at) * move.bp / Math.max(1, df)) / 50)) + 2;
     if (move.type === attacker.type1 || move.type === attacker.type2) {
         baseDamage = Math.floor(baseDamage * 1.5);
     }
     baseDamage = Math.floor(baseDamage * typeEffectiveness);
-    // If baseDamage >= 768, don't apply random factor? I saw this somewhere months ago but now I can't find it :(
+    // If baseDamage >= 768, don't apply random factor? upokecenter says this, but nobody else does
     var damage = [];
     for (var i = 217; i <= 255; i++) {
         damage[i-217] = Math.floor(baseDamage * i / 255);
