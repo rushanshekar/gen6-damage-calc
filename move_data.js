@@ -38,7 +38,8 @@ var MOVES_RBY = {
         bp: 90,
         type: 'Water',
         category: 'Physical',
-        makesContact: true
+        makesContact: true,
+        alwaysCrit: true
     },
     'Dig': {
         bp: 100,
@@ -265,6 +266,7 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         hasSecondaryEffect: true,
         isBite: true
     },
+    'Crabhammer': { alwaysCrit: false },
     'Cross Chop': {
         bp: 100,
         type: 'Fighting',
@@ -1621,7 +1623,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         category: 'Physical',
         makesContact: true
     },
-    'Freeze Dry': {
+    'Freeze-Dry': {
         bp: 70,
         type: 'Ice',
         category: 'Special',
