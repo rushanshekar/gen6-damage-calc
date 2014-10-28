@@ -595,7 +595,7 @@ function getMoveEffectiveness(move, type, isGhostRevealed, isGravity) {
         return 1;
     } else if (isGravity && type === "Flying" && move.type === "Ground") {
         return 1;
-    } else if (move.name === "Freeze Dry" && type === "Water") {
+    } else if (move.name === "Freeze-Dry" && type === "Water") {
         return 2;
     } else if (move.name === "Flying Press") {
         return typeChart["Fighting"][type] * typeChart["Flying"][type];
