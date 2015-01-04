@@ -150,7 +150,7 @@ th {
     display: inline-block;
     width: 6em;
 }
-.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span {
+.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span :not(.select2-chosen) {
     display: inline-block;
     width: 2.5em;
 }
@@ -162,7 +162,7 @@ th {
     margin: 1em 0;
 }
 .set-selector {
-    width: 100%;
+    width: 28em;
 }
 .info-selectors select {
     width: 8em;
@@ -199,9 +199,6 @@ select.toxic-counter {
 }
 
 /* select2 overrides */
-.select2-container .select2-choice > .select2-chosen {
-    width: 100%;
-}
 .small-select.select2-container .select2-choice {
     font-size: 0.9em;
     height: 18px;
