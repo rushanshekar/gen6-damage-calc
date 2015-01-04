@@ -274,6 +274,13 @@ $(".set-selector").change(function() {
                 moveObj.change();
             }
         }
+        var formeObj = $(this).siblings().find(".forme").parent();
+        itemObj.prop("disabled", false);
+        if (pokemon.formes) {
+            showFormes(formeObj, setName, pokemonName, pokemon);
+        } else {
+            formeObj.hide();
+        }
         calcHP(pokeObj);
         calcStats(pokeObj);
         abilityObj.change();
@@ -281,9 +288,67 @@ $(".set-selector").change(function() {
     }
 });
 
+function showFormes(formeObj, setName, pokemonName, pokemon) {
+    var formeOptions = getSelectOptions(pokemon.formes);
+    if (setName !== "Blank Set") {
+        var set = setdex[pokemonName][setName];
+        if (set.item.indexOf("ite") === -1 && pokemonName !== "Aegislash" &&
+                (pokemonName !== "Meloetta" || set.moves.indexOf("Relic Song") === -1) &&
+                (pokemonName !== "Groudon" || set.item.indexOf("Red Orb") === -1) &&
+                (pokemonName !== "Kyogre" || set.item.indexOf("Blue Orb") === -1) &&
+                (pokemonName !== "Rayquaza" || set.moves.indexOf("Dragon Ascent") === -1)) {
+            formeOptions = getSelectOptions([pokemon.formes[0]]);
+        } else if (set.item.indexOf("X") > -1) {
+            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[1]]);
+        } else if (set.item.indexOf("Y") > -1) {
+            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[2]]);
+        }
+    }
+    formeObj.children("select").find("option").remove().end().append(formeOptions);
+    formeObj.show();
+}
+
 function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
 }
+
+$(".forme").change(function() {
+    var altForme = pokedex[$(this).val()],
+        container = $(this).closest(".info-group").siblings(),
+        fullSetName = container.find(".select2-chosen").first().text(),
+        pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
+        setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
+
+    $(this).parent().siblings().find(".type1").val(altForme.t1);
+    $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
+    $(this).parent().siblings().find(".weight").val(altForme.w);
+
+    for (var i = 0; i < STATS.length; i++) {
+        var baseStat = container.find("." + STATS[i]).find(".base");
+        baseStat.val(altForme.bs[STATS[i]]);
+        baseStat.keyup();
+    }
+
+    if (abilities.indexOf(altForme.ab) > -1) {
+        container.find(".ability").val(altForme.ab);
+    } else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) > -1) {
+        container.find(".ability").val(setdex[pokemonName][setName].ability);
+    } else {
+        container.find(".ability").val("");
+    }
+    container.find(".ability").keyup();
+
+    if ($(this).val().indexOf("Mega") === 0 && $(this).val() !== "Mega Rayquaza") {
+        container.find(".item").val("").keyup();
+        container.find(".item").prop("disabled", true);
+    } else {
+        container.find(".item").prop("disabled", false);
+    }
+
+    if (pokemonName === "Darmanitan") {
+        container.find(".percent-hp").val($(this).val() === "Darmanitan-Z" ? "50" : "100").keyup();
+    }
+});
 
 var resultLocations = [[],[]];
 for (var i = 0; i < 4; i++) {
@@ -369,7 +434,8 @@ function Pokemon(pokeInfo) {
     if (setName.indexOf("(") === -1) {
         this.name = setName;
     } else {
-        this.name = setName.substring(0, setName.indexOf(" ("));
+        var pokemonName = setName.substring(0, setName.indexOf(" ("));
+        this.name = (pokedex[pokemonName].formes) ? pokeInfo.find(".forme").val() : pokemonName;
     }
     this.type1 = pokeInfo.find(".type1").val();
     this.type2 = pokeInfo.find(".type2").val();
@@ -570,7 +636,14 @@ function clearField() {
 }
 
 function getSetOptions() {
-    var pokeNames = Object.keys(pokedex);
+    var pokeNames, index;
+    pokeNames = Object.keys(pokedex);
+    index = pokeNames.length;
+    while (index--) {
+        if (pokedex[pokeNames[index]].isAlternateForme) {
+            pokeNames.splice(index, 1);
+        }
+    }
     pokeNames.sort();
     var setOptions = [];
     var idNum = 0;
@@ -627,8 +700,7 @@ $(document).ready(function() {
             var results = [];
             for (var i = 0; i < setOptions.length; i++) {
                 var pokeName = setOptions[i].pokemon.toUpperCase();
-                // 2nd condition is for Megas; remove when Megas are merged
-                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf(" " + query.term.toUpperCase()) >= 0) {
+                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0) {
                     results.push(setOptions[i]);
                 }
             }
