@@ -622,12 +622,16 @@ $(document).ready(function() {
             return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
         },
         query: function(query) {
+            var setOptions = getSetOptions();
             var pageSize = 30;
-            var results = _.filter(getSetOptions(), function(option) {
-                var pokeName = option.pokemon.toUpperCase();
+            var results = [];
+            for (var i = 0; i < setOptions.length; i++) {
+                var pokeName = setOptions[i].pokemon.toUpperCase();
                 // 2nd condition is for Megas; remove when Megas are merged
-                return !query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf(" " + query.term.toUpperCase()) >= 0;
-            });
+                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf(" " + query.term.toUpperCase()) >= 0) {
+                    results.push(setOptions[i]);
+                }
+            }
             query.callback({
                 results: results.slice((query.page - 1) * pageSize, query.page * pageSize),
                 more: results.length >= query.page * pageSize
