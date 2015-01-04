@@ -1,4 +1,4 @@
-﻿function CALCULATE_ALL_MOVES_RBY(p1, p2, field) {
+function CALCULATE_ALL_MOVES_RBY(p1, p2, field) {
     p1.stats[AT] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[AT], p1.boosts[AT])));
     p1.stats[DF] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[DF], p1.boosts[DF])));
     p1.stats[SL] = Math.min(999, Math.max(1, getModifiedStat(p1.rawStats[SL], p1.boosts[SL])));

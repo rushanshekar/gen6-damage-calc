@@ -1,4 +1,4 @@
-﻿function CALCULATE_ALL_MOVES_DPP(p1, p2, field) {
+function CALCULATE_ALL_MOVES_DPP(p1, p2, field) {
     checkAirLock(p1, field);
     checkAirLock(p2, field);
     checkForecast(p1, field.getWeather());
