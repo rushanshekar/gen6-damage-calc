@@ -1,8 +1,13 @@
-function getKOChanceText(damage, defender, field, hits, isBadDreams) {
+function getKOChanceText(damage, move, defender, field, isBadDreams) {
     if (isNaN(damage[0])) {
         return 'something broke; please tell Honko';
     }
     if (damage[damage.length-1] === 0) {
+        if (field.weather === "Harsh Sun" && move.type === "Water") {
+            return 'the Water-Type attack evaporated in the harsh sunlight';
+        } else if (field.weather === "Heavy Rain" && move.type === "Fire") {
+            return 'the Fire-Type attack fizzled out in the heavy rain';
+        }
         return 'aim for the horn next time';
     }
     if (damage[0] >= defender.curHP) {
@@ -115,9 +120,9 @@ function getKOChanceText(damage, defender, field, hits, isBadDreams) {
 
     // multi-hit moves have too many possibilities for brute-forcing to work, so reduce it to an approximate distribution
     var qualifier = '';
-    if (hits > 1) {
+    if (move.hits > 1) {
         qualifier = 'approx. ';
-        damage = squashMultihit(damage, hits);
+        damage = squashMultihit(damage, move.hits);
     }
 
     var c = getKOChance(damage, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter);

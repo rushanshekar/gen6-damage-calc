@@ -137,23 +137,55 @@ function autosetWeather(ability, i) {
         lastManualWeather = currentWeather;
         lastAutoWeather[1-i] = "";
     }
-    if (ability === "Drought") {
-        lastAutoWeather[i] = "Sun";
-        $("#sun").prop("checked", true);
-    } else if (ability === "Drizzle") {
-        lastAutoWeather[i] = "Rain";
-        $("#rain").prop("checked", true);
-    } else if (ability === "Sand Stream") {
-        lastAutoWeather[i] = "Sand";
-        $("#sand").prop("checked", true);
-    } else if (ability === "Snow Warning") {
-        lastAutoWeather[i] = "Hail";
-        $("#hail").prop("checked", true);
+
+    var primalWeather = ["Harsh Sun", "Heavy Rain"];
+    var autoWeatherAbilities = {
+            "Drought": "Sun",
+            "Drizzle": "Rain",
+            "Sand Stream": "Sand",
+            "Snow Warning": "Hail",
+            "Desolate Land": "Harsh Sun",
+            "Primordial Sea": "Heavy Rain",
+            "Delta Stream": "Strong Winds"
+        };
+    var newWeather;
+
+    if (ability in autoWeatherAbilities) {
+        lastAutoWeather[i] = autoWeatherAbilities[ability];
+        if (currentWeather === "Strong Winds") {
+            if (lastAutoWeather.indexOf("Strong Winds") === -1) {
+                newWeather = lastAutoWeather[i];
+            }
+        } else if (primalWeather.indexOf(currentWeather) > -1) {
+            if (lastAutoWeather[i] === "Strong Winds" || primalWeather.indexOf(lastAutoWeather[i]) > -1) {
+                newWeather = lastAutoWeather[i];
+            } else if (primalWeather.indexOf(lastAutoWeather[1-i]) > -1) {
+                newWeather = lastAutoWeather[1-i];
+            } else {
+                newWeather = lastAutoWeather[i];
+            }
+        } else {
+            newWeather = lastAutoWeather[i];
+        }
     } else {
         lastAutoWeather[i] = "";
-        var newWeather = lastAutoWeather[1-i] !== "" ? lastAutoWeather[1-i] : lastManualWeather;
-        $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
+        newWeather = lastAutoWeather[1-i] !== "" ? lastAutoWeather[1-i] : lastManualWeather;
     }
+
+    if (newWeather === "Strong Winds" || primalWeather.indexOf(newWeather) > -1) {
+        $("input:radio[name='weather']").prop("disabled", true);
+        $("input:radio[name='weather'][value='" + newWeather + "']").prop("disabled", false);
+    } else if (typeof newWeather != "undefined") {
+        for (var k = 0; k < $("input:radio[name='weather']").length; k++) {
+            var val = $("input:radio[name='weather']")[k].value;
+            if (primalWeather.indexOf(val) === -1 && val !== "Strong Winds") {
+                $("input:radio[name='weather']")[k].disabled = false;
+            } else {
+                $("input:radio[name='weather']")[k].disabled = true;
+            }
+        }
+    }
+    $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
 }
 
 $("#p1 .item").bind("keyup change", function() {
@@ -314,7 +346,7 @@ function calculate() {
         maxPercent = Math.floor(maxDamage * 1000 / p2.maxHP) / 10;
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
         result.koChanceText = p1.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p2, field.getSide(1), p1.moves[i].hits, p1.ability === 'Bad Dreams');
+                : getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === 'Bad Dreams');
         $(resultLocations[0][i].move + " + label").text(p1.moves[i].name.replace("Hidden Power", "HP"));
         $(resultLocations[0][i].damage).text(minPercent + " - " + maxPercent + "%");
         if (maxPercent > highestMaxPercent) {
@@ -329,7 +361,7 @@ function calculate() {
         maxPercent = Math.floor(maxDamage * 1000 / p1.maxHP) / 10;
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
         result.koChanceText = p2.moves[i].bp === 0 ? 'nice move'
-                : getKOChanceText(result.damage, p1, field.getSide(0), p2.moves[i].hits, p2.ability === 'Bad Dreams');
+                : getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === 'Bad Dreams');
         $(resultLocations[1][i].move + " + label").text(p2.moves[i].name.replace("Hidden Power", "HP"));
         $(resultLocations[1][i].damage).text(minPercent + " - " + maxPercent + "%");
         if (maxPercent > highestMaxPercent) {
