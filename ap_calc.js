@@ -306,6 +306,13 @@ $(".set-selector").change(function() {
                 moveObj.change();
             }
         }
+        var formeObj = $(this).siblings().find(".forme").parent();
+        itemObj.prop("disabled", false);
+        if (pokemon.formes) {
+            showFormes(formeObj, setName, pokemonName, pokemon);
+        } else {
+            formeObj.hide();
+        }
         calcHP(pokeObj);
         calcStats(pokeObj);
         abilityObj.change();
@@ -313,8 +320,105 @@ $(".set-selector").change(function() {
     }
 });
 
+function showFormes(formeObj, setName, pokemonName, pokemon) {
+    var formeOptions = getSelectOptions(pokemon.formes);
+    if (setName !== "Blank Set") {
+        var set = setdex[pokemonName][setName];
+        if (set.item.indexOf("ite") === -1 && pokemonName !== "Aegislash" &&
+                (pokemonName !== "Meloetta" || set.moves.indexOf("Relic Song") === -1) &&
+                (pokemonName !== "Groudon" || set.item.indexOf("Red Orb") === -1) &&
+                (pokemonName !== "Kyogre" || set.item.indexOf("Blue Orb") === -1) &&
+                (pokemonName !== "Rayquaza" || set.moves.indexOf("Dragon Ascent") === -1)) {
+            formeOptions = getSelectOptions([pokemon.formes[0]]);
+        } else if (set.item.indexOf("X") > -1) {
+            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[1]]);
+        } else if (set.item.indexOf("Y") > -1) {
+            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[2]]);
+        }
+    }
+    formeObj.children("select").find("option").remove().end().append(formeOptions);
+    formeObj.show();
+}
+
 function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
+}
+
+$(".forme").change(function() {
+    var altForme = pokedex[$(this).val()],
+        container = $(this).closest(".info-group").siblings(),
+        fullSetName = container.find(".select2-chosen").first().text(),
+        pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
+        setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
+
+    $(this).parent().siblings().find(".type1").val(altForme.t1);
+    $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
+    $(this).parent().siblings().find(".weight").val(altForme.w);
+
+    for (var i = 0; i < STATS.length; i++) {
+        var baseStat = container.find("." + STATS[i]).find(".base");
+        baseStat.val(altForme.bs[STATS[i]]);
+        baseStat.keyup();
+    }
+
+    if (abilities.indexOf(altForme.ab) > -1) {
+        container.find(".ability").val(altForme.ab);
+    } else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) > -1) {
+        container.find(".ability").val(setdex[pokemonName][setName].ability);
+    } else {
+        container.find(".ability").val("");
+    }
+    container.find(".ability").keyup();
+
+    if ($(this).val().indexOf("Mega") === 0 && $(this).val() !== "Mega Rayquaza") {
+        container.find(".item").val("").keyup();
+        container.find(".item").prop("disabled", true);
+    } else {
+        container.find(".item").prop("disabled", false);
+    }
+
+    if (pokemonName === "Darmanitan") {
+        container.find(".percent-hp").val($(this).val() === "Darmanitan-Z" ? "50" : "100").keyup();
+    }
+});
+
+function getTerrainEffects() {
+    var className = $(this).prop("className");
+    className = className.substring(0, className.indexOf(" "));
+    switch (className) {
+        case "type1":
+        case "type2":
+        case "ability":
+        case "item":
+            var id = $(this).closest(".poke-info").prop("id");
+            var terrainValue = $("input:checkbox[name='terrain']:checked").val();
+            if (terrainValue === "Electric") {
+                $("#" + id).find("[value='Asleep']").prop("disabled", isGrounded($("#" + id)));
+            } else if (terrainValue === "Misty") {
+                $("#" + id).find(".status").prop("disabled", isGrounded($("#" + id)));
+            }
+            break;
+        default:
+            $("input:checkbox[name='terrain']").not(this).prop("checked", false);
+            if ($(this).prop("checked") && $(this).val() === "Electric") {
+                $("#p1").find("[value='Asleep']").prop("disabled", isGrounded($("#p1")));
+                $("#p2").find("[value='Asleep']").prop("disabled", isGrounded($("#p2")));
+            } else if ($(this).prop("checked") && $(this).val() === "Misty") {
+                $("#p1").find(".status").prop("disabled", isGrounded($("#p1")));
+                $("#p2").find(".status").prop("disabled", isGrounded($("#p2")));
+            } else {
+                $("#p1").find("[value='Asleep']").prop("disabled", false);
+                $("#p1").find(".status").prop("disabled", false);
+                $("#p2").find("[value='Asleep']").prop("disabled", false);
+                $("#p2").find(".status").prop("disabled", false);
+            }
+            break;
+    }
+}
+
+function isGrounded(pokeInfo) {
+    return $("#gravity").prop("checked") || (pokeInfo.find(".type1").val() !== "Flying" && pokeInfo.find(".type2").val() !== "Flying" &&
+            pokeInfo.find(".ability").val() !== "Levitate" && pokeInfo.find(".item").val() !== "Air Balloon");
 }
 
 var resultLocations = [[],[]];
@@ -401,7 +505,8 @@ function Pokemon(pokeInfo) {
     if (setName.indexOf("(") === -1) {
         this.name = setName;
     } else {
-        this.name = setName.substring(0, setName.indexOf(" ("));
+        var pokemonName = setName.substring(0, setName.indexOf(" ("));
+        this.name = (pokedex[pokemonName].formes) ? pokeInfo.find(".forme").val() : pokemonName;
     }
     this.type1 = pokeInfo.find(".type1").val();
     this.type2 = pokeInfo.find(".type2").val();
@@ -458,6 +563,7 @@ function Field() {
         weather = $("input:radio[name='weather']:checked").val();
         spikes = [~~$("input:radio[name='spikesL']:checked").val(), ~~$("input:radio[name='spikesR']:checked").val()];
     }
+    var terrain = ($("input:checkbox[name='terrain']:checked").val()) ? $("input:checkbox[name='terrain']:checked").val() : "";
     var isReflect = [$("#reflectL").prop("checked"), $("#reflectR").prop("checked")];
     var isLightScreen = [$("#lightScreenL").prop("checked"), $("#lightScreenR").prop("checked")];
     var isForesight = [$("#foresightL").prop("checked"), $("#foresightR").prop("checked")];
@@ -470,12 +576,13 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i]);
     };
 }
 
-function Side(format, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand) {
     this.format = format;
+    this.terrain = terrain;
     this.weather = weather;
     this.isGravity = isGravity;
     this.isSR = isSR;
@@ -602,7 +709,14 @@ function clearField() {
 }
 
 function getSetOptions() {
-    var pokeNames = Object.keys(pokedex);
+    var pokeNames, index;
+    pokeNames = Object.keys(pokedex);
+    index = pokeNames.length;
+    while (index--) {
+        if (pokedex[pokeNames[index]].isAlternateForme) {
+            pokeNames.splice(index, 1);
+        }
+    }
     pokeNames.sort();
     var setOptions = [];
     var idNum = 0;
@@ -648,6 +762,7 @@ function getSelectOptions(arr, sort) {
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
+    $(".terrain-trigger").bind("change keyup", getTerrainEffects);
     $(".calc-trigger").bind("change keyup", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
@@ -659,8 +774,7 @@ $(document).ready(function() {
             var results = [];
             for (var i = 0; i < setOptions.length; i++) {
                 var pokeName = setOptions[i].pokemon.toUpperCase();
-                // 2nd condition is for Megas; remove when Megas are merged
-                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0 || pokeName.indexOf(" " + query.term.toUpperCase()) >= 0) {
+                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0) {
                     results.push(setOptions[i]);
                 }
             }

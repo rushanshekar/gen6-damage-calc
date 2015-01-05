@@ -47,8 +47,12 @@
             <div class="info-group">
                 <div>
                     <label>Type</label>
-                    <select class="type1 calc-trigger"></select>
-                    <select class="type2 calc-trigger"></select>
+                    <select class="type1 terrain-trigger calc-trigger"></select>
+                    <select class="type2 terrain-trigger calc-trigger"></select>
+                </div>
+                <div class="hide">
+                    <label>Forme</label>
+                    <select class="forme calc-trigger"></select>
                 </div>
                 <div>
                     <label>Level</label>
@@ -78,11 +82,11 @@
                 </div>
                 <div class="gen-specific g3 g4 g5 g6">
                     <label>Ability</label>
-                    <select class="ability calc-trigger"></select>
+                    <select class="ability terrain-trigger calc-trigger"></select>
                 </div>
                 <div class="gen-specific g2 g3 g4 g5 g6">
                     <label>Item</label>
-                    <select class="item calc-trigger"></select>
+                    <select class="item terrain-trigger calc-trigger"></select>
                 </div>
                 <div>
                     <label>Status</label>
@@ -136,6 +140,12 @@
                 <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
                 <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
             </div>
+            <div class="gen-specific g6" style="width: 24.3em; margin: 5px auto;" title="Select the current terrain.">
+                <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxwide btn-left" for="electric">Electric Terrain</label>
+                <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxwide btn-mid" for="grassy">Grassy Terrain</label>
+                <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xwide btn-right" for="misty">Misty Terrain</label>
+            </div>
+            <hr class="gen-specific g6" />
             <div class="gen-specific g3 g4 g5 g6" style="width: 22.2em; margin: 5px auto;" title="Select the current weather condition.">
                 <input class="btn-input calc-trigger" type="radio" name="weather" value="" id="clear" checked="checked" /><label class="btn btn-small btn-left" for="clear">None</label>
                 <input class="btn-input calc-trigger" type="radio" name="weather" value="Sun" id="sun" /><label class="btn btn-small btn-mid" for="sun">Sun</label>
@@ -223,8 +233,12 @@
             <div class="info-group">
                 <div>
                     <label>Type</label>
-                    <select class="type1 calc-trigger"></select>
-                    <select class="type2 calc-trigger"></select>
+                    <select class="type1 terrain-trigger calc-trigger"></select>
+                    <select class="type2 terrain-trigger calc-trigger"></select>
+                </div>
+                <div class="hide">
+                    <label>Forme</label>
+                    <select class="forme calc-trigger"></select>
                 </div>
                 <div>
                     <label>Level</label>
@@ -254,11 +268,11 @@
                 </div>
                 <div class="gen-specific g3 g4 g5 g6">
                     <label>Ability</label>
-                    <select class="ability calc-trigger"></select>
+                    <select class="ability terrain-trigger calc-trigger"></select>
                 </div>
                 <div class="gen-specific g2 g3 g4 g5 g6">
                     <label>Item</label>
-                    <select class="item calc-trigger"></select>
+                    <select class="item terrain-trigger calc-trigger"></select>
                 </div>
                 <div>
                     <label>Status</label>
