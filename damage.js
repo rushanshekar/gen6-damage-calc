@@ -51,8 +51,8 @@ function getDamageResult(attacker, defender, move, field) {
     var isCritical = move.isCrit && ["Battle Armor", "Shell Armor"].indexOf(defAbility) === -1;
     
     if (move.name === "Weather Ball") {
-        move.type = field.weather === "Sun" ? "Fire"
-                : field.weather === "Rain" ? "Water"
+        move.type = field.weather.indexOf("Sun") > -1 ? "Fire"
+                : field.weather.indexOf("Rain") > -1 ? "Water"
                 : field.weather === "Sand" ? "Rock"
                 : field.weather === "Hail" ? "Ice"
                 : "Normal";
@@ -67,6 +67,8 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerItem = attacker.item;
         description.moveBP = move.bp;
         description.moveType = move.type;
+    } else if (move.name === "Nature Power") {
+        move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : "Normal";
     }
     
     var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
@@ -103,6 +105,9 @@ function getDamageResult(attacker, defender, move, field) {
     }
     if (move.type === "Ground" && !field.isGravity && defender.item === "Air Balloon") {
         description.defenderItem = defender.item;
+        return {"damage":[0], "description":buildDescription(description)};
+    }
+    if ((field.weather === "Harsh Sun" && move.type === "Water") || (field.weather === "Heavy Rain" && move.type === "Fire")) {
         return {"damage":[0], "description":buildDescription(description)};
     }
     
@@ -191,6 +196,14 @@ function getDamageResult(attacker, defender, move, field) {
             basePower = p <= 1 ? 200 : p <= 4 ? 150 : p <= 9 ? 100 : p <= 16 ? 80 : p <= 32 ? 40 : 20;
             description.moveBP = basePower;
             break;
+        case "Bulldoze":
+        case "Earthquake":
+            basePower = (field.terrain === "Grassy") ? move.bp / 2 : move.bp;
+            description.terrain = field.terrain;
+            break;
+        case "Nature Power":
+            basePower = (field.terrain === "Electric" || field.terrain === "Grassy") ? 90 : (field.terrain === "Misty") ? 95 : 80;
+            break;
         default:
             basePower = move.bp;
     }
@@ -251,7 +264,7 @@ function getDamageResult(attacker, defender, move, field) {
             (move.name === "Venoshock" && (defender.status === "Poisoned" || defender.status === "Badly Poisoned"))) {
         bpMods.push(0x2000);
         description.moveBP = move.bp * 2;
-    } else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain","Sand","Hail"].indexOf(field.weather) !== -1) {
+    } else if ((move.name === "Solar Beam" || move.name == "SolarBeam") && ["Rain","Sand","Hail","Heavy Rain"].indexOf(field.weather) !== -1) {
         bpMods.push(0x800);
         description.moveBP = move.bp / 2;
         description.weather = field.weather;
@@ -340,8 +353,8 @@ function getDamageResult(attacker, defender, move, field) {
     } else if (attacker.ability === "Flash Fire (activated)" && move.type === "Fire") {
         atMods.push(0x1800);
         description.attackerAbility = "Flash Fire";
-    } else if ((attacker.ability === "Solar Power" && field.weather === "Sun" && move.category === "Special") ||
-            (attacker.ability === "Flower Gift" && field.weather === "Sun" && move.category === "Physical")) {
+    } else if ((attacker.ability === "Solar Power" && field.weather.indexOf("Sun") > -1 && move.category === "Special") ||
+            (attacker.ability === "Flower Gift" && field.weather.indexOf("Sun") > -1 && move.category === "Physical")) {
         atMods.push(0x1800);
         description.attackerAbility = attacker.ability;
         description.weather = field.weather;
@@ -397,7 +410,7 @@ function getDamageResult(attacker, defender, move, field) {
     if (defAbility === "Marvel Scale" && defender.status !== "Healthy" && hitsPhysical) {
         dfMods.push(0x1800);
         description.defenderAbility = defAbility;
-    } else if (defAbility === "Flower Gift" && field.weather === "Sun" && !hitsPhysical) {
+    } else if (defAbility === "Flower Gift" && field.weather.indexOf("Sun") > -1 && !hitsPhysical) {
         dfMods.push(0x1800);
         description.defenderAbility = defAbility;
         description.weather = field.weather;
@@ -420,12 +433,31 @@ function getDamageResult(attacker, defender, move, field) {
     if (field.format !== "Singles" && move.isSpread) {
         baseDamage = pokeRound(baseDamage * 0xC00 / 0x1000);
     }
-    if ((field.weather === "Sun" && move.type === "Fire") || (field.weather === "Rain" && move.type === "Water")) {
+    if ((field.weather.indexOf("Sun") > -1 && move.type === "Fire") || (field.weather.indexOf("Rain") > -1 && move.type === "Water")) {
         baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
         description.weather = field.weather;
-    } else if ((field.weather === "Sun" && move.type === "Water") || (field.weather === "Rain" && move.type === "Fire")) {
+    } else if ((field.weather === "Sun" && move.type === "Water") || (field.weather === "Rain" && move.type === "Fire") ||
+               (field.weather === "Strong Winds" && (defender.type1 === "Flying" || defender.type2 === "Flying") &&
+               typeChart[move.type]["Flying"] > 1)) {
         baseDamage = pokeRound(baseDamage * 0x800 / 0x1000);
         description.weather = field.weather;
+    }
+    if (field.isGravity || (attacker.type1 !== "Flying" && attacker.type2 !== "Flying" &&
+                attacker.item !== "Air Balloon" && attacker.ability !== "Levitate")) {
+        if (field.terrain === "Electric" && move.type === "Electric") {
+            baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
+            description.terrain = field.terrain;
+        } else if (field.terrain === "Grassy" && move.type == "Grass") {
+            baseDamage = pokeRound(baseDamage * 0x1800 / 0x1000);
+            description.terrain = field.terrain;
+        }
+    }
+    if (field.isGravity || (defender.type1 !== "Flying" && defender.type2 !== "Flying" &&
+            defender.item !== "Air Balloon" && defender.ability !== "Levitate")) {
+        if (field.terrain === "Misty" && move.type === "Dragon") {
+            baseDamage = pokeRound(baseDamage * 0x800 / 0x1000);
+            description.terrain = field.terrain;
+        }
     }
     if (isCritical) {
         baseDamage = Math.floor(baseDamage * (gen >= 6 ? 1.5 : 2));
@@ -552,6 +584,8 @@ function buildDescription(description) {
     output += description.defenderName;
     if (description.weather) {
         output += " in " + description.weather;
+    } else if (description.terrain) {
+        output += " in " + description.terrain + " Terrain";
     }
     if (description.isReflect) {
         output += " through Reflect";
@@ -617,9 +651,9 @@ function getFinalSpeed(pokemon, weather) {
     } else if (pokemon.item === "Macho Brace" || pokemon.item === "Iron Ball") {
         speed = Math.floor(speed / 2);
     }
-    if ((pokemon.ability === "Chlorophyll" && weather === "Sun") ||
+    if ((pokemon.ability === "Chlorophyll" && weather.indexOf("Sun") > -1) ||
             (pokemon.ability === "Sand Rush" && weather === "Sand") ||
-            (pokemon.ability === "Swift Swim" && weather === "Rain")) {
+            (pokemon.ability === "Swift Swim" && weather.indexOf("Rain") > -1)) {
         speed *= 2;
     }
     return speed;
@@ -632,9 +666,9 @@ function checkAirLock(pokemon, field) {
 }
 function checkForecast(pokemon, weather) {
     if (pokemon.ability === "Forecast" && pokemon.name === "Castform") {
-        if (weather === "Sun") {
+        if (weather.indexOf("Sun") > -1) {
             pokemon.type1 = "Fire";
-        } else if (weather === "Rain") {
+        } else if (weather.indexOf("Rain") > -1) {
             pokemon.type1 = "Water";
         } else if (weather === "Hail") {
             pokemon.type1 = "Ice";
