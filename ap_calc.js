@@ -288,7 +288,7 @@ $(".set-selector").change(function() {
                 moveObj.change();
             }
         } else {
-            pokeObj.find(".level").val(100);
+            pokeObj.find(".level").val(50);
             pokeObj.find(".hp .evs").val(0);
             pokeObj.find(".hp .ivs").val(31);
             pokeObj.find(".hp .dvs").val(15);
@@ -688,7 +688,7 @@ $(".gen").change(function () {
 });
 
 function clearField() {
-    $("#singles").prop("checked", true);
+    $("#doubles").prop("checked", true);
     $("#clear").prop("checked", true);
     $("#gscClear").prop("checked", true);
     $("#gravity").prop("checked", false);
