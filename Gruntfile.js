@@ -1,4 +1,4 @@
-var rawFile = 'vgc2015-1760.json';
+var rawFile = 'vgc2015-1500.json';
 var genFile = 'setdex_smogvgc.js';
 
 module.exports = function (grunt) {
@@ -194,7 +194,7 @@ module.exports = function (grunt) {
         var spread = parseSpread(spreadRaw);
 
         return { 
-            "Smogon VGC Paradigm": {
+            "Common Showdown": {
                 level:   50,
                 evs:     spread.evs,
                 nature:  LevenWork.closestNature(spread.nature),
