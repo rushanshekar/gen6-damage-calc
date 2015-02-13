@@ -5,7 +5,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -27,7 +27,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -49,7 +49,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -71,7 +71,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -93,7 +93,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 180,
+        "df": 180,
         "sa": 0,
         "sd": 0,
         "sp": 76
@@ -115,7 +115,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 188,
+        "df": 188,
         "sa": 0,
         "sd": 0,
         "sp": 72
@@ -137,7 +137,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -159,7 +159,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 220,
         "at": 0,
-        "de": 100,
+        "df": 100,
         "sa": 188,
         "sd": 0,
         "sp": 0
@@ -181,7 +181,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 204,
+        "df": 204,
         "sa": 0,
         "sd": 52,
         "sp": 0
@@ -203,7 +203,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -225,7 +225,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -247,7 +247,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -269,7 +269,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -291,7 +291,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 204,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 188,
         "sd": 116,
         "sp": 0
@@ -313,7 +313,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -335,7 +335,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -357,7 +357,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 228,
+        "df": 228,
         "sa": 0,
         "sd": 28,
         "sp": 0
@@ -379,7 +379,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 36,
         "sp": 220
@@ -401,7 +401,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 108,
+        "df": 108,
         "sa": 0,
         "sd": 148,
         "sp": 0
@@ -423,7 +423,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -445,7 +445,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -467,7 +467,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -489,7 +489,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -511,7 +511,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -533,7 +533,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -555,7 +555,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -577,7 +577,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 252,
         "sp": 4
@@ -599,7 +599,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -621,7 +621,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 108,
+        "df": 108,
         "sa": 0,
         "sd": 144,
         "sp": 0
@@ -643,7 +643,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -665,7 +665,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -687,7 +687,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -709,7 +709,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -731,7 +731,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 124,
+        "df": 124,
         "sa": 0,
         "sd": 128,
         "sp": 0
@@ -753,7 +753,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 12,
+        "df": 12,
         "sa": 0,
         "sd": 244,
         "sp": 0
@@ -775,7 +775,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -797,7 +797,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 176,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 140,
         "sd": 0,
         "sp": 192
@@ -819,7 +819,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -841,7 +841,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 100,
+        "df": 100,
         "sa": 0,
         "sd": 156,
         "sp": 0
@@ -863,7 +863,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -885,7 +885,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 244,
         "sd": 4,
         "sp": 252
@@ -907,7 +907,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -929,7 +929,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -951,7 +951,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -973,7 +973,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 196,
+        "df": 196,
         "sa": 0,
         "sd": 60,
         "sp": 0
@@ -995,7 +995,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1017,7 +1017,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -1039,7 +1039,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -1061,7 +1061,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -1083,7 +1083,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -1105,7 +1105,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -1127,7 +1127,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -1149,7 +1149,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 84,
+        "df": 84,
         "sa": 76,
         "sd": 92,
         "sp": 4
@@ -1171,7 +1171,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1193,7 +1193,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 100,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 156
@@ -1215,7 +1215,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1237,7 +1237,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1259,7 +1259,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1281,7 +1281,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -1303,7 +1303,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -1325,7 +1325,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -1347,7 +1347,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -1369,7 +1369,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 124,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 132,
         "sp": 0
@@ -1391,7 +1391,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1413,7 +1413,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -1435,7 +1435,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -1457,7 +1457,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 8,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -1479,7 +1479,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -1501,7 +1501,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 184,
+        "df": 184,
         "sa": 152,
         "sd": 0,
         "sp": 168
@@ -1523,7 +1523,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -1545,7 +1545,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1567,7 +1567,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -1589,7 +1589,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1611,7 +1611,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -1633,7 +1633,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -1655,7 +1655,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 156,
+        "df": 156,
         "sa": 28,
         "sd": 68,
         "sp": 4
@@ -1677,7 +1677,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 8,
         "sd": 252,
         "sp": 0
@@ -1699,7 +1699,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -1721,7 +1721,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1743,7 +1743,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -1765,7 +1765,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -1787,7 +1787,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1809,7 +1809,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -1831,7 +1831,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -1853,7 +1853,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -1875,7 +1875,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -1897,7 +1897,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -1919,7 +1919,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -1941,7 +1941,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -1963,7 +1963,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -1985,7 +1985,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -2007,7 +2007,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -2029,7 +2029,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 124,
+        "df": 124,
         "sa": 132,
         "sd": 0,
         "sp": 0
@@ -2051,7 +2051,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 8,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2073,7 +2073,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -2095,7 +2095,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2117,7 +2117,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 8,
         "sd": 252,
         "sp": 0
@@ -2139,7 +2139,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 84,
         "at": 84,
-        "de": 0,
+        "df": 0,
         "sa": 84,
         "sd": 84,
         "sp": 84
@@ -2161,7 +2161,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -2183,7 +2183,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -2205,7 +2205,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 228,
+        "df": 228,
         "sa": 0,
         "sd": 28,
         "sp": 0
@@ -2227,7 +2227,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2249,7 +2249,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -2271,7 +2271,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -2291,7 +2291,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -2313,7 +2313,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -2335,7 +2335,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 196,
         "at": 116,
-        "de": 0,
+        "df": 0,
         "sa": 196,
         "sd": 0,
         "sp": 0
@@ -2357,7 +2357,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2379,7 +2379,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -2401,7 +2401,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -2423,7 +2423,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 120,
         "at": 0,
-        "de": 116,
+        "df": 116,
         "sa": 252,
         "sd": 8,
         "sp": 12
@@ -2445,7 +2445,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -2467,7 +2467,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 188,
+        "df": 188,
         "sa": 0,
         "sd": 68,
         "sp": 0
@@ -2489,7 +2489,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 76,
+        "df": 76,
         "sa": 8,
         "sd": 176,
         "sp": 0
@@ -2511,7 +2511,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -2533,7 +2533,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -2555,7 +2555,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -2577,7 +2577,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -2599,7 +2599,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 84,
         "at": 84,
-        "de": 0,
+        "df": 0,
         "sa": 84,
         "sd": 84,
         "sp": 84
@@ -2621,7 +2621,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -2643,7 +2643,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -2665,7 +2665,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 188,
+        "df": 188,
         "sa": 236,
         "sd": 12,
         "sp": 68
@@ -2687,7 +2687,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 84,
         "at": 84,
-        "de": 84,
+        "df": 84,
         "sa": 84,
         "sd": 84,
         "sp": 84
@@ -2709,7 +2709,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -2731,7 +2731,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -2753,7 +2753,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -2775,7 +2775,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -2797,7 +2797,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -2819,7 +2819,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -2841,7 +2841,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2863,7 +2863,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -2885,7 +2885,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -2907,7 +2907,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -2929,7 +2929,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 28,
+        "df": 28,
         "sa": 252,
         "sd": 4,
         "sp": 220
@@ -2951,7 +2951,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -2973,7 +2973,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -2995,7 +2995,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -3017,7 +3017,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3039,7 +3039,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3061,7 +3061,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3083,7 +3083,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -3105,7 +3105,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3127,7 +3127,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -3149,7 +3149,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -3171,7 +3171,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3193,7 +3193,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3215,7 +3215,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 132,
+        "df": 132,
         "sa": 4,
         "sd": 100,
         "sp": 20
@@ -3237,7 +3237,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3259,7 +3259,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -3281,7 +3281,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -3303,7 +3303,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3325,7 +3325,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3347,7 +3347,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -3369,7 +3369,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3391,7 +3391,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -3413,7 +3413,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -3435,7 +3435,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -3457,7 +3457,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 6,
         "sd": 0,
         "sp": 252
@@ -3479,7 +3479,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -3501,7 +3501,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 244,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 12,
         "sp": 0
@@ -3523,7 +3523,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 240,
         "at": 0,
-        "de": 188,
+        "df": 188,
         "sa": 0,
         "sd": 80,
         "sp": 0
@@ -3545,7 +3545,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3567,7 +3567,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3589,7 +3589,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 124,
+        "df": 124,
         "sa": 0,
         "sd": 128,
         "sp": 0
@@ -3611,7 +3611,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -3633,7 +3633,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -3655,7 +3655,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 148,
+        "df": 148,
         "sa": 0,
         "sd": 108,
         "sp": 0
@@ -3677,7 +3677,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 12,
+        "df": 12,
         "sa": 0,
         "sd": 244,
         "sp": 0
@@ -3699,7 +3699,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -3721,7 +3721,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -3743,7 +3743,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -3765,7 +3765,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -3787,7 +3787,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -3809,7 +3809,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -3831,7 +3831,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 8,
         "sd": 252,
         "sp": 0
@@ -3853,7 +3853,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -3875,7 +3875,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -3897,7 +3897,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 4,
         "sd": 252,
         "sp": 0
@@ -3919,7 +3919,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -3941,7 +3941,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 156,
+        "df": 156,
         "sa": 0,
         "sd": 100,
         "sp": 0
@@ -3963,7 +3963,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -3985,7 +3985,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4007,7 +4007,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -4029,7 +4029,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 64,
         "at": 0,
-        "de": 124,
+        "df": 124,
         "sa": 252,
         "sd": 64,
         "sp": 0
@@ -4051,7 +4051,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -4073,7 +4073,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -4095,7 +4095,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -4117,7 +4117,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 228,
         "sd": 4,
         "sp": 20
@@ -4139,7 +4139,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4161,7 +4161,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4183,7 +4183,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 208,
+        "df": 208,
         "sa": 0,
         "sd": 44,
         "sp": 4
@@ -4205,7 +4205,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4227,7 +4227,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4249,7 +4249,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4271,7 +4271,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -4293,7 +4293,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -4315,7 +4315,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -4337,7 +4337,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -4359,7 +4359,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -4381,7 +4381,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4403,7 +4403,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -4425,7 +4425,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4447,7 +4447,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4469,7 +4469,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 8,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -4491,7 +4491,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -4513,7 +4513,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4535,7 +4535,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -4557,7 +4557,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -4579,7 +4579,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 156,
+        "df": 156,
         "sa": 2,
         "sd": 100,
         "sp": 0
@@ -4601,7 +4601,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -4623,7 +4623,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4645,7 +4645,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 72,
         "sd": 124,
         "sp": 60
@@ -4667,7 +4667,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 8,
         "sd": 0,
         "sp": 0
@@ -4689,7 +4689,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 4,
         "sd": 252,
         "sp": 0
@@ -4711,7 +4711,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4733,7 +4733,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -4755,7 +4755,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -4777,7 +4777,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -4799,7 +4799,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -4821,7 +4821,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 8,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4843,7 +4843,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -4865,7 +4865,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4887,7 +4887,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -4909,7 +4909,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 252,
         "sp": 4
@@ -4931,7 +4931,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 156,
+        "df": 156,
         "sa": 20,
         "sd": 76,
         "sp": 0
@@ -4953,7 +4953,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -4975,7 +4975,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -4997,7 +4997,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -5019,7 +5019,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -5041,7 +5041,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5063,7 +5063,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5085,7 +5085,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -5107,7 +5107,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -5129,7 +5129,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -5151,7 +5151,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5173,7 +5173,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 28,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 236,
         "sd": 0,
         "sp": 244
@@ -5195,7 +5195,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 44,
+        "df": 44,
         "sa": 60,
         "sd": 148,
         "sp": 4
@@ -5217,7 +5217,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -5239,7 +5239,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -5261,7 +5261,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5283,7 +5283,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 60,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 196
@@ -5305,7 +5305,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -5327,7 +5327,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -5349,7 +5349,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 172,
         "at": 0,
-        "de": 164,
+        "df": 164,
         "sa": 0,
         "sd": 172,
         "sp": 0
@@ -5371,7 +5371,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -5393,7 +5393,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5415,7 +5415,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5437,7 +5437,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 76,
-        "de": 44,
+        "df": 44,
         "sa": 0,
         "sd": 132,
         "sp": 4
@@ -5459,7 +5459,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5481,7 +5481,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -5503,7 +5503,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -5525,7 +5525,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 204,
         "at": 0,
-        "de": 116,
+        "df": 116,
         "sa": 0,
         "sd": 188,
         "sp": 0
@@ -5547,7 +5547,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5569,7 +5569,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -5591,7 +5591,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 60,
+        "df": 60,
         "sa": 40,
         "sd": 156,
         "sp": 0
@@ -5613,7 +5613,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5635,7 +5635,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 84,
         "at": 84,
-        "de": 80,
+        "df": 80,
         "sa": 84,
         "sd": 84,
         "sp": 84
@@ -5657,7 +5657,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 28,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 228
@@ -5679,7 +5679,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5701,7 +5701,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5723,7 +5723,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 148,
+        "df": 148,
         "sa": 8,
         "sd": 100,
         "sp": 0
@@ -5745,7 +5745,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -5767,7 +5767,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -5789,7 +5789,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5811,7 +5811,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -5833,7 +5833,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -5855,7 +5855,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -5877,7 +5877,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5899,7 +5899,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5921,7 +5921,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -5943,7 +5943,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -5965,7 +5965,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -5987,7 +5987,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -6009,7 +6009,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -6031,7 +6031,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -6053,7 +6053,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -6075,7 +6075,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -6097,7 +6097,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6119,7 +6119,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6141,7 +6141,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -6163,7 +6163,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 8,
         "sp": 0
@@ -6185,7 +6185,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -6207,7 +6207,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -6229,7 +6229,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -6251,7 +6251,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6273,7 +6273,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 220,
         "at": 68,
-        "de": 220,
+        "df": 220,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -6295,7 +6295,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6317,7 +6317,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -6339,7 +6339,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -6361,7 +6361,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -6383,7 +6383,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -6405,7 +6405,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 164,
+        "df": 164,
         "sa": 0,
         "sd": 92,
         "sp": 0
@@ -6427,7 +6427,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -6449,7 +6449,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -6471,7 +6471,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 228,
+        "df": 228,
         "sa": 0,
         "sd": 0,
         "sp": 24
@@ -6493,7 +6493,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -6515,7 +6515,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6537,7 +6537,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -6559,7 +6559,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6581,7 +6581,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6603,7 +6603,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6625,7 +6625,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6647,7 +6647,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -6669,7 +6669,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 76,
         "at": 0,
-        "de": 52,
+        "df": 52,
         "sa": 68,
         "sd": 56,
         "sp": 252
@@ -6691,7 +6691,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -6713,7 +6713,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 244,
+        "df": 244,
         "sa": 4,
         "sd": 4,
         "sp": 4
@@ -6735,7 +6735,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6757,7 +6757,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -6779,7 +6779,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6801,7 +6801,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6823,7 +6823,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -6845,7 +6845,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6867,7 +6867,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 84,
+        "df": 84,
         "sa": 148,
         "sd": 4,
         "sp": 20
@@ -6889,7 +6889,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -6911,7 +6911,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 68,
+        "df": 68,
         "sa": 0,
         "sd": 0,
         "sp": 188
@@ -6933,7 +6933,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6955,7 +6955,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -6977,7 +6977,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -6999,7 +6999,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7021,7 +7021,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 188,
         "at": 76,
-        "de": 100,
+        "df": 100,
         "sa": 0,
         "sd": 140,
         "sp": 4
@@ -7043,7 +7043,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 8,
         "sd": 252,
         "sp": 0
@@ -7065,7 +7065,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -7087,7 +7087,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7109,7 +7109,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 0
@@ -7131,7 +7131,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -7153,7 +7153,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 200,
         "at": 0,
-        "de": 108,
+        "df": 108,
         "sa": 0,
         "sd": 60,
         "sp": 140
@@ -7175,7 +7175,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 244,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 12,
         "sp": 0
@@ -7197,7 +7197,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7219,7 +7219,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -7241,7 +7241,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 156,
+        "df": 156,
         "sa": 0,
         "sd": 100,
         "sp": 0
@@ -7263,7 +7263,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 236,
+        "df": 236,
         "sa": 0,
         "sd": 0,
         "sp": 20
@@ -7285,7 +7285,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7307,7 +7307,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7329,7 +7329,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7351,7 +7351,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -7373,7 +7373,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 8,
         "sp": 0
@@ -7395,7 +7395,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7417,7 +7417,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -7439,7 +7439,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 248,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -7461,7 +7461,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 196,
+        "df": 196,
         "sa": 0,
         "sd": 56,
         "sp": 0
@@ -7483,7 +7483,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7505,7 +7505,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -7527,7 +7527,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -7549,7 +7549,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7571,7 +7571,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -7593,7 +7593,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7615,7 +7615,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -7637,7 +7637,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 232,
         "at": 0,
-        "de": 84,
+        "df": 84,
         "sa": 112,
         "sd": 80,
         "sp": 0
@@ -7659,7 +7659,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -7681,7 +7681,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 0
@@ -7703,7 +7703,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 252,
+        "df": 252,
         "sa": 4,
         "sd": 0,
         "sp": 0
@@ -7725,7 +7725,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 0,
         "sp": 252
@@ -7747,7 +7747,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 180,
+        "df": 180,
         "sa": 0,
         "sd": 72,
         "sp": 0
@@ -7769,7 +7769,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7791,7 +7791,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 4,
-        "de": 252,
+        "df": 252,
         "sa": 0,
         "sd": 0,
         "sp": 0
@@ -7813,7 +7813,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 4,
         "sd": 0,
         "sp": 252
@@ -7835,7 +7835,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 196,
         "at": 0,
-        "de": 212,
+        "df": 212,
         "sa": 96,
         "sd": 4,
         "sp": 0
@@ -7857,7 +7857,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 100,
+        "df": 100,
         "sa": 0,
         "sd": 150,
         "sp": 0
@@ -7879,7 +7879,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7901,7 +7901,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -7923,7 +7923,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -7945,7 +7945,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 0,
-        "de": 4,
+        "df": 4,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -7967,7 +7967,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 4,
         "sp": 252
@@ -7989,7 +7989,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
@@ -8011,7 +8011,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 252,
-        "de": 4,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -8033,7 +8033,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 4,
         "at": 252,
-        "de": 0,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
@@ -8055,7 +8055,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 252,
         "at": 136,
-        "de": 60,
+        "df": 60,
         "sa": 0,
         "sd": 60,
         "sp": 0
@@ -8077,7 +8077,7 @@ var SETDEX_XY={
       "evs": {
         "hp": 0,
         "at": 0,
-        "de": 0,
+        "df": 0,
         "sa": 252,
         "sd": 4,
         "sp": 252
