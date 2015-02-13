@@ -213,7 +213,7 @@ module.exports = function (grunt) {
             grunt.log.ok('Reading data file ' + fn);
             data = require('./' + fn);
         } catch (e) { 
-            grunt.log.error('Failed to require the data file: ' + fn);
+            grunt.fail.fatal('Failed to require the data file: ' + fn);
         }
         
         grunt.log.write('Processing sets');
