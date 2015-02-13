@@ -1,1 +1,1 @@
-var SETDEX_DPP={"Abomasnow":{"Placeholder":{"level":50,"evs":{"df":4,"hp":252,"sd":252},"nature":"Sassy","item":"Leftovers","moves":["Leech Seed","Protect","Wood Hammer","Blizzard"]}}};
+var SETDEX_DPP={};

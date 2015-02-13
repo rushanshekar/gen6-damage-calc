@@ -1,1 +1,1 @@
-var SETDEX_GSC={"Aerodactyl":{"Placeholder":{"level":50,"item":"Leftovers","moves":["Earthquake","Hidden Power Rock","Wing Attack","Fire Blast"]}}};
+var SETDEX_GSC={};

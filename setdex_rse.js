@@ -1,1 +1,1 @@
-var SETDEX_ADV={"Absol":{"Placeholder":{"level":50,"evs":{"hp":252,"sp":216,"sa":40},"nature":"Timid","item":"Leftovers","moves":["Calm Mind","Thunderbolt","Ice Beam","Baton Pass"]}}};
+var SETDEX_ADV={};
