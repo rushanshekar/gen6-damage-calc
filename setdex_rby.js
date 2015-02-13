@@ -1,1 +1,1 @@
-var SETDEX_RBY={"Alakazam":{"Placeholder":{"level":50,"moves":["Psychic","Recover","Thunder Wave","Reflect"]}}};
+var SETDEX_RBY={};

@@ -1,1 +1,1 @@
-var SETDEX_BW={"Abomasnow":{"Placeholder":{"level":50,"evs":{"hp":248,"sa":8,"sd":252},"nature":"Calm","ability":"Snow Warning","item":"Leftovers","moves":["Protect","Leech Seed","Grass Knot","Blizzard"]}}};
+var SETDEX_BW={};
