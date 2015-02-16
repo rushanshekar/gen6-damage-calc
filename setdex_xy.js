@@ -1,7 +1,7 @@
 var SETDEX_XY = {};
 
 var components = [
-	SETDEX_SMOGVGC
+	SETDEX_SHOWDOWN
 ];
 
 for (var i=0; i<components.length; i++) {
