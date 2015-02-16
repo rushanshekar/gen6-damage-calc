@@ -1,6 +1,3 @@
-var rawFile = 'vgc2015-1500.json';
-var genFile = 'setdex_smogvgc.js';
-
 module.exports = function (grunt) {
 
     // Since I want to avoid polluting the global namespace, we're going to eval all the datafiles in
@@ -119,30 +116,25 @@ module.exports = function (grunt) {
         }
     })(grunt);
 
-
     grunt.initConfig({
         http: {
-            smogon: {
+            showdown: {
                 options: {
-                    url: 'http://www.smogon.com/stats/2015-01/chaos/' + rawFile
+                    url: 'http://www.smogon.com/stats/2015-01/chaos/<%= showdown.rawFile %>'
                 },
-                dest: rawFile
+                dest: '<%= showdown.rawFile %>'
             }
+        },
+        showdown: {
+            rawFile: 'vgc2015-1500.json',
+            genFile: 'setdex_showdown.js'
+
+        },
+        globalLink: {
+            rawDir: 'globalLink',
+            genFile: 'setdex_globalLink.js'
         }
     });
-
-    function needsDownload(fn) {
-        return !grunt.file.exists(fn);
-    }
-
-    function optionalHttp() {
-        if (needsDownload(rawFile)) {
-            grunt.log.ok('File doesn\'t exist, downloading: ' + rawFile);
-            grunt.task.run('http');
-        } else {
-            grunt.log.ok('File exists, not downloading: ' + rawFile);
-        }
-    }
 
     function getSimpleSorted(obj, max) {
         if (!max) {
@@ -229,15 +221,22 @@ module.exports = function (grunt) {
         return sets;
     }
 
-    function generateSetdex(raw, out) {
-        optionalHttp();
+    function generateShowdownDex(raw, out) {
         var sets = findSets(raw);
-        var outText = 'var SETDEX_XY=' + JSON.stringify(sets, null, 2) +';';
-        grunt.log.ok('Writing output to ' + genFile);
-        grunt.file.write(genFile, outText);
+        var outText = 'var SETDEX_SHOWDOWN=' + JSON.stringify(sets, null, 2) +';';
+        grunt.log.ok('Writing output to ' + out);
+        grunt.file.write(out, outText);
     }
 
     grunt.loadNpmTasks('grunt-http');
 
-    grunt.registerTask('default', 'Download if necessary', function () { generateSetdex(rawFile, genFile); });
+    grunt.registerTask('showdown', 'Generate Showdown Dex', function () {
+        generateShowdownDex(grunt.config([this.name, 'rawFile']), grunt.config([this.name, 'genFile']));
+    });
+    
+    grunt.registerTask('globallink', 'Generate Global Link data', function () { 
+        generateGlobalLinkDex(rawFile.globalLink, genFile.globalLink); 
+    });
+
+    grunt.registerTask('default', ['showdown']);
 };
