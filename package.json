@@ -24,7 +24,6 @@
     "grunt-http": "^1.5.0",
     "jquery-extend": "^2.0.3",
     "levenshtein": "^1.0.5",
-    "load-grunt-config": "^0.16.0",
     "request": "^2.53.0"
   }
 }
