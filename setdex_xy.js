@@ -1,26 +1,16 @@
-var SETDEX_XY={};
-(function () {
-	var old = {
-		"Abomasnow": {
-			"Placeholder": {
-				"level":50,
-				"evs": {
-					"sa":252,
-					"hp":8,
-					"sp":84,
-					"at":160,
-					"sd":4
-				},
-				"nature":"Lonely",
-				"ability":"Soundproof",
-				"item":"Abomasite",
-				"moves": [
-					"Ice Shard",
-					"Wood Hammer",
-					"Blizzard",
-					"Earthquake"
-				]
+var SETDEX_XY = {};
+
+var components = [
+	SETDEX_SHOWDOWN
+];
+
+for (var i=0; i<components.length; i++) {
+	var sourceDex = components[i];
+	if (sourceDex) {
+		for (var p in sourceDex) {
+			if (sourceDex.hasOwnProperty(p)) {
+				SETDEX_XY[p] = $.extend(SETDEX_XY[p], sourceDex[p])
 			}
 		}
-	};
-});
+	}
+}
