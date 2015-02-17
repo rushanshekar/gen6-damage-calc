@@ -85,24 +85,27 @@ module.exports = function (grunt) {
             //         return leven(inKey, a) - leven(inKey, b);
             //     })[0];
 
-            var bestMatch = {
-                val: 'NOMATCH',
-                dist: Number.MAX_VALUE
-            }
-
-            function mangle(s) {
-                return s.replace(/\W/g, '').toLowerCase();
-            }
-
-            ary.forEach(function (a) {
-                var dist = leven(inKey, mangle(a));
-                if (dist < bestMatch.dist) {
-                    bestMatch.val = a;
-                    bestMatch.dist = dist;
+            if (inKey) {
+                var bestMatch = {
+                    val: 'NOMATCH',
+                    dist: Number.MAX_VALUE
                 }
-            });
-            if (bestMatch.dist < 3) {
-                return bestMatch.val;
+
+                function mangle(s) {
+                    return s.replace(/\W/g, '').toLowerCase();
+                }
+
+                var mangledKey = mangle(inKey);
+                ary.forEach(function (a) {
+                    var dist = leven(mangledKey, mangle(a));
+                    if (dist < bestMatch.dist) {
+                        bestMatch.val = a;
+                        bestMatch.dist = dist;
+                    }
+                });
+                if (bestMatch.dist < 3) {
+                    return bestMatch.val;
+                }
             }
             // There weren't any sufficiently close matches, which happens a lot for (eg) status moves
             return '';
@@ -168,5 +171,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-http');
 
     grunt.registerTask('default', ['showdown']);
-    grunt.registerTask('all', ['http', 'showdown', 'globalLink']);
+    grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink']);
 };
