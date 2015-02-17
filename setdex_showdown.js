@@ -1,4 +1,4 @@
-var SETDEX_XY={
+var SETDEX_SHOWDOWN={
   "Swellow": {
     "Common Showdown": {
       "level": 50,
