@@ -61,6 +61,29 @@ module.exports = function (grunt) {
         };
     }
 
+    function getFormeName(name) {
+        switch (name) {
+            case 'Rotom-Frost':
+                return 'Rotom-F';
+            case 'Rotom-Fan':
+                return 'Rotom-S';
+            case 'Rotom-Heat':
+                return 'Rotom-H';
+            case 'Rotom-Wash':
+                return 'Rotom-W';
+            case 'Rotom-Mow':
+                return 'Rotom-C';
+            
+            case 'Landorus-Therian':
+                return 'Landorus-T';
+            case 'Tornadus-Therian':
+                return 'Tornadus-T';
+            case 'Thundurus-Therian':
+                return 'Thundurus-T';
+        }
+        return name;
+    }
+
     function findSets(fn) {
         // This is the cheesy way to read valid JSON.
         var data = {};
@@ -77,7 +100,8 @@ module.exports = function (grunt) {
             if (data.data.hasOwnProperty(p)) {
                 // p is the name of a Pokemon; the data's in data.data[p] (eg data["data"]["Abomasnow"])
                 grunt.log.write('.');
-                sets[p] = individualSet(data.data[p]);
+                var formeName = getFormeName(p);
+                sets[formeName] = individualSet(data.data[p]);
             }
         }
         grunt.log.ok();
