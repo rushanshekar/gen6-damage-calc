@@ -1,4 +1,4 @@
-var SETDEX_XY={
+var SETDEX_SHOWDOWN={
   "Swellow": {
     "Common Showdown": {
       "level": 50,
@@ -263,7 +263,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Landorus-Therian": {
+  "Landorus-T": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -1143,7 +1143,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Rotom-Mow": {
+  "Rotom-C": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -3385,7 +3385,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Rotom-Frost": {
+  "Rotom-F": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -3517,7 +3517,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Rotom-Fan": {
+  "Rotom-S": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -3825,7 +3825,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Rotom-Heat": {
+  "Rotom-H": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -5189,7 +5189,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Rotom-Wash": {
+  "Rotom-W": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -6047,7 +6047,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Tornadus-Therian": {
+  "Tornadus-T": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -7719,7 +7719,7 @@ var SETDEX_XY={
       ]
     }
   },
-  "Thundurus-Therian": {
+  "Thundurus-T": {
     "Common Showdown": {
       "level": 50,
       "evs": {
