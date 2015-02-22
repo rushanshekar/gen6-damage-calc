@@ -1,8 +1,7 @@
 var SETDEX_XY = {};
 
 var components = [
-	SETDEX_SHOWDOWN,
-    SETDEX_GLOBALLINK
+	SETDEX_SHOWDOWN
 ];
 
 for (var i=0; i<components.length; i++) {
