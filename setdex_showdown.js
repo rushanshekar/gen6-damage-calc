@@ -1092,7 +1092,7 @@ var SETDEX_SHOWDOWN={
       "ability": "Technician",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "Bullet Seed",
         "Mach Punch",
         ""
@@ -1139,7 +1139,7 @@ var SETDEX_SHOWDOWN={
         "",
         "Scald",
         "",
-        "Spark"
+        ""
       ]
     }
   },
@@ -2214,7 +2214,7 @@ var SETDEX_SHOWDOWN={
       "ability": "Dry Skin",
       "item": "Sitrus Berry",
       "moves": [
-        "Spark",
+        "",
         "",
         "",
         "Seed Bomb"
@@ -5138,7 +5138,7 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "",
         "Giga Drain",
         ""
@@ -5185,7 +5185,7 @@ var SETDEX_SHOWDOWN={
         "Ice Beam",
         "Scald",
         "",
-        "Spark"
+        ""
       ]
     }
   },
@@ -7121,7 +7121,7 @@ var SETDEX_SHOWDOWN={
         "Ice Beam",
         "Scald",
         "Thunderbolt",
-        "Spark"
+        ""
       ]
     }
   },
@@ -7231,7 +7231,7 @@ var SETDEX_SHOWDOWN={
         "",
         "",
         "",
-        "Poison Jab"
+        ""
       ]
     }
   },

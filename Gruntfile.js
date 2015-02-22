@@ -103,7 +103,9 @@ module.exports = function (grunt) {
                         bestMatch.dist = dist;
                     }
                 });
-                if (bestMatch.dist < 3) {
+                // Since we're mangling everything only a typo should keep us from exact matches...
+                // ... in theory, anyway.
+                if (bestMatch.dist < 1) {
                     return bestMatch.val;
                 }
             }
