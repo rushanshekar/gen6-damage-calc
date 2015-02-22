@@ -712,7 +712,7 @@ var SETDEX_GLOBALLINK={
         "",
         "",
         "",
-        "Fling"
+        ""
       ]
     }
   },
@@ -1161,7 +1161,7 @@ var SETDEX_GLOBALLINK={
       "moves": [
         "",
         "Water Spout",
-        "Bite",
+        "",
         "Blizzard"
       ]
     }
@@ -1726,7 +1726,7 @@ var SETDEX_GLOBALLINK={
       "ability": "Technician",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "Bullet Seed",
         "Mach Punch",
         ""
@@ -2869,7 +2869,7 @@ var SETDEX_GLOBALLINK={
         "",
         "",
         "Iron Head",
-        "Pluck"
+        ""
       ]
     }
   },
@@ -2897,7 +2897,7 @@ var SETDEX_GLOBALLINK={
       "item": "",
       "moves": [
         "",
-        "Spark",
+        "",
         "Ice Beam",
         "Hydro Pump"
       ]
@@ -3077,7 +3077,7 @@ var SETDEX_GLOBALLINK={
       "item": "Eviolite",
       "moves": [
         "",
-        "Psychic",
+        "",
         "",
         ""
       ]
@@ -3273,7 +3273,7 @@ var SETDEX_GLOBALLINK={
       "moves": [
         "",
         "Scald",
-        "Spark",
+        "",
         ""
       ]
     }
@@ -3304,7 +3304,7 @@ var SETDEX_GLOBALLINK={
         "",
         "",
         "X-Scissor",
-        "Spark"
+        ""
       ]
     }
   },
@@ -3466,7 +3466,7 @@ var SETDEX_GLOBALLINK={
       "ability": "Dry Skin",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "",
         "",
         ""
@@ -4609,7 +4609,7 @@ var SETDEX_GLOBALLINK={
         "",
         "",
         "Feint Attack",
-        "Giga Drain"
+        ""
       ]
     }
   },
@@ -4621,7 +4621,7 @@ var SETDEX_GLOBALLINK={
       "ability": "",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "",
         "Giga Drain",
         ""
@@ -4651,7 +4651,7 @@ var SETDEX_GLOBALLINK={
       "ability": "",
       "item": "",
       "moves": [
-        "Spark",
+        "",
         "",
         "",
         "Aqua Jet"
@@ -5344,7 +5344,7 @@ var SETDEX_GLOBALLINK={
         "",
         "",
         "",
-        "Searing Shot"
+        ""
       ]
     }
   },
