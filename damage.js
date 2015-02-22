@@ -493,7 +493,12 @@ function getDamageResult(attacker, defender, move, field) {
     if (attacker.ability === "Tinted Lens" && typeEffectiveness < 1) {
         finalMods.push(0x2000);
         description.attackerAbility = attacker.ability;
-    } else if (attacker.ability === "Sniper" && isCritical) {
+    } 
+    if (field.isFriendGuard) {
+        finalMods.push(0xC00);
+        description.isFriendGuard = true;
+    }
+    if (attacker.ability === "Sniper" && isCritical) {
         finalMods.push(0x1800);
         description.attackerAbility = attacker.ability;
     }

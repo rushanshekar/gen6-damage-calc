@@ -568,6 +568,7 @@ function Field() {
     var isLightScreen = [$("#lightScreenL").prop("checked"), $("#lightScreenR").prop("checked")];
     var isForesight = [$("#foresightL").prop("checked"), $("#foresightR").prop("checked")];
     var isHelpingHand = [$("#helpingHandR").prop("checked"), $("#helpingHandL").prop("checked")]; // affects attacks against opposite side
+    var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
     
     this.getWeather = function() {
         return weather;
@@ -576,11 +577,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -591,6 +592,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isLightScreen = isLightScreen;
     this.isForesight = isForesight;
     this.isHelpingHand = isHelpingHand;
+    this.isFriendGuard = isFriendGuard;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
@@ -706,6 +708,8 @@ function clearField() {
     $("#foresightR").prop("checked", false);
     $("#helpingHandL").prop("checked", false);
     $("#helpingHandR").prop("checked", false);
+    $("#friendGuardL").prop("checked", false);
+    $("#friendGuardR").prop("checked", false);
 }
 
 function getSetOptions() {
