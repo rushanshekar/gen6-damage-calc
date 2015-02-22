@@ -322,6 +322,8 @@ $(".set-selector").change(function() {
 
 function showFormes(formeObj, setName, pokemonName, pokemon) {
     var formeOptions = getSelectOptions(pokemon.formes);
+    // Well whaddya know, it looks like all the forme filtering is easy enough to remove.
+    /*
     if (setName !== "Blank Set") {
         var set = setdex[pokemonName][setName];
         if (set.item.indexOf("ite") === -1 && pokemonName !== "Aegislash" &&
@@ -336,6 +338,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
             formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[2]]);
         }
     }
+    */
     formeObj.children("select").find("option").remove().end().append(formeOptions);
     formeObj.show();
 }
