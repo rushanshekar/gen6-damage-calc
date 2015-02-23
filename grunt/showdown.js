@@ -49,6 +49,15 @@ module.exports = function (grunt) {
         var spreadRaw = getSimpleSorted(pokeData.Spreads, 1)[0];
         var spread = parseSpread(spreadRaw);
 
+        var allMoves = getSimpleSorted(pokeData.Moves);
+        var moves = [];
+        for (var i=0; i<allMoves.length; i++) {
+            var move = grunt.LevenWork.closestMove(allMoves[i]);
+            // If it's not status, let's append it; once we hit four, we'll get out of here.
+            if (move && moves.push(move) >= 4) {
+                break;
+            }
+        }
         return { 
             "Common Showdown": {
                 level:   50,
@@ -56,7 +65,7 @@ module.exports = function (grunt) {
                 nature:  grunt.LevenWork.closestNature(spread.nature),
                 ability: grunt.LevenWork.closestAbility(getSimpleSorted(pokeData.Abilities, 1)[0]),
                 item:    grunt.LevenWork.closestItem(getSimpleSorted(pokeData.Items, 1)[0]),
-                moves:   getSimpleSorted(pokeData.Moves, 4).map(function (a) { return grunt.LevenWork.closestMove(a); })
+                moves:   moves
             }
         };
     }
