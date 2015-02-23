@@ -16,8 +16,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Brave Bird",
         "Facade",
-        "",
-        "Quick Attack"
+        "Quick Attack",
+        "U-turn"
       ]
     }
   },
@@ -36,10 +36,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Adaptability",
       "item": "Silk Scarf",
       "moves": [
-        "",
-        "",
-        "",
-        "Iron Tail"
+        "Iron Tail",
+        "Shadow Ball",
+        "Quick Attack",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -60,8 +60,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Waterfall",
         "Brick Break",
-        "",
-        "Ice Punch"
+        "Ice Punch",
+        "Earthquake"
       ]
     }
   },
@@ -80,10 +80,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Motor Drive",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Electro Ball",
+        "Air Slash",
+        "Discharge",
+        "Volt Switch"
       ]
     }
   },
@@ -102,10 +102,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Bug Buzz",
-        "",
-        ""
+        "Giga Drain",
+        "Energy Ball",
+        "Solar Beam"
       ]
     }
   },
@@ -125,9 +125,9 @@ var SETDEX_SHOWDOWN={
       "item": "Toxic Orb",
       "moves": [
         "Earthquake",
-        "",
-        "",
-        "Knock Off"
+        "Knock Off",
+        "Acrobatics",
+        "Rock Slide"
       ]
     }
   },
@@ -145,12 +145,7 @@ var SETDEX_SHOWDOWN={
       "nature": "Relaxed",
       "ability": "",
       "item": "Leftovers",
-      "moves": [
-        "",
-        "",
-        "",
-        ""
-      ]
+      "moves": []
     }
   },
   "Cresselia": {
@@ -168,10 +163,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Ice Beam",
-        "Psychic"
+        "Psychic",
+        "Icy Wind",
+        "Psyshock"
       ]
     }
   },
@@ -190,10 +185,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
         "Giga Drain",
-        "",
-        ""
+        "Leaf Storm",
+        "Knock Off",
+        "Ancient Power"
       ]
     }
   },
@@ -213,9 +208,9 @@ var SETDEX_SHOWDOWN={
       "item": "Absolite",
       "moves": [
         "Sucker Punch",
-        "",
         "Knock Off",
-        "Play Rough"
+        "Play Rough",
+        "Night Slash"
       ]
     }
   },
@@ -235,9 +230,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sceptilite",
       "moves": [
         "Dragon Pulse",
-        "",
         "Leaf Storm",
-        "Focus Blast"
+        "Focus Blast",
+        "Giga Drain"
       ]
     }
   },
@@ -256,10 +251,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Extreme Speed",
         "Shadow Claw",
-        ""
+        "Seed Bomb",
+        "Return"
       ]
     }
   },
@@ -325,7 +320,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Rock Slide",
         "Knock Off",
-        ""
+        "Crunch"
       ]
     }
   },
@@ -346,8 +341,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Play Rough",
         "Sucker Punch",
-        "",
-        "Iron Head"
+        "Iron Head",
+        "Rock Slide"
       ]
     }
   },
@@ -366,10 +361,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Psychic",
+        "Psyshock",
+        "Dark Pulse",
+        "Foul Play"
       ]
     }
   },
@@ -388,10 +383,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Guts",
       "item": "Flame Orb",
       "moves": [
-        "",
         "Facade",
         "Sucker Punch",
-        ""
+        "Quick Attack",
+        "Crunch"
       ]
     }
   },
@@ -410,10 +405,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Water Absorb",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        "Scald"
+        "Scald",
+        "Icy Wind",
+        "Air Slash",
+        "Ice Beam"
       ]
     }
   },
@@ -435,7 +430,7 @@ var SETDEX_SHOWDOWN={
         "Rock Slide",
         "Earthquake",
         "Iron Head",
-        ""
+        "Heavy Slam"
       ]
     }
   },
@@ -455,9 +450,9 @@ var SETDEX_SHOWDOWN={
       "item": "Slowbronite",
       "moves": [
         "Scald",
-        "",
-        "",
-        ""
+        "Ice Beam",
+        "Psyshock",
+        "Psychic"
       ]
     }
   },
@@ -478,8 +473,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dragon Pulse",
         "Thunderbolt",
-        "",
-        "Focus Blast"
+        "Focus Blast",
+        "Power Gem"
       ]
     }
   },
@@ -501,7 +496,7 @@ var SETDEX_SHOWDOWN={
         "Ice Beam",
         "Muddy Water",
         "Ancient Power",
-        ""
+        "Scald"
       ]
     }
   },
@@ -520,10 +515,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Thick Fat",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
         "Blizzard",
-        "Ice Beam"
+        "Ice Beam",
+        "Surf",
+        "Icy Wind"
       ]
     }
   },
@@ -588,8 +583,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Waterfall",
         "Sucker Punch",
-        "",
-        ""
+        "Ice Beam",
+        "Crunch"
       ]
     }
   },
@@ -611,7 +606,7 @@ var SETDEX_SHOWDOWN={
         "Rock Slide",
         "Drain Punch",
         "Ice Punch",
-        ""
+        "Earthquake"
       ]
     }
   },
@@ -632,8 +627,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Ice Shard",
         "Earthquake",
-        "",
-        "Avalanche"
+        "Avalanche",
+        "Icy Wind"
       ]
     }
   },
@@ -655,7 +650,7 @@ var SETDEX_SHOWDOWN={
         "Aqua Jet",
         "Knock Off",
         "Crabhammer",
-        ""
+        "Superpower"
       ]
     }
   },
@@ -674,10 +669,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Black Sludge",
       "moves": [
-        "",
-        "",
         "Brave Bird",
-        ""
+        "Cross Poison",
+        "U-turn",
+        "Acrobatics"
       ]
     }
   },
@@ -719,9 +714,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Poison Jab",
-        "",
         "Foul Play",
-        "Play Rough"
+        "Play Rough",
+        "Crunch"
       ]
     }
   },
@@ -740,10 +735,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Simple",
       "item": "Leftovers",
       "moves": [
-        "",
         "Waterfall",
         "Return",
-        ""
+        "Quick Attack",
+        "Aqua Tail"
       ]
     }
   },
@@ -762,10 +757,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Psyshock",
-        "",
-        "Psychic"
+        "Psychic",
+        "Thunderbolt",
+        "Energy Ball"
       ]
     }
   },
@@ -807,9 +802,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Earth Power",
-        "",
         "Scald",
-        "Icy Wind"
+        "Icy Wind",
+        "Sludge Bomb"
       ]
     }
   },
@@ -828,10 +823,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Hurricane",
-        ""
+        "Air Slash",
+        "Heat Wave",
+        "Acrobatics"
       ]
     }
   },
@@ -850,10 +845,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        "Icy Wind"
+        "Icy Wind",
+        "Shadow Ball",
+        "Foul Play",
+        "Hex"
       ]
     }
   },
@@ -872,10 +867,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Storm Drain",
       "item": "",
       "moves": [
-        "",
-        "",
         "Solar Beam",
-        ""
+        "Giga Drain",
+        "Energy Ball",
+        "Hidden Power Fire"
       ]
     }
   },
@@ -894,10 +889,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Soundproof",
       "item": "Air Balloon",
       "moves": [
-        "",
         "Discharge",
         "Foul Play",
-        "Volt Switch"
+        "Volt Switch",
+        "Thunderbolt"
       ]
     }
   },
@@ -919,7 +914,7 @@ var SETDEX_SHOWDOWN={
         "Flash Cannon",
         "Scald",
         "Ice Beam",
-        ""
+        "Aqua Jet"
       ]
     }
   },
@@ -941,7 +936,7 @@ var SETDEX_SHOWDOWN={
         "Psychic",
         "Dazzling Gleam",
         "Shadow Ball",
-        ""
+        "Energy Ball"
       ]
     }
   },
@@ -982,10 +977,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Flower Gift",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Solar Beam",
+        "Giga Drain",
+        "Weather Ball",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -1004,10 +999,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Moonblast",
+        "Dazzling Gleam",
+        "Rock Slide",
+        "Power Gem"
       ]
     }
   },
@@ -1048,10 +1043,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Magic Guard",
       "item": "Life Orb",
       "moves": [
-        "",
         "Psychic",
         "Shadow Ball",
-        "Psyshock"
+        "Psyshock",
+        "Focus Blast"
       ]
     }
   },
@@ -1092,10 +1087,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Technician",
       "item": "",
       "moves": [
-        "",
         "Bullet Seed",
         "Mach Punch",
-        ""
+        "Rock Tomb",
+        "Drain Punch"
       ]
     }
   },
@@ -1114,10 +1109,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        "Shadow Ball"
+        "Shadow Ball",
+        "Thunderbolt",
+        "Icy Wind",
+        "Acrobatics"
       ]
     }
   },
@@ -1136,10 +1131,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
         "Scald",
-        "",
-        ""
+        "Icy Wind",
+        "Knock Off",
+        "Ice Beam"
       ]
     }
   },
@@ -1160,8 +1155,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Leaf Storm",
         "Thunderbolt",
-        "",
-        ""
+        "Volt Switch",
+        "Discharge"
       ]
     }
   },
@@ -1180,10 +1175,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Shell Armor",
       "item": "Leftovers",
       "moves": [
-        "",
         "Heat Wave",
         "Earth Power",
-        "Clear Smog"
+        "Clear Smog",
+        "Eruption"
       ]
     }
   },
@@ -1203,9 +1198,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Sludge Bomb",
-        "",
         "Solar Beam",
-        "Weather Ball"
+        "Weather Ball",
+        "Giga Drain"
       ]
     }
   },
@@ -1226,8 +1221,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Drain Punch",
         "Return",
-        "",
-        "Knock Off"
+        "Knock Off",
+        "Earthquake"
       ]
     }
   },
@@ -1248,8 +1243,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Scald",
         "Sludge Bomb",
-        "",
-        "Acid Spray"
+        "Acid Spray",
+        "Ice Beam"
       ]
     }
   },
@@ -1270,8 +1265,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Explosion",
         "Knock Off",
-        "",
-        "Power Whip"
+        "Power Whip",
+        "Earthquake"
       ]
     }
   },
@@ -1312,10 +1307,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Shadow Ball",
         "Flash Cannon",
-        ""
+        "Shadow Sneak",
+        "Sacred Sword"
       ]
     }
   },
@@ -1337,7 +1332,7 @@ var SETDEX_SHOWDOWN={
         "Waterfall",
         "Ice Punch",
         "Aqua Jet",
-        ""
+        "Crunch"
       ]
     }
   },
@@ -1357,9 +1352,9 @@ var SETDEX_SHOWDOWN={
       "item": "Air Balloon",
       "moves": [
         "Wild Charge",
-        "",
         "Overheat",
-        "Thunderbolt"
+        "Thunderbolt",
+        "Flame Charge"
       ]
     }
   },
@@ -1378,10 +1373,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
         "Explosion",
-        ""
+        "Phantom Force",
+        "Shadow Sneak",
+        "Seed Bomb"
       ]
     }
   },
@@ -1401,9 +1396,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Rock Slide",
-        "",
         "Explosion",
-        ""
+        "Zen Headbutt",
+        "Earthquake"
       ]
     }
   },
@@ -1422,10 +1417,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Phantom Force",
+        "Seed Bomb",
+        "Shadow Sneak",
+        "Foul Play"
       ]
     }
   },
@@ -1467,9 +1462,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Horn Leech",
-        "",
-        "",
-        ""
+        "Phantom Force",
+        "Shadow Claw",
+        "Wood Hammer"
       ]
     }
   },
@@ -1489,9 +1484,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Water Spout",
-        "",
         "Ice Beam",
-        "Energy Ball"
+        "Energy Ball",
+        "Flamethrower"
       ]
     }
   },
@@ -1510,10 +1505,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
         "Discharge",
         "Focus Blast",
-        "Hidden Power Ice"
+        "Hidden Power Ice",
+        "Feint"
       ]
     }
   },
@@ -1532,10 +1527,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "Light Ball",
       "moves": [
-        "",
         "Fake Out",
         "Volt Tackle",
-        "Thunderbolt"
+        "Thunderbolt",
+        "Quick Attack"
       ]
     }
   },
@@ -1557,7 +1552,7 @@ var SETDEX_SHOWDOWN={
         "Flamethrower",
         "Night Daze",
         "Dark Pulse",
-        ""
+        "Focus Blast"
       ]
     }
   },
@@ -1578,8 +1573,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Ice Beam",
         "Psychic",
-        "",
-        "Focus Blast"
+        "Focus Blast",
+        "Fake Out"
       ]
     }
   },
@@ -1600,8 +1595,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Bug Buzz",
         "Thunder",
-        "",
-        "Energy Ball"
+        "Energy Ball",
+        "Volt Switch"
       ]
     }
   },
@@ -1642,10 +1637,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Simple",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
         "Flame Charge",
-        ""
+        "Fire Blast",
+        "Earthquake",
+        "Earth Power"
       ]
     }
   },
@@ -1664,10 +1659,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Magic Guard",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Moonblast",
-        ""
+        "Ice Beam",
+        "Dazzling Gleam",
+        "Icy Wind"
       ]
     }
   },
@@ -1687,9 +1682,9 @@ var SETDEX_SHOWDOWN={
       "item": "Flame Orb",
       "moves": [
         "Stored Power",
-        "",
-        "",
-        ""
+        "Air Slash",
+        "Heat Wave",
+        "Psyshock"
       ]
     }
   },
@@ -1710,8 +1705,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Poison Jab",
         "Waterfall",
-        "",
-        ""
+        "Aqua Jet",
+        "Explosion"
       ]
     }
   },
@@ -1732,8 +1727,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Draco Meteor",
         "Psyshock",
-        "",
-        "Ice Beam"
+        "Ice Beam",
+        "Psychic"
       ]
     }
   },
@@ -1752,10 +1747,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
-        "",
         "Earth Power",
         "Ice Beam",
-        "Psychic"
+        "Psychic",
+        "Psyshock"
       ]
     }
   },
@@ -1776,8 +1771,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sucker Punch",
         "Rock Slide",
-        "",
-        "Wood Hammer"
+        "Wood Hammer",
+        "Hammer Arm"
       ]
     }
   },
@@ -1818,10 +1813,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Giga Drain",
-        "",
-        ""
+        "Knock Off",
+        "Power Whip",
+        "Sludge Bomb"
       ]
     }
   },
@@ -1842,8 +1837,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Solar Beam",
         "Heat Wave",
-        "",
-        ""
+        "Overheat",
+        "Dark Pulse"
       ]
     }
   },
@@ -1864,8 +1859,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Aqua Jet",
         "Play Rough",
-        "",
-        ""
+        "Waterfall",
+        "Superpower"
       ]
     }
   },
@@ -1884,10 +1879,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Glalitite",
       "moves": [
-        "",
         "Explosion",
         "Return",
-        "Earthquake"
+        "Earthquake",
+        "Ice Shard"
       ]
     }
   },
@@ -1907,9 +1902,9 @@ var SETDEX_SHOWDOWN={
       "item": "Cameruptite",
       "moves": [
         "Earth Power",
-        "",
         "Heat Wave",
-        "Ancient Power"
+        "Ancient Power",
+        "Eruption"
       ]
     }
   },
@@ -1952,8 +1947,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Aqua Jet",
         "Rock Slide",
-        "",
-        ""
+        "Ice Beam",
+        "Stone Edge"
       ]
     }
   },
@@ -1972,10 +1967,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Galladite",
       "moves": [
-        "",
         "Close Combat",
         "Ice Punch",
-        "Psycho Cut"
+        "Psycho Cut",
+        "Drain Punch"
       ]
     }
   },
@@ -1995,9 +1990,9 @@ var SETDEX_SHOWDOWN={
       "item": "Black Sludge",
       "moves": [
         "Sludge Bomb",
-        "",
-        "",
-        "Flamethrower"
+        "Flamethrower",
+        "Thunderbolt",
+        "Fire Blast"
       ]
     }
   },
@@ -2016,10 +2011,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Simple",
       "item": "",
       "moves": [
-        "",
         "Stored Power",
-        "",
-        ""
+        "Psychic",
+        "Air Slash",
+        "Heat Wave"
       ]
     }
   },
@@ -2038,10 +2033,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Infiltrator",
       "item": "Leftovers",
       "moves": [
-        "",
         "Foul Play",
         "Shadow Sneak",
-        "Dark Pulse"
+        "Dark Pulse",
+        "Icy Wind"
       ]
     }
   },
@@ -2061,9 +2056,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Fake Out",
-        "",
         "Foul Play",
-        ""
+        "Knock Off",
+        "Sucker Punch"
       ]
     }
   },
@@ -2083,9 +2078,9 @@ var SETDEX_SHOWDOWN={
       "item": "Chesto Berry",
       "moves": [
         "Crunch",
-        "",
         "Body Slam",
-        ""
+        "Earthquake",
+        "Return"
       ]
     }
   },
@@ -2126,10 +2121,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Air Slash",
-        "Giga Drain"
+        "Giga Drain",
+        "Solar Beam",
+        "Earthquake"
       ]
     }
   },
@@ -2148,10 +2143,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Rock Slide",
+        "Iron Head",
+        "Aerial Ace",
+        "Shadow Claw"
       ]
     }
   },
@@ -2171,9 +2166,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Dynamic Punch",
-        "",
         "Ice Punch",
-        "Stone Edge"
+        "Stone Edge",
+        "Bullet Punch"
       ]
     }
   },
@@ -2192,10 +2187,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Chlorophyll",
       "item": "Life Orb",
       "moves": [
-        "",
         "Psyshock",
         "Solar Beam",
-        "Psychic"
+        "Psychic",
+        "Leaf Storm"
       ]
     }
   },
@@ -2214,10 +2209,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Dry Skin",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        "Seed Bomb"
+        "Seed Bomb",
+        "X-Scissor",
+        "Giga Drain",
+        "Bug Bite"
       ]
     }
   },
@@ -2238,8 +2233,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Iron Head",
         "Close Combat",
-        "",
-        "Stone Edge"
+        "Stone Edge",
+        "Sacred Sword"
       ]
     }
   },
@@ -2258,10 +2253,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        "Discharge"
+        "Discharge",
+        "Hidden Power Ice",
+        "Volt Switch",
+        "Thunderbolt"
       ]
     }
   },
@@ -2279,10 +2274,7 @@ var SETDEX_SHOWDOWN={
       "nature": "Bold",
       "ability": "",
       "item": "Choice Scarf",
-      "moves": [
-        "",
-        ""
-      ]
+      "moves": []
     }
   },
   "Eelektross": {
@@ -2303,7 +2295,7 @@ var SETDEX_SHOWDOWN={
         "Flamethrower",
         "Giga Drain",
         "Thunderbolt",
-        ""
+        "Discharge"
       ]
     }
   },
@@ -2322,10 +2314,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sharpedonite",
       "moves": [
-        "",
         "Crunch",
         "Waterfall",
-        "Ice Fang"
+        "Ice Fang",
+        "Ice Beam"
       ]
     }
   },
@@ -2346,8 +2338,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Psychic",
         "Ice Beam",
-        "",
-        "Energy Ball"
+        "Energy Ball",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -2369,7 +2361,7 @@ var SETDEX_SHOWDOWN={
         "Iron Head",
         "Sucker Punch",
         "Knock Off",
-        ""
+        "Low Kick"
       ]
     }
   },
@@ -2389,9 +2381,9 @@ var SETDEX_SHOWDOWN={
       "item": "Toxic Orb",
       "moves": [
         "Facade",
-        "",
         "Close Combat",
-        "Quick Attack"
+        "Quick Attack",
+        "Knock Off"
       ]
     }
   },
@@ -2411,9 +2403,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Moonblast",
-        "",
-        "",
-        "Dazzling Gleam"
+        "Dazzling Gleam",
+        "Giga Drain",
+        "Psychic"
       ]
     }
   },
@@ -2435,7 +2427,7 @@ var SETDEX_SHOWDOWN={
         "Earth Power",
         "Sludge Bomb",
         "Ice Beam",
-        ""
+        "Flamethrower"
       ]
     }
   },
@@ -2455,9 +2447,9 @@ var SETDEX_SHOWDOWN={
       "item": "Altarianite",
       "moves": [
         "Hyper Voice",
-        "",
-        "",
-        "Draco Meteor"
+        "Draco Meteor",
+        "Fire Blast",
+        "Heat Wave"
       ]
     }
   },
@@ -2477,9 +2469,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Air Slash",
-        "",
         "Dazzling Gleam",
-        ""
+        "Aura Sphere",
+        "Heat Wave"
       ]
     }
   },
@@ -2499,9 +2491,9 @@ var SETDEX_SHOWDOWN={
       "item": "Eviolite",
       "moves": [
         "Snarl",
-        "",
         "Discharge",
-        ""
+        "Wild Charge",
+        "Ice Fang"
       ]
     }
   },
@@ -2522,8 +2514,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sludge Bomb",
         "Giga Drain",
-        "",
-        ""
+        "Hidden Power Ice",
+        "Energy Ball"
       ]
     }
   },
@@ -2544,8 +2536,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Aura Sphere",
         "Ice Beam",
-        "",
-        "Water Spout"
+        "Water Spout",
+        "Dark Pulse"
       ]
     }
   },
@@ -2564,10 +2556,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Volt Absorb",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Discharge",
+        "Volt Switch",
+        "Thunderbolt",
+        "Grass Knot"
       ]
     }
   },
@@ -2586,10 +2578,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        "Foul Play"
+        "Foul Play",
+        "Dazzling Gleam",
+        "Flash Cannon",
+        "Play Rough"
       ]
     }
   },
@@ -2608,10 +2600,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Dazzling Gleam",
+        "Icy Wind",
+        "Hyper Voice",
+        "Charge Beam"
       ]
     }
   },
@@ -2652,10 +2644,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Coba Berry",
       "moves": [
-        "",
         "Storm Throw",
         "Stone Edge",
-        ""
+        "Rock Slide",
+        "Ice Punch"
       ]
     }
   },
@@ -2696,10 +2688,9 @@ var SETDEX_SHOWDOWN={
       "ability": "Swift Swim",
       "item": "",
       "moves": [
-        "",
-        "",
         "Flail",
-        "Bounce"
+        "Bounce",
+        "Tackle"
       ]
     }
   },
@@ -2718,10 +2709,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        "Shadow Sneak"
+        "Shadow Sneak",
+        "Night Shade",
+        "Ice Punch",
+        "Shadow Punch"
       ]
     }
   },
@@ -2740,10 +2731,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Sap Sipper",
       "item": "",
       "moves": [
-        "",
         "Hyper Voice",
         "Psychic",
-        ""
+        "Energy Ball",
+        "Foul Play"
       ]
     }
   },
@@ -2764,8 +2755,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Play Rough",
         "Close Combat",
-        "",
-        "Rock Slide"
+        "Rock Slide",
+        "Ice Punch"
       ]
     }
   },
@@ -2787,7 +2778,7 @@ var SETDEX_SHOWDOWN={
         "Waterfall",
         "Rock Slide",
         "Aqua Jet",
-        ""
+        "Knock Off"
       ]
     }
   },
@@ -2809,7 +2800,7 @@ var SETDEX_SHOWDOWN={
         "Hyper Voice",
         "Shadow Ball",
         "Psyshock",
-        ""
+        "Hyper Beam"
       ]
     }
   },
@@ -2829,9 +2820,9 @@ var SETDEX_SHOWDOWN={
       "item": "Steelixite",
       "moves": [
         "Earthquake",
-        "",
         "Rock Slide",
-        "Heavy Slam"
+        "Heavy Slam",
+        "Gyro Ball"
       ]
     }
   },
@@ -2850,10 +2841,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Thunderbolt",
+        "Volt Switch",
+        "Grass Knot",
+        "Play Rough"
       ]
     }
   },
@@ -2896,8 +2887,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Aerial Ace",
         "Bug Bite",
-        "",
-        ""
+        "U-turn",
+        "X-Scissor"
       ]
     }
   },
@@ -2918,8 +2909,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Brave Bird",
         "Sucker Punch",
-        "",
-        "Superpower"
+        "Superpower",
+        "Pursuit"
       ]
     }
   },
@@ -2941,7 +2932,7 @@ var SETDEX_SHOWDOWN={
         "Freeze-Dry",
         "Hurricane",
         "Ancient Power",
-        ""
+        "Ice Beam"
       ]
     }
   },
@@ -2960,10 +2951,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
         "Dazzling Gleam",
-        ""
+        "Ancient Power",
+        "Heat Wave",
+        "Flamethrower"
       ]
     }
   },
@@ -2983,9 +2974,9 @@ var SETDEX_SHOWDOWN={
       "item": "Houndoominite",
       "moves": [
         "Dark Pulse",
-        "",
         "Heat Wave",
-        "Solar Beam"
+        "Solar Beam",
+        "Flamethrower"
       ]
     }
   },
@@ -3004,10 +2995,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Unaware",
       "item": "Leftovers",
       "moves": [
-        "",
         "Earthquake",
         "Scald",
-        "Waterfall"
+        "Waterfall",
+        "Ice Punch"
       ]
     }
   },
@@ -3026,10 +3017,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Intimidate",
       "item": "",
       "moves": [
-        "",
         "Bug Buzz",
         "Air Slash",
-        ""
+        "Icy Wind",
+        "U-turn"
       ]
     }
   },
@@ -3049,9 +3040,9 @@ var SETDEX_SHOWDOWN={
       "item": "Gyaradosite",
       "moves": [
         "Waterfall",
-        "",
-        "",
-        "Earthquake"
+        "Earthquake",
+        "Ice Fang",
+        "Crunch"
       ]
     }
   },
@@ -3070,10 +3061,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Contrary",
       "item": "Choice Scarf",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Fake Out",
+        "Drain Punch",
+        "Icy Wind",
+        "Sucker Punch"
       ]
     }
   },
@@ -3093,9 +3084,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Heat Wave",
-        "",
         "Earth Power",
-        "Flash Cannon"
+        "Flash Cannon",
+        "Overheat"
       ]
     }
   },
@@ -3117,7 +3108,7 @@ var SETDEX_SHOWDOWN={
         "Knock Off",
         "Gunk Shot",
         "Drain Punch",
-        ""
+        "Ice Punch"
       ]
     }
   },
@@ -3158,10 +3149,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
         "Scald",
         "Psychic",
-        "Psyshock"
+        "Psyshock",
+        "Flamethrower"
       ]
     }
   },
@@ -3204,8 +3195,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "High Jump Kick",
         "Acrobatics",
-        "",
-        ""
+        "Sky Attack",
+        "Rock Slide"
       ]
     }
   },
@@ -3224,10 +3215,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Fur Coat",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Return",
-        "Snarl"
+        "Snarl",
+        "Sucker Punch",
+        "U-turn"
       ]
     }
   },
@@ -3268,10 +3259,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Tinted Lens",
       "item": "Black Sludge",
       "moves": [
-        "",
         "Bug Buzz",
-        "",
-        ""
+        "Sludge Bomb",
+        "Signal Beam",
+        "Psychic"
       ]
     }
   },
@@ -3312,10 +3303,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Fake Out",
+        "Storm Throw",
+        "Icy Wind",
+        "Extreme Speed"
       ]
     }
   },
@@ -3334,10 +3325,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Moonblast",
+        "Giga Drain",
+        "Dazzling Gleam",
+        "Energy Ball"
       ]
     }
   },
@@ -3356,10 +3347,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Contrary",
       "item": "Eviolite",
       "moves": [
-        "",
         "Leaf Storm",
-        "",
-        ""
+        "Leaf Blade",
+        "Giga Drain",
+        "Hidden Power Fire"
       ]
     }
   },
@@ -3403,7 +3394,7 @@ var SETDEX_SHOWDOWN={
         "Blizzard",
         "Thunderbolt",
         "Volt Switch",
-        ""
+        "Discharge"
       ]
     }
   },
@@ -3422,10 +3413,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Brave Bird",
+        "Poison Fang",
+        "U-turn",
+        "Air Slash"
       ]
     }
   },
@@ -3446,8 +3437,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sludge Bomb",
         "Shadow Ball",
-        "",
-        ""
+        "Icy Wind",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -3466,10 +3457,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "",
       "moves": [
-        "",
         "Dazzling Gleam",
-        "",
-        ""
+        "Psychic",
+        "Extrasensory",
+        "Stored Power"
       ]
     }
   },
@@ -3489,9 +3480,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Hyper Voice",
-        "",
         "Heat Wave",
-        "Hidden Power Ice"
+        "Hidden Power Ice",
+        "Overheat"
       ]
     }
   },
@@ -3511,9 +3502,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Scald",
-        "",
         "Icy Wind",
-        ""
+        "Ice Beam",
+        "U-turn"
       ]
     }
   },
@@ -3533,9 +3524,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Air Slash",
-        "",
         "Thunderbolt",
-        ""
+        "Volt Switch",
+        "Thunder"
       ]
     }
   },
@@ -3557,7 +3548,7 @@ var SETDEX_SHOWDOWN={
         "Rock Slide",
         "X-Scissor",
         "Earthquake",
-        ""
+        "Knock Off"
       ]
     }
   },
@@ -3598,10 +3589,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Sucker Punch",
+        "Knock Off",
+        "Return",
+        "U-turn"
       ]
     }
   },
@@ -3622,8 +3613,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "",
-        ""
+        "Explosion",
+        "Heavy Slam"
       ]
     }
   },
@@ -3642,10 +3633,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "Manectite",
       "moves": [
-        "",
         "Hidden Power Ice",
         "Thunderbolt",
-        "Volt Switch"
+        "Volt Switch",
+        "Flamethrower"
       ]
     }
   },
@@ -3664,10 +3655,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "U-turn",
+        "Dazzling Gleam",
+        "Bug Buzz",
+        "Giga Drain"
       ]
     }
   },
@@ -3687,9 +3678,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Iron Head",
-        "",
-        "",
-        "Rock Slide"
+        "Rock Slide",
+        "Ice Punch",
+        "Earthquake"
       ]
     }
   },
@@ -3709,9 +3700,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Psychic",
-        "",
-        "",
-        ""
+        "Air Slash",
+        "Night Shade",
+        "Psyshock"
       ]
     }
   },
@@ -3732,8 +3723,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Explosion",
         "Psychic",
-        "",
-        "Energy Ball"
+        "Energy Ball",
+        "Psyshock"
       ]
     }
   },
@@ -3752,10 +3743,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Knock Off",
+        "Gyro Ball",
+        "Rock Slide",
+        "Earthquake"
       ]
     }
   },
@@ -3774,10 +3765,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "Leftovers",
       "moves": [
-        "",
         "Ice Beam",
         "Scald",
-        "Knock Off"
+        "Knock Off",
+        "Surf"
       ]
     }
   },
@@ -3799,7 +3790,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Wood Hammer",
         "Stone Edge",
-        ""
+        "Superpower"
       ]
     }
   },
@@ -3842,8 +3833,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Overheat",
         "Thunderbolt",
-        "",
-        ""
+        "Hidden Power Ice",
+        "Volt Switch"
       ]
     }
   },
@@ -3865,7 +3856,7 @@ var SETDEX_SHOWDOWN={
         "Superpower",
         "Knock Off",
         "Psycho Cut",
-        ""
+        "Rock Slide"
       ]
     }
   },
@@ -3886,8 +3877,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sacred Fire",
         "Stone Edge",
-        "",
-        "Iron Head"
+        "Iron Head",
+        "Bulldoze"
       ]
     }
   },
@@ -3906,10 +3897,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
         "Psychic",
-        ""
+        "Energy Ball",
+        "Psyshock",
+        "Shadow Ball"
       ]
     }
   },
@@ -3929,9 +3920,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Rock Slide",
-        "",
-        "",
-        "Headbutt"
+        "Headbutt",
+        "Blizzard",
+        "Drill Run"
       ]
     }
   },
@@ -3950,10 +3941,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Feint",
+        "Bullet Punch",
+        "High Jump Kick",
+        "Reversal"
       ]
     }
   },
@@ -3972,10 +3963,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        "Night Shade"
+        "Night Shade",
+        "Shadow Sneak",
+        "Hex",
+        "Shadow Ball"
       ]
     }
   },
@@ -3994,10 +3985,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
         "Poison Jab",
-        ""
+        "Megahorn",
+        "Cross Poison",
+        "Sucker Punch"
       ]
     }
   },
@@ -4018,8 +4009,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Bug Buzz",
         "Air Slash",
-        "",
-        ""
+        "Hidden Power Ice",
+        "Ancient Power"
       ]
     }
   },
@@ -4038,10 +4029,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Solar Power",
       "item": "Life Orb",
       "moves": [
-        "",
         "Earth Power",
         "Leaf Storm",
-        "Sludge Bomb"
+        "Sludge Bomb",
+        "Giga Drain"
       ]
     }
   },
@@ -4082,10 +4073,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Overcoat",
       "item": "Leftovers",
       "moves": [
-        "",
         "Foul Play",
-        "",
-        ""
+        "Knock Off",
+        "Brave Bird",
+        "Snarl"
       ]
     }
   },
@@ -4105,9 +4096,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Bug Buzz",
-        "",
         "Heat Wave",
-        ""
+        "Fiery Dance",
+        "Giga Drain"
       ]
     }
   },
@@ -4128,8 +4119,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Waterfall",
-        "",
-        "Ice Punch"
+        "Ice Punch",
+        "Earth Power"
       ]
     }
   },
@@ -4171,9 +4162,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Fake Out",
-        "",
-        "",
-        "Return"
+        "Return",
+        "Sucker Punch",
+        "Knock Off"
       ]
     }
   },
@@ -4192,10 +4183,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        "Foul Play"
+        "Foul Play",
+        "Psychic",
+        "Knock Off",
+        "Psyshock"
       ]
     }
   },
@@ -4215,9 +4206,9 @@ var SETDEX_SHOWDOWN={
       "item": "Beedrillite",
       "moves": [
         "Poison Jab",
-        "",
         "U-turn",
-        "Drill Run"
+        "Drill Run",
+        "X-Scissor"
       ]
     }
   },
@@ -4280,10 +4271,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Swift Swim",
       "item": "",
       "moves": [
-        "",
-        "",
         "Scald",
-        "Ice Beam"
+        "Ice Beam",
+        "Hidden Power Grass",
+        "Hydro Pump"
       ]
     }
   },
@@ -4304,8 +4295,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sucker Punch",
         "Seed Bomb",
-        "",
-        "Drain Punch"
+        "Drain Punch",
+        "Dark Pulse"
       ]
     }
   },
@@ -4325,9 +4316,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Fake Out",
-        "",
         "Thunderbolt",
-        ""
+        "Hidden Power Ice",
+        "Volt Switch"
       ]
     }
   },
@@ -4346,10 +4337,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
         "Psychic",
-        ""
+        "Psyshock",
+        "Dazzling Gleam",
+        "Signal Beam"
       ]
     }
   },
@@ -4390,10 +4381,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Blazikenite",
       "moves": [
-        "",
         "Flare Blitz",
         "High Jump Kick",
-        "Rock Slide"
+        "Rock Slide",
+        "Superpower"
       ]
     }
   },
@@ -4412,10 +4403,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "Eviolite",
       "moves": [
-        "",
         "Rock Slide",
         "Earthquake",
-        "Drill Run"
+        "Drill Run",
+        "Ice Punch"
       ]
     }
   },
@@ -4436,8 +4427,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Brave Bird",
         "Leaf Blade",
-        "",
-        "Night Slash"
+        "Night Slash",
+        "Return"
       ]
     }
   },
@@ -4456,10 +4447,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Play Rough",
         "Drain Punch",
-        ""
+        "Return",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -4478,10 +4469,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Gyro Ball",
-        "",
-        "Power Whip"
+        "Power Whip",
+        "Knock Off",
+        "Iron Head"
       ]
     }
   },
@@ -4502,8 +4493,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Scald",
         "Ice Beam",
-        "",
-        "Icy Wind"
+        "Icy Wind",
+        "Hydro Pump"
       ]
     }
   },
@@ -4523,9 +4514,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Rock Slide",
-        "",
-        "",
-        ""
+        "Ice Fang",
+        "Earthquake",
+        "Iron Head"
       ]
     }
   },
@@ -4544,10 +4535,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "",
       "moves": [
-        "",
         "Thunderbolt",
-        "",
-        "Discharge"
+        "Discharge",
+        "Grass Knot",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -4568,8 +4559,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Hyper Voice",
         "Earth Power",
-        "",
-        "Freeze-Dry"
+        "Freeze-Dry",
+        "Ancient Power"
       ]
     }
   },
@@ -4588,10 +4579,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Water Absorb",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Scald",
-        "",
-        ""
+        "Icy Wind",
+        "Air Slash",
+        "Ice Beam"
       ]
     }
   },
@@ -4613,7 +4604,7 @@ var SETDEX_SHOWDOWN={
         "Shadow Sneak",
         "Iron Head",
         "Sacred Sword",
-        ""
+        "Gyro Ball"
       ]
     }
   },
@@ -4635,7 +4626,7 @@ var SETDEX_SHOWDOWN={
         "Leaf Blade",
         "Knock Off",
         "X-Scissor",
-        ""
+        "Iron Tail"
       ]
     }
   },
@@ -4654,10 +4645,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Intimidate",
       "item": "Leftovers",
       "moves": [
-        "",
         "Flare Blitz",
         "Extreme Speed",
-        ""
+        "Close Combat",
+        "Snarl"
       ]
     }
   },
@@ -4678,8 +4669,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Scald",
         "Ice Beam",
-        "",
-        ""
+        "Hydro Pump",
+        "Icy Wind"
       ]
     }
   },
@@ -4698,10 +4689,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
         "Shadow Ball",
-        ""
+        "Hex",
+        "Night Shade",
+        "Knock Off"
       ]
     }
   },
@@ -4766,8 +4757,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "",
-        "Drill Run"
+        "Drill Run",
+        "Ice Punch"
       ]
     }
   },
@@ -4788,8 +4779,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Rock Slide",
-        "",
-        "Iron Head"
+        "Iron Head",
+        "Explosion"
       ]
     }
   },
@@ -4809,9 +4800,9 @@ var SETDEX_SHOWDOWN={
       "item": "Pinsirite",
       "moves": [
         "Return",
-        "",
         "Close Combat",
-        "Quick Attack"
+        "Quick Attack",
+        "Earthquake"
       ]
     }
   },
@@ -4830,10 +4821,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Fake Out",
-        "",
-        ""
+        "Psychic",
+        "Psyshock",
+        "Energy Ball"
       ]
     }
   },
@@ -4852,10 +4843,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Banettite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Shadow Sneak",
+        "Shadow Claw",
+        "Gunk Shot",
+        "Sucker Punch"
       ]
     }
   },
@@ -4877,7 +4868,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Rock Slide",
         "Return",
-        ""
+        "Zen Headbutt"
       ]
     }
   },
@@ -4898,8 +4889,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Thunderbolt",
         "Hidden Power Ice",
-        "",
-        "Snarl"
+        "Snarl",
+        "Volt Switch"
       ]
     }
   },
@@ -4919,9 +4910,9 @@ var SETDEX_SHOWDOWN={
       "item": "Black Sludge",
       "moves": [
         "Gunk Shot",
-        "",
-        "",
-        ""
+        "Earthquake",
+        "Sucker Punch",
+        "Ice Fang"
       ]
     }
   },
@@ -4940,10 +4931,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
         "Ice Beam",
-        "",
-        "Tri Attack"
+        "Tri Attack",
+        "Thunderbolt",
+        "Shadow Ball"
       ]
     }
   },
@@ -4984,10 +4975,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
         "Seismic Toss",
-        "",
-        ""
+        "Icy Wind",
+        "Shadow Ball",
+        "Flamethrower"
       ]
     }
   },
@@ -5009,7 +5000,7 @@ var SETDEX_SHOWDOWN={
         "Close Combat",
         "Fake Out",
         "Overheat",
-        ""
+        "Mach Punch"
       ]
     }
   },
@@ -5029,9 +5020,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Shadow Ball",
-        "",
         "Icy Wind",
-        ""
+        "Energy Ball",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -5075,7 +5066,7 @@ var SETDEX_SHOWDOWN={
         "Ice Beam",
         "Gunk Shot",
         "Dark Pulse",
-        ""
+        "Scald"
       ]
     }
   },
@@ -5119,7 +5110,7 @@ var SETDEX_SHOWDOWN={
         "Horn Leech",
         "Jump Kick",
         "Double-Edge",
-        ""
+        "Wild Charge"
       ]
     }
   },
@@ -5138,10 +5129,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
         "Giga Drain",
-        ""
+        "Sludge Bomb",
+        "Clear Smog",
+        "Foul Play"
       ]
     }
   },
@@ -5184,8 +5175,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Ice Beam",
         "Scald",
-        "",
-        ""
+        "Hydro Pump",
+        "Focus Blast"
       ]
     }
   },
@@ -5205,9 +5196,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Hydro Pump",
-        "",
         "Thunderbolt",
-        ""
+        "Volt Switch",
+        "Discharge"
       ]
     }
   },
@@ -5226,10 +5217,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Bulletproof",
       "item": "",
       "moves": [
-        "",
         "Drain Punch",
         "Wood Hammer",
-        "Seed Bomb"
+        "Seed Bomb",
+        "Hammer Arm"
       ]
     }
   },
@@ -5249,9 +5240,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Foul Play",
-        "",
-        "",
-        ""
+        "Payback",
+        "Snarl",
+        "Dark Pulse"
       ]
     }
   },
@@ -5273,7 +5264,7 @@ var SETDEX_SHOWDOWN={
         "Close Combat",
         "Pin Missile",
         "Rock Blast",
-        ""
+        "Bullet Seed"
       ]
     }
   },
@@ -5295,7 +5286,7 @@ var SETDEX_SHOWDOWN={
         "Ice Punch",
         "Waterfall",
         "Aqua Jet",
-        ""
+        "Superpower"
       ]
     }
   },
@@ -5338,8 +5329,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Extreme Speed",
         "Dragon Claw",
-        "",
-        "Earthquake"
+        "Earthquake",
+        "Fire Punch"
       ]
     }
   },
@@ -5358,10 +5349,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Storm Drain",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Giga Drain",
+        "Ancient Power",
+        "Earth Power",
+        "Sludge Bomb"
       ]
     }
   },
@@ -5382,8 +5373,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Scald",
         "Ice Beam",
-        "",
-        ""
+        "Muddy Water",
+        "Surf"
       ]
     }
   },
@@ -5404,8 +5395,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Leaf Blade",
         "Close Combat",
-        "",
-        "Stone Edge"
+        "Stone Edge",
+        "Sacred Sword"
       ]
     }
   },
@@ -5424,10 +5415,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Shadow Ball",
         "Ice Beam",
-        "Blizzard"
+        "Blizzard",
+        "Frost Breath"
       ]
     }
   },
@@ -5447,9 +5438,9 @@ var SETDEX_SHOWDOWN={
       "item": "Lum Berry",
       "moves": [
         "Gear Grind",
-        "",
-        "",
-        ""
+        "Wild Charge",
+        "Return",
+        "Volt Switch"
       ]
     }
   },
@@ -5470,8 +5461,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Close Combat",
-        "",
-        "Double Kick"
+        "Double Kick",
+        "Earthquake"
       ]
     }
   },
@@ -5512,10 +5503,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        "Psychic"
+        "Psychic",
+        "Foul Play",
+        "Dazzling Gleam",
+        "Zen Headbutt"
       ]
     }
   },
@@ -5534,10 +5525,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Audinite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Dazzling Gleam",
+        "Ice Beam",
+        "Hyper Voice",
+        "Flamethrower"
       ]
     }
   },
@@ -5556,10 +5547,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Infiltrator",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Giga Drain",
+        "Acrobatics",
+        "Energy Ball",
+        "Seed Bomb"
       ]
     }
   },
@@ -5580,8 +5571,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Cross Poison",
         "Night Slash",
-        "",
-        "Knock Off"
+        "Knock Off",
+        "Poison Jab"
       ]
     }
   },
@@ -5600,10 +5591,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
         "Power Gem",
         "Flash Cannon",
-        ""
+        "Earth Power",
+        "Discharge"
       ]
     }
   },
@@ -5625,7 +5616,7 @@ var SETDEX_SHOWDOWN={
         "Iron Head",
         "Rock Slide",
         "Earthquake",
-        ""
+        "Drill Run"
       ]
     }
   },
@@ -5644,10 +5635,7 @@ var SETDEX_SHOWDOWN={
       "ability": "Magic Guard",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Psychic"
       ]
     }
   },
@@ -5689,9 +5677,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Ice Beam",
-        "",
         "Aqua Jet",
-        "Scald"
+        "Scald",
+        "Superpower"
       ]
     }
   },
@@ -5711,9 +5699,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Thunderbolt",
-        "",
-        "",
-        "Hidden Power Ice"
+        "Hidden Power Ice",
+        "Grass Knot",
+        "Thunder"
       ]
     }
   },
@@ -5732,10 +5720,9 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Dazzling Gleam",
+        "Moonblast",
+        "Thunderbolt"
       ]
     }
   },
@@ -5754,10 +5741,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sablenite",
       "moves": [
-        "",
-        "",
-        "",
-        "Foul Play"
+        "Foul Play",
+        "Fake Out",
+        "Knock Off",
+        "Dark Pulse"
       ]
     }
   },
@@ -5777,9 +5764,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Earthquake",
-        "",
         "Sucker Punch",
-        "Rock Slide"
+        "Rock Slide",
+        "Stone Edge"
       ]
     }
   },
@@ -5822,8 +5809,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Dynamic Punch",
-        "",
-        "Shadow Punch"
+        "Shadow Punch",
+        "Ice Punch"
       ]
     }
   },
@@ -5842,10 +5829,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        "Heavy Slam"
+        "Heavy Slam",
+        "Iron Head",
+        "Rock Slide",
+        "Earthquake"
       ]
     }
   },
@@ -5866,8 +5853,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Bullet Punch",
         "Bug Bite",
-        "",
-        ""
+        "Superpower",
+        "Knock Off"
       ]
     }
   },
@@ -5910,8 +5897,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earth Power",
         "Ice Beam",
-        "",
-        "Sludge Bomb"
+        "Sludge Bomb",
+        "Poison Jab"
       ]
     }
   },
@@ -5933,7 +5920,7 @@ var SETDEX_SHOWDOWN={
         "Thunderbolt",
         "Heat Wave",
         "Hidden Power Ice",
-        ""
+        "Discharge"
       ]
     }
   },
@@ -5952,10 +5939,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        "X-Scissor"
+        "X-Scissor",
+        "Aerial Ace",
+        "U-turn",
+        "Night Slash"
       ]
     }
   },
@@ -5974,10 +5961,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Hurricane",
-        "",
-        ""
+        "Bug Buzz",
+        "U-turn",
+        "Hidden Power Rock"
       ]
     }
   },
@@ -5997,9 +5984,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Psychic",
-        "",
-        "",
-        "Icy Wind"
+        "Icy Wind",
+        "Psyshock",
+        "Energy Ball"
       ]
     }
   },
@@ -6020,8 +6007,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Heat Wave",
         "Air Slash",
-        "",
-        "Overheat"
+        "Overheat",
+        "Hurricane"
       ]
     }
   },
@@ -6043,7 +6030,7 @@ var SETDEX_SHOWDOWN={
         "Flare Blitz",
         "Superpower",
         "Quick Attack",
-        ""
+        "Facade"
       ]
     }
   },
@@ -6063,9 +6050,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Hurricane",
-        "",
         "U-turn",
-        "Focus Blast"
+        "Focus Blast",
+        "Heat Wave"
       ]
     }
   },
@@ -6086,8 +6073,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Chatter",
         "Boomburst",
-        "",
-        "Heat Wave"
+        "Heat Wave",
+        "Hyper Voice"
       ]
     }
   },
@@ -6106,10 +6093,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Intimidate",
       "item": "",
       "moves": [
-        "",
         "Return",
-        "",
-        ""
+        "Megahorn",
+        "Jump Kick",
+        "Earthquake"
       ]
     }
   },
@@ -6129,9 +6116,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Fake Out",
-        "",
         "Ice Shard",
-        "Frost Breath"
+        "Frost Breath",
+        "Ice Punch"
       ]
     }
   },
@@ -6150,10 +6137,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Blaze",
       "item": "Charizardite Y",
       "moves": [
-        "",
         "Heat Wave",
         "Solar Beam",
-        "Overheat"
+        "Overheat",
+        "Air Slash"
       ]
     }
   },
@@ -6195,9 +6182,9 @@ var SETDEX_SHOWDOWN={
       "item": "Abomasite",
       "moves": [
         "Blizzard",
-        "",
         "Ice Shard",
-        "Giga Drain"
+        "Giga Drain",
+        "Energy Ball"
       ]
     }
   },
@@ -6218,8 +6205,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Wild Charge",
         "Ice Fang",
-        "",
-        "Superpower"
+        "Superpower",
+        "Crunch"
       ]
     }
   },
@@ -6238,10 +6225,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Water Absorb",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Water Spout",
-        "",
-        "Shadow Ball"
+        "Shadow Ball",
+        "Scald",
+        "Ice Beam"
       ]
     }
   },
@@ -6261,9 +6248,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Fake Out",
-        "",
         "High Jump Kick",
-        "Rock Slide"
+        "Rock Slide",
+        "Drain Punch"
       ]
     }
   },
@@ -6283,9 +6270,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Horn Leech",
-        "",
         "Earthquake",
-        ""
+        "Rock Slide",
+        "Leaf Blade"
       ]
     }
   },
@@ -6351,7 +6338,7 @@ var SETDEX_SHOWDOWN={
         "Head Charge",
         "Earthquake",
         "Wild Charge",
-        ""
+        "Iron Head"
       ]
     }
   },
@@ -6371,9 +6358,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Earth Power",
-        "",
         "Rock Slide",
-        "Sludge Bomb"
+        "Sludge Bomb",
+        "Earthquake"
       ]
     }
   },
@@ -6394,8 +6381,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sludge Bomb",
         "Giga Drain",
-        "",
-        ""
+        "Solar Beam",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -6414,10 +6401,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        "Moonblast"
+        "Moonblast",
+        "Icy Wind",
+        "Dazzling Gleam",
+        "Knock Off"
       ]
     }
   },
@@ -6438,8 +6425,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Flash Cannon",
         "Thunderbolt",
-        "",
-        "Hidden Power Ice"
+        "Hidden Power Ice",
+        "Discharge"
       ]
     }
   },
@@ -6458,10 +6445,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
         "Rapid Spin",
         "Gyro Ball",
-        ""
+        "Volt Switch",
+        "Explosion"
       ]
     }
   },
@@ -6481,9 +6468,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Brave Bird",
-        "",
-        "",
-        "Iron Head"
+        "Iron Head",
+        "Rock Slide",
+        "Drill Peck"
       ]
     }
   },
@@ -6502,10 +6489,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Bug Buzz",
+        "Giga Drain",
+        "Thunderbolt",
+        "Seismic Toss"
       ]
     }
   },
@@ -6546,10 +6533,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "",
       "moves": [
-        "",
         "Gyro Ball",
-        "",
-        ""
+        "Zen Headbutt",
+        "Iron Head",
+        "Explosion"
       ]
     }
   },
@@ -6569,9 +6556,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Fake Out",
-        "",
-        "",
-        ""
+        "Icy Wind",
+        "Sucker Punch",
+        "Double-Edge"
       ]
     }
   },
@@ -6615,7 +6602,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Return",
         "Quick Attack",
-        ""
+        "Rock Slide"
       ]
     }
   },
@@ -6637,7 +6624,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Dragon Claw",
         "Rock Slide",
-        ""
+        "Iron Head"
       ]
     }
   },
@@ -6678,10 +6665,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Chlorophyll",
       "item": "",
       "moves": [
-        "",
-        "",
         "Giga Drain",
-        ""
+        "Leaf Storm",
+        "Petal Dance",
+        "Energy Ball"
       ]
     }
   },
@@ -6722,10 +6709,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        "Overheat"
+        "Overheat",
+        "Heat Wave",
+        "Focus Blast",
+        "Psychic"
       ]
     }
   },
@@ -6744,10 +6731,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Lucarionite",
       "moves": [
-        "",
         "Close Combat",
         "Bullet Punch",
-        "Flash Cannon"
+        "Flash Cannon",
+        "Aura Sphere"
       ]
     }
   },
@@ -6768,8 +6755,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "",
-        "Fire Punch"
+        "Fire Punch",
+        "Iron Head"
       ]
     }
   },
@@ -6791,7 +6778,7 @@ var SETDEX_SHOWDOWN={
         "Rock Blast",
         "Bullet Seed",
         "Tail Slap",
-        ""
+        "Knock Off"
       ]
     }
   },
@@ -6810,10 +6797,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
         "Poison Jab",
         "Megahorn",
-        ""
+        "Earthquake",
+        "Rock Slide"
       ]
     }
   },
@@ -6833,9 +6820,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Leaf Storm",
-        "",
         "Dragon Pulse",
-        "Hidden Power Rock"
+        "Hidden Power Rock",
+        "Giga Drain"
       ]
     }
   },
@@ -6857,7 +6844,7 @@ var SETDEX_SHOWDOWN={
         "Brave Bird",
         "Close Combat",
         "U-turn",
-        ""
+        "Double-Edge"
       ]
     }
   },
@@ -6900,8 +6887,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Icicle Spear",
         "Rock Blast",
-        "",
-        "Razor Shell"
+        "Razor Shell",
+        "Ice Shard"
       ]
     }
   },
@@ -6920,10 +6907,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
         "Phantom Force",
-        "",
-        "Seed Bomb"
+        "Seed Bomb",
+        "Explosion",
+        "Gyro Ball"
       ]
     }
   },
@@ -6942,10 +6929,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Intimidate",
       "item": "Salamencite",
       "moves": [
-        "",
-        "",
         "Earthquake",
-        "Double-Edge"
+        "Double-Edge",
+        "Draco Meteor",
+        "Hyper Voice"
       ]
     }
   },
@@ -6967,7 +6954,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Dragon Claw",
         "Rock Slide",
-        ""
+        "Poison Jab"
       ]
     }
   },
@@ -6986,10 +6973,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Lightning Rod",
       "item": "Thick Club",
       "moves": [
-        "",
         "Rock Slide",
         "Bonemerang",
-        "Earthquake"
+        "Earthquake",
+        "Knock Off"
       ]
     }
   },
@@ -7011,7 +6998,7 @@ var SETDEX_SHOWDOWN={
         "Blizzard",
         "Ice Beam",
         "Shadow Ball",
-        ""
+        "Icy Wind"
       ]
     }
   },
@@ -7031,9 +7018,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Earthquake",
-        "",
         "Ice Fang",
-        ""
+        "Rock Slide",
+        "Fire Fang"
       ]
     }
   },
@@ -7053,9 +7040,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Giga Drain",
-        "",
-        "",
-        ""
+        "Solar Beam",
+        "Dazzling Gleam",
+        "Leaf Storm"
       ]
     }
   },
@@ -7074,10 +7061,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
         "Seismic Toss",
-        "Flamethrower"
+        "Flamethrower",
+        "Ice Beam",
+        "Charge Beam"
       ]
     }
   },
@@ -7097,9 +7084,9 @@ var SETDEX_SHOWDOWN={
       "item": "Metagrossite",
       "moves": [
         "Zen Headbutt",
-        "",
         "Ice Punch",
-        "Meteor Mash"
+        "Meteor Mash",
+        "Bullet Punch"
       ]
     }
   },
@@ -7121,7 +7108,7 @@ var SETDEX_SHOWDOWN={
         "Ice Beam",
         "Scald",
         "Thunderbolt",
-        ""
+        "Discharge"
       ]
     }
   },
@@ -7142,8 +7129,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Heat Wave",
         "Psychic",
-        "",
-        "Psyshock"
+        "Psyshock",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -7163,9 +7150,9 @@ var SETDEX_SHOWDOWN={
       "item": "Kee Berry",
       "moves": [
         "Scald",
-        "",
-        "",
-        ""
+        "Hurricane",
+        "Hydro Pump",
+        "Air Slash"
       ]
     }
   },
@@ -7208,8 +7195,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Brave Bird",
         "Flare Blitz",
-        "",
-        ""
+        "U-turn",
+        "Overheat"
       ]
     }
   },
@@ -7228,10 +7215,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Black Sludge",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Sludge Bomb",
+        "Giga Drain",
+        "Acid Spray",
+        "Shadow Ball"
       ]
     }
   },
@@ -7250,10 +7237,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Overgrow",
       "item": "",
       "moves": [
-        "",
         "Giga Drain",
-        "",
-        ""
+        "Earthquake",
+        "Ancient Power",
+        "Dragon Tail"
       ]
     }
   },
@@ -7272,10 +7259,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Filter",
       "item": "Sitrus Berry",
       "moves": [
-        "",
         "Fake Out",
         "Dazzling Gleam",
-        ""
+        "Icy Wind",
+        "Psychic"
       ]
     }
   },
@@ -7296,8 +7283,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Razor Shell",
         "Rock Slide",
-        "",
-        ""
+        "Night Slash",
+        "Poison Jab"
       ]
     }
   },
@@ -7318,8 +7305,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Water Spout",
         "Ice Beam",
-        "",
-        ""
+        "Hydro Pump",
+        "Surf"
       ]
     }
   },
@@ -7341,7 +7328,7 @@ var SETDEX_SHOWDOWN={
         "Shadow Ball",
         "Heat Wave",
         "Energy Ball",
-        ""
+        "Overheat"
       ]
     }
   },
@@ -7361,9 +7348,9 @@ var SETDEX_SHOWDOWN={
       "item": "Flame Orb",
       "moves": [
         "Facade",
-        "",
         "Close Combat",
-        "Crunch"
+        "Crunch",
+        "Shadow Claw"
       ]
     }
   },
@@ -7404,10 +7391,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Gardevoirite",
       "moves": [
-        "",
         "Psychic",
         "Hyper Voice",
-        "Psyshock"
+        "Psyshock",
+        "Moonblast"
       ]
     }
   },
@@ -7427,9 +7414,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Earth Power",
-        "",
         "Discharge",
-        "Thunderbolt"
+        "Thunderbolt",
+        "Scald"
       ]
     }
   },
@@ -7448,10 +7435,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "",
-        "",
-        "",
-        ""
+        "Foul Play",
+        "Snarl",
+        "Brave Bird",
+        "Sucker Punch"
       ]
     }
   },
@@ -7470,10 +7457,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "",
-        "",
         "Moonblast",
-        ""
+        "Dazzling Gleam",
+        "Energy Ball",
+        "Psyshock"
       ]
     }
   },
@@ -7494,8 +7481,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Weather Ball",
         "Thunder",
-        "",
-        "Hurricane"
+        "Hurricane",
+        "Blizzard"
       ]
     }
   },
@@ -7515,9 +7502,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Giga Drain",
-        "",
         "Ancient Power",
-        ""
+        "Earth Power",
+        "Sludge Bomb"
       ]
     }
   },
@@ -7538,8 +7525,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Hurricane",
         "Heat Wave",
-        "",
-        ""
+        "Hidden Power Ice",
+        "Hyper Beam"
       ]
     }
   },
@@ -7583,7 +7570,7 @@ var SETDEX_SHOWDOWN={
         "Sludge Bomb",
         "Giga Drain",
         "Leaf Storm",
-        ""
+        "Dazzling Gleam"
       ]
     }
   },
@@ -7604,8 +7591,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Flare Blitz",
         "Drill Run",
-        "",
-        ""
+        "Wild Charge",
+        "Heat Wave"
       ]
     }
   },
@@ -7647,9 +7634,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Scald",
-        "",
         "Ice Beam",
-        "Snarl"
+        "Snarl",
+        "Icy Wind"
       ]
     }
   },
@@ -7668,10 +7655,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        "Phantom Force"
+        "Phantom Force",
+        "Seed Bomb",
+        "Shadow Sneak",
+        "Flamethrower"
       ]
     }
   },
@@ -7693,7 +7680,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Ice Shard",
         "Rock Slide",
-        ""
+        "Knock Off"
       ]
     }
   },
@@ -7714,8 +7701,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earth Power",
         "Ice Beam",
-        "",
-        "Scald"
+        "Scald",
+        "Muddy Water"
       ]
     }
   },
@@ -7756,10 +7743,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
-        "",
-        "",
-        "",
-        "Sludge Bomb"
+        "Sludge Bomb",
+        "Giga Drain",
+        "Crunch",
+        "Knock Off"
       ]
     }
   },
@@ -7780,8 +7767,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Crunch",
-        "",
-        "Ice Beam"
+        "Ice Beam",
+        "Ice Punch"
       ]
     }
   },
@@ -7800,10 +7787,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Thick Fat",
       "item": "Leftovers",
       "moves": [
-        "",
         "Body Slam",
-        "",
-        ""
+        "Seismic Toss",
+        "Return",
+        "Earthquake"
       ]
     }
   },
@@ -7822,10 +7809,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "",
-        "",
         "Bug Buzz",
-        "Giga Drain"
+        "Giga Drain",
+        "Acid Spray",
+        "Sludge Bomb"
       ]
     }
   },
@@ -7845,9 +7832,9 @@ var SETDEX_SHOWDOWN={
       "item": "Sitrus Berry",
       "moves": [
         "Fake Out",
-        "",
-        "",
-        ""
+        "Ice Beam",
+        "Frost Breath",
+        "Icy Wind"
       ]
     }
   },
@@ -7866,10 +7853,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Black Sludge",
       "moves": [
-        "",
         "Poison Jab",
         "Gunk Shot",
-        "Shadow Sneak"
+        "Shadow Sneak",
+        "Power-Up Punch"
       ]
     }
   },
@@ -7891,7 +7878,7 @@ var SETDEX_SHOWDOWN={
         "Fake Out",
         "Knock Off",
         "Leaf Blade",
-        ""
+        "Rock Slide"
       ]
     }
   },
@@ -7913,7 +7900,7 @@ var SETDEX_SHOWDOWN={
         "Freeze-Dry",
         "Ice Beam",
         "Flash Cannon",
-        ""
+        "Icy Wind"
       ]
     }
   },
@@ -7935,7 +7922,7 @@ var SETDEX_SHOWDOWN={
         "Icicle Crash",
         "Superpower",
         "Aqua Jet",
-        ""
+        "Rock Slide"
       ]
     }
   },
@@ -7956,8 +7943,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Ice Beam",
         "Thunderbolt",
-        "",
-        "Icy Wind"
+        "Icy Wind",
+        "Flash Cannon"
       ]
     }
   },
@@ -8001,7 +7988,7 @@ var SETDEX_SHOWDOWN={
         "Psychic",
         "Dazzling Gleam",
         "Shadow Ball",
-        ""
+        "Psyshock"
       ]
     }
   },
@@ -8022,8 +8009,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Shadow Sneak",
         "X-Scissor",
-        "",
-        ""
+        "Phantom Force",
+        "Shadow Claw"
       ]
     }
   },
@@ -8066,8 +8053,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Fake Out",
         "Close Combat",
-        "",
-        ""
+        "Feint",
+        "Mach Punch"
       ]
     }
   },
@@ -8088,8 +8075,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Draco Meteor",
         "Muddy Water",
-        "",
-        "Ice Beam"
+        "Ice Beam",
+        "Dragon Pulse"
       ]
     }
   }
