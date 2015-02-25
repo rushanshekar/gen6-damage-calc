@@ -1,7 +1,8 @@
 var SETDEX_XY = {};
 
 var components = [
-	SETDEX_SHOWDOWN
+	SETDEX_SHOWDOWN,
+    SETDEX_NUGGETBRIDGE
 ];
 
 for (var i=0; i<components.length; i++) {

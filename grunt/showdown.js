@@ -94,11 +94,11 @@ module.exports = function (grunt) {
     }
 
     function findSets(fn) {
-        // This is the cheesy way to read valid JSON.
         var data = {};
         var sets = {};
         try {
             grunt.log.ok('Reading data file ' + fn);
+            // This is the cheesy way to read valid JSON.
             data = require(process.cwd() + '/' + fn);
         } catch (e) { 
             grunt.fail.fatal('Failed to require the data file: ' + fn);

@@ -138,6 +138,10 @@ module.exports = function (grunt) {
             genFile: 'setdex_showdown.js'
 
         },
+        nuggets: {
+            rawFile: 'nbReports/report_sets.txt',
+            genFile: 'setdex_nuggetBridge.js'
+        },
         globalLinkDownload: {
             rawDir: '<%= globalLink.rawDir %>',
             request: {
@@ -173,5 +177,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-http');
 
     grunt.registerTask('default', ['showdown']);
-    grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink']);
+    grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink', 'nuggets']);
 };
