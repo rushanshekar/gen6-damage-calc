@@ -65,3 +65,5 @@ Adamant Nature
 - Double-Edge
 - Sucker Punch
 - Low Kick
+
+// Always leave a blank line after the last Pokemon, please!

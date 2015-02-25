@@ -1,3 +1,5 @@
+var extend = require('jquery-extend');
+
 module.exports = function (grunt) {
 
     var showdown_parser = (function() {
@@ -187,7 +189,11 @@ module.exports = function (grunt) {
         for (var i=0; i<data.length; i++) {
             grunt.log.write('.');
             var formeName = getFormeName(data[i].pokemon);
-            sets[formeName] = individualSet(data[i]);
+            if (sets[formeName]) {
+                sets[formeName] = extend(sets[formeName], individualSet(data[i]));
+            } else {
+                sets[formeName] = individualSet(data[i]);
+            }
         }
         grunt.log.ok();
 
