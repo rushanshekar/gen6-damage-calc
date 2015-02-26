@@ -9135,6 +9135,8 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
   "Metagross": { "formes": ["Metagross", "Mega Metagross"] },
   "Latias": { "formes": ["Latias", "Mega Latias"] },
   "Latios": { "formes": ["Latios", "Mega Latios"] },
+  "Kyogre": { "formes": ["Kyogre", "Primal Kyogre"] },
+  "Groudon": { "formes": ["Groudon", "Primal Groudon"] },
   "Rayquaza": { "formes": ["Rayquaza", "Mega Rayquaza"] },
   "Staraptor": { "bs": { "sd": 60 } },
   "Roserade": { "bs": { "df": 65 } },
