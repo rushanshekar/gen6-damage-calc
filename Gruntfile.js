@@ -175,7 +175,8 @@ module.exports = function (grunt) {
     grunt.loadTasks('grunt');
 
     grunt.loadNpmTasks('grunt-http');
-
+    grunt.loadNpmTasks('grunt-bump');
+    
     grunt.registerTask('default', ['showdown']);
     grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink', 'nuggets']);
 };
