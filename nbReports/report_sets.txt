@@ -1,3 +1,71 @@
+== Metatyph6's Winter 2015 Darude ==
+Darude (Tyranitar) @ Tyranitarite
+Ability: Sand Stream
+Level: 50
+EVs: 196 HP / 252 SpA / 60 Spe
+Modest Nature
+- Ice Beam
+- Rock Slide
+- Fire Blast
+- Protect
+
+== Metatyph6's Winter 2015 Guacamole ==
+Guacamole (Excadrill) @ White Herb
+Ability: Sand Rush
+Level: 50
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Earthquake
+- Iron Head
+- Rock Slide
+- Protect
+
+== Metatyph6's Winter 2015 CrayCrayLovr ==
+CrayCrayLovr (Cradily) @ Sitrus Berry
+Ability: Storm Drain
+Level: 50
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Giga Drain
+- Ancient Power
+- Gastro Acid
+- Protect
+
+== Metatyph6's Winter 2015 Bravest Bird ==
+Bravest Bird (Talonflame) @ Life Orb
+Ability: Gale Wings
+Level: 50
+EVs: 252 Atk / 44 SpA / 212 Spe
+Adamant Nature
+- Brave Bird
+- Overheat
+- Quick Guard
+- Protect
+
+== Metatyph6's Winter 2015 Voltergeist ==
+Voltergeist (Thundurus) @ Safety Goggles
+Ability: Prankster
+Level: 50
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+IVs: 30 Atk / 30 Def
+- Thunderbolt
+- Hidden Power [Ice]
+- Taunt
+- Protect
+
+== Metatyph6's Winter 2015 Blade Works ==
+Blade Works (Aegislash) @ Weakness Policy
+Ability: Stance Change
+Level: 50
+EVs: 252 HP / 4 Atk / 252 SpA
+Quiet Nature
+IVs: 0 Spe
+- Shadow Ball
+- Sacred Sword
+- Flash Cannon
+- King’s Shield
+
 == Guru Fernandez's Winter 2015 REGIS MK-V ==
 REGIS MK-V (Metagross) @ Metagrossite
 Ability: Clear Body
