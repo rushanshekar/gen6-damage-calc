@@ -760,8 +760,13 @@ function getSelectOptions(arr, sort) {
         arr.sort();
     }
     var r = '';
+    var selected = '';
     for (var i = 0; i < arr.length; i++) {
-        r += '<option value="' + arr[i] + '">' + arr[i] + '</option>';
+        // We always want the last, because that's going to be the mega.. or possibly the Mega Y.
+        if (i === arr.length-1) {
+            selected = 'selected="selected"';
+        }
+        r += '<option value="' + arr[i] + '"' + selected + '>' + arr[i] + '</option>';
     }
     return r;
 }
