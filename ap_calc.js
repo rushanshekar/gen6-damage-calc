@@ -339,7 +339,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
         }
     }
     */
-    formeObj.children("select").find("option").remove().end().append(formeOptions);
+    formeObj.children("select").find("option").remove().end().append(formeOptions).change();
     formeObj.show();
 }
 
