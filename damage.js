@@ -552,11 +552,6 @@ function getDamageResult(attacker, defender, move, field) {
     return {"damage": pbDamage.length ? pbDamage.sort() : damage, "description": buildDescription(description)};
 }
 
-function onlyUnique(value, index, self) {
-    // http://stackoverflow.com/a/14438954
-    return self.indexOf(value) === index;
-}
-
 function buildDescription(description) {
     var output = "";
     if (description.attackBoost) {
