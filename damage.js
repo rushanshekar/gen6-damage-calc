@@ -524,7 +524,8 @@ function getDamageResult(attacker, defender, move, field) {
     }
     var finalMod = chainMods(finalMods);
     
-    var damage = [];
+    var damage = [], pbDamage = [];
+    var child, childMove, childDamage, j;
     for (var i = 0; i < 16; i++) {
         damage[i] = Math.floor(baseDamage * (85 + i) / 100);
         damage[i] = pokeRound(damage[i] * stabMod / 0x1000);
@@ -534,14 +535,22 @@ function getDamageResult(attacker, defender, move, field) {
         }
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
-
-        // is 2nd hit half BP? half attack? half damage range? keeping it as a flat 1.5x until I know the specifics
         if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
-            damage[i] = Math.floor(damage[i] * 3/2);
+            child = $.extend({}, attacker, {ability: ""});
+            childMove = $.extend({}, move, {bp: move.bp / 2});
+            childDamage = getDamageResult(child, defender, childMove, field).damage;
+            for (j = 0; j < 16; j++) {
+                pbDamage[(16 * i) + j] = damage[i] + childDamage[j];
+            }
             description.attackerAbility = attacker.ability;
         }
     }
-    return {"damage":damage, "description":buildDescription(description)};
+    return {"damage": pbDamage.length ? pbDamage.filter(onlyUnique) : damage, "description": buildDescription(description)};
+}
+
+function onlyUnique(value, index, self) {
+    // http://stackoverflow.com/a/14438954
+    return self.indexOf(value) === index;
 }
 
 function buildDescription(description) {
