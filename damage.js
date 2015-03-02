@@ -536,7 +536,11 @@ function getDamageResult(attacker, defender, move, field) {
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
         if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
-            child = $.extend({}, attacker, {ability: ""});
+            child = $.extend(true, {}, attacker, {ability: ""});
+            if (move.name === 'Power-Up Punch') {
+                child.boosts[AT]++;
+                child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
+            }
             childMove = $.extend({}, move, {bp: move.bp / 2});
             childDamage = getDamageResult(child, defender, childMove, field).damage;
             for (j = 0; j < 16; j++) {
@@ -545,7 +549,7 @@ function getDamageResult(attacker, defender, move, field) {
             description.attackerAbility = attacker.ability;
         }
     }
-    return {"damage": pbDamage.length ? pbDamage.filter(onlyUnique) : damage, "description": buildDescription(description)};
+    return {"damage": pbDamage.length ? pbDamage.sort() : damage, "description": buildDescription(description)};
 }
 
 function onlyUnique(value, index, self) {
