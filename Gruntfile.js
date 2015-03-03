@@ -75,7 +75,9 @@ module.exports = function (grunt) {
             'Steelixite',
             'Swampertite',
             'Tyranitarite',
-            'Venusaurite'
+            'Venusaurite',
+            'Red Orb',
+            'Blue Orb'
             ]);
 
         function simpleLeven(inKey, ary) {
