@@ -1,3 +1,69 @@
+== KellsterCartier's Spring 2015 Metagross ==
+Metagross @ Metagrossite
+Ability: Clear Body
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Bullet Punch
+- Zen Headbutt
+- Ice Punch
+- Protect
+
+== KellsterCartier's Spring 2015 Hydreigon ==
+Hydreigon @ Life Orb
+Ability: Levitate
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Dark Pulse
+- Protect
+- Fire Blast
+- Draco Meteor
+
+== KellsterCartier's Spring 2015 Landorus ==
+Landorus-Therian @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 116 HP / 252 Atk / 4 Def / 4 SpD / 132 Spe
+Adamant Nature
+- Earthquake
+- Rock Slide
+- Knock Off
+- U-turn
+
+== KellsterCartier's Spring 2015 Terrakion ==
+Terrakion @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 116 HP / 140 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Rock Slide
+- Quick Guard
+- Protect
+
+== KellsterCartier's Spring 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 236 HP / 116 Def / 128 SpD / 28 Spe
+Calm Nature
+- Thunder Wave
+- Thunderbolt
+- Protect
+- Taunt
+
+== KellsterCartier's Spring 2015 Lapras ==
+Lapras @ Weakness Policy
+Ability: Water Absorb
+Level: 50
+EVs: 228 HP / 124 Def / 156 SpA
+Calm Nature
+- Ice Shard
+- Hydro Pump
+- Freeze-Dry
+- Protect
+
 == Metatyph6's Winter 2015 Darude ==
 Darude (Tyranitar) @ Tyranitarite
 Ability: Sand Stream
