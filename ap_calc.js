@@ -487,7 +487,11 @@ $(".result-move").change(function() {
         var result = findDamageResult($(this));
         if (result) {
             $("#mainResult").text(result.description + ": " + result.damageText + " -- " + result.koChanceText);
-            $("#damageValues").text("(" + result.damage.join(", ") + ")");
+            if (result.damage.length === 256) {
+                $("#damageValues").text("");
+            } else {
+                $("#damageValues").text("(" + result.damage.join(", ") + ")");
+            }
         }
     }
 });
