@@ -151,7 +151,9 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         if (c === 1) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (c > 0) {
-            return qualifier + Math.round(c * 1000) / 10 + '% chance to ' + i + 'HKO' + afterText;
+            var pct = Math.round(c * 1000) / 10;
+            var chance = pct ? qualifier + pct + '%' : 'Miniscule';
+            return chance + ' chance to ' + i + 'HKO' + afterText;
         }
     }
 
