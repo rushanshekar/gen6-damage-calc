@@ -1,4 +1,239 @@
 var SETDEX_NUGGETBRIDGE={
+  "Metagross": {
+    "KellsterCartier's Spring 2015 Metagross": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Bullet Punch",
+        "Zen Headbutt",
+        "Ice Punch",
+        ""
+      ]
+    },
+    "Guru Fernandez's Winter 2015 REGIS MK-V": {
+      "level": 50,
+      "evs": {
+        "hp": "156",
+        "at": "156",
+        "sp": "196"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Iron Head",
+        "Zen Headbutt",
+        "Ice Punch",
+        ""
+      ]
+    }
+  },
+  "Hydreigon": {
+    "KellsterCartier's Spring 2015 Hydreigon": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Life Orb",
+      "moves": [
+        "Dark Pulse",
+        "",
+        "Fire Blast",
+        "Draco Meteor"
+      ]
+    },
+    "Guru Fernandez's Winter 2015 Trigun": {
+      "level": 50,
+      "evs": {
+        "hp": "28",
+        "df": "36",
+        "sa": "244",
+        "sd": "4",
+        "sp": "196"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Dark Pulse",
+        "Draco Meteor",
+        "Fire Blast",
+        "Earth Power"
+      ]
+    }
+  },
+  "Landorus-T": {
+    "KellsterCartier's Spring 2015 Landorus": {
+      "level": 50,
+      "evs": {
+        "hp": "116",
+        "at": "252",
+        "df": "4",
+        "sd": "4",
+        "sp": "132"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Knock Off",
+        "U-turn"
+      ]
+    }
+  },
+  "Terrakion": {
+    "KellsterCartier's Spring 2015 Terrakion": {
+      "level": 50,
+      "evs": {
+        "hp": "116",
+        "at": "140",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Rock Slide",
+        "",
+        ""
+      ]
+    },
+    "Guru Fernandez's Winter 2015 Oxford": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Rock Slide",
+        "Close Combat",
+        "",
+        ""
+      ]
+    }
+  },
+  "Thundurus": {
+    "KellsterCartier's Spring 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "116",
+        "sd": "128",
+        "sp": "28"
+      },
+      "nature": "Calm",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "",
+        "Thunderbolt",
+        "",
+        ""
+      ]
+    },
+    "Metatyph6's Winter 2015 Voltergeist": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "30",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "Safety Goggles",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "",
+        ""
+      ]
+    },
+    "Guru Fernandez's Winter 2015 Voltolos": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "140",
+        "sa": "36",
+        "sd": "68",
+        "sp": "20"
+      },
+      "ivs": {
+        "sp": "30"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "",
+        ""
+      ]
+    },
+    "Level 51's Winter 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "104",
+        "sa": "60",
+        "sp": "108"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "",
+        "",
+        "Hidden Power Ice"
+      ]
+    }
+  },
+  "Lapras": {
+    "KellsterCartier's Spring 2015 Lapras": {
+      "level": 50,
+      "evs": {
+        "hp": "228",
+        "df": "124",
+        "sa": "156"
+      },
+      "nature": "Calm",
+      "ability": "Water Absorb",
+      "item": "",
+      "moves": [
+        "Ice Shard",
+        "Hydro Pump",
+        "Freeze-Dry",
+        ""
+      ]
+    }
+  },
   "Tyranitar": {
     "Metatyph6's Winter 2015 Darude": {
       "level": 50,
@@ -92,73 +327,6 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Thundurus": {
-    "Metatyph6's Winter 2015 Voltergeist": {
-      "level": 50,
-      "evs": {
-        "sa": "252",
-        "sd": "4",
-        "sp": "252"
-      },
-      "ivs": {
-        "at": "30",
-        "df": "30"
-      },
-      "nature": "Timid",
-      "ability": "",
-      "item": "Safety Goggles",
-      "moves": [
-        "Thunderbolt",
-        "Hidden Power Ice",
-        "",
-        ""
-      ]
-    },
-    "Guru Fernandez's Winter 2015 Voltolos": {
-      "level": 50,
-      "evs": {
-        "hp": "244",
-        "df": "140",
-        "sa": "36",
-        "sd": "68",
-        "sp": "20"
-      },
-      "ivs": {
-        "sp": "30"
-      },
-      "nature": "Bold",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "Hidden Power Ice",
-        "",
-        ""
-      ]
-    },
-    "Level 51's Winter 2015 Thundurus": {
-      "level": 50,
-      "evs": {
-        "hp": "236",
-        "df": "104",
-        "sa": "60",
-        "sp": "108"
-      },
-      "ivs": {
-        "at": "0",
-        "df": "30"
-      },
-      "nature": "Modest",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "",
-        "",
-        "Hidden Power Ice"
-      ]
-    }
-  },
   "Aegislash": {
     "Metatyph6's Winter 2015 Blade Works": {
       "level": 50,
@@ -178,46 +346,6 @@ var SETDEX_NUGGETBRIDGE={
         "Sacred Sword",
         "Flash Cannon",
         ""
-      ]
-    }
-  },
-  "Metagross": {
-    "Guru Fernandez's Winter 2015 REGIS MK-V": {
-      "level": 50,
-      "evs": {
-        "hp": "156",
-        "at": "156",
-        "sp": "196"
-      },
-      "nature": "Jolly",
-      "ability": "Clear Body",
-      "item": "Metagrossite",
-      "moves": [
-        "Iron Head",
-        "Zen Headbutt",
-        "Ice Punch",
-        ""
-      ]
-    }
-  },
-  "Hydreigon": {
-    "Guru Fernandez's Winter 2015 Trigun": {
-      "level": 50,
-      "evs": {
-        "hp": "28",
-        "df": "36",
-        "sa": "244",
-        "sd": "4",
-        "sp": "196"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Choice Specs",
-      "moves": [
-        "Dark Pulse",
-        "Draco Meteor",
-        "Fire Blast",
-        "Earth Power"
       ]
     }
   },
@@ -257,25 +385,6 @@ var SETDEX_NUGGETBRIDGE={
         "Scald",
         "Ice Beam",
         "Hydro Pump",
-        ""
-      ]
-    }
-  },
-  "Terrakion": {
-    "Guru Fernandez's Winter 2015 Oxford": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Rock Slide",
-        "Close Combat",
-        "",
         ""
       ]
     }
