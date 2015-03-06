@@ -630,6 +630,12 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         category: 'Physical',
         makesContact: true
     },
+    'Luster Purge': {
+        bp: 70,
+        type: 'Psychic',
+        category: 'Special',
+        hasSecondaryEffect: true
+    },
     'Meteor Mash': {
         bp: 100,
         type: 'Steel',
@@ -1039,6 +1045,12 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         type: 'Fire',
         category: 'Special'
     },
+    'Mud Bomb': {
+        bp: 65,
+        type: 'Ground',
+        category: 'Special',
+        hasSecondaryEffect: true
+    },
     'Natural Gift': {
         bp: 1,
         type: 'Normal',
@@ -1426,6 +1438,12 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         category: 'Special',
         isSpread: true
     },
+    'Inferno': {
+        bp: 100,
+        type: 'Fire',
+        category: 'Special',
+        hasSecondaryEffect: true
+    },
     'Jump Kick': { bp: 100 },
     'Low Sweep': {
         bp: 60,
@@ -1620,6 +1638,12 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         makesContact: true
     },
     'Dragon Pulse': { bp: 85 },
+    'Draining Kiss': {
+        bp: 50,
+        type: 'Fairy',
+        category: 'Special',
+        makesContact: true,
+    },
     'Energy Ball': { bp: 90 },
     'Facade': { ignoresBurn: true },
     'Fire Blast': { bp: 110 },
