@@ -321,24 +321,24 @@ $(".set-selector").change(function() {
 });
 
 function showFormes(formeObj, setName, pokemonName, pokemon) {
-    var formeOptions = getSelectOptions(pokemon.formes);
-    // Well whaddya know, it looks like all the forme filtering is easy enough to remove.
-    /*
-    if (setName !== "Blank Set") {
+    var defaultForme = 0;
+
+    if (setName !== 'Blank Set') {
         var set = setdex[pokemonName][setName];
-        if (set.item.indexOf("ite") === -1 && pokemonName !== "Aegislash" &&
-                (pokemonName !== "Meloetta" || set.moves.indexOf("Relic Song") === -1) &&
-                (pokemonName !== "Groudon" || set.item.indexOf("Red Orb") === -1) &&
-                (pokemonName !== "Kyogre" || set.item.indexOf("Blue Orb") === -1) &&
-                (pokemonName !== "Rayquaza" || set.moves.indexOf("Dragon Ascent") === -1)) {
-            formeOptions = getSelectOptions([pokemon.formes[0]]);
-        } else if (set.item.indexOf("X") > -1) {
-            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[1]]);
-        } else if (set.item.indexOf("Y") > -1) {
-            formeOptions = getSelectOptions([pokemon.formes[0], pokemon.formes[2]]);
+
+        // Repurpose the previous filtering code to provide the "different default" logic
+        if ((set.item.indexOf('ite') !== -1 && set.item.indexOf('ite Y') === -1) ||
+            (pokemonName === "Groudon" && set.item.indexOf("Red Orb") !== -1) ||
+            (pokemonName === "Kyogre" && set.item.indexOf("Blue Orb") !== -1) ||
+            (pokemonName === "Meloetta" && set.moves.indexOf("Relic Song") !== -1) ||
+            (pokemonName === "Rayquaza" && set.moves.indexOf("Dragon Ascent") !== -1)) {
+            defaultForme = 1;
+        } else if (set.item.indexOf('ite Y') !== -1) {
+            defaultForme = 2;
         }
     }
-    */
+
+    var formeOptions = getSelectOptions(pokemon.formes, false, defaultForme);
     formeObj.children("select").find("option").remove().end().append(formeOptions).change();
     formeObj.show();
 }
@@ -759,18 +759,21 @@ function getSetOptions() {
     return setOptions;
 }
 
-function getSelectOptions(arr, sort) {
+function getSelectOptions(arr, sort, defaultIdx) {
     if (sort) {
         arr.sort();
     }
     var r = '';
-    var selected = '';
+    // Zero is of course falsy too, but this is mostly to coerce undefined.
+    if (!defaultIdx) {
+        defaultIdx = 0;
+    }
     for (var i = 0; i < arr.length; i++) {
-        // We always want the last, because that's going to be the mega.. or possibly the Mega Y.
-        if (i === arr.length-1) {
-            selected = 'selected="selected"';
+        if (i === defaultIdx) {
+            r += '<option value="' + arr[i] + '" selected="selected">' + arr[i] + '</option>';
+        } else {
+            r += '<option value="' + arr[i] + '">' + arr[i] + '</option>';
         }
-        r += '<option value="' + arr[i] + '"' + selected + '>' + arr[i] + '</option>';
     }
     return r;
 }
