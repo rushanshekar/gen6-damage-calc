@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     var showdown_parser = (function() {
 
         var nameLinePat = /^== (.*)'s (.*) ==$/
-        var pokeAndItemLinePat = /^(.+?)\s?(\([^\)]*\))?\s?(?:\([MF]\))? @ (.*)$/;
+        var pokeAndItemLinePat = /^(.+?)\s?(\([^\)]*\))?\s?(?:\([MF]\))?(?: @ (.*))?$/;
         var abilityLinePat = /^Ability: (.*)$/;
         var natureLinePat = /^(.*) Nature$/;
         var evsLinePat = /^EVs:/;
