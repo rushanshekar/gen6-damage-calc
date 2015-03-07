@@ -1,6 +1,6 @@
 {
   "name": "gen6-damage-calc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "VGC-specific fork of Honko and Gamut's Pokemon damage calculator",
   "main": "index.html",
   "repository": {
