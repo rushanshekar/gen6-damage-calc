@@ -48,6 +48,9 @@ $(".sd .base, .sd .evs, .sd .ivs").bind("keyup change", function() {
 $(".sp .base, .sp .evs, .sp .ivs").bind("keyup change", function() {
     calcStat($(this).closest(".poke-info"), 'sp');
 });
+$(".evs").bind("keyup change", function() {
+    calcEvTotal($(this).closest(".poke-info"));
+});
 $(".sl .base").keyup(function() {
     calcStat($(this).closest(".poke-info"), 'sl');
 });
@@ -95,6 +98,16 @@ function calcStats(poke) {
     for (var i = 0; i < STATS.length; i++) {
         calcStat(poke, STATS[i]);
     }
+}
+
+function calcEvTotal(poke) {
+    var total = 0;
+    poke.find('.evs').each(function (idx, elt) { total += 1*$(elt).val(); });
+
+    var newClass = total > 510 ? 'overLimit' : 'underLimit';
+
+    var evTotal = poke.find('.ev-total');
+    evTotal.removeClass('underLimit overLimit').text(total).addClass(newClass);
 }
 
 function calcCurrentHP(poke, max, percent) {
@@ -315,6 +328,7 @@ $(".set-selector").change(function() {
         }
         calcHP(pokeObj);
         calcStats(pokeObj);
+        calcEvTotal(pokeObj);
         abilityObj.change();
         itemObj.change();
     }
