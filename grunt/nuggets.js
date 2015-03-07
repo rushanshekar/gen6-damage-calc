@@ -8,9 +8,11 @@ module.exports = function (grunt) {
         var pokeAndItemLinePat = /^(.+?)\s?(\([^\)]*\))?\s?(?:\([MF]\))?(?: @ (.*))?$/;
         var abilityLinePat = /^Ability: (.*)$/;
         var natureLinePat = /^(.*) Nature$/;
+        var levelLinePat = /^Level: (.*)$/;
         var evsLinePat = /^EVs:/;
         var ivsLinePat = /^IVs:/;
         var moveLinePat = /^-\s?(.*)$/;
+        var commentLinePat = /^(\/\/)/;
 
         function parseValues(line) {
             // line looks like:
@@ -89,26 +91,18 @@ module.exports = function (grunt) {
                             finalizePoke(curPoke, allPokes);
                         }
                         curPoke = {};
+                    } else if (commentLinePat.test(curLine)) {
+                        // It's a comment, what did you expect to happen?
                     } else if (nameLinePat.test(curLine)) { 
                         bits = nameLinePat.exec(curLine);
                         curPoke.title = bits[1] + "'s " + bits[2];
                         curPoke.creator = bits[1];
-                    } else if (pokeAndItemLinePat.test(curLine)) {
-                        bits = pokeAndItemLinePat.exec(curLine);
-
-                        // If bits[2] is length 3, then it's '(M)' or '(F)'.  Which isn't a Pokemon.
-                        if (bits[2] && bits[2].length !== 3) {
-                            curPoke.nickname = bits[1];
-                            curPoke.pokemon = bits[2].slice(1,bits[2].length-1);
-                            curPoke.heldItem = bits[3];
-                        } else {
-                            curPoke.pokemon = bits[1];
-                            curPoke.heldItem = bits[3];
-                        }
                     } else if (abilityLinePat.test(curLine)) {
                         bits = abilityLinePat.exec(curLine);
 
                         curPoke.ability = bits[1];
+                    } else if (levelLinePat.test(curLine)) {
+                        // We just want them to be level 50, so we're not going to do anything here.
                     } else if (natureLinePat.test(curLine)) {
                         bits = natureLinePat.exec(curLine);
 
@@ -124,6 +118,18 @@ module.exports = function (grunt) {
                             curPoke.moves.push(bits[1]);
                         } else {
                             curPoke.moves = [bits[1]];
+                        }
+                    } else if (pokeAndItemLinePat.test(curLine)) {
+                        bits = pokeAndItemLinePat.exec(curLine);
+
+                        // If bits[2] is length 3, then it's '(M)' or '(F)'.  Which isn't a Pokemon.
+                        if (bits[2] && bits[2].length !== 3) {
+                            curPoke.nickname = bits[1];
+                            curPoke.pokemon = bits[2].slice(1,bits[2].length-1);
+                            curPoke.heldItem = bits[3];
+                        } else {
+                            curPoke.pokemon = bits[1];
+                            curPoke.heldItem = bits[3];
                         }
                     }
                 }
@@ -189,7 +195,9 @@ module.exports = function (grunt) {
         for (var i=0; i<data.length; i++) {
             grunt.log.write('.');
             var formeName = getFormeName(data[i].pokemon);
-            if (sets[formeName]) {
+            if (!formeName || formeName === 'undefined') {
+                grunt.fail.warn('Pokemon line failed to parse! "' + JSON.stringify(data[i]) + '"');
+            } else if (sets[formeName]) {
                 sets[formeName] = extend(sets[formeName], individualSet(data[i]));
             } else {
                 sets[formeName] = individualSet(data[i]);
