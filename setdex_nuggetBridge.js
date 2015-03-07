@@ -1,4 +1,165 @@
 var SETDEX_NUGGETBRIDGE={
+  "Kangaskhan": {
+    "amr97's Spring 2015 My Song": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Fake Out",
+        "Return",
+        "Power-Up Punch",
+        "Sucker Punch"
+      ]
+    },
+    "Level 51's Winter 2015 #BANKANGA’15": {
+      "level": 50,
+      "evs": {
+        "hp": "212",
+        "at": "108",
+        "df": "60",
+        "sd": "20",
+        "sp": "108"
+      },
+      "nature": "Adamant",
+      "ability": "Scrappy",
+      "item": "Kangaskhanite",
+      "moves": [
+        "Fake Out",
+        "Double-Edge",
+        "Sucker Punch",
+        "Low Kick"
+      ]
+    }
+  },
+  "Azumarill": {
+    "amr97's Spring 2015 Trial Dance": {
+      "level": 50,
+      "evs": {
+        "hp": "196",
+        "at": "252",
+        "df": "20",
+        "sd": "12",
+        "sp": "28"
+      },
+      "nature": "Adamant",
+      "ability": "Huge Power",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Aqua Jet",
+        "Play Rough",
+        "",
+        ""
+      ]
+    }
+  },
+  "Amoonguss": {
+    "amr97's Spring 2015 Flower Girl": {
+      "level": 50,
+      "evs": {
+        "hp": "188",
+        "df": "164",
+        "sd": "156"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Sassy",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "",
+        "",
+        "Giga Drain",
+        ""
+      ]
+    }
+  },
+  "Rotom-H": {
+    "amr97's Spring 2015 Smile Taisou": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "108",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Safety Goggles",
+      "moves": [
+        "Thunderbolt",
+        "Overheat",
+        "",
+        ""
+      ]
+    }
+  },
+  "Landorus-T": {
+    "amr97's Spring 2015 BANGxBANG": {
+      "level": 50,
+      "evs": {
+        "hp": "12",
+        "at": "252",
+        "df": "92",
+        "sd": "4",
+        "sp": "148"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Knock Off",
+        "Superpower"
+      ]
+    },
+    "KellsterCartier's Spring 2015 Landorus": {
+      "level": 50,
+      "evs": {
+        "hp": "116",
+        "at": "252",
+        "df": "4",
+        "sd": "4",
+        "sp": "132"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Knock Off",
+        "U-turn"
+      ]
+    }
+  },
+  "Bisharp": {
+    "amr97's Spring 2015 Smoky Thrill": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "item": "Life Orb",
+      "moves": [
+        "Sucker Punch",
+        "Iron Head",
+        "Assurance",
+        ""
+      ]
+    }
+  },
   "Metagross": {
     "KellsterCartier's Spring 2015 Metagross": {
       "level": 50,
@@ -70,27 +231,6 @@ var SETDEX_NUGGETBRIDGE={
         "Draco Meteor",
         "Fire Blast",
         "Earth Power"
-      ]
-    }
-  },
-  "Landorus-T": {
-    "KellsterCartier's Spring 2015 Landorus": {
-      "level": 50,
-      "evs": {
-        "hp": "116",
-        "at": "252",
-        "df": "4",
-        "sd": "4",
-        "sp": "132"
-      },
-      "nature": "Adamant",
-      "ability": "Intimidate",
-      "item": "Choice Scarf",
-      "moves": [
-        "Earthquake",
-        "Rock Slide",
-        "Knock Off",
-        "U-turn"
       ]
     }
   },
@@ -573,27 +713,6 @@ var SETDEX_NUGGETBRIDGE={
         "Power Whip",
         "",
         ""
-      ]
-    }
-  },
-  "Kangaskhan": {
-    "Level 51's Winter 2015 #BANKANGA’15": {
-      "level": 50,
-      "evs": {
-        "hp": "212",
-        "at": "108",
-        "df": "60",
-        "sd": "20",
-        "sp": "108"
-      },
-      "nature": "Adamant",
-      "ability": "Scrappy",
-      "item": "Kangaskhanite",
-      "moves": [
-        "Fake Out",
-        "Double-Edge",
-        "Sucker Punch",
-        "Low Kick"
       ]
     }
   }
