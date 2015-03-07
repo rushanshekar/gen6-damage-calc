@@ -535,10 +535,10 @@ function Pokemon(pokeInfo) {
     this.maxHP = ~~pokeInfo.find(".hp .total").text();
     this.curHP = ~~pokeInfo.find(".current-hp").val();
     this.HPEVs = ~~pokeInfo.find(".hp .evs").val();
-    this.rawStats = [];
-    this.boosts = [];
-    this.stats = [];
-    this.evs = [];
+    this.rawStats = {};
+    this.boosts = {};
+    this.stats = {};
+    this.evs = {};
     for (var i = 0; i < STATS.length; i++) {
         this.rawStats[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .total").text();
         this.boosts[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .boost").val();
