@@ -1,3 +1,69 @@
+== rapha's Spring 2015 Elmo ==
+Elmo (Politoed) @ Leftovers
+Ability: Drizzle
+Level: 50
+EVs: 212 HP / 132 Def / 4 SpA / 116 SpD / 44 Spe
+Calm Nature
+- Scald
+- Icy Wind
+- Helping Hand
+- Protect
+
+== rapha's Spring 2015 Grapes? ==
+Grapes? (Ludicolo) @ Assault Vest
+Ability: Swift Swim
+Level: 50
+EVs: 108 HP / 252 SpA / 148 Spe
+Modest Nature
+- Fake Out
+- Scald
+- Giga Drain
+- Ice Beam
+
+== rapha's Spring 2015 Terrakion ==
+Terrakion @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Rock Slide
+- Double Kick
+- Protect
+
+== rapha's Spring 2015 Oppenheimer ==
+Oppenheimer (Hydreigon) @ Choice Specs
+Ability: Levitate
+Level: 50
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Draco Meteor
+- Dark Pulse
+- Flamethrower
+- Earth Power
+
+== rapha's Spring 2015 Metagross ==
+Metagross @ Metagrossite
+Ability: Clear Body
+Level: 50
+EVs: 252 HP / 36 Atk / 4 Def / 36 SpD / 180 Spe
+Adamant Nature
+- Iron Head
+- Zen Headbutt
+- Substitute
+- Protect
+
+== rapha's Spring 2015 such toge ==
+such toge (Togekiss) @ Sitrus Berry
+Ability: Serene Grace
+Level: 50
+EVs: 252 HP / 116 Def / 4 SpA / 60 SpD / 76 Spe
+Bold Nature
+- Air Slash
+- Follow Me
+- Tailwind
+- Protect
+
 == amr97's Spring 2015 My Song ==
 My Song (Kangaskhan) @ Kangaskhanite
 Ability: Scrappy
