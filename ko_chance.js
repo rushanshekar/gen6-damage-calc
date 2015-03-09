@@ -187,11 +187,12 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
             }
         }
     }
+    /*
     if (predictTotal(maxDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) < hp) {
         return 0;
     } else if (predictTotal(minDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) >= hp) {
         return 1;
-    }
+    }*/
     var toxicDamage = 0;
     if (toxicCounter > 0) {
         toxicDamage = Math.floor(toxicCounter * maxHP / 16);
