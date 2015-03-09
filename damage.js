@@ -311,6 +311,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
+    basePower = attacker.isChild ? basePower / 2 : basePower;
     
     ////////////////////////////////
     ////////// (SP)ATTACK //////////
@@ -493,7 +494,7 @@ function getDamageResult(attacker, defender, move, field) {
     if (attacker.ability === "Tinted Lens" && typeEffectiveness < 1) {
         finalMods.push(0x2000);
         description.attackerAbility = attacker.ability;
-    } 
+    }
     if (field.isFriendGuard) {
         finalMods.push(0xC00);
         description.isFriendGuard = true;
@@ -525,7 +526,7 @@ function getDamageResult(attacker, defender, move, field) {
     var finalMod = chainMods(finalMods);
     
     var damage = [], pbDamage = [];
-    var child, childMove, childDamage, j;
+    var child, childDamage, j;
     for (var i = 0; i < 16; i++) {
         damage[i] = Math.floor(baseDamage * (85 + i) / 100);
         damage[i] = pokeRound(damage[i] * stabMod / 0x1000);
@@ -536,13 +537,14 @@ function getDamageResult(attacker, defender, move, field) {
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
         if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
-            child = $.extend(true, {}, attacker, {ability: ""});
+            child = JSON.parse(JSON.stringify(attacker));
+            child.ability = '';
+            child.isChild = true;
             if (move.name === 'Power-Up Punch') {
                 child.boosts[AT]++;
                 child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
             }
-            childMove = $.extend({}, move, {bp: move.bp / 2});
-            childDamage = getDamageResult(child, defender, childMove, field).damage;
+            childDamage = getDamageResult(child, defender, move, field).damage;
             for (j = 0; j < 16; j++) {
                 pbDamage[(16 * i) + j] = damage[i] + childDamage[j];
             }
