@@ -123,6 +123,10 @@ th {
     float: right;
 }
 
+.locked-move:checked + .btn {
+    background: #ffff99;
+}
+
 /* header */
 .move-result-group {
     max-width: 80em;
