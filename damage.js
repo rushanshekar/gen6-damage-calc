@@ -527,6 +527,17 @@ function getDamageResult(attacker, defender, move, field) {
     
     var damage = [], pbDamage = [];
     var child, childDamage, j;
+    if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
+        child = JSON.parse(JSON.stringify(attacker));
+        child.ability = '';
+        child.isChild = true;
+        if (move.name === 'Power-Up Punch') {
+            child.boosts[AT]++;
+            child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
+        }
+        childDamage = getDamageResult(child, defender, move, field).damage;
+        description.attackerAbility = attacker.ability;
+    }
     for (var i = 0; i < 16; i++) {
         damage[i] = Math.floor(baseDamage * (85 + i) / 100);
         damage[i] = pokeRound(damage[i] * stabMod / 0x1000);
@@ -537,18 +548,9 @@ function getDamageResult(attacker, defender, move, field) {
         damage[i] = Math.max(1, damage[i]);
         damage[i] = pokeRound(damage[i] * finalMod / 0x1000);
         if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
-            child = JSON.parse(JSON.stringify(attacker));
-            child.ability = '';
-            child.isChild = true;
-            if (move.name === 'Power-Up Punch') {
-                child.boosts[AT]++;
-                child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
-            }
-            childDamage = getDamageResult(child, defender, move, field).damage;
             for (j = 0; j < 16; j++) {
                 pbDamage[(16 * i) + j] = damage[i] + childDamage[j];
             }
-            description.attackerAbility = attacker.ability;
         }
     }
     return {"damage": pbDamage.length ? pbDamage.sort() : damage, "description": buildDescription(description)};
