@@ -553,7 +553,11 @@ function getDamageResult(attacker, defender, move, field) {
             }
         }
     }
-    return {"damage": pbDamage.length ? pbDamage.sort() : damage, "description": buildDescription(description)};
+    return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
+}
+
+function numericSort(a, b) {
+    return a - b;
 }
 
 function buildDescription(description) {
