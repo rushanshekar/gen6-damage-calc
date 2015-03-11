@@ -266,6 +266,12 @@ $(".set-selector").change(function() {
     var pokemon = pokedex[pokemonName];
     if (pokemon) {
         var pokeObj = $(this).closest(".poke-info");
+
+        // If the sticky move was on this side, reset it
+        if (stickyMoves.getSelectedSide() === pokeObj.prop("id")) {
+            stickyMoves.clearStickyMove();
+        }
+
         pokeObj.find(".type1").val(pokemon.t1);
         pokeObj.find(".type2").val(pokemon.t2);
         pokeObj.find(".hp .base").val(pokemon.bs.hp);
@@ -490,6 +496,11 @@ function calculate() {
             bestResult = $(resultLocations[1][i].move);
         }
     }
+    if ($('.locked-move').length) {
+        bestResult = $('.locked-move');
+    } else {
+        stickyMoves.setSelectedMove(bestResult.prop("id"));
+    }
     bestResult.prop("checked", true);
     bestResult.change();
     $("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
@@ -509,6 +520,40 @@ $(".result-move").change(function() {
         }
     }
 });
+
+// Need to close over "lastClicked", so we'll do it the old-fashioned way to avoid
+// needlessly polluting the global namespace.
+var stickyMoves = (function () {
+    var lastClicked = 'resultMoveL1';
+    $(".result-move").click(function () {
+        if (this.id === lastClicked) {
+            $(this).toggleClass("locked-move");
+        } else {
+            $('.locked-move').removeClass('locked-move');
+        }
+        lastClicked = this.id;
+    });
+
+    return {
+        clearStickyMove: function () {
+            lastClicked = null;
+            $('.locked-move').removeClass('locked-move');
+        },
+        setSelectedMove: function (slot) {
+            lastClicked = slot;
+        },
+        getSelectedSide: function () {
+            if (lastClicked) {
+                if (lastClicked.indexOf('resultMoveL') !== -1) {
+                    return 'p1';
+                } else if (lastClicked.indexOf('resultMoveR') !== -1) {
+                    return 'p2';
+                }
+            }
+            return null;
+        }
+    };
+})();
 
 function findDamageResult(resultMoveObj) {
     var selector = "#" + resultMoveObj.attr("id");
