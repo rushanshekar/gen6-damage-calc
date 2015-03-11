@@ -199,18 +199,25 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
         toxicCounter++;
     }
     var sum = 0;
+    var lastC = 0;
     for (i = 0; i < n; i++) {
         if ((hp - damage[i] <= maxHP / 2) && hasSitrus) {
             hp += Math.floor(maxHP / 4);
             hasSitrus = false;
         }
-        var c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus);
+        var c;
+        if (i === 0 || damage[i] !== damage[i-1]) {
+            c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus);
+        } else {
+            c = lastC;
+        }
         if (c === 1) {
             sum += (n-i);
             break;
         } else {
             sum += c;
         }
+        lastC = c;
     }
     return sum/n;
 }
