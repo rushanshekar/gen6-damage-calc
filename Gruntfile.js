@@ -127,6 +127,28 @@ module.exports = function (grunt) {
     grunt.LevenWork = LevenWork;
 
     grunt.initConfig({
+        connect: {
+            server: {
+                options: {
+                    open: true,
+                    keepalive: true
+                }
+            },
+            test: {
+                options: {
+                    port: 8001
+                }
+            }
+        },
+        mocha_phantomjs: {
+            all: {
+                options: {
+                    urls: [
+                      'http://localhost:8001/test/load.html'
+                    ]
+                }
+            }
+        },
         http: {
             showdown: {
                 options: {
@@ -179,7 +201,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-http');
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-debug-task');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-mocha-phantomjs');
 
     grunt.registerTask('default', ['showdown']);
     grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink', 'nuggets']);
+
+    grunt.registerTask('develop', ['connect:server']);
+    grunt.registerTask('test', ['connect:test', 'mocha_phantomjs']);
 };
