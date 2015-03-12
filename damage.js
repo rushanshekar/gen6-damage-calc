@@ -111,7 +111,8 @@ function getDamageResult(attacker, defender, move, field) {
         return {"damage":[0], "description":buildDescription(description)};
     }
     if (move.name === "Sky Drop" &&
-        ([defender.type1, defender.type2].indexOf("Flying") !== -1 || defender.weight >= 200.0)) {
+        ([defender.type1, defender.type2].indexOf("Flying") !== -1 ||
+            defender.weight >= 200.0 || field.isGravity)) {
         return {"damage":[0], "description":buildDescription(description)};
     }
     
