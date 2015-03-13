@@ -1,3 +1,90 @@
+/**
+ * BW/BW2/XY/ORAS mass damage calculation.  
+ * 
+ * Field is prototyped in ap_calc.js and has several member functions.  A sample Pokemon looks like this:
+ *
+ * {
+ *     "name": "Mega Kangaskhan",
+ *     "type1": "Normal",
+ *     "type2": "",
+ *     "level": 50,
+ *     "maxHP": 181,
+ *     "curHP": 181,
+ *     "HPEVs": 4,
+ *     "rawStats": {
+ *         "at": 176,
+ *         "df": 120,
+ *         "sa": 72,
+ *         "sd": 120,
+ *         "sp": 167
+ *     },
+ *     "boosts": {
+ *         "at": 0,
+ *         "df": 0,
+ *         "sa": 0,
+ *         "sd": 0,
+ *         "sp": 0
+ *     },
+ *     "stats": {},
+ *     "evs": {
+ *         "at": 248,
+ *         "df": 0,
+ *         "sa": 0,
+ *         "sd": 0,
+ *         "sp": 252
+ *     },
+ *     "nature": "Jolly",
+ *     "ability": "Parental Bond",
+ *     "item": "",
+ *     "status": "Healthy",
+ *     "toxicCounter": 0,
+ *     "moves": [
+ *         {
+ *             "bp": 40,
+ *             "type": "Normal",
+ *             "category": "Physical",
+ *             "makesContact": true,
+ *             "hasSecondaryEffect": true,
+ *             "name": "Fake Out",
+ *             "isCrit": false,
+ *             "hits": 1
+ *         },
+ *         {
+ *             "bp": 80,
+ *             "type": "Dark",
+ *             "category": "Physical",
+ *             "makesContact": true,
+ *             "name": "Sucker Punch",
+ *             "isCrit": false,
+ *             "hits": 1
+ *         },
+ *         {
+ *             "bp": 120,
+ *             "type": "Normal",
+ *             "category": "Physical",
+ *             "makesContact": true,
+ *             "hasRecoil": true,
+ *             "name": "Double-Edge",
+ *             "isCrit": false,
+ *             "hits": 1
+ *         },
+ *         {
+ *             "bp": 1,
+ *             "type": "Fighting",
+ *             "category": "Physical",
+ *             "makesContact": true,
+ *             "name": "Low Kick",
+ *             "isCrit": false,
+ *             "hits": 1
+ *         }
+ *     ],
+ *     "weight": 100
+ * }
+ * 
+ * @param p1 {Pokemon}  Left-side Pokemon   
+ * @param p2 {Pokemon}  Right-side Pokemon
+ * @param field {Field} Weather, etc
+ */
 function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     checkAirLock(p1, field);
     checkAirLock(p2, field);
