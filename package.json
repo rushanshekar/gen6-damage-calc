@@ -17,15 +17,19 @@
   },
   "homepage": "https://github.com/rushanshekar/gen6-damage-calc",
   "devDependencies": {
+    "chai": "^2.1.1",
     "grunt": "~0.4.5",
     "grunt-bump": "^0.3.0",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-debug-task": "^0.1.5",
     "grunt-http": "^1.5.0",
+    "grunt-mocha-test": "^0.12.7",
     "jquery-extend": "^2.0.3",
     "levenshtein": "^1.0.5",
+    "mocha": "^2.2.1",
     "request": "^2.53.0"
   }
 }

@@ -171,6 +171,17 @@ module.exports = function (grunt) {
         globalLink: {
             rawDir: process.cwd() + '/globalLink',
             genFile: 'setdex_globalLink.js',
+        },
+        mochaTest: {
+            test: {
+                src: ['test/**/*.js']
+            }
+        },
+        watch: {
+            test: {
+                files: ['test/**/*.js'],
+                tasks: ['test']
+            }
         }
     });
 
@@ -179,7 +190,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-http');
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-debug-task');
+    grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['showdown']);
     grunt.registerTask('all', ['http', 'globalLinkDownload', 'showdown', 'globalLink', 'nuggets']);
+    grunt.registerTask('test', ['mochaTest']);
 };
