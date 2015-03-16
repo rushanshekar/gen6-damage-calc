@@ -558,6 +558,15 @@ function getDamageResult(attacker, defender, move, field) {
             }
         }
     }
+    // REturn a bit more info if this is a Parental Bond usage.
+    if (pbDamage.length) {
+        return {
+            "damage": pbDamage.sort(numericSort),
+            "parentDamage": damage,
+            "childDamage": childDamage,
+            "description": buildDescription(description)
+        };
+    }
     return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }
 
