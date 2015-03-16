@@ -1,3 +1,267 @@
+== DylanxArsenal's Spring 2015 Twinkle ==
+Twinkle (Politoed) @ Choice Scarf
+Ability: Drizzle
+Level: 50
+EVs: 252 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Scald
+- Focus Blast
+- Ice Beam
+- Rain Dance
+
+== DylanxArsenal's Spring 2015 Icingdeath ==
+Icingdeath (Ludicolo) @ Assault Vest
+Ability: Swift Swim
+Level: 50
+EVs: 76 HP / 236 SpA / 196 Spe
+Modest Nature
+- Fake Out
+- Giga Drain
+- Scald
+- Ice Beam
+
+== DylanxArsenal's Spring 2015 Bisharp ==
+Bisharp @ Life Orb
+Ability: Defiant
+Level: 50
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Sucker Punch
+- Iron Head
+- Knock Off
+- Protect
+
+== DylanxArsenal's Spring 2015 Cresselia ==
+Cresselia @ Rocky Helmet
+Ability: Levitate
+Level: 50
+EVs: 252 HP / 252 SpA / 4 Spe
+Modest Nature
+- Icy Wind
+- Psychic
+- Light Screen
+- Moonlight
+
+== DylanxArsenal's Spring 2015 DatTail ==
+DatTail (Thundurus) @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 244 HP / 108 Def / 64 SpA / 72 SpD / 20 Spe
+Calm Nature
+- Thunderbolt
+- Thunder Wave
+- Taunt
+- Swagger
+
+== DylanxArsenal's Spring 2015 Kangaskhan ==
+Kangaskhan @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Sucker Punch
+- Double-Edge
+- Low Kick
+- Facade
+
+== JoeDaPr0's Spring 2015 Chesnaught ==
+Chesnaught @ Sitrus Berry
+Ability: Bulletproof
+Level: 50
+EVs: 224 HP / 60 Atk / 44 Def / 180 SpD
+Sassy Nature
+- Super Fang
+- Feint
+- Helping Hand
+- Low Kick
+
+== JoeDaPr0's Spring 2015 Heatran ==
+Heatran @ Life Orb
+Ability: Flash Fire
+Level: 50
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+- Flash Cannon
+- Heat Wave
+- Earth Power
+- Protect
+
+== JoeDaPr0's Spring 2015 Cresselia ==
+Cresselia @ Rocky Helmet
+Ability: Levitate
+Level: 50
+EVs: 236 HP / 172 Def / 4 SpA / 92 SpD
+Bold Nature
+- Ice Beam
+- Skill Swap
+- Psychic
+- Trick Room
+
+== JoeDaPr0's Spring 2015 Salamence ==
+Salamence @ Salamencite
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Dragon Dance
+- Double-Edge
+- Protect
+- Rock Slide
+
+== JoeDaPr0's Spring 2015 Swampert ==
+Swampert @ Expert Belt
+Ability: Torrent
+Level: 50
+EVs: 252 HP / 4 Def / 228 SpA / 4 SpD / 20 Spe
+Modest Nature
+- Wide Guard
+- Scald
+- Ice Beam
+- Earth Power
+
+== JoeDaPr0's Spring 2015 Raikou ==
+Raikou @ Assault Vest
+Ability: Pressure
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Hidden Power [Ice]
+- Snarl
+- Thunderbolt
+- Extrasensory
+
+== conan's Spring 2015 Salamence ==
+Salamence @ Salamencite
+Ability: Intimidate
+Level: 50
+EVs: 76 HP / 244 Atk / 188 Spe
+Jolly Nature
+- Double-Edge
+- Dragon Dance
+- Roost
+- Protect
+
+== conan's Spring 2015 Terrakion ==
+Terrakion @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Rock Slide
+- Protect
+- Earthquake
+
+== conan's Spring 2015 Weavile ==
+Weavile @ Focus Sash
+Ability: Pressure
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Icicle Crash
+- Beat Up
+- Low Kick
+- Fake Out
+
+== conan's Spring 2015 Aegislash ==
+Aegislash @ Weakness Policy
+Ability: Stance Change
+Level: 50
+EVs: 252 HP / 252 SpA / 4 Spe
+Modest Nature
+- Shadow Ball
+- Wide Guard
+- Flash Cannon
+- King’s Shield
+
+== conan's Spring 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 252 HP / 76 Def / 4 SpA / 132 SpD / 44 Spe
+Calm Nature
+- Thunderbolt
+- Taunt
+- Swagger
+- Thunder Wave
+
+== conan's Spring 2015 Cresselia ==
+Cresselia @ Rocky Helmet
+Ability: Levitate
+Level: 50
+EVs: 220 HP / 172 Def / 4 SpA / 92 SpD / 20 Spe
+Calm Nature
+- Psychic
+- Helping Hand
+- Icy Wind
+- Moonlight
+
+== Life Orb's Spring 2015 Landorus-Therian ==
+Landorus-Therian @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Earthquake
+- U-Turn
+- Knock Off
+- Rock Slide
+
+== Life Orb's Spring 2015 Kangaskhan ==
+Kangaskhan @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Fake Out
+- Double-Edge
+- Low Kick
+- Sucker Punch
+
+== Life Orb's Spring 2015 Sylveon ==
+Sylveon @ Choice Specs
+Ability: Pixilate
+Level: 50
+EVs: 92 HP / 116 Def / 252 SpA / 48 Spe
+Modest Nature
+- Hyper Voice
+- Shadow Ball
+- Psyshock
+- Moonblast
+
+== Life Orb's Spring 2015 Heatran ==
+Heatran @ Shuca Berry
+Ability: Flash Fire
+Level: 50
+EVs: 252 HP / 168 Def / 68 SpA
+Modest Nature
+- Heat Wave
+- Flash Cannon
+- Earth Power
+- Protect
+
+== Life Orb's Spring 2015 Hydreigon ==
+Hydreigon @ Life Orb
+Ability: Levitate
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Draco Meteor
+- Dark Pulse
+- Fire Blast
+- Protect
+
+== Life Orb's Spring 2015 Cresselia ==
+Cresselia @ Sitrus Berry
+Ability: Levitate
+Level: 50
+EVs: 220 HP / 100 Def / 188 SpD
+Bold Nature
+- Icy Wind
+- Helping Hand
+- Sunny Day
+- Psyshock
+
 == rapha's Spring 2015 Elmo ==
 Elmo (Politoed) @ Leftovers
 Ability: Drizzle

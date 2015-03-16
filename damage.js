@@ -110,6 +110,11 @@ function getDamageResult(attacker, defender, move, field) {
     if ((field.weather === "Harsh Sun" && move.type === "Water") || (field.weather === "Heavy Rain" && move.type === "Fire")) {
         return {"damage":[0], "description":buildDescription(description)};
     }
+    if (move.name === "Sky Drop" &&
+        ([defender.type1, defender.type2].indexOf("Flying") !== -1 ||
+            defender.weight >= 200.0 || field.isGravity)) {
+        return {"damage":[0], "description":buildDescription(description)};
+    }
     
     description.HPEVs = defender.HPEVs + " HP";
     
@@ -552,6 +557,15 @@ function getDamageResult(attacker, defender, move, field) {
                 pbDamage[(16 * i) + j] = damage[i] + childDamage[j];
             }
         }
+    }
+    // REturn a bit more info if this is a Parental Bond usage.
+    if (pbDamage.length) {
+        return {
+            "damage": pbDamage.sort(numericSort),
+            "parentDamage": damage,
+            "childDamage": childDamage,
+            "description": buildDescription(description)
+        };
     }
     return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }

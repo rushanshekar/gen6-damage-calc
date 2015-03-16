@@ -512,8 +512,9 @@ $(".result-move").change(function() {
         var result = findDamageResult($(this));
         if (result) {
             $("#mainResult").text(result.description + ": " + result.damageText + " -- " + result.koChanceText);
-            if (result.damage.length === 256) {
-                $("#damageValues").text("");
+            if (result.parentDamage) {
+                $("#damageValues").text("(First hit: " + result.parentDamage.join(", ") + 
+                    "; Second hit: " + result.childDamage.join(", ") + ")");
             } else {
                 $("#damageValues").text("(" + result.damage.join(", ") + ")");
             }

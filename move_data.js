@@ -1530,6 +1530,12 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         category: 'Special',
         dealsPhysicalDamage: true
     },
+    'Sky Drop': {
+        bp: 60,
+        type: 'Flying',
+        category: 'Physical',
+        makesContact: true,
+    },
     'Sludge Wave': {
         bp: 95,
         type: 'Poison',
