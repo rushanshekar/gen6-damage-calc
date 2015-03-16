@@ -3,7 +3,46 @@ var expect = require('chai').expect;
 var extend = require('jquery-extend');
 require('blanket');
 
-describe('damage', function() {
+// This is heere to get it out of the "use strict" scope.  Since we're not evaling every
+// single source file in the app, we have some dangling undefineds that don't matter
+// except to the strict-mode parser.
+function modularizeSource() {
+    eval(fs.readFileSync('damage.js', 'utf8'));
+
+    // For countBoosts
+    eval(fs.readFileSync('stat_data.js', 'utf8'));
+    var STATS = STATS_GSC;
+
+    // For getMoveEffectiveness
+    var $ = { extend: extend };
+    eval(fs.readFileSync('type_data.js', 'utf8'));
+    var typeChart = TYPE_CHART_XY;
+
+    // Turn it into a module definition
+    return {
+        calculateAllMoves:    CALCULATE_ALL_MOVES_BW,
+        getDamageResult:      getDamageResult,
+        buildDescription:     buildDescription,
+        appendIfSet:          appendIfSet,
+        toSmogonStat:         toSmogonStat,
+        chainMods:            chainMods,
+        getMoveEffectiveness: getMoveEffectiveness,
+        getModifiedStat:      getModifiedStat,
+        getFinalSpeed:        getFinalSpeed,
+        checkAirLock:         checkAirLock,
+        checkForecast:        checkForecast,
+        checkKlutz:           checkKlutz,
+        checkIntimidate:      checkIntimidate,
+        checkDownload:        checkDownload,
+        checkInfiltrator:     checkInfiltrator,
+        countBoosts:          countBoosts,
+        pokeRound:            pokeRound
+    };
+}
+
+describe('damage', function() {    
+    'use strict';
+
     var damage = {};
     var samplePokemon = {
         "Kangaskhan-Mega": {
@@ -92,33 +131,9 @@ describe('damage', function() {
     };
 
 
-    before(function () {
-        eval(fs.readFileSync('damage.js', 'utf8'));
-
-        // For countBoosts
-        eval(fs.readFileSync('stat_data.js', 'utf8'));
-        var STATS = STATS_GSC;
-
-        // Turn it into a module definition
-        damage = {
-            calculateAllMoves:    CALCULATE_ALL_MOVES_BW,
-            getDamageResult:      getDamageResult,
-            buildDescription:     buildDescription,
-            appendIfSet:          appendIfSet,
-            toSmogonStat:         toSmogonStat,
-            chainMods:            chainMods,
-            getMoveEffectiveness: getMoveEffectiveness,
-            getModifiedStat:      getModifiedStat,
-            getFinalSpeed:        getFinalSpeed,
-            checkAirLock:         checkAirLock,
-            checkForecast:        checkForecast,
-            checkKlutz:           checkKlutz,
-            checkIntimidate:      checkIntimidate,
-            checkDownload:        checkDownload,
-            checkInfiltrator:     checkInfiltrator,
-            countBoosts:          countBoosts,
-            pokeRound:            pokeRound
-        };
+    before(function (done) {
+        damage = modularizeSource();
+        done();
     });
 
     it('All interface functions exist', function () {
@@ -150,7 +165,6 @@ describe('damage', function() {
     });
 
     it('countBoosts counts positive boosts', function () {
-        'use strict';
         // No boosts
         expect(damage.countBoosts(samplePokemon['Kangaskhan-Mega'].boosts)).to.equal(0);
 
@@ -178,8 +192,26 @@ describe('damage', function() {
         }
     });
 
+    it('getModifiedStat works for a wide variety of stats and boosts', function () {
+        for (var stat=0; stat<450; stat++) {
+            // Doing this manually rather than in a loop just to be explicit
+            expect(damage.getModifiedStat(stat, -6)).to.equal(Math.floor(stat * 2 / 8));
+            expect(damage.getModifiedStat(stat, -5)).to.equal(Math.floor(stat * 2 / 7));
+            expect(damage.getModifiedStat(stat, -4)).to.equal(Math.floor(stat * 2 / 6));
+            expect(damage.getModifiedStat(stat, -3)).to.equal(Math.floor(stat * 2 / 5));
+            expect(damage.getModifiedStat(stat, -2)).to.equal(Math.floor(stat * 2 / 4));
+            expect(damage.getModifiedStat(stat, -1)).to.equal(Math.floor(stat * 2 / 3));
+            expect(damage.getModifiedStat(stat,  0)).to.equal(Math.floor(stat * 2 / 2));
+            expect(damage.getModifiedStat(stat,  1)).to.equal(Math.floor(stat * 3 / 2));
+            expect(damage.getModifiedStat(stat,  2)).to.equal(Math.floor(stat * 4 / 2));
+            expect(damage.getModifiedStat(stat,  3)).to.equal(Math.floor(stat * 5 / 2));
+            expect(damage.getModifiedStat(stat,  4)).to.equal(Math.floor(stat * 6 / 2));
+            expect(damage.getModifiedStat(stat,  5)).to.equal(Math.floor(stat * 7 / 2));
+            expect(damage.getModifiedStat(stat,  6)).to.equal(Math.floor(stat * 8 / 2));
+        }
+    });
+
     describe('checkInfiltrator assigns field side data properly', function () {
-        'use strict';
         var source;
 
         beforeEach(function () {
@@ -224,7 +256,6 @@ describe('damage', function() {
     });
 
     describe('checkDownload correctly boosts source based on ability and target\'s stats', function () {
-        'use strict';
         var source, target;
 
         beforeEach(function () {
@@ -266,7 +297,6 @@ describe('damage', function() {
     });
 
     describe('checkIntimidate buffs and debuffs properly with various target abilities', function () {
-        'use strict';
         var source, target, expectedBoosts;
 
         beforeEach(function () {
@@ -304,7 +334,6 @@ describe('damage', function() {
 
     // Why do we even support this?
     describe('checkKlutz effectively eliminates the source\'s held item.', function () {
-        'use strict';
         var source;
 
         beforeEach(function () {
@@ -343,7 +372,6 @@ describe('damage', function() {
 
     // Why do we even support this?
     describe('checkForecast handles Castform correctly', function () {
-        'use strict';
         var castform, kang, expectedCastform, expectedKang;
 
         beforeEach(function () {
@@ -412,6 +440,165 @@ describe('damage', function() {
             expect(field.cleared).to.be.true;
         });
     });
-
     
+    // TODO Expand this one to account for item & ability interactions, since the math is being
+    // truncated for items.  Also: Verify that the math should be truncated for items.
+    describe('getFinalSpeed accounts for abilities and items', function () {
+        var source;
+
+        function makeCase(weather, speeds) {
+            return function () {
+                var chlor = extend(true, {}, source);
+                chlor.ability = 'Chlorophyll';
+
+                var rush = extend(true, {}, source);
+                rush.ability = 'Sand Rush';
+
+                var swim = extend(true, {}, source);
+                swim.ability = 'Swift Swim';
+
+                expect(damage.getFinalSpeed(chlor, weather)).to.equal(chlor.stats.sp * speeds[0]);
+                expect(damage.getFinalSpeed(rush, weather)).to.equal(rush.stats.sp * speeds[1]);
+                expect(damage.getFinalSpeed(swim, weather)).to.equal(swim.stats.sp * speeds[2]);
+            };
+        }
+
+        beforeEach(function () {
+            source = extend(true, {}, samplePokemon['Kangaskhan-Mega']);
+        });
+
+        it('Accounts for Choice Scarf (no ability)', function () {
+            source.item = 'Choice Scarf';
+            expect(damage.getFinalSpeed(source, '')).to.equal(Math.floor(source.stats.sp * 3 / 2));
+        });
+
+        it('Accounts for Macho Brace (no ability)', function () {
+            source.item = 'Macho Brace';
+            expect(damage.getFinalSpeed(source, '')).to.equal(Math.floor(source.stats.sp * 1 / 2));
+        });
+
+        it('Accounts for Iron Ball (no ability)', function () {
+            source.item = 'Iron Ball';
+            expect(damage.getFinalSpeed(source, '')).to.equal(Math.floor(source.stats.sp * 1 / 2));
+        });
+
+        it('Does nothing for Chlorophyll, Sand Rush, and Swift Swim outside of weather', 
+            makeCase('', [1, 1, 1]));
+
+        it('Boosts speed for Chlorophyll in Sun', makeCase('Sun', [2, 1, 1]));
+        it('Boosts speed for Chlorophyll in Harsh Sun', makeCase('Harsh Sun', [2, 1, 1]));
+
+        it('Boosts speed for Sand Rush in Sand', makeCase('Sand', [1, 2, 1]));
+
+        it('Boosts speed for Swift Swim in Rain', makeCase('Rain', [1, 1, 2]));
+        it('Boosts speed for Swift Swim in Heavy Rain', makeCase('Heavy Rain', [1, 1, 2]));
+    });
+
+    describe('getMoveEffectiveness works for all types and special cases', function () {
+        var typeList = [ 'Normal',   'Fighting', 'Flying', 'Poison',
+                         'Ground',   'Rock',     'Bug',    'Ghost',
+                         'Steel',    'Fire',     'Water',  'Grass',
+                         'Electric', 'Psychic',  'Ice',    'Dragon',
+                         'Dark',     'Fairy' ];
+
+        var typeChart = [
+            [   1,   1,   1,   1,   1, 0.5,   1,   0, 0.5,   1,   1,   1,   1,   1,   1,   1,   1,   1 ],
+            [   2,   1, 0.5, 0.5,   1,   2, 0.5,   0,   2,   1,   1,   1,   1, 0.5,   2,   1,   2, 0.5 ],
+            [   1,   2,   1,   1,   1, 0.5,   2,   1, 0.5,   1,   1,   2, 0.5,   1,   1,   1,   1,   1 ],
+            [   1,   1,   1, 0.5, 0.5, 0.5,   1, 0.5,   0,   1,   1,   2,   1,   1,   1,   1,   1,   2 ],
+            [   1,   1,   0,   2,   1,   2, 0.5,   1,   2,   2,   1, 0.5,   2,   1,   1,   1,   1,   1 ],
+            [   1, 0.5,   2,   1, 0.5,   1,   2,   1, 0.5,   2,   1,   1,   1,   1,   2,   1,   1,   1 ],
+            [   1, 0.5, 0.5, 0.5,   1,   1,   1, 0.5, 0.5, 0.5,   1,   2,   1,   2,   1,   1,   2, 0.5 ],
+            [   0,   1,   1,   1,   1,   1,   1,   2,   1,   1,   1,   1,   1,   2,   1,   1, 0.5,   1 ],
+            [   1,   1,   1,   1,   1,   2,   1,   1, 0.5, 0.5, 0.5,   1, 0.5,   1,   2,   1,   1,   2 ],
+            [   1,   1,   1,   1,   1, 0.5,   2,   1,   2, 0.5, 0.5,   2,   1,   1,   2, 0.5,   1,   1 ],
+            [   1,   1,   1,   1,   2,   2,   1,   1,   1,   2, 0.5, 0.5,   1,   1,   1, 0.5,   1,   1 ],
+            [   1,   1, 0.5, 0.5,   2,   2, 0.5,   1, 0.5, 0.5,   2, 0.5,   1,   1,   1, 0.5,   1,   1 ],
+            [   1,   1,   2,   1,   0,   1,   1,   1,   1,   1,   2, 0.5, 0.5,   1,   1, 0.5,   1,   1 ],
+            [   1,   2,   1,   2,   1,   1,   1,   1, 0.5,   1,   1,   1,   1, 0.5,   1,   1,   0,   1 ],
+            [   1,   1,   2,   1,   2,   1,   1,   1, 0.5, 0.5, 0.5,   2,   1,   1, 0.5,   2,   1,   1 ],
+            [   1,   1,   1,   1,   1,   1,   1,   1, 0.5,   1,   1,   1,   1,   1,   1,   2,   1,   0 ],
+            [   1, 0.5,   1,   1,   1,   1,   1,   2,   1,   1,   1,   1,   1,   2,   1,   1, 0.5, 0.5 ],
+            [   1,   2,   1, 0.5,   1,   1,   1,   1, 0.5, 0.5,   1,   1,   1,   1,   1,   2,   2,   1 ],
+        ];
+
+        it('All standard cases are properly handled', function () {
+            var move = { name: 'Suspicious Odor' };
+            var defender;
+
+            for (var i=0; i<typeList.length; i++) {
+                move.type = typeList[i];
+                for (var j=0; j<typeList.length; j++) {
+                    defender = typeList[j];
+                    expect(damage.getMoveEffectiveness(move, defender)).to.equal(typeChart[i][j]);
+                }
+            }
+        });
+
+        it('Scrappy and Foresight cases are properly handled', function () {
+            var move = { name: 'Spooooky' };
+            var defender;
+            var ghostTypeChart = JSON.parse(JSON.stringify(typeChart));
+            ghostTypeChart[typeList.indexOf('Normal')][typeList.indexOf('Ghost')] = 1;
+            ghostTypeChart[typeList.indexOf('Fighting')][typeList.indexOf('Ghost')] = 1;
+
+            for (var i=0; i<typeList.length; i++) {
+                move.type = typeList[i];
+                for (var j=0; j<typeList.length; j++) {
+                    defender = typeList[j];
+                    expect(damage.getMoveEffectiveness(move, defender, true)).to.equal(ghostTypeChart[i][j]);
+                }
+            }
+        });
+
+        it('Gravity cases are properly handled', function () {
+            var move = { name: 'Compost' };
+            var defender;
+            var gravityTypeChart = JSON.parse(JSON.stringify(typeChart));
+            gravityTypeChart[typeList.indexOf('Ground')][typeList.indexOf('Flying')] = 1;
+
+            for (var i=0; i<typeList.length; i++) {
+                move.type = typeList[i];
+                for (var j=0; j<typeList.length; j++) {
+                    defender = typeList[j];
+                    expect(damage.getMoveEffectiveness(move, defender, false, true)).to.equal(gravityTypeChart[i][j]);
+                }
+            }
+        });
+
+        it('Freeze-Dry cases are properly handled', function () {
+            var move = { name: 'Freeze-Dry' };
+            var defender;
+            var freezeDryTypeChart = JSON.parse(JSON.stringify(typeChart));
+            // Per Bulbapedia: "If used on a Water-type Pokémon, this move ignores the type effectiveness of this 
+            // move's type against Water and treats it as being super effective against Water types instead (even 
+            // during Inverse Battles and even if its type is changed)."
+            for (var i=0; i<freezeDryTypeChart.length; i++) {
+                freezeDryTypeChart[i][typeList.indexOf('Water')] = 2;
+            }
+
+            for (var i=0; i<typeList.length; i++) {
+                move.type = typeList[i];
+                for (var j=0; j<typeList.length; j++) {
+                    defender = typeList[j];
+                    expect(damage.getMoveEffectiveness(move, defender)).to.equal(freezeDryTypeChart[i][j]);
+                }
+            }            
+        });
+
+        it('Flying Press cases are properly handled', function () {
+            var move = { name: 'Flying Press' };
+            var fighting = typeList.indexOf('Fighting');
+            var flying = typeList.indexOf('Flying');
+            var defender;
+
+            for (var j=0; j<typeList.length; j++) {
+                defender = typeList[j];
+                var expected = typeChart[fighting][j] * typeChart[flying][j];
+                expect(damage.getMoveEffectiveness(move, defender)).to.equal(expected);
+            }
+
+        })
+
+    });
 });
