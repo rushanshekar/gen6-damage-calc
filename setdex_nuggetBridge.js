@@ -1,4 +1,379 @@
 var SETDEX_NUGGETBRIDGE={
+  "Cresselia": {
+    "IoriYagami's Spring 2015 Luna": {
+      "level": 50,
+      "evs": {
+        "hp": "216",
+        "df": "60",
+        "sa": "36",
+        "sd": "184",
+        "sp": "12"
+      },
+      "nature": "Calm",
+      "ability": "Levitate",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Psychic",
+        "Ice Beam",
+        "",
+        ""
+      ]
+    },
+    "DylanxArsenal's Spring 2015 Cresselia": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "sa": "252",
+        "sp": "4"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "",
+      "moves": [
+        "Icy Wind",
+        "Psychic",
+        "",
+        ""
+      ]
+    },
+    "JoeDaPr0's Spring 2015 Cresselia": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "172",
+        "sa": "4",
+        "sd": "92"
+      },
+      "nature": "Bold",
+      "ability": "Levitate",
+      "item": "",
+      "moves": [
+        "Ice Beam",
+        "",
+        "Psychic",
+        ""
+      ]
+    },
+    "conan's Spring 2015 Cresselia": {
+      "level": 50,
+      "evs": {
+        "hp": "220",
+        "df": "172",
+        "sa": "4",
+        "sd": "92",
+        "sp": "20"
+      },
+      "nature": "Calm",
+      "ability": "Levitate",
+      "item": "",
+      "moves": [
+        "Psychic",
+        "",
+        "Icy Wind",
+        ""
+      ]
+    },
+    "Life Orb's Spring 2015 Cresselia": {
+      "level": 50,
+      "evs": {
+        "hp": "220",
+        "df": "100",
+        "sd": "188"
+      },
+      "nature": "Bold",
+      "ability": "Levitate",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Icy Wind",
+        "",
+        "",
+        "Psyshock"
+      ]
+    },
+    "Level 51's Winter 2015 Crescenda": {
+      "level": 50,
+      "evs": {
+        "hp": "220",
+        "df": "172",
+        "sa": "4",
+        "sd": "92",
+        "sp": "20"
+      },
+      "nature": "Calm",
+      "ability": "Levitate",
+      "item": "",
+      "moves": [
+        "Psyshock",
+        "Ice Beam",
+        "",
+        ""
+      ]
+    }
+  },
+  "Heatran": {
+    "IoriYagami's Spring 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "148",
+        "sa": "44",
+        "sd": "4",
+        "sp": "68"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "",
+        "",
+        "Heat Wave",
+        "Earth Power"
+      ]
+    },
+    "Keonspy's Spring 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "232",
+        "df": "104",
+        "sa": "60",
+        "sd": "112"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "Overheat",
+        "Earth Power",
+        "",
+        ""
+      ]
+    },
+    "JoeDaPr0's Spring 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "252"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Life Orb",
+      "moves": [
+        "Flash Cannon",
+        "Heat Wave",
+        "Earth Power",
+        ""
+      ]
+    },
+    "Life Orb's Spring 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "168",
+        "sa": "68"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Shuca Berry",
+      "moves": [
+        "Heat Wave",
+        "Flash Cannon",
+        "Earth Power",
+        ""
+      ]
+    }
+  },
+  "Gastrodon": {
+    "IoriYagami's Spring 2015 Gastrodon": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "108",
+        "sa": "68",
+        "sd": "88"
+      },
+      "nature": "Bold",
+      "ability": "Storm Drain",
+      "item": "Rindo Berry",
+      "moves": [
+        "Muddy Water",
+        "Earth Power",
+        "",
+        ""
+      ]
+    }
+  },
+  "Lopunny": {
+    "IoriYagami's Spring 2015 Praline": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lopunnite",
+      "moves": [
+        "Fake Out",
+        "Low Kick",
+        "",
+        "Return"
+      ]
+    }
+  },
+  "Granbull": {
+    "IoriYagami's Spring 2015 Spike": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "180",
+        "sd": "76"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Assault Vest",
+      "moves": [
+        "Play Rough",
+        "",
+        "Rock Slide",
+        "Ice Punch"
+      ]
+    }
+  },
+  "Virizion": {
+    "IoriYagami's Spring 2015 Midori": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Leaf Blade",
+        "",
+        ""
+      ]
+    }
+  },
+  "Heliolisk": {
+    "Keonspy's Spring 2015 Heliolisk": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Dry Skin",
+      "item": "Choice Scarf",
+      "moves": [
+        "",
+        "Thunderbolt",
+        "",
+        "Hyper Beam"
+      ]
+    }
+  },
+  "Sceptile": {
+    "Keonspy's Spring 2015 Sceptile": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Overgrow",
+      "item": "Sceptilite",
+      "moves": [
+        "Energy Ball",
+        "Dragon Pulse",
+        "Hidden Power Ice",
+        ""
+      ]
+    }
+  },
+  "Thundurus-T": {
+    "Keonspy's Spring 2015 Thundurus-Therian": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Timid",
+      "ability": "Volt Absorb",
+      "item": "Life Orb",
+      "moves": [
+        "Discharge",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        ""
+      ]
+    }
+  },
+  "Gyarados": {
+    "Keonspy's Spring 2015 Gyarados": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Lum Berry",
+      "moves": [
+        "Waterfall",
+        "Earthquake",
+        "",
+        ""
+      ]
+    }
+  },
+  "Amoonguss": {
+    "Keonspy's Spring 2015 Amoonguss": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "92",
+        "sd": "164"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Giga Drain",
+        "",
+        "",
+        ""
+      ]
+    },
+    "amr97's Spring 2015 Flower Girl": {
+      "level": 50,
+      "evs": {
+        "hp": "188",
+        "df": "164",
+        "sd": "156"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Sassy",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "",
+        "",
+        "Giga Drain",
+        ""
+      ]
+    }
+  },
   "Politoed": {
     "DylanxArsenal's Spring 2015 Twinkle": {
       "level": 50,
@@ -105,98 +480,6 @@ var SETDEX_NUGGETBRIDGE={
         "Sucker Punch",
         "Iron Head",
         "Assurance",
-        ""
-      ]
-    }
-  },
-  "Cresselia": {
-    "DylanxArsenal's Spring 2015 Cresselia": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "sa": "252",
-        "sp": "4"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "",
-      "moves": [
-        "Icy Wind",
-        "Psychic",
-        "",
-        ""
-      ]
-    },
-    "JoeDaPr0's Spring 2015 Cresselia": {
-      "level": 50,
-      "evs": {
-        "hp": "236",
-        "df": "172",
-        "sa": "4",
-        "sd": "92"
-      },
-      "nature": "Bold",
-      "ability": "Levitate",
-      "item": "",
-      "moves": [
-        "Ice Beam",
-        "",
-        "Psychic",
-        ""
-      ]
-    },
-    "conan's Spring 2015 Cresselia": {
-      "level": 50,
-      "evs": {
-        "hp": "220",
-        "df": "172",
-        "sa": "4",
-        "sd": "92",
-        "sp": "20"
-      },
-      "nature": "Calm",
-      "ability": "Levitate",
-      "item": "",
-      "moves": [
-        "Psychic",
-        "",
-        "Icy Wind",
-        ""
-      ]
-    },
-    "Life Orb's Spring 2015 Cresselia": {
-      "level": 50,
-      "evs": {
-        "hp": "220",
-        "df": "100",
-        "sd": "188"
-      },
-      "nature": "Bold",
-      "ability": "Levitate",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Icy Wind",
-        "",
-        "",
-        "Psyshock"
-      ]
-    },
-    "Level 51's Winter 2015 Crescenda": {
-      "level": 50,
-      "evs": {
-        "hp": "220",
-        "df": "172",
-        "sa": "4",
-        "sd": "92",
-        "sp": "20"
-      },
-      "nature": "Calm",
-      "ability": "Levitate",
-      "item": "",
-      "moves": [
-        "Psyshock",
-        "Ice Beam",
-        "",
         ""
       ]
     }
@@ -413,42 +696,6 @@ var SETDEX_NUGGETBRIDGE={
         "Feint",
         "",
         "Low Kick"
-      ]
-    }
-  },
-  "Heatran": {
-    "JoeDaPr0's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "4",
-        "sa": "252"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Life Orb",
-      "moves": [
-        "Flash Cannon",
-        "Heat Wave",
-        "Earth Power",
-        ""
-      ]
-    },
-    "Life Orb's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "168",
-        "sa": "68"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Shuca Berry",
-      "moves": [
-        "Heat Wave",
-        "Flash Cannon",
-        "Earth Power",
-        ""
       ]
     }
   },
@@ -934,28 +1181,6 @@ var SETDEX_NUGGETBRIDGE={
         "Aqua Jet",
         "Play Rough",
         "",
-        ""
-      ]
-    }
-  },
-  "Amoonguss": {
-    "amr97's Spring 2015 Flower Girl": {
-      "level": 50,
-      "evs": {
-        "hp": "188",
-        "df": "164",
-        "sd": "156"
-      },
-      "ivs": {
-        "sp": "0"
-      },
-      "nature": "Sassy",
-      "ability": "",
-      "item": "",
-      "moves": [
-        "",
-        "",
-        "Giga Drain",
         ""
       ]
     }
