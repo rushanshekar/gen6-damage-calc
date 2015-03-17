@@ -1,3 +1,135 @@
+== IoriYagami's Spring 2015 Luna ==
+Luna (Cresselia) @ Sitrus Berry
+Ability: Levitate
+Level: 50
+EVs: 216 HP / 60 Def / 36 SpA / 184 SpD / 12 Spe
+Calm Nature
+- Psychic
+- Ice Beam
+- Skill Swap
+- Thunder Wave
+
+== IoriYagami's Spring 2015 Heatran ==
+Heatran @ Leftovers
+Ability: Flash Fire
+Level: 50
+EVs: 244 HP / 148 Def / 44 SpA / 4 SpD / 68 Spe
+Modest Nature
+- Protect
+- Substitute
+- Heat Wave
+- Earth Power
+
+== IoriYagami's Spring 2015 Gastrodon ==
+Gastrodon @ Rindo Berry
+Ability: Storm Drain
+Level: 50
+EVs: 244 HP / 108 Def / 68 SpA / 88 SpD
+Bold Nature
+- Muddy Water
+- Earth Power
+- Protect
+- Recover
+
+== IoriYagami's Spring 2015 Praline ==
+Praline (Lopunny) @ Lopunnite
+Ability: Limber
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Fake Out
+- Low Kick
+- Protect
+- Return
+
+== IoriYagami's Spring 2015 Spike ==
+Spike (Granbull) @ Assault Vest
+Ability: Intimidate
+Level: 50
+EVs: 252 HP / 180 Atk / 76 SpD
+Adamant Nature
+- Play Rough
+- Super Fang
+- Rock Slide
+- Ice Punch
+
+== IoriYagami's Spring 2015 Midori ==
+Midori (Virizion) @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Leaf Blade
+- Protect
+- Quick Guard
+
+== Keonspy's Spring 2015 Heliolisk ==
+Heliolisk @ Choice Scarf
+Ability: Dry Skin
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Electrify
+- Thunderbolt
+- Parabolic Charge
+- Hyper Beam
+
+== Keonspy's Spring 2015 Sceptile ==
+Sceptile @ Sceptilite
+Ability: Overgrow
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Energy Ball
+- Dragon Pulse
+- Hidden Power [Ice]
+- Detect
+
+== Keonspy's Spring 2015 Thundurus-Therian ==
+Thundurus-Therian (M) @ Life Orb
+Ability: Volt Absorb
+Level: 50
+EVs: 252 SpA / 252 Spe
+Timid Nature
+- Discharge
+- Thunderbolt
+- Hidden Power [Ice]
+- Protect
+
+== Keonspy's Spring 2015 Gyarados ==
+Gyarados @ Lum Berry
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Waterfall
+- Earthquake
+- Dragon Dance
+- Protect
+
+== Keonspy's Spring 2015 Heatran ==
+Heatran @ Leftovers
+Ability: Flash Fire
+Level: 50
+EVs: 232 HP / 104 Def / 60 SpA / 112 SpD
+Modest Nature
+- Overheat
+- Earth Power
+- Substitute
+- Protect
+
+== Keonspy's Spring 2015 Amoonguss ==
+Amoonguss @ Rocky Helmet
+Ability: Regenerator
+Level: 50
+EVs: 252 HP / 92 Def / 164 SpD
+Bold Nature
+- Giga Drain
+- Rage Powder
+- Spore
+- Protect
+
 == DylanxArsenal's Spring 2015 Twinkle ==
 Twinkle (Politoed) @ Choice Scarf
 Ability: Drizzle
