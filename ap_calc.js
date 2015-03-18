@@ -144,6 +144,9 @@ $("#p2 .ability").bind("keyup change", function() {
 
 var lastManualWeather = "";
 var lastAutoWeather = ["", ""];
+$("input[name='weather']").bind("click", function () {
+    lastManualWeather = $(this).val();
+});
 function autosetWeather(ability, i) {
     var currentWeather = $("input:radio[name='weather']:checked").val();
     if (lastAutoWeather.indexOf(currentWeather) === -1) {
