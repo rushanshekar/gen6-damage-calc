@@ -1568,6 +1568,12 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         makesContact: true,
         alwaysCrit: true
     },
+    'Synchronoise': {
+        bp: 70,
+        type: 'Psychic',
+        category: 'Special',
+        isSpread: true
+    },
     'Tackle': { bp: 50 },
     'Tail Slap': {
         bp: 25,
@@ -1764,6 +1770,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
     'Rock Tomb': { bp: 60 },
     'Storm Throw': { bp: 60 },
     'Surf': { bp: 90 },
+    'Synchronoise': { bp: 120 },
     'Thief': { bp: 60 },
     'Thunder': { bp: 110 },
     'Thunderbolt': { bp: 90 },

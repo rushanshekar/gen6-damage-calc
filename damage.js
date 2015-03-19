@@ -115,6 +115,10 @@ function getDamageResult(attacker, defender, move, field) {
             defender.weight >= 200.0 || field.isGravity)) {
         return {"damage":[0], "description":buildDescription(description)};
     }
+    if (move.name === "Synchronoise" &&
+            [defender.type1, defender.type2].indexOf(attacker.type1) === -1 && [defender.type1, defender.type2].indexOf(attacker.type2) === -1) {
+        return {"damage": [0], "description": buildDescription(description)};
+    }
     
     description.HPEVs = defender.HPEVs + " HP";
     
