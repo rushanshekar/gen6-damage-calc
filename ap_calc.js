@@ -146,7 +146,7 @@ var lastManualWeather = "";
 var lastAutoWeather = ["", ""];
 function autosetWeather(ability, i) {
     var currentWeather = $("input:radio[name='weather']:checked").val();
-    if (lastAutoWeather.indexOf(currentWeather) === -1) {
+    if (lastAutoWeather.indexOf(currentWeather) === -1 || currentWeather === "") {
         lastManualWeather = currentWeather;
         lastAutoWeather[1-i] = "";
     }
