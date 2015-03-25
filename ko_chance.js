@@ -133,7 +133,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     }
 
     var hasSitrus = defender.item === 'Sitrus Berry';
-    var c = getKOChance(damage, move.hits, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus);
+    var c = getKOChance(damage, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus);
     var afterText = hazardText.length > 0 ? ' after ' + serializeText(hazardText) : '';
     if (c === 1) {
         return 'guaranteed OHKO' + afterText;
@@ -147,7 +147,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     afterText = hazardText.length > 0 || eotText.length > 0 ? ' after ' + serializeText(hazardText.concat(eotText)) : '';
     var i;
     for (i = 2; i <= 4; i++) {
-        c = getKOChance(damage, move.hits, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus);
+        c = getKOChance(damage, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus);
         if (c === 1) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (c > 0) {
@@ -168,21 +168,21 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     return 'possibly the worst move ever';
 }
 
-function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus) {
+function getKOChance(damage, hp, eot, hits, maxHP, toxicCounter, hasSitrus) {
     var n = damage.length;
     var minDamage = damage[0];
     var maxDamage = damage[n-1];
     var i;
     if (hits === 1) {
-        if ((multihit === 1 || !hasSitrus) && maxDamage < hp) {
+        if (!hasSitrus && maxDamage < hp) {
             return 0;
-        } else if (multihit > 1 && hasSitrus && maxDamage < hp + Math.floor(maxHP / 4)) {
+        } else if (hasSitrus && maxDamage < hp + Math.floor(maxHP / 4)) {
             return 0;
         }
         for (i = 0; i < n; i++) {
-            if ((multihit === 1 || !hasSitrus) && damage[i] >= hp) {
+            if (!hasSitrus && damage[i] >= hp) {
                 return (n-i)/n;
-            } else if (multihit > 1 && hasSitrus && damage[i] >= hp + Math.floor(maxHP / 4)) {
+            } else if (hasSitrus && damage[i] >= hp + Math.floor(maxHP / 4)) {
                 return (n-i)/n;
             }
         }
@@ -207,7 +207,7 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
         }
         var c;
         if (i === 0 || damage[i] !== damage[i-1]) {
-            c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus);
+            c = getKOChance(damage, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus);
         } else {
             c = lastC;
         }
