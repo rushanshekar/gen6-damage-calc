@@ -211,6 +211,14 @@ describe('damage', function() {
         }
     });
 
+    // I'm only here so I don't get fined.
+    it('appendIfSet works as expected', function () {
+        expect(damage.appendIfSet('a', 'b')).to.equal('ab ');
+        expect(damage.appendIfSet('', 'a')).to.equal('a ');
+        expect(damage.appendIfSet('', null)).to.equal('');
+        expect(damage.appendIfSet('a', null)).to.equal('a');
+    });
+
     describe('checkInfiltrator assigns field side data properly', function () {
         var source;
 
@@ -599,6 +607,293 @@ describe('damage', function() {
             }
 
         })
+    });
 
+    describe('chainMods can handle a couple of spot-checks', function () {
+        var mods = [];
+
+        beforeEach(function () {
+            mods = [];
+        });
+
+        it('Base power: Reckless Flare Blitz into Dry Skin while holding a Fire Gem and boosted by Helping Hand', function () {
+            mods.push(0x1333); // Flare Blitz
+            expect(damage.chainMods(mods)).to.equal(0x1333);
+
+            mods.push(0x1400); // Dry Skin
+            expect(damage.chainMods(mods)).to.equal(0x1800);
+            
+            mods.push(0x1333); // Fire Gem
+            expect(damage.chainMods(mods)).to.equal(0x1ccd);
+
+            mods.push(0x1800); // Helping Hand
+            expect(damage.chainMods(mods)).to.equal(0x2b34);
+        });
+
+        // Rather than go through every actual case, in which case we'd have to just do the math on this side,
+        // we'll just chain a handful of actually-used mods and make sure the numbers match our precomputed results.
+        it('Some random possible mods', function () {
+            mods.push(0x800);
+            expect(damage.chainMods(mods)).to.equal(0x800);
+
+            mods.push(0x1800);
+            expect(damage.chainMods(mods)).to.equal(0xc00);
+
+            mods.push(0x2000);
+            expect(damage.chainMods(mods)).to.equal(0x1800);
+
+            mods.push(0x548);
+            expect(damage.chainMods(mods)).to.equal(0x7ec);
+
+            mods.push(0x14cd);
+            expect(damage.chainMods(mods)).to.equal(0xa4c);
+
+            mods.push(0x1199);
+            expect(damage.chainMods(mods)).to.equal(0xb53);
+        });
+    });
+
+    // I'm only here so I don't get fined.
+    describe('toSmogonStat works as expected', function () {
+        
+        function makeCase(a, b) {
+            return function () {
+                expect(damage.toSmogonStat(a)).to.equal(b);
+            }
+        }
+
+        it('Attack', makeCase('at', 'Atk'));
+        it('Defense', makeCase('df', 'Def'));
+        it('Special Attack', makeCase('sa', 'SpA'));
+        it('Special Defense', makeCase('sd', 'SpD'));
+        it('Speed', makeCase('sp', 'Spe'));
+        it('Oops', makeCase('na', 'wtf'));
+    });
+
+    describe('buildDescription builds accurate descriptions as expected', function () {
+        // Description can take the following, asterisk means required:
+        // {
+        //     int  attackBoost
+        //     str  attackEVs
+        //     str  attackerItem
+        //     str  attackerAbility
+        //     bool isBurned
+        //    *str  attackerName
+        //     bool isHelpingHand
+        //    *str  moveName
+        //     str  moveBP
+        //     str  moveType
+        //     str  hits
+        //     int  defenseBoost
+        //     str  HPEVs
+        //     str  defenseEVs
+        //     str  defenderItem
+        //     str  defenderAbility
+        //    *str  defenderName
+        //     str  weather
+        //     str  terrain
+        //     bool isReflect
+        //     bool isLightScreen
+        //     bool isCriticalHit
+        // }
+
+        var sets = {
+            'Abomasnow (No Move) vs. Abomasnow': {
+                attackerName: 'Abomasnow',
+                moveName: '(No Move)',
+                defenderName: 'Abomasnow'
+            },
+            '252+ SpA Mega Abomasnow Energy Ball vs. 252 HP / 0 SpD Mega Abomasnow': {
+                attackEVs: '252+ SpA',
+                attackerName: 'Mega Abomasnow',
+                moveName: 'Energy Ball',
+                HPEVs: '252 HP',
+                defenseEVs: '0 SpD',
+                defenderName: 'Mega Abomasnow'
+            },
+            '+6 4 Atk Mega Abomasnow Ice Shard vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackBoost: 6,
+                attackEVs: '4 Atk',
+                attackerName: 'Mega Abomasnow',
+                moveName: 'Ice Shard',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '252+ Atk Huge Power Azumarill Play Rough vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '252+ Atk',
+                attackerAbility: 'Huge Power',
+                attackerName: 'Azumarill',
+                moveName: 'Play Rough',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '-2 252+ Atk Huge Power Azumarill Waterfall vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackBoost: -2,
+                attackEVs: '252+ Atk',
+                attackerAbility: 'Huge Power',
+                attackerName: 'Azumarill',
+                moveName: 'Waterfall',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '-3 252+ Atk Huge Power burned Azumarill Superpower vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackBoost: -3,
+                attackEVs: '252+ Atk',
+                attackerAbility: 'Huge Power',
+                isBurned: true,
+                attackerName: 'Azumarill',
+                moveName: 'Superpower',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '-2 252+ Atk Huge Power burned Azumarill Helping Hand Superpower vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackBoost: -2,
+                attackEVs: '252+ Atk',
+                attackerAbility: 'Huge Power',
+                isBurned: true,
+                isHelpingHand: true,
+                attackerName: 'Azumarill',
+                moveName: 'Superpower',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '0- Atk Sitrus Berry Tropius Natural Gift (80 BP Psychic) vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '0- Atk',
+                attackerItem: 'Sitrus Berry',
+                moveBP: 80,
+                moveType: 'Psychic',
+                attackerName: 'Tropius',
+                moveName: 'Natural Gift',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'                
+            },
+            '0- Atk Sitrus Berry Tropius Natural Gift (80 BP) vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '0- Atk',
+                attackerItem: 'Sitrus Berry',
+                moveBP: 80,
+                attackerName: 'Tropius',
+                moveName: 'Natural Gift',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'                
+            },
+            '0- Atk Sitrus Berry Tropius Natural Gift (Psychic) vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '0- Atk',
+                attackerItem: 'Sitrus Berry',
+                moveType: 'Psychic',
+                attackerName: 'Tropius',
+                moveName: 'Natural Gift',
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '252 Atk Adaptability Mega Beedrill Pin Missile (3 hits) vs. 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '252 Atk',
+                attackerAbility: 'Adaptability',
+                attackerName: 'Mega Beedrill',
+                moveName: 'Pin Missile',
+                hits: 3,
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'
+            },
+            '252 Atk Parental Bond Mega Kangaskhan Low Kick (100 BP) vs. +1 252 HP / 0 Def Mega Abomasnow': {
+                attackEVs: '252 Atk',
+                attackerAbility: 'Parental Bond',
+                attackerName: 'Mega Kangaskhan',
+                moveName: 'Low Kick',
+                moveBP: 100,
+                defenseBoost: 1,
+                HPEVs: '252 HP',
+                defenseEVs: '0 Def',
+                defenderName: 'Mega Abomasnow'                
+            },
+            '252 SpA Thundurus Thunder vs. 252 HP / 0 SpD Assault Vest Abomasnow': {
+                attackEVs: '252 SpA',
+                attackerName: 'Thundurus',
+                moveName: 'Thunder',
+                HPEVs: '252 HP',
+                defenseEVs: '0 SpD',
+                defenderItem: 'Assault Vest',
+                defenderName: 'Abomasnow'
+            },
+            '252 Atk Parental Bond Mega Kangaskhan Low Kick (100 BP) vs. 252 HP / 252+ Def Marvel Scale Milotic': {
+                attackEVs: '252 Atk',
+                attackerAbility: 'Parental Bond',
+                attackerName: 'Mega Kangaskhan',
+                moveName: 'Low Kick',
+                moveBP: 100,
+                HPEVs: '252 HP',
+                defenseEVs: '252+ Def',
+                defenderAbility: 'Marvel Scale',
+                defenderName: 'Milotic'                
+            },
+            '4 SpA Milotic Hydro Pump vs. 4 HP / 0 SpD Mega Kangaskhan in Rain': {
+                attackEVs: '4 SpA',
+                attackerName: 'Milotic',
+                moveName: 'Hydro Pump',
+                HPEVs: '4 HP',
+                defenseEVs: '0 SpD',
+                defenderName: 'Mega Kangaskhan',
+                weather: 'Rain'
+            },
+            '148+ SpA Ludicolo Giga Drain vs. 252 HP / 0 SpD Milotic in Grassy Terrain': {
+                attackEVs: '148+ SpA',
+                attackerName: 'Ludicolo',
+                moveName: 'Giga Drain',
+                HPEVs: '252 HP',
+                defenseEVs: '0 SpD',
+                defenderName: 'Milotic',
+                terrain: 'Grassy'
+            },
+            '0- Atk Ludicolo Fake Out vs. 252 HP / 252+ Def Milotic through Reflect': {
+                attackEVs: '0- Atk',
+                attackerName: 'Ludicolo',
+                moveName: 'Fake Out',
+                HPEVs: '252 HP',
+                defenseEVs: '252+ Def',
+                defenderName: 'Milotic',
+                isReflect: true
+            },
+            '148+ SpA Ludicolo Giga Drain vs. 252 HP / 0 SpD Milotic in Grassy Terrain through Light Screen': {
+                attackEVs: '148+ SpA',
+                attackerName: 'Ludicolo',
+                moveName: 'Giga Drain',
+                HPEVs: '252 HP',
+                defenseEVs: '0 SpD',
+                defenderName: 'Milotic',
+                terrain: 'Grassy',
+                isLightScreen: true
+            },
+            // Interesting -- getDamageResult doesn't set isLightScreen/isReflect for crits. 
+            '148+ SpA Ludicolo Giga Drain vs. 252 HP / 0 SpD Milotic in Grassy Terrain on a critical hit': {
+                attackEVs: '148+ SpA',
+                attackerName: 'Ludicolo',
+                moveName: 'Giga Drain',
+                HPEVs: '252 HP',
+                defenseEVs: '0 SpD',
+                defenderName: 'Milotic',
+                terrain: 'Grassy',
+                isCritical: true
+            }
+        };
+
+        function makeCase(set) {
+            return function () {
+                expect(damage.buildDescription(sets[set])).to.equal(set);
+            };
+        }
+
+        for (var set in sets) {
+            if (sets.hasOwnProperty(set)) {
+                it(set, makeCase(set));
+            }
+        }
     });
 });

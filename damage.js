@@ -685,7 +685,8 @@ function buildDescription(description) {
     }
     output = appendIfSet(output, description.HPEVs);
     if (description.defenseEVs) {
-        output += " / " + description.defenseEVs + " ";
+        // Took out a leading space here because the previous string will always have a trailing space
+        output += "/ " + description.defenseEVs + " ";
     }
     output = appendIfSet(output, description.defenderItem);
     output = appendIfSet(output, description.defenderAbility);
