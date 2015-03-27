@@ -1,3 +1,70 @@
+== MajorBowman's Spring 2015 Metagross ==
+Metagross @ Metagrossite
+Ability: Clear Body
+Level: 50
+EVs: 44 HP / 164 Atk / 44 Def / 4 SpD / 252 Spe
+Jolly Nature
+- Iron Head
+- Zen Headbutt
+- Protect
+- Substitute
+
+== MajorBowman's Spring 2015 Hydreigon ==
+Hydreigon @ Choice Specs
+Ability: Levitate
+Level: 50
+EVs: 60 HP / 180 Def / 132 SpA / 4 SpD / 132 Spe
+Modest Nature
+- Draco Meteor
+- Dark Pulse
+- Earth Power
+- Flamethrower
+
+== MajorBowman's Spring 2015 Landorus-Therian ==
+Landorus-Therian @ Choice Band
+Ability: Intimidate
+Level: 50
+EVs: 164 HP / 60 Atk / 4 Def / 28 SpD / 252 Spe
+Jolly Nature
+- Earthquake
+- Superpower
+- U-turn
+- Rock Slide
+
+== MajorBowman's Spring 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 212 HP / 104 Def / 4 SpA / 76 SpD / 108 Spe
+Timid Nature
+IVs: 0 Atk / 30 Def
+- Thunder Wave
+- Taunt
+- Hidden Power [Ice]
+- Thunderbolt
+
+== MajorBowman's Spring 2015 Terrakion ==
+Terrakion @ Focus Sash
+Ability: Justified
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Rock Slide
+- Quick Guard
+- Protect
+
+== MajorBowman's Spring 2015 Ludicolo ==
+Ludicolo @ Assault Vest
+Ability: Swift Swim
+Level: 50
+EVs: 156 HP / 52 Def / 156 SpA / 4 SpD / 140 Spe
+Modest Nature
+- Scald
+- Giga Drain
+- Ice Beam
+- Fake Out
+
 == IoriYagami's Spring 2015 Luna ==
 Luna (Cresselia) @ Sitrus Berry
 Ability: Levitate
@@ -370,17 +437,6 @@ Modest Nature
 - Heat Wave
 - Flash Cannon
 - Earth Power
-- Protect
-
-== Life Orb's Spring 2015 Hydreigon ==
-Hydreigon @ Life Orb
-Ability: Levitate
-Level: 50
-EVs: 4 HP / 252 SpA / 252 Spe
-Modest Nature
-- Draco Meteor
-- Dark Pulse
-- Fire Blast
 - Protect
 
 == Life Orb's Spring 2015 Cresselia ==
