@@ -1,14 +1,3 @@
-== pokebeys14's Spring 2015 Swampert ==
-Swampert @ Expert Belt
-Ability: Torrent
-Level: 50
-EVs: 252 HP / 4 Def / 228 SpA / 4 SpD / 20 Spe
-Modest Nature
-- Scald
-- Ice Beam
-- Earth Power
-- Wide Guard
-
 == pokebeys14's Spring 2015 Clefable ==
 Clefable @ Sitrus Berry
 Ability: Unaware
@@ -30,28 +19,6 @@ Modest Nature
 - Overheat
 - Hidden Power [Ice]
 - Protect
-
-== pokebeys14's Spring 2015 Hunter J ==
-Hunter J (Salamence) @ Salamencite
-Ability: Intimidate
-Level: 50
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly Nature
-- Double-Edge
-- Earthquake
-- Dragon Dance
-- Protect
-
-== pokebeys14's Spring 2015 #GotRekt ==
-#GotRekt (Terrakion) @ Focus Sash
-Ability: Justified
-Level: 50
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly Nature
-- Close Combat
-- Rock Slide
-- Protect
-- Taunt
 
 == pokebeys14's Spring 2015 Ferrothorn ==
 Ferrothorn @ Lum Berry
