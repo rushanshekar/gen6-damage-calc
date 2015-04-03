@@ -1,3 +1,137 @@
+== pokebeys14's Spring 2015 Swampert ==
+Swampert @ Expert Belt
+Ability: Torrent
+Level: 50
+EVs: 252 HP / 4 Def / 228 SpA / 4 SpD / 20 Spe
+Modest Nature
+- Scald
+- Ice Beam
+- Earth Power
+- Wide Guard
+
+== pokebeys14's Spring 2015 Clefable ==
+Clefable @ Sitrus Berry
+Ability: Unaware
+Level: 50
+EVs: 252 HP / 156 Def / 28 SpA / 68 SpD / 4 Spe
+Bold Nature
+- Follow Me
+- Ice Beam
+- Helping Hand
+- Protect
+
+== pokebeys14's Spring 2015 Rotom-Heat ==
+Rotom-Heat @ Life Orb
+Ability: Levitate
+Level: 50
+EVs: 92 HP / 252 SpA / 164 Spe
+Modest Nature
+- Thunderbolt
+- Overheat
+- Hidden Power [Ice]
+- Protect
+
+== pokebeys14's Spring 2015 Hunter J ==
+Hunter J (Salamence) @ Salamencite
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Double-Edge
+- Earthquake
+- Dragon Dance
+- Protect
+
+== pokebeys14's Spring 2015 #GotRekt ==
+#GotRekt (Terrakion) @ Focus Sash
+Ability: Justified
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Rock Slide
+- Protect
+- Taunt
+
+== pokebeys14's Spring 2015 Ferrothorn ==
+Ferrothorn @ Lum Berry
+Ability: Iron Barbs
+Level: 50
+EVs: 252 HP / 236 Atk / 20 SpD
+Brave Nature
+IVs: 0 Spe
+- Power Whip
+- Leech Seed
+- Protect
+- Gyro Ball
+
+== NinjaSyao's Spring 2015 Marina ==
+Marina (Mawile) @ Mawilite
+Ability: Intimidate
+Level: 50
+EVs: 252 HP / 204 Atk / 52 Spe
+Adamant Nature
+- Play Rough
+- Iron Head
+- Sucker Punch
+- Protect
+
+== NinjaSyao's Spring 2015 Calina ==
+Calina (Trevenant) @ Sitrus Berry
+Ability: Harvest
+Level: 50
+EVs: 252 HP / 76 Atk / 100 Def / 76 SpD / 4 Spe
+Adamant Nature
+- Wood Hammer
+- Will-O-Wisp
+- Trick Room
+- Protect
+
+== NinjaSyao's Spring 2015 Teran ==
+Teran (Suicune) @ Assault Vest
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 4 Def / 108 SpA / 4 SpD / 140 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Icy Wind
+- Snarl
+
+== NinjaSyao's Spring 2015 Lunar ==
+Lunar (Rotom-Heat) @ Safety Goggles
+Ability: Levitate
+Level: 50
+EVs: 236 HP / 84 Def / 20 SpA / 4 SpD / 164 Spe
+Modest Nature
+- Overheat
+- Thunderbolt
+- Will-O-Wisp
+- Protect
+
+== NinjaSyao's Spring 2015 Merco ==
+Merco (Zapdos) @ Choice Specs
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 32 Def / 20 SpA / 148 SpD / 52 Spe
+Modest Nature
+IVs: 4 Atk / 30 Def
+- Thunderbolt
+- Heat Wave
+- Hidden Power [Ice]
+- Volt Switch
+
+== NinjaSyao's Spring 2015 Tarus ==
+Tarus (Terrakion) @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 44 HP / 124 Atk / 100 Def / 4 SpD / 236 Spe
+Jolly Nature
+- Rock Slide
+- Close Combat
+- Double Kick
+- Protect
+
 == MajorBowman's Spring 2015 Metagross ==
 Metagross @ Metagrossite
 Ability: Clear Body
