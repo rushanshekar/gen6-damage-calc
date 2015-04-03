@@ -144,17 +144,6 @@ IVs: 0 Atk / 30 Def
 - Hidden Power [Ice]
 - Thunderbolt
 
-== MajorBowman's Spring 2015 Terrakion ==
-Terrakion @ Focus Sash
-Ability: Justified
-Level: 50
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly Nature
-- Close Combat
-- Rock Slide
-- Quick Guard
-- Protect
-
 == MajorBowman's Spring 2015 Ludicolo ==
 Ludicolo @ Assault Vest
 Ability: Swift Swim
@@ -862,17 +851,6 @@ IVs: 30 Spe
 - Hidden Power [Ice]
 - Thunder Wave
 - Taunt
-
-== Guru Fernandez's Winter 2015 Oxford ==
-Oxford (Terrakion) @ Lum Berry
-Ability: Justified
-Level: 50
-EVs: 4 HP / 252 Atk / 252 Spe
-Jolly Nature
-- Rock Slide
-- Close Combat
-- Quick Guard
-- Protect
 
 == Guru Fernandez's Winter 2015 Bulbasage ==
 Bulbasage (Venusaur) @ Venusaurite
