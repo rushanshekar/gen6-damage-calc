@@ -505,6 +505,24 @@ function calculate() {
     bestResult.change();
     $("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
     $("#resultHeaderR").text(p2.name + "'s Moves (select one to show detailed results)");
+    displayAdjustedStats(p1, p2);
+}
+
+function displayAdjustedStats(/*p1, p2*/) {
+    var totalStatObj, adjustedStatObj, i, j;
+    for (i = 0; i < arguments.length; i++) {
+        for (j = 0; j < STATS.length; j++) {
+            totalStatObj = $("#p" + (i + 1)).find("." + STATS[j] + " .total");
+            adjustedStatObj = $("#p" + (i + 1)).find("." + STATS[j] + " .adjusted");
+            if (arguments[i].adjustedStats[STATS[j]] && arguments[i].adjustedStats[STATS[j]] !== arguments[i].rawStats[STATS[j]]) {
+                adjustedStatObj.text(arguments[i].adjustedStats[STATS[j]]);
+                adjustedStatObj.css("color", (arguments[i].adjustedStats[STATS[j]] > arguments[i].rawStats[STATS[j]]) ? "red" : "blue");
+                adjustedStatObj.parent().after(totalStatObj.parent().hide()).show();
+            } else if (adjustedStatObj.is(":visible")) {
+                adjustedStatObj.parent().before(totalStatObj.parent().show()).hide();
+            }
+        }
+    }
 }
 
 $(".result-move").change(function() {
@@ -513,7 +531,7 @@ $(".result-move").change(function() {
         if (result) {
             $("#mainResult").text(result.description + ": " + result.damageText + " -- " + result.koChanceText);
             if (result.parentDamage) {
-                $("#damageValues").text("(First hit: " + result.parentDamage.join(", ") + 
+                $("#damageValues").text("(First hit: " + result.parentDamage.join(", ") +
                     "; Second hit: " + result.childDamage.join(", ") + ")");
             } else {
                 $("#damageValues").text("(" + result.damage.join(", ") + ")");
@@ -584,6 +602,7 @@ function Pokemon(pokeInfo) {
     this.rawStats = {};
     this.boosts = {};
     this.stats = {};
+    this.adjustedStats = {};
     this.evs = {};
     for (var i = 0; i < STATS.length; i++) {
         this.rawStats[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .total").text();

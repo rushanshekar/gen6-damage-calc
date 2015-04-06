@@ -7,10 +7,10 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     checkKlutz(p2);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeed(p1, field.getWeather());
+    p1.stats[SP] = p1.adjustedStats[SP] = getFinalSpeed(p1, field.getWeather());
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeed(p2, field.getWeather());
+    p2.stats[SP] = p2.adjustedStats[SP] = getFinalSpeed(p2, field.getWeather());
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -390,6 +390,14 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     attack = Math.max(1, pokeRound(attack * chainMods(atMods) / 0x1000));
+
+    var typeEnhancingAbilities = ["Overgrow", "Blaze", "Torrent", "Swarm", "Flash Fire"];
+    if (!(isCritical && attackSource.boosts[attackStat] < 0) && move.name !== "Foul Play" &&
+            description.defenderAbility !== "Thick Fat" && typeEnhancingAbilities.indexOf(description.attackerAbility) === -1) {
+        attacker.adjustedStats[attackStat] = attack;
+    } else {
+        // TODO: Handle these cases?
+    }
     
     ////////////////////////////////
     ///////// (SP)DEFENSE //////////
@@ -435,6 +443,12 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     defense = Math.max(1, pokeRound(defense * chainMods(dfMods) / 0x1000));
+
+    if (!(isCritical && defender.boosts[defenseStat] > 0) && !move.ignoresDefenseBoosts) {
+        defender.adjustedStats[defenseStat] = defense;
+    } else {
+        // TODO: Handle these cases?
+    }
     
     ////////////////////////////////
     //////////// DAMAGE ////////////
@@ -685,16 +699,19 @@ function getModifiedStat(stat, mod) {
 
 function getFinalSpeed(pokemon, weather) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
+    // TODO: Add Sticky Web and Paralysis?
     if (pokemon.item === "Choice Scarf") {
         speed = Math.floor(speed * 1.5);
     } else if (pokemon.item === "Macho Brace" || pokemon.item === "Iron Ball") {
         speed = Math.floor(speed / 2);
     }
+    // TODO: Add Quick Powder?
     if ((pokemon.ability === "Chlorophyll" && weather.indexOf("Sun") > -1) ||
             (pokemon.ability === "Sand Rush" && weather === "Sand") ||
             (pokemon.ability === "Swift Swim" && weather.indexOf("Rain") > -1)) {
         speed *= 2;
     }
+    // TODO: Add Quick Feet?
     return speed;
 }
 
