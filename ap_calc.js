@@ -13,7 +13,7 @@ for (var bounded in bounds) {
     }
 }
 function attachValidation(clazz, min, max) {
-    $("." + clazz).keyup(function() {
+    $("." + clazz).on("keyup", function() {
         validate($(this), min, max);
     });
 }
@@ -22,23 +22,23 @@ function validate(obj, min, max) {
 }
 
 // auto-calc stats and current HP on change
-$(".level").keyup(function() {
+$(".level").on("keyup", function() {
     var poke = $(this).closest(".poke-info");
     CALC_HP_ADV(poke);
     calcStats(poke);
 });
-$(".nature").bind("keyup change", function() {
+$(".nature").on("keyup change", function() {
     calcStats($(this).closest(".poke-info"));
 });
-$(".hp .base, .hp .evs, .hp .ivs").bind("keyup change", function() {
+$(".hp .base, .hp .evs, .hp .ivs").on("keyup change", function() {
     CALC_HP_ADV($(this).closest(".poke-info"));
 });
 STATS_GSC.forEach(function(stat) {
-    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").bind("keyup change", function() {
+    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").on("keyup change", function() {
         CALC_STAT_ADV($(this).closest(".poke-info"), stat);
     });
 });
-$(".evs").bind("keyup change", function() {
+$(".evs").on("keyup change", function() {
     calcEvTotal($(this).closest(".poke-info"));
 });
 /* $(".sl .base").keyup(function() {
@@ -108,27 +108,27 @@ function calcPercentHP(poke, max, current) {
     var percent = Math.floor(100 * current / max);
     poke.find(".percent-hp").val(percent);
 }
-$(".current-hp").keyup(function() {
+$(".current-hp").on("keyup", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, max);
     var current = $(this).val();
     calcPercentHP($(this).parent(), max, current);
 });
-$(".percent-hp").keyup(function() {
+$(".percent-hp").on("keyup", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, 100);
     var percent = $(this).val();
     calcCurrentHP($(this).parent(), max, percent);
 });
 
-$(".ability").bind("keyup change", function() {
+$(".ability").on("keyup change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
 });
 
-$("#p1 .ability").bind("keyup change", function() {
+$("#p1 .ability").on("keyup change", function() {
     autosetWeather($(this).val(), 0);
 });
-$("#p2 .ability").bind("keyup change", function() {
+$("#p2 .ability").on("keyup change", function() {
     autosetWeather($(this).val(), 1);
 });
 
@@ -191,10 +191,10 @@ function autosetWeather(ability, i) {
     $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
 }
 
-$("#p1 .item").bind("keyup change", function() {
+$("#p1 .item").on("keyup change", function() {
     autosetStatus("#p1", $(this).val());
 });
-$("#p2 .item").bind("keyup change", function() {
+$("#p2 .item").on("keyup change", function() {
     autosetStatus("#p2", $(this).val());
 });
 
@@ -222,7 +222,7 @@ function autosetStatus(p, item) {
     }
 }
 
-$(".status").bind("keyup change", function() {
+$(".status").on("keyup change", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
     } else {
@@ -231,7 +231,7 @@ $(".status").bind("keyup change", function() {
 });
 
 // auto-update move details on select
-$(".move-selector").change(function() {
+$(".move-selector").on("change", function() {
     var moveName = $(this).val();
     var move = MOVES_XY[moveName] || MOVES_XY['(No Move)'];
     var moveGroupObj = $(this).parent();
@@ -248,7 +248,7 @@ $(".move-selector").change(function() {
 });
 
 // auto-update set details on select
-$(".set-selector").change(function() {
+$(".set-selector").on("change", function() {
     var fullSetName = $(this).val();
     var pokemonName, setName;
     pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -356,7 +356,7 @@ function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
 }
 
-$(".forme").change(function() {
+$(".forme").on("change", function() {
     var pokeObj = $(this).closest(".poke-info"),
         altFormeName = $(this).val(),
         altForme = POKEDEX_XY[altFormeName],
@@ -388,7 +388,7 @@ $(".forme").change(function() {
     }
 });
 
-$("input[name='terrain']").change(function () {
+$("input[name='terrain']").on("change", function () {
     $("input[name='terrain']").not(this).prop("checked", false);
 });
 
@@ -484,7 +484,7 @@ function calculate() {
     $("#resultHeaderR").text(p2.name + "'s Moves (select one to show detailed results)");
 }
 
-$(".result-move").change(function() {
+$(".result-move").on("change", function() {
     if (damageResults) {
         var result = findDamageResult($(this));
         if (result) {
@@ -503,7 +503,7 @@ $(".result-move").change(function() {
 // needlessly polluting the global namespace.
 var stickyMoves = (function () {
     var lastClicked = 'resultMoveL1';
-    $(".result-move").click(function () {
+    $(".result-move").on("click", function () {
         if (this.id === lastClicked) {
             $(this).toggleClass("locked-move");
         } else {
@@ -815,11 +815,11 @@ function getSelectOptions(arr, sort, defaultIdx) {
     return r;
 }
 
-$(document).ready(function() {
+$(document).on("ready", function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $(".terrain-trigger").bind("change keyup", applyTerrainEffects);
-    $(".calc-trigger").bind("change keyup", calculate);
+    $(".terrain-trigger").on("change keyup", applyTerrainEffects);
+    $(".calc-trigger").on("change keyup", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
             return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
