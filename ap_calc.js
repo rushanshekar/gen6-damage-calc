@@ -33,20 +33,10 @@ $(".nature").bind("keyup change", function() {
 $(".hp .base, .hp .evs, .hp .ivs").bind("keyup change", function() {
     CALC_HP_ADV($(this).closest(".poke-info"));
 });
-$(".at .base, .at .evs, .at .ivs").bind("keyup change", function() {
-    CALC_STAT_ADV($(this).closest(".poke-info"), 'at');
-});
-$(".df .base, .df .evs, .df .ivs").bind("keyup change", function() {
-    CALC_STAT_ADV($(this).closest(".poke-info"), 'df');
-});
-$(".sa .base, .sa .evs, .sa .ivs").bind("keyup change", function() {
-    CALC_STAT_ADV($(this).closest(".poke-info"), 'sa');
-});
-$(".sd .base, .sd .evs, .sd .ivs").bind("keyup change", function() {
-    CALC_STAT_ADV($(this).closest(".poke-info"), 'sd');
-});
-$(".sp .base, .sp .evs, .sp .ivs").bind("keyup change", function() {
-    CALC_STAT_ADV($(this).closest(".poke-info"), 'sp');
+STATS_GSC.forEach(function(stat) {
+    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").bind("keyup change", function() {
+        CALC_STAT_ADV($(this).closest(".poke-info"), stat);
+    });
 });
 $(".evs").bind("keyup change", function() {
     calcEvTotal($(this).closest(".poke-info"));
