@@ -388,37 +388,31 @@ $(".forme").change(function() {
     }
 });
 
-function getTerrainEffects() {
-    var className = $(this).prop("className");
-    className = className.substring(0, className.indexOf(" "));
-    switch (className) {
-        case "type1":
-        case "type2":
-        case "ability":
-        case "item":
-            var id = $(this).closest(".poke-info").prop("id");
-            var terrainValue = $("input:checkbox[name='terrain']:checked").val();
-            if (terrainValue === "Electric") {
-                $("#" + id).find("[value='Asleep']").prop("disabled", isGrounded($("#" + id)));
-            } else if (terrainValue === "Misty") {
-                $("#" + id).find(".status").prop("disabled", isGrounded($("#" + id)));
-            }
-            break;
-        default:
-            $("input:checkbox[name='terrain']").not(this).prop("checked", false);
-            if ($(this).prop("checked") && $(this).val() === "Electric") {
-                $("#p1").find("[value='Asleep']").prop("disabled", isGrounded($("#p1")));
-                $("#p2").find("[value='Asleep']").prop("disabled", isGrounded($("#p2")));
-            } else if ($(this).prop("checked") && $(this).val() === "Misty") {
-                $("#p1").find(".status").prop("disabled", isGrounded($("#p1")));
-                $("#p2").find(".status").prop("disabled", isGrounded($("#p2")));
-            } else {
-                $("#p1").find("[value='Asleep']").prop("disabled", false);
-                $("#p1").find(".status").prop("disabled", false);
-                $("#p2").find("[value='Asleep']").prop("disabled", false);
-                $("#p2").find(".status").prop("disabled", false);
-            }
-            break;
+$("input[name='terrain']").change(function () {
+    $("input[name='terrain']").not(this).prop("checked", false);
+});
+
+function applyTerrainEffects() {
+    var terrainType = $("input:checkbox[name='terrain']:checked").val();
+    if (this.id) {
+        if (!terrainType || terrainType === "Grassy") {
+            $(".poke-info").find("[value='Asleep']").prop("disabled", false);
+            $(".poke-info").find(".status").prop("disabled", false);
+        } else if (terrainType === "Electric") {
+            $("#p1").find("[value='Asleep']").prop("disabled", isGrounded($("#p1")));
+            $("#p2").find("[value='Asleep']").prop("disabled", isGrounded($("#p2")));
+            $(".poke-info").find(".status").prop("disabled", false);
+        } else {
+            $("#p1").find(".status").prop("disabled", isGrounded($("#p1")));
+            $("#p2").find(".status").prop("disabled", isGrounded($("#p2")));
+        }
+    } else if (terrainType && terrainType !== "Grassy") {
+        var pokeID = $(this).closest(".poke-info").prop("id");
+        if (terrainType === "Electric") {
+            $("#" + pokeID).find("[value='Asleep']").prop("disabled", isGrounded($("#" + pokeID)));
+        } else {
+            $("#" + pokeID).find(".status").prop("disabled", isGrounded($("#" + pokeID)));
+        }
     }
 }
 
@@ -824,7 +818,7 @@ function getSelectOptions(arr, sort, defaultIdx) {
 $(document).ready(function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $(".terrain-trigger").bind("change keyup", getTerrainEffects);
+    $(".terrain-trigger").bind("change keyup", applyTerrainEffects);
     $(".calc-trigger").bind("change keyup", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
