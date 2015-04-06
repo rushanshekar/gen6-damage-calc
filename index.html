@@ -121,7 +121,7 @@
                     <input class="move-bp calc-trigger" value="50" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critL1" /><label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critL1" /><label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move2">
@@ -129,7 +129,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critL2" /><label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critL2" /><label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move3">
@@ -137,7 +137,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critL3" /><label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critL3" /><label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move4">
@@ -145,7 +145,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critL4" /><label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critL4" /><label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
             </div>
@@ -155,26 +155,26 @@
             <div class="panel-heading"><h4 class="panel-title">Field</h4></div>
             <div class="panel-body">
                 <div class="gen-specific g3 g4 g5 g6" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
-                    <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
-                    <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
                 </div>
                 <div class="gen-specific g6" style="width: 24.3em; margin: 5px auto;" title="Select the current terrain.">
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxwide btn-left" for="electric">Electric Terrain</label>
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxwide btn-mid" for="grassy">Grassy Terrain</label>
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xwide btn-right" for="misty">Misty Terrain</label>
+                    <input class="btn-input terrain-trigger checkbox-calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxwide btn-left" for="electric">Electric Terrain</label>
+                    <input class="btn-input terrain-trigger checkbox-calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxwide btn-mid" for="grassy">Grassy Terrain</label>
+                    <input class="btn-input terrain-trigger checkbox-calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xwide btn-right" for="misty">Misty Terrain</label>
                 </div>
                 <hr class="gen-specific g6" />
                 <div class="gen-specific g3 g4 g5 g6" style="width: 22.2em; margin: 5px auto;" title="Select the current weather condition.">
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="" id="clear" checked="checked" /><label class="btn btn-small btn-left" for="clear">None</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Sun" id="sun" /><label class="btn btn-small btn-mid" for="sun">Sun</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Rain" id="rain" /><label class="btn btn-small btn-mid" for="rain">Rain</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Sand" id="sand" /><label class="btn btn-small btn-mid" for="sand">Sand</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Hail" id="hail" /><label class="btn btn-small btn-right" for="hail">Hail</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="" id="clear" checked="checked" /><label class="btn btn-small btn-left" for="clear">None</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Sun" id="sun" /><label class="btn btn-small btn-mid" for="sun">Sun</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Rain" id="rain" /><label class="btn btn-small btn-mid" for="rain">Rain</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Sand" id="sand" /><label class="btn btn-small btn-mid" for="sand">Sand</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Hail" id="hail" /><label class="btn btn-small btn-right" for="hail">Hail</label>
                 </div>
                 <div class="gen-specific g6" style="width: 21.1em; margin: 5px auto;" title="Select the current weather condition.">
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Harsh Sun" id="harsh-sun" disabled="disabled" /><label class="btn btn-wide btn-left" for="harsh-sun">Harsh Sun</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Heavy Rain" id="heavy-rain" disabled="disabled" /><label class="btn btn-wide btn-mid" for="heavy-rain">Heavy Rain</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Strong Winds" id="strong-winds" disabled="disabled" /><label class="btn btn-xwide btn-right" for="strong-winds">Strong Winds</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Harsh Sun" id="harsh-sun" disabled="disabled" /><label class="btn btn-wide btn-left" for="harsh-sun">Harsh Sun</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Heavy Rain" id="heavy-rain" disabled="disabled" /><label class="btn btn-wide btn-mid" for="heavy-rain">Heavy Rain</label>
+                    <input class="btn-input radio-calc-trigger" type="radio" name="weather" value="Strong Winds" id="strong-winds" disabled="disabled" /><label class="btn btn-xwide btn-right" for="strong-winds">Strong Winds</label>
                 </div>
                 <!--<div class="gen-specific g2 hide" style="width: 17.8em; margin: 0 auto 5px;" title="Select the current weather condition.">
                     <input class="btn-input calc-trigger" type="radio" name="gscWeather" value="" id="gscClear" checked="checked" /><label class="btn btn-small btn-left" for="gscClear">None</label>
@@ -183,29 +183,29 @@
                     <input class="btn-input calc-trigger" type="radio" name="gscWeather" value="Sand" id="gscSand" /><label class="btn btn-small btn-right" for="gscSand">Sand</label>
                 </div> -->
                 <div class="gen-specific g4 g5 g6" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" id="gravity" /><label class="btn" for="gravity">Gravity</label>
+                    <input class="btn-input terrain-trigger checkbox-calc-trigger" type="checkbox" id="gravity" /><label class="btn" for="gravity">Gravity</label>
                 </div>
                 <hr class="gen-specific g2 g3 g4 g5 g6" />
                 <div class="btn-group gen-specific g4 g5 g6">
                     <div class="left" title="Is Stealth Rock affecting this side of the field?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="srL" /><label class="btn btn-xwide" for="srL">Stealth Rock</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="srL" /><label class="btn btn-xwide" for="srL">Stealth Rock</label>
                     </div>
                     <div class="right" title="Is Stealth Rock affecting this side of the field?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="srR" /><label class="btn btn-xwide" for="srR">Stealth Rock</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="srR" /><label class="btn btn-xwide" for="srR">Stealth Rock</label>
                     </div>
                 </div>
                 <div class="btn-group gen-specific g3 g4 g5 g6">
                     <div class="left" title="Are there Spikes on this side of the field?">
-                        <input class="btn-input calc-trigger" type="radio" name="spikesL" value="0" id="spikesL0" checked="checked" /><label class="btn btn-xsmall btn-left" for="spikesL0">0</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesL" value="1" id="spikesL1" /><label class="btn btn-xsmall btn-mid" for="spikesL1">1</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesL" value="2" id="spikesL2" /><label class="btn btn-xsmall btn-mid" for="spikesL2">2</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesL" value="3" id="spikesL3" /><label class="btn btn-wide btn-right" for="spikesL3">3 Spikes</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesL" value="0" id="spikesL0" checked="checked" /><label class="btn btn-xsmall btn-left" for="spikesL0">0</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesL" value="1" id="spikesL1" /><label class="btn btn-xsmall btn-mid" for="spikesL1">1</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesL" value="2" id="spikesL2" /><label class="btn btn-xsmall btn-mid" for="spikesL2">2</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesL" value="3" id="spikesL3" /><label class="btn btn-wide btn-right" for="spikesL3">3 Spikes</label>
                     </div>
                     <div class="right" title="Are there Spikes on this side of the field?">
-                        <input class="btn-input calc-trigger" type="radio" name="spikesR" value="0" id="spikesR0" checked="checked" /><label class="btn btn-xsmall btn-left" for="spikesR0">0</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesR" value="1" id="spikesR1" /><label class="btn btn-xsmall btn-mid" for="spikesR1">1</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesR" value="2" id="spikesR2" /><label class="btn btn-xsmall btn-mid" for="spikesR2">2</label>
-                        <input class="btn-input calc-trigger" type="radio" name="spikesR" value="3" id="spikesR3" /><label class="btn btn-wide btn-right" for="spikesR3">3 Spikes</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesR" value="0" id="spikesR0" checked="checked" /><label class="btn btn-xsmall btn-left" for="spikesR0">0</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesR" value="1" id="spikesR1" /><label class="btn btn-xsmall btn-mid" for="spikesR1">1</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesR" value="2" id="spikesR2" /><label class="btn btn-xsmall btn-mid" for="spikesR2">2</label>
+                        <input class="btn-input radio-calc-trigger" type="radio" name="spikesR" value="3" id="spikesR3" /><label class="btn btn-wide btn-right" for="spikesR3">3 Spikes</label>
                     </div>
                 </div>
                 <!--<div class="btn-group gen-specific g2">
@@ -218,36 +218,36 @@
                 </div> -->
                 <div class="btn-group">
                     <div class="left" title="Is this Pokemon protected by Reflect and/or Light Screen?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="reflectL" /><label class="btn btn-left" for="reflectL">Reflect</label>
-                        <input class="btn-input calc-trigger" type="checkbox" id="lightScreenL" /><label class="btn btn-xwide btn-right" for="lightScreenL">Light Screen</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="reflectL" /><label class="btn btn-left" for="reflectL">Reflect</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="lightScreenL" /><label class="btn btn-xwide btn-right" for="lightScreenL">Light Screen</label>
                     </div>
                     <div class="right" title="Is this Pokemon protected by Reflect and/or Light Screen?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="reflectR" /><label class="btn btn-left" for="reflectR">Reflect</label>
-                        <input class="btn-input calc-trigger" type="checkbox" id="lightScreenR" /><label class="btn btn-xwide btn-right" for="lightScreenR">Light Screen</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="reflectR" /><label class="btn btn-left" for="reflectR">Reflect</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="lightScreenR" /><label class="btn btn-xwide btn-right" for="lightScreenR">Light Screen</label>
                     </div>
                 </div>
                 <div class="btn-group gen-specific g2 g3 g4 g5 g6">
                     <div class="left" title="Has this Pokemon been revealed with Foresight or Odor Sleuth?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="foresightL" /><label class="btn btn-wide" for="foresightL">Foresight</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="foresightL" /><label class="btn btn-wide" for="foresightL">Foresight</label>
                     </div>
                     <div class="right" title="Has this Pokemon been revealed with Foresight or Odor Sleuth?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="foresightR" /><label class="btn btn-wide" for="foresightR">Foresight</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="foresightR" /><label class="btn btn-wide" for="foresightR">Foresight</label>
                     </div>
                 </div>
                 <div class="btn-group gen-specific g3 g4 g5 g6">
                     <div class="left" title="Has this Pokemon's power been boosted by an ally's Helping Hand?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="helpingHandL" /><label class="btn btn-xxwide" for="helpingHandL">Helping Hand</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="helpingHandL" /><label class="btn btn-xxwide" for="helpingHandL">Helping Hand</label>
                     </div>
                     <div class="right" title="Has this Pokemon's power been boosted by an ally's Helping Hand?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="helpingHandR" /><label class="btn btn-xxwide" for="helpingHandR">Helping Hand</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="helpingHandR" /><label class="btn btn-xxwide" for="helpingHandR">Helping Hand</label>
                     </div>
                 </div>
                 <div class="btn-group gen-specific g5 g6">
                     <div class="left" title="Is this Pokemon protected by an ally's Friend Guard?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="friendGuardL" /><label class="btn btn-xxwide" for="friendGuardL">Friend Guard</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="friendGuardL" /><label class="btn btn-xxwide" for="friendGuardL">Friend Guard</label>
                     </div>
                     <div class="right" title="Is this Pokemon protected by an ally's Friend Guard?">
-                        <input class="btn-input calc-trigger" type="checkbox" id="friendGuardR" /><label class="btn btn-xxwide" for="friendGuardR">Friend Guard</label>
+                        <input class="btn-input checkbox-calc-trigger" type="checkbox" id="friendGuardR" /><label class="btn btn-xxwide" for="friendGuardR">Friend Guard</label>
                     </div>
                 </div>
             </div>
@@ -316,7 +316,7 @@
                     <input class="move-bp calc-trigger" value="50" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critR1" /><label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critR1" /><label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move2">
@@ -324,7 +324,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critR2" /><label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critR2" /><label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move3">
@@ -332,7 +332,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critR3" /><label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critR3" /><label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
                 <div class="move4">
@@ -340,7 +340,7 @@
                     <input class="move-bp calc-trigger" value="0" />
                     <select class="move-type calc-trigger"></select>
                     <select class="move-cat calc-trigger gen-specific g4 g5 g6"><option value="Physical">Physical</option><option value="Special">Special</option></select>
-                    <input class="move-crit calc-trigger btn-input" type="checkbox" id="critR4" /><label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
+                    <input class="move-crit checkbox-calc-trigger btn-input" type="checkbox" id="critR4" /><label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
             </div>

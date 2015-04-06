@@ -13,7 +13,7 @@ for (var bounded in bounds) {
     }
 }
 function attachValidation(clazz, min, max) {
-    $("." + clazz).on("keyup", function() {
+    $("." + clazz).on("input", function() {
         validate($(this), min, max);
     });
 }
@@ -22,23 +22,23 @@ function validate(obj, min, max) {
 }
 
 // auto-calc stats and current HP on change
-$(".level").on("keyup", function() {
+$(".level").on("input", function() {
     var poke = $(this).closest(".poke-info");
     CALC_HP_ADV(poke);
     calcStats(poke);
 });
-$(".nature").on("keyup change", function() {
+$(".nature").on("input", function() {
     calcStats($(this).closest(".poke-info"));
 });
-$(".hp .base, .hp .evs, .hp .ivs").on("keyup change", function() {
+$(".hp .base, .hp .evs, .hp .ivs").on("input", function() {
     CALC_HP_ADV($(this).closest(".poke-info"));
 });
 STATS_GSC.forEach(function(stat) {
-    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").on("keyup change", function() {
+    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").on("input", function() {
         CALC_STAT_ADV($(this).closest(".poke-info"), stat);
     });
 });
-$(".evs").on("keyup change", function() {
+$(".evs").on("input", function() {
     calcEvTotal($(this).closest(".poke-info"));
 });
 /* $(".sl .base").keyup(function() {
@@ -108,27 +108,27 @@ function calcPercentHP(poke, max, current) {
     var percent = Math.floor(100 * current / max);
     poke.find(".percent-hp").val(percent);
 }
-$(".current-hp").on("keyup", function() {
+$(".current-hp").on("input", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, max);
     var current = $(this).val();
     calcPercentHP($(this).parent(), max, current);
 });
-$(".percent-hp").on("keyup", function() {
+$(".percent-hp").on("input", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, 100);
     var percent = $(this).val();
     calcCurrentHP($(this).parent(), max, percent);
 });
 
-$(".ability").on("keyup change", function() {
+$(".ability").on("change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
 });
 
-$("#p1 .ability").on("keyup change", function() {
+$("#p1 .ability").on("change", function() {
     autosetWeather($(this).val(), 0);
 });
-$("#p2 .ability").on("keyup change", function() {
+$("#p2 .ability").on("change", function() {
     autosetWeather($(this).val(), 1);
 });
 
@@ -191,10 +191,10 @@ function autosetWeather(ability, i) {
     $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
 }
 
-$("#p1 .item").on("keyup change", function() {
+$("#p1 .item").on("change", function() {
     autosetStatus("#p1", $(this).val());
 });
-$("#p2 .item").on("keyup change", function() {
+$("#p2 .item").on("change", function() {
     autosetStatus("#p2", $(this).val());
 });
 
@@ -207,22 +207,19 @@ function autosetStatus(p, item) {
     }
     if (item === "Flame Orb") {
         lastAutoStatus[p] = "Burned";
-        $(p + " .status").val("Burned");
-        $(p + " .status").change();
+        $(p + " .status").val("Burned").trigger("input");
     } else if (item === "Toxic Orb") {
         lastAutoStatus[p] = "Badly Poisoned";
-        $(p + " .status").val("Badly Poisoned");
-        $(p + " .status").change();
+        $(p + " .status").val("Badly Poisoned").trigger("input");
     } else {
         lastAutoStatus[p] = "Healthy";
         if (currentStatus !== lastManualStatus[p]) {
-            $(p + " .status").val(lastManualStatus[p]);
-            $(p + " .status").change();
+            $(p + " .status").val(lastManualStatus[p]).trigger("input");
         }
     }
 }
 
-$(".status").on("keyup change", function() {
+$(".status").on("input", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
     } else {
@@ -230,8 +227,12 @@ $(".status").on("keyup change", function() {
     }
 });
 
+$(".move-selector, .set-selector").on("change", function (e) {
+    $(this).trigger("select2-change");
+});
+
 // auto-update move details on select
-$(".move-selector").on("change", function() {
+$(".move-selector").on("select2-change", function() {
     var moveName = $(this).val();
     var move = MOVES_XY[moveName] || MOVES_XY['(No Move)'];
     var moveGroupObj = $(this).parent();
@@ -248,7 +249,7 @@ $(".move-selector").on("change", function() {
 });
 
 // auto-update set details on select
-$(".set-selector").on("change", function() {
+$(".set-selector").on("select2-change", function() {
     var fullSetName = $(this).val();
     var pokemonName, setName;
     pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -268,8 +269,8 @@ $(".set-selector").on("change", function() {
         } else {
             formeObj.hide();
         }
-        pokeObj.find(".type1").val(pokemon.t1);
-        pokeObj.find(".type2").val(pokemon.t2);
+        pokeObj.find(".type1").val(pokemon.t1).change();
+        pokeObj.find(".type2").val(pokemon.t2).change();
         pokeObj.find(".hp .base").val(pokemon.bs.hp);
         var i;
         for (i = 0; i < STATS_GSC.length; i++) {
@@ -278,8 +279,7 @@ $(".set-selector").on("change", function() {
         pokeObj.find(".weight").val(pokemon.w);
         pokeObj.find(".boost").val(0);
         pokeObj.find(".percent-hp").val(100);
-        pokeObj.find(".status").val("Healthy");
-        $(".status").change();
+        pokeObj.find(".status").val("Healthy").trigger("input");
         var moveObj;
         var abilityObj = pokeObj.find(".ability");
         var itemObj = pokeObj.find(".item");
@@ -348,7 +348,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
     }
 
     var formeOptions = getSelectOptions(pokemon.formes, false, defaultForme);
-    formeObj.children("select").find("option").remove().end().append(formeOptions).change();
+    formeObj.children("select").find("option").remove().end().append(formeOptions).trigger("input");
     formeObj.show();
 }
 
@@ -356,7 +356,7 @@ function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
 }
 
-$(".forme").on("change", function() {
+$(".forme").on("input", function() {
     var pokeObj = $(this).closest(".poke-info"),
         altFormeName = $(this).val(),
         altForme = POKEDEX_XY[altFormeName],
@@ -364,8 +364,8 @@ $(".forme").on("change", function() {
         pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
         setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
 
-    pokeObj.find(".type1").val(altForme.t1);
-    pokeObj.find(".type2").val(altForme.t2);
+    pokeObj.find(".type1").val(altForme.t1).change();
+    pokeObj.find(".type2").val(altForme.t2).change();
     pokeObj.find(".weight").val(altForme.w);
     for (var i = 0; i < STATS_GSC.length; i++) {
         pokeObj.find("." + STATS_GSC[i] + " .base").val(altForme.bs[STATS_GSC[i]]);
@@ -384,7 +384,7 @@ $(".forme").on("change", function() {
         pokeObj.find(".item").prop("disabled", false);
     }
     if (pokemonName === "Darmanitan") {
-        pokeObj.find(".percent-hp").val(altFormeName === "Darmanitan-Z" ? "50" : "100").keyup();
+        pokeObj.find(".percent-hp").val(altFormeName === "Darmanitan-Z" ? "50" : "100").trigger("input");
     }
 });
 
@@ -818,8 +818,9 @@ function getSelectOptions(arr, sort, defaultIdx) {
 $(document).on("ready", function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $(".terrain-trigger").on("change keyup", applyTerrainEffects);
-    $(".calc-trigger").on("change keyup", calculate);
+    $(".terrain-trigger").on("change", applyTerrainEffects);
+    $(".radio-calc-trigger, .checkbox-calc-trigger").on("change", calculate);
+    $(".calc-trigger").on("input select2-change", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
             return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
