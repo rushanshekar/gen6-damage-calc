@@ -357,40 +357,34 @@ function setSelectValueIfValid(select, value, fallback) {
 }
 
 $(".forme").change(function() {
-    var altForme = POKEDEX_XY[$(this).val()],
-        container = $(this).closest(".info-group").siblings(),
-        fullSetName = container.find(".select2-chosen").first().text(),
+    var pokeObj = $(this).closest(".poke-info"),
+        altFormeName = $(this).val(),
+        altForme = POKEDEX_XY[altFormeName],
+        fullSetName = $(this).closest('.poke-info').find('.set-selector .select2-chosen').text(),
         pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
         setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
 
-    $(this).parent().siblings().find(".type1").val(altForme.t1);
-    $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
-    $(this).parent().siblings().find(".weight").val(altForme.w);
-
+    pokeObj.find(".type1").val(altForme.t1);
+    pokeObj.find(".type2").val(altForme.t2);
+    pokeObj.find(".weight").val(altForme.w);
     for (var i = 0; i < STATS_GSC.length; i++) {
-        var baseStat = container.find("." + STATS_GSC[i]).find(".base");
-        baseStat.val(altForme.bs[STATS_GSC[i]]);
-        baseStat.keyup();
+        pokeObj.find("." + STATS_GSC[i] + " .base").val(altForme.bs[STATS_GSC[i]]);
     }
-
+    calcStats(pokeObj);
     if (ABILITIES_XY.indexOf(altForme.ab) > -1) {
-        container.find(".ability").val(altForme.ab);
+        pokeObj.find(".ability").val(altForme.ab).change();
     } else if (setName !== "Blank Set" && ABILITIES_XY.indexOf(SETDEX_XY[pokemonName][setName].ability) > -1) {
-        container.find(".ability").val(SETDEX_XY[pokemonName][setName].ability);
+        pokeObj.find(".ability").val(SETDEX_XY[pokemonName][setName].ability).change();
     } else {
-        container.find(".ability").val("");
+        pokeObj.find(".ability").val("").change();
     }
-    container.find(".ability").keyup();
-
-    if ($(this).val().indexOf("Mega") === 0 && $(this).val() !== "Mega Rayquaza") {
-        container.find(".item").val("").keyup();
-        container.find(".item").prop("disabled", true);
+    if (altFormeName.indexOf("Mega") === 0 && altFormeName !== "Mega Rayquaza") {
+        pokeObj.find(".item").val("").change().prop("disabled", true);
     } else {
-        container.find(".item").prop("disabled", false);
+        pokeObj.find(".item").prop("disabled", false);
     }
-
     if (pokemonName === "Darmanitan") {
-        container.find(".percent-hp").val($(this).val() === "Darmanitan-Z" ? "50" : "100").keyup();
+        pokeObj.find(".percent-hp").val(altFormeName === "Darmanitan-Z" ? "50" : "100").keyup();
     }
 });
 
