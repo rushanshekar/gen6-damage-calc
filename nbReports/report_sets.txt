@@ -1,4 +1,73 @@
-== pokebeys14's Spring 2015 Clefable ==
+== DaWoblefet's Winter 2015 Salamence ==
+Salamence @ Salamencite
+Ability: Intimidate
+Level: 50
+Happiness: 0
+EVs: 52 HP / 172 Atk / 4 Def / 84 SpD / 196 Spe
+Jolly Nature
+- Frustration
+- Dragon Dance
+- Roost
+- Protect
+
+== DaWoblefet's Winter 2015 Clefable ==
+Clefable @ Sitrus Berry
+Ability: Unaware
+Level: 50
+EVs: 244 HP / 164 Def / 28 SpA / 68 SpD / 4 Spe
+Bold Nature
+IVs: 1 Atk
+- Follow Me
+- Ice Beam
+- Helping Hand
+- Protect
+
+== DaWoblefet's Winter 2015 Bisharp ==
+Bisharp @ Focus Sash
+Ability: Defiant
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Sucker Punch
+- Knock Off
+- Iron Head
+- Protect
+
+== DaWoblefet's Winter 2015 Virizion ==
+Virizion @ Expert Belt
+Ability: Justified
+Level: 50
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Close Combat
+- Leaf Blade
+- Taunt
+- Protect
+
+== DaWoblefet's Winter 2015 Heatran ==
+Heatran @ Chople Berry
+Ability: Flash Fire
+Level: 50
+EVs: 132 HP / 20 Def / 132 SpA / 12 SpD / 212 Spe
+Modest Nature
+- Heat Wave
+- Earth Power
+- Substitute
+- Protect
+
+== DaWoblefet's Winter 2015 Suicune ==
+Suicune @ Rocky Helmet
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 4 Def / 132 SpA / 60 SpD / 60 Spe
+Bold Nature
+IVs: 0 Atk
+- Scald
+- Ice Beam
+- Tailwind
+- Protect
+
+== pokebeys14's Winter 2015 Clefable ==
 Clefable @ Sitrus Berry
 Ability: Unaware
 Level: 50
@@ -9,7 +78,7 @@ Bold Nature
 - Helping Hand
 - Protect
 
-== pokebeys14's Spring 2015 Rotom-Heat ==
+== pokebeys14's Winter 2015 Rotom-Heat ==
 Rotom-Heat @ Life Orb
 Ability: Levitate
 Level: 50
@@ -20,7 +89,7 @@ Modest Nature
 - Hidden Power [Ice]
 - Protect
 
-== pokebeys14's Spring 2015 Ferrothorn ==
+== pokebeys14's Winter 2015 Ferrothorn ==
 Ferrothorn @ Lum Berry
 Ability: Iron Barbs
 Level: 50
@@ -32,7 +101,7 @@ IVs: 0 Spe
 - Protect
 - Gyro Ball
 
-== NinjaSyao's Spring 2015 Marina ==
+== NinjaSyao's Winter 2015 Marina ==
 Marina (Mawile) @ Mawilite
 Ability: Intimidate
 Level: 50
@@ -43,7 +112,7 @@ Adamant Nature
 - Sucker Punch
 - Protect
 
-== NinjaSyao's Spring 2015 Calina ==
+== NinjaSyao's Winter 2015 Calina ==
 Calina (Trevenant) @ Sitrus Berry
 Ability: Harvest
 Level: 50
@@ -54,7 +123,7 @@ Adamant Nature
 - Trick Room
 - Protect
 
-== NinjaSyao's Spring 2015 Teran ==
+== NinjaSyao's Winter 2015 Teran ==
 Teran (Suicune) @ Assault Vest
 Ability: Pressure
 Level: 50
@@ -65,7 +134,7 @@ Bold Nature
 - Icy Wind
 - Snarl
 
-== NinjaSyao's Spring 2015 Lunar ==
+== NinjaSyao's Winter 2015 Lunar ==
 Lunar (Rotom-Heat) @ Safety Goggles
 Ability: Levitate
 Level: 50
@@ -76,7 +145,7 @@ Modest Nature
 - Will-O-Wisp
 - Protect
 
-== NinjaSyao's Spring 2015 Merco ==
+== NinjaSyao's Winter 2015 Merco ==
 Merco (Zapdos) @ Choice Specs
 Ability: Pressure
 Level: 50
@@ -88,7 +157,7 @@ IVs: 4 Atk / 30 Def
 - Hidden Power [Ice]
 - Volt Switch
 
-== NinjaSyao's Spring 2015 Tarus ==
+== NinjaSyao's Winter 2015 Tarus ==
 Tarus (Terrakion) @ Lum Berry
 Ability: Justified
 Level: 50
@@ -99,7 +168,7 @@ Jolly Nature
 - Double Kick
 - Protect
 
-== MajorBowman's Spring 2015 Metagross ==
+== MajorBowman's Winter 2015 Metagross ==
 Metagross @ Metagrossite
 Ability: Clear Body
 Level: 50
@@ -110,7 +179,7 @@ Jolly Nature
 - Protect
 - Substitute
 
-== MajorBowman's Spring 2015 Hydreigon ==
+== MajorBowman's Winter 2015 Hydreigon ==
 Hydreigon @ Choice Specs
 Ability: Levitate
 Level: 50
@@ -121,7 +190,7 @@ Modest Nature
 - Earth Power
 - Flamethrower
 
-== MajorBowman's Spring 2015 Landorus-Therian ==
+== MajorBowman's Winter 2015 Landorus-Therian ==
 Landorus-Therian @ Choice Band
 Ability: Intimidate
 Level: 50
@@ -132,7 +201,7 @@ Jolly Nature
 - U-turn
 - Rock Slide
 
-== MajorBowman's Spring 2015 Thundurus ==
+== MajorBowman's Winter 2015 Thundurus ==
 Thundurus @ Sitrus Berry
 Ability: Prankster
 Level: 50
@@ -144,7 +213,7 @@ IVs: 0 Atk / 30 Def
 - Hidden Power [Ice]
 - Thunderbolt
 
-== MajorBowman's Spring 2015 Ludicolo ==
+== MajorBowman's Winter 2015 Ludicolo ==
 Ludicolo @ Assault Vest
 Ability: Swift Swim
 Level: 50
@@ -155,7 +224,7 @@ Modest Nature
 - Ice Beam
 - Fake Out
 
-== IoriYagami's Spring 2015 Luna ==
+== IoriYagami's Winter 2015 Luna ==
 Luna (Cresselia) @ Sitrus Berry
 Ability: Levitate
 Level: 50
@@ -166,7 +235,7 @@ Calm Nature
 - Skill Swap
 - Thunder Wave
 
-== IoriYagami's Spring 2015 Heatran ==
+== IoriYagami's Winter 2015 Heatran ==
 Heatran @ Leftovers
 Ability: Flash Fire
 Level: 50
@@ -177,7 +246,7 @@ Modest Nature
 - Heat Wave
 - Earth Power
 
-== IoriYagami's Spring 2015 Gastrodon ==
+== IoriYagami's Winter 2015 Gastrodon ==
 Gastrodon @ Rindo Berry
 Ability: Storm Drain
 Level: 50
@@ -188,7 +257,7 @@ Bold Nature
 - Protect
 - Recover
 
-== IoriYagami's Spring 2015 Praline ==
+== IoriYagami's Winter 2015 Praline ==
 Praline (Lopunny) @ Lopunnite
 Ability: Limber
 Level: 50
@@ -199,7 +268,7 @@ Jolly Nature
 - Protect
 - Return
 
-== IoriYagami's Spring 2015 Spike ==
+== IoriYagami's Winter 2015 Spike ==
 Spike (Granbull) @ Assault Vest
 Ability: Intimidate
 Level: 50
@@ -210,7 +279,7 @@ Adamant Nature
 - Rock Slide
 - Ice Punch
 
-== IoriYagami's Spring 2015 Midori ==
+== IoriYagami's Winter 2015 Midori ==
 Midori (Virizion) @ Lum Berry
 Ability: Justified
 Level: 50
@@ -221,7 +290,7 @@ Jolly Nature
 - Protect
 - Quick Guard
 
-== Keonspy's Spring 2015 Heliolisk ==
+== Keonspy's Winter 2015 Heliolisk ==
 Heliolisk @ Choice Scarf
 Ability: Dry Skin
 Level: 50
@@ -232,7 +301,7 @@ Timid Nature
 - Parabolic Charge
 - Hyper Beam
 
-== Keonspy's Spring 2015 Sceptile ==
+== Keonspy's Winter 2015 Sceptile ==
 Sceptile @ Sceptilite
 Ability: Overgrow
 Level: 50
@@ -243,7 +312,7 @@ Timid Nature
 - Hidden Power [Ice]
 - Detect
 
-== Keonspy's Spring 2015 Thundurus-Therian ==
+== Keonspy's Winter 2015 Thundurus-Therian ==
 Thundurus-Therian (M) @ Life Orb
 Ability: Volt Absorb
 Level: 50
@@ -254,7 +323,7 @@ Timid Nature
 - Hidden Power [Ice]
 - Protect
 
-== Keonspy's Spring 2015 Gyarados ==
+== Keonspy's Winter 2015 Gyarados ==
 Gyarados @ Lum Berry
 Ability: Intimidate
 Level: 50
@@ -265,7 +334,7 @@ Adamant Nature
 - Dragon Dance
 - Protect
 
-== Keonspy's Spring 2015 Heatran ==
+== Keonspy's Winter 2015 Heatran ==
 Heatran @ Leftovers
 Ability: Flash Fire
 Level: 50
@@ -276,7 +345,7 @@ Modest Nature
 - Substitute
 - Protect
 
-== Keonspy's Spring 2015 Amoonguss ==
+== Keonspy's Winter 2015 Amoonguss ==
 Amoonguss @ Rocky Helmet
 Ability: Regenerator
 Level: 50
@@ -287,7 +356,7 @@ Bold Nature
 - Spore
 - Protect
 
-== DylanxArsenal's Spring 2015 Twinkle ==
+== DylanxArsenal's Winter 2015 Twinkle ==
 Twinkle (Politoed) @ Choice Scarf
 Ability: Drizzle
 Level: 50
@@ -298,7 +367,7 @@ Modest Nature
 - Ice Beam
 - Rain Dance
 
-== DylanxArsenal's Spring 2015 Icingdeath ==
+== DylanxArsenal's Winter 2015 Icingdeath ==
 Icingdeath (Ludicolo) @ Assault Vest
 Ability: Swift Swim
 Level: 50
@@ -309,7 +378,7 @@ Modest Nature
 - Scald
 - Ice Beam
 
-== DylanxArsenal's Spring 2015 Bisharp ==
+== DylanxArsenal's Winter 2015 Bisharp ==
 Bisharp @ Life Orb
 Ability: Defiant
 Level: 50
@@ -320,7 +389,7 @@ Adamant Nature
 - Knock Off
 - Protect
 
-== DylanxArsenal's Spring 2015 Cresselia ==
+== DylanxArsenal's Winter 2015 Cresselia ==
 Cresselia @ Rocky Helmet
 Ability: Levitate
 Level: 50
@@ -331,7 +400,7 @@ Modest Nature
 - Light Screen
 - Moonlight
 
-== DylanxArsenal's Spring 2015 DatTail ==
+== DylanxArsenal's Winter 2015 DatTail ==
 DatTail (Thundurus) @ Sitrus Berry
 Ability: Prankster
 Level: 50
@@ -342,7 +411,7 @@ Calm Nature
 - Taunt
 - Swagger
 
-== DylanxArsenal's Spring 2015 Kangaskhan ==
+== DylanxArsenal's Winter 2015 Kangaskhan ==
 Kangaskhan @ Kangaskhanite
 Ability: Scrappy
 Level: 50
@@ -353,7 +422,7 @@ Adamant Nature
 - Low Kick
 - Facade
 
-== JoeDaPr0's Spring 2015 Chesnaught ==
+== JoeDaPr0's Winter 2015 Chesnaught ==
 Chesnaught @ Sitrus Berry
 Ability: Bulletproof
 Level: 50
@@ -364,7 +433,7 @@ Sassy Nature
 - Helping Hand
 - Low Kick
 
-== JoeDaPr0's Spring 2015 Heatran ==
+== JoeDaPr0's Winter 2015 Heatran ==
 Heatran @ Life Orb
 Ability: Flash Fire
 Level: 50
@@ -375,7 +444,7 @@ Modest Nature
 - Earth Power
 - Protect
 
-== JoeDaPr0's Spring 2015 Cresselia ==
+== JoeDaPr0's Winter 2015 Cresselia ==
 Cresselia @ Rocky Helmet
 Ability: Levitate
 Level: 50
@@ -386,7 +455,7 @@ Bold Nature
 - Psychic
 - Trick Room
 
-== JoeDaPr0's Spring 2015 Salamence ==
+== JoeDaPr0's Winter 2015 Salamence ==
 Salamence @ Salamencite
 Ability: Intimidate
 Level: 50
@@ -397,7 +466,7 @@ Adamant Nature
 - Protect
 - Rock Slide
 
-== JoeDaPr0's Spring 2015 Swampert ==
+== JoeDaPr0's Winter 2015 Swampert ==
 Swampert @ Expert Belt
 Ability: Torrent
 Level: 50
@@ -408,7 +477,7 @@ Modest Nature
 - Ice Beam
 - Earth Power
 
-== JoeDaPr0's Spring 2015 Raikou ==
+== JoeDaPr0's Winter 2015 Raikou ==
 Raikou @ Assault Vest
 Ability: Pressure
 Level: 50
@@ -419,7 +488,7 @@ Timid Nature
 - Thunderbolt
 - Extrasensory
 
-== conan's Spring 2015 Salamence ==
+== conan's Winter 2015 Salamence ==
 Salamence @ Salamencite
 Ability: Intimidate
 Level: 50
@@ -430,7 +499,7 @@ Jolly Nature
 - Roost
 - Protect
 
-== conan's Spring 2015 Terrakion ==
+== conan's Winter 2015 Terrakion ==
 Terrakion @ Lum Berry
 Ability: Justified
 Level: 50
@@ -441,7 +510,7 @@ Jolly Nature
 - Protect
 - Earthquake
 
-== conan's Spring 2015 Weavile ==
+== conan's Winter 2015 Weavile ==
 Weavile @ Focus Sash
 Ability: Pressure
 Level: 50
@@ -452,7 +521,7 @@ Jolly Nature
 - Low Kick
 - Fake Out
 
-== conan's Spring 2015 Aegislash ==
+== conan's Winter 2015 Aegislash ==
 Aegislash @ Weakness Policy
 Ability: Stance Change
 Level: 50
@@ -463,7 +532,7 @@ Modest Nature
 - Flash Cannon
 - King’s Shield
 
-== conan's Spring 2015 Thundurus ==
+== conan's Winter 2015 Thundurus ==
 Thundurus @ Sitrus Berry
 Ability: Prankster
 Level: 50
@@ -474,7 +543,7 @@ Calm Nature
 - Swagger
 - Thunder Wave
 
-== conan's Spring 2015 Cresselia ==
+== conan's Winter 2015 Cresselia ==
 Cresselia @ Rocky Helmet
 Ability: Levitate
 Level: 50
@@ -485,7 +554,7 @@ Calm Nature
 - Icy Wind
 - Moonlight
 
-== Life Orb's Spring 2015 Landorus-Therian ==
+== Life Orb's Winter 2015 Landorus-Therian ==
 Landorus-Therian @ Choice Scarf
 Ability: Intimidate
 Level: 50
@@ -496,7 +565,7 @@ Adamant Nature
 - Knock Off
 - Rock Slide
 
-== Life Orb's Spring 2015 Kangaskhan ==
+== Life Orb's Winter 2015 Kangaskhan ==
 Kangaskhan @ Kangaskhanite
 Ability: Scrappy
 Level: 50
@@ -507,7 +576,7 @@ Jolly Nature
 - Low Kick
 - Sucker Punch
 
-== Life Orb's Spring 2015 Sylveon ==
+== Life Orb's Winter 2015 Sylveon ==
 Sylveon @ Choice Specs
 Ability: Pixilate
 Level: 50
@@ -518,7 +587,7 @@ Modest Nature
 - Psyshock
 - Moonblast
 
-== Life Orb's Spring 2015 Heatran ==
+== Life Orb's Winter 2015 Heatran ==
 Heatran @ Shuca Berry
 Ability: Flash Fire
 Level: 50
@@ -529,7 +598,7 @@ Modest Nature
 - Earth Power
 - Protect
 
-== Life Orb's Spring 2015 Cresselia ==
+== Life Orb's Winter 2015 Cresselia ==
 Cresselia @ Sitrus Berry
 Ability: Levitate
 Level: 50
@@ -540,7 +609,7 @@ Bold Nature
 - Sunny Day
 - Psyshock
 
-== rapha's Spring 2015 Elmo ==
+== rapha's Winter 2015 Elmo ==
 Elmo (Politoed) @ Leftovers
 Ability: Drizzle
 Level: 50
@@ -551,7 +620,7 @@ Calm Nature
 - Helping Hand
 - Protect
 
-== rapha's Spring 2015 Grapes? ==
+== rapha's Winter 2015 Grapes? ==
 Grapes? (Ludicolo) @ Assault Vest
 Ability: Swift Swim
 Level: 50
@@ -562,7 +631,7 @@ Modest Nature
 - Giga Drain
 - Ice Beam
 
-== rapha's Spring 2015 Terrakion ==
+== rapha's Winter 2015 Terrakion ==
 Terrakion @ Lum Berry
 Ability: Justified
 Level: 50
@@ -573,7 +642,7 @@ Jolly Nature
 - Double Kick
 - Protect
 
-== rapha's Spring 2015 Oppenheimer ==
+== rapha's Winter 2015 Oppenheimer ==
 Oppenheimer (Hydreigon) @ Choice Specs
 Ability: Levitate
 Level: 50
@@ -584,7 +653,7 @@ Modest Nature
 - Flamethrower
 - Earth Power
 
-== rapha's Spring 2015 Metagross ==
+== rapha's Winter 2015 Metagross ==
 Metagross @ Metagrossite
 Ability: Clear Body
 Level: 50
@@ -595,7 +664,7 @@ Adamant Nature
 - Substitute
 - Protect
 
-== rapha's Spring 2015 such toge ==
+== rapha's Winter 2015 such toge ==
 such toge (Togekiss) @ Sitrus Berry
 Ability: Serene Grace
 Level: 50
@@ -606,7 +675,7 @@ Bold Nature
 - Tailwind
 - Protect
 
-== amr97's Spring 2015 My Song ==
+== amr97's Winter 2015 My Song ==
 My Song (Kangaskhan) @ Kangaskhanite
 Ability: Scrappy
 Level: 50
@@ -617,7 +686,7 @@ Jolly Nature
 - Power-Up Punch
 - Sucker Punch
 
-== amr97's Spring 2015 Trial Dance ==
+== amr97's Winter 2015 Trial Dance ==
 Trial Dance (Azumarill) @ Sitrus Berry
 Ability: Huge Power
 Level: 50
@@ -628,7 +697,7 @@ Adamant Nature
 - Belly Drum
 - Protect
 
-== amr97's Spring 2015 Flower Girl ==
+== amr97's Winter 2015 Flower Girl ==
 Flower Girl (Amoonguss) @ Rocky Helmet
 Ability: Regenerator
 Level: 50
@@ -640,7 +709,7 @@ IVs: 0 Spe
 - Giga Drain
 - Protect
 
-== amr97's Spring 2015 Smile Taisou ==
+== amr97's Winter 2015 Smile Taisou ==
 Smile Taisou (Rotom-Heat) @ Safety Goggles
 Ability: Levitate
 Level: 50
@@ -651,7 +720,7 @@ Modest Nature
 - Will-O-Wisp
 - Thunder Wave
 
-== amr97's Spring 2015 BANGxBANG ==
+== amr97's Winter 2015 BANGxBANG ==
 BANGxBANG (Landorus-Therian) @ Choice Scarf
 Ability: Intimidate
 Level: 50
@@ -662,7 +731,7 @@ Adamant Nature
 - Knock Off
 - Superpower
 
-== amr97's Spring 2015 Smoky Thrill ==
+== amr97's Winter 2015 Smoky Thrill ==
 Smoky Thrill (Bisharp) @ Life Orb
 Ability: Defiant
 Level: 50
@@ -673,7 +742,7 @@ Adamant Nature
 - Assurance
 - Protect
 
-== KellsterCartier's Spring 2015 Metagross ==
+== KellsterCartier's Winter 2015 Metagross ==
 Metagross @ Metagrossite
 Ability: Clear Body
 Level: 50
@@ -684,7 +753,7 @@ Jolly Nature
 - Ice Punch
 - Protect
 
-== KellsterCartier's Spring 2015 Hydreigon ==
+== KellsterCartier's Winter 2015 Hydreigon ==
 Hydreigon @ Life Orb
 Ability: Levitate
 Level: 50
@@ -695,7 +764,7 @@ Modest Nature
 - Fire Blast
 - Draco Meteor
 
-== KellsterCartier's Spring 2015 Landorus ==
+== KellsterCartier's Winter 2015 Landorus ==
 Landorus-Therian @ Choice Scarf
 Ability: Intimidate
 Level: 50
@@ -706,7 +775,7 @@ Adamant Nature
 - Knock Off
 - U-turn
 
-== KellsterCartier's Spring 2015 Terrakion ==
+== KellsterCartier's Winter 2015 Terrakion ==
 Terrakion @ Lum Berry
 Ability: Justified
 Level: 50
@@ -717,7 +786,7 @@ Jolly Nature
 - Quick Guard
 - Protect
 
-== KellsterCartier's Spring 2015 Thundurus ==
+== KellsterCartier's Winter 2015 Thundurus ==
 Thundurus @ Sitrus Berry
 Ability: Prankster
 Level: 50
@@ -728,7 +797,7 @@ Calm Nature
 - Protect
 - Taunt
 
-== KellsterCartier's Spring 2015 Lapras ==
+== KellsterCartier's Winter 2015 Lapras ==
 Lapras @ Weakness Policy
 Ability: Water Absorb
 Level: 50
