@@ -228,7 +228,8 @@ $(".status").on("input", function() {
 });
 
 $(".move-selector, .set-selector").on("change", function (e) {
-    $(this).trigger("select2-change");
+    var shouldCalculate = $(this).prop('className').indexOf('set-selector') > -1 || !!e.val;
+    $(this).trigger("select2-change", shouldCalculate);
 });
 
 // auto-update move details on select
@@ -434,7 +435,10 @@ for (var i = 0; i < 4; i++) {
 }
 
 var damageResults;
-function calculate() {
+function calculate(e, shouldCalculate) {
+    if (e.originalEvent === undefined && !shouldCalculate) {
+        return;
+    }
     var p1 = new Pokemon($("#p1"));
     var p2 = new Pokemon($("#p2"));
     var field = new Field();
