@@ -263,12 +263,6 @@ $(".set-selector").on("select2-change", function() {
             stickyMoves.clearStickyMove();
         }
 
-        var formeObj = pokeObj.find(".forme").parent();
-        if (pokemon.formes) {
-            showFormes(formeObj, setName, pokemonName, pokemon);
-        } else {
-            formeObj.hide();
-        }
         pokeObj.find(".type1").val(pokemon.t1).change();
         pokeObj.find(".type2").val(pokemon.t2).change();
         pokeObj.find(".hp .base").val(pokemon.bs.hp);
@@ -320,6 +314,12 @@ $(".set-selector").on("select2-change", function() {
                 moveObj.val("(No Move)");
                 moveObj.change();
             }
+        }
+        var formeObj = pokeObj.find(".forme").parent();
+        if (pokemon.formes) {
+            showFormes(formeObj, setName, pokemonName, pokemon);
+        } else {
+            formeObj.hide();
         }
         CALC_HP_ADV(pokeObj);
         calcStats(pokeObj);
