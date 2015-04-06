@@ -17,7 +17,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     var hazards = 0;
     var hazardText = [];
     if (field.isSR && defender.ability !== 'Magic Guard') {
-        var effectiveness = typeChart['Rock'][defender.type1] * (defender.type2 ? typeChart['Rock'][defender.type2] : 1);
+        var effectiveness = TYPE_CHART_XY['Rock'][defender.type1] * (defender.type2 ? TYPE_CHART_XY['Rock'][defender.type2] : 1);
         hazards += Math.floor(effectiveness * defender.maxHP / 8);
         hazardText.push('Stealth Rock');
     }
@@ -25,11 +25,11 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
             ['Magic Guard', 'Levitate'].indexOf(defender.ability) === -1 && defender.item !== 'Air Balloon') {
         if (field.spikes === 1) {
             hazards += Math.floor(defender.maxHP / 8);
-            if (gen === 2) {
+            /* if (gen === 2) {
                 hazardText.push('Spikes');
-            } else {
+            } else { */
                 hazardText.push('1 layer of Spikes');
-            }
+            // }
         } else if (field.spikes === 2) {
             hazards += Math.floor(defender.maxHP / 6);
             hazardText.push('2 layers of Spikes');
@@ -243,12 +243,12 @@ function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) {
 function squashMultihit(d, hits) {
     if (d.length === 1) {
         return [d[0] * hits];
-    } else if (gen === 1) {
+    /* } else if (gen === 1) {
         var r = [];
         for (var i = 0; i < d.length; i++) {
             r[i] = d[i] * hits;
         }
-        return r;
+        return r; */
     } else if (d.length === 16) {
         switch (hits) {
             case 2:
@@ -283,7 +283,7 @@ function squashMultihit(d, hits) {
                 console.log("Unexpected # of hits: " + hits);
                 return d;
         }
-    } else if (d.length === 39) {
+    /* } else if (d.length === 39) {
         switch (hits) {
             case 2:
                 return [
@@ -316,7 +316,7 @@ function squashMultihit(d, hits) {
             default:
                 console.log("Unexpected # of hits: " + hits);
                 return d;
-        }
+        } */
     } else {
         console.log("Unexpected # of possible damage values: " + d.length);
         return d;

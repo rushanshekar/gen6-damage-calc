@@ -1,8 +1,9 @@
-var AT = "at", DF = "df", SA = "sa", SD = "sd", SP = "sp", SL = "sl";
-var STATS_RBY = [AT, DF, SL, SP];
+// var AT = "at", DF = "df", SA = "sa", SD = "sd", SP = "sp", SL = "sl";
+var AT = "at", DF = "df", SA = "sa", SD = "sd", SP = "sp";
+// var STATS_RBY = [AT, DF, SL, SP];
 var STATS_GSC = [AT, DF, SA, SD, SP];
 
-function CALC_HP_RBY(poke) {
+/* function CALC_HP_RBY(poke) {
     var hp = poke.find(".hp");
     var total;
     var base = ~~hp.find(".base").val();
@@ -21,7 +22,7 @@ function CALC_STAT_RBY(poke, statName) {
     var dvs = ~~stat.find(".dvs").val();
     var total = Math.floor(((base + dvs) * 2 + 63) * level / 100) + 5;
     stat.find(".total").text(total);
-}
+} */
 
 function CALC_HP_ADV(poke) {
     var hp = poke.find(".hp");

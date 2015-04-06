@@ -347,9 +347,9 @@ function getNaturalGift(item) {
         'Yache Berry' : {'t':'Ice','p':80}
     }[item];
     if (gift) {
-        if (gen < 6) {
+        /* if (gen < 6) {
             gift.p -= 20;
-        }
+        } */
         return gift;
     }
     return {'t':'Normal','p':1};
