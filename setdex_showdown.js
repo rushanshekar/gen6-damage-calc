@@ -1,35 +1,13 @@
 var SETDEX_SHOWDOWN={
-  "Fletchinder": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 124,
-        "sa": 4,
-        "sd": 124,
-        "sp": 0
-      },
-      "nature": "Bold",
-      "ability": "",
-      "item": "Eviolite",
-      "moves": [
-        "Heat Wave",
-        "Overheat",
-        "Acrobatics",
-        "U-turn"
-      ]
-    }
-  },
   "Swellow": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Jolly",
@@ -48,20 +26,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
-        "df": 252,
+        "at": 252,
+        "df": 4,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Impish",
+      "nature": "Brave",
       "ability": "Adaptability",
       "item": "Silk Scarf",
       "moves": [
         "Quick Attack",
         "Return",
-        "Double-Edge",
-        "Bite"
+        "Facade",
+        "Frustration"
       ]
     }
   },
@@ -69,20 +47,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
-        "sp": 252
+        "sd": 0,
+        "sp": 4
       },
       "nature": "Adamant",
       "ability": "Swift Swim",
-      "item": "Life Orb",
+      "item": "Sitrus Berry",
       "moves": [
         "Waterfall",
-        "Brick Break",
         "Ice Punch",
+        "Brick Break",
         "Poison Jab"
       ]
     }
@@ -100,12 +78,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "Motor Drive",
-      "item": "Sitrus Berry",
+      "item": "Salac Berry",
       "moves": [
         "Electro Ball",
         "Air Slash",
-        "Acrobatics",
-        "Volt Switch"
+        "Thunderbolt",
+        "Discharge"
       ]
     }
   },
@@ -113,11 +91,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
@@ -126,8 +104,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Bug Buzz",
         "Psychic",
-        "U-turn",
-        "Giga Drain"
+        "Giga Drain",
+        "Shadow Ball"
       ]
     }
   },
@@ -135,11 +113,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
@@ -157,14 +135,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Calm",
       "ability": "",
       "item": "Leftovers",
       "moves": []
@@ -185,10 +163,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Levitate",
       "item": "",
       "moves": [
-        "Ice Beam",
         "Psychic",
-        "Psyshock",
-        "Icy Wind"
+        "Ice Beam",
+        "Icy Wind",
+        "Psyshock"
       ]
     }
   },
@@ -198,8 +176,8 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
-        "sa": 0,
+        "df": 0,
+        "sa": 4,
         "sd": 252,
         "sp": 0
       },
@@ -208,9 +186,9 @@ var SETDEX_SHOWDOWN={
       "item": "Eviolite",
       "moves": [
         "Giga Drain",
-        "Energy Ball",
+        "Ancient Power",
         "Leaf Storm",
-        "Sludge Bomb"
+        "Hidden Power Ice"
       ]
     }
   },
@@ -231,7 +209,7 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sucker Punch",
         "Play Rough",
-        "Night Slash",
+        "Knock Off",
         "Psycho Cut"
       ]
     }
@@ -275,8 +253,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Extreme Speed",
         "Shadow Claw",
-        "Seed Bomb",
-        "Facade"
+        "Facade",
+        "Play Rough"
       ]
     }
   },
@@ -297,8 +275,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Rock Slide",
-        "U-turn",
-        "Superpower"
+        "Superpower",
+        "U-turn"
       ]
     }
   },
@@ -306,16 +284,16 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 204,
-        "at": 4,
-        "df": 60,
-        "sa": 172,
-        "sd": 68,
+        "hp": 228,
+        "at": 0,
+        "df": 124,
+        "sa": 156,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Sassy",
+      "nature": "Calm",
       "ability": "Water Absorb",
-      "item": "Assault Vest",
+      "item": "",
       "moves": [
         "Freeze-Dry",
         "Hydro Pump",
@@ -328,12 +306,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 28,
         "at": 252,
         "df": 0,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 228
       },
       "nature": "Adamant",
       "ability": "Intimidate",
@@ -342,7 +320,7 @@ var SETDEX_SHOWDOWN={
         "Earthquake",
         "Rock Slide",
         "Knock Off",
-        "Crunch"
+        "Superpower"
       ]
     }
   },
@@ -350,11 +328,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Adamant",
@@ -385,30 +363,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Psychic",
         "Psyshock",
-        "Shadow Ball",
-        "Thunderbolt"
-      ]
-    }
-  },
-  "Raticate": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 252
-      },
-      "nature": "Jolly",
-      "ability": "Guts",
-      "item": "Flame Orb",
-      "moves": [
-        "Facade",
-        "Quick Attack",
-        "Sucker Punch",
-        "Crunch"
+        "Foul Play",
+        "Shadow Ball"
       ]
     }
   },
@@ -418,12 +374,12 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 108,
+        "df": 252,
         "sa": 0,
-        "sd": 148,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Calm",
+      "nature": "Bold",
       "ability": "Water Absorb",
       "item": "Eviolite",
       "moves": [
@@ -449,10 +405,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Aggronite",
       "moves": [
-        "Rock Slide",
-        "Heavy Slam",
+        "Iron Head",
         "Earthquake",
-        "Iron Head"
+        "Rock Slide",
+        "Heavy Slam"
       ]
     }
   },
@@ -460,10 +416,10 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 0,
         "df": 252,
-        "sa": 4,
+        "sa": 8,
         "sd": 0,
         "sp": 0
       },
@@ -472,9 +428,9 @@ var SETDEX_SHOWDOWN={
       "item": "Slowbronite",
       "moves": [
         "Scald",
-        "Psyshock",
         "Ice Beam",
-        "Psychic"
+        "Psychic",
+        "Psyshock"
       ]
     }
   },
@@ -482,21 +438,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 0,
-        "df": 4,
+        "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 8,
         "sp": 0
       },
-      "nature": "Quiet",
+      "nature": "Modest",
       "ability": "",
       "item": "Ampharosite",
       "moves": [
         "Dragon Pulse",
         "Thunderbolt",
         "Focus Blast",
-        "Hidden Power Ice"
+        "Discharge"
       ]
     }
   },
@@ -513,7 +469,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "Swift Swim",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Ice Beam",
         "Muddy Water",
@@ -528,19 +484,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "df": 148,
+        "sa": 108,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Thick Fat",
       "item": "Leftovers",
       "moves": [
-        "Blizzard",
         "Ice Beam",
-        "Surf",
-        "Icy Wind"
+        "Blizzard",
+        "Icy Wind",
+        "Surf"
       ]
     }
   },
@@ -556,8 +512,8 @@ var SETDEX_SHOWDOWN={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Solar Power",
-      "item": "Choice Specs",
+      "ability": "Dry Skin",
+      "item": "Choice Scarf",
       "moves": [
         "Thunderbolt",
         "Hyper Voice",
@@ -570,21 +526,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
       "ability": "Hustle",
-      "item": "Choice Band",
+      "item": "",
       "moves": [
         "Iron Head",
         "X-Scissor",
-        "Rock Slide",
-        "Superpower"
+        "Superpower",
+        "Rock Slide"
       ]
     }
   },
@@ -592,11 +548,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 252,
+        "hp": 252,
+        "at": 52,
         "df": 0,
         "sa": 0,
-        "sd": 8,
+        "sd": 204,
         "sp": 0
       },
       "nature": "Adamant",
@@ -604,9 +560,9 @@ var SETDEX_SHOWDOWN={
       "item": "Assault Vest",
       "moves": [
         "Rock Slide",
-        "Drain Punch",
         "Ice Punch",
-        "Earthquake"
+        "Drain Punch",
+        "Iron Head"
       ]
     }
   },
@@ -625,32 +581,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Thick Fat",
       "item": "Eviolite",
       "moves": [
-        "Ice Shard",
         "Earthquake",
+        "Ice Shard",
         "Rock Slide",
         "Avalanche"
-      ]
-    }
-  },
-  "Rotom": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 164,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 0,
-        "sp": 92
-      },
-      "nature": "Bold",
-      "ability": "Levitate",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Shadow Ball",
-        "Thunderbolt",
-        "Hex",
-        "Volt Switch"
       ]
     }
   },
@@ -672,7 +606,7 @@ var SETDEX_SHOWDOWN={
         "Knock Off",
         "Aqua Jet",
         "Crabhammer",
-        "Waterfall"
+        "Superpower"
       ]
     }
   },
@@ -680,12 +614,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
+        "hp": 248,
+        "at": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "sd": 36,
+        "sp": 220
       },
       "nature": "Jolly",
       "ability": "",
@@ -714,31 +648,9 @@ var SETDEX_SHOWDOWN={
       "item": "Choice Specs",
       "moves": [
         "Draco Meteor",
-        "Flamethrower",
         "Hurricane",
-        "Air Slash"
-      ]
-    }
-  },
-  "Skuntank": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 0
-      },
-      "nature": "Adamant",
-      "ability": "",
-      "item": "Black Sludge",
-      "moves": [
-        "Poison Jab",
-        "Crunch",
-        "Feint",
-        "Fire Blast"
+        "Air Slash",
+        "Flamethrower"
       ]
     }
   },
@@ -746,21 +658,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 100,
-        "at": 200,
-        "df": 108,
+        "hp": 252,
+        "at": 0,
+        "df": 156,
         "sa": 0,
-        "sd": 100,
+        "sd": 96,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Calm",
       "ability": "Simple",
       "item": "Leftovers",
       "moves": [
         "Waterfall",
         "Return",
-        "Superpower",
-        "Quick Attack"
+        "Quick Attack",
+        "Scald"
       ]
     }
   },
@@ -781,8 +693,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Psyshock",
         "Psychic",
-        "Energy Ball",
-        "Thunderbolt"
+        "Shadow Ball",
+        "Energy Ball"
       ]
     }
   },
@@ -790,11 +702,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 8,
         "sp": 0
       },
       "nature": "Modest",
@@ -802,9 +714,9 @@ var SETDEX_SHOWDOWN={
       "item": "Choice Specs",
       "moves": [
         "Boomburst",
-        "Ice Beam",
-        "Flamethrower",
-        "Fire Blast"
+        "Focus Blast",
+        "Fire Blast",
+        "Ice Beam"
       ]
     }
   },
@@ -821,12 +733,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Hardy",
       "ability": "Water Absorb",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
-        "Drain Punch",
-        "Earthquake",
         "Earth Power",
-        "Ice Punch"
+        "Earthquake",
+        "Drain Punch",
+        "Poison Jab"
       ]
     }
   },
@@ -847,8 +759,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Knock Off",
-        "Rock Slide",
-        "Acrobatics"
+        "Acrobatics",
+        "Rock Slide"
       ]
     }
   },
@@ -859,18 +771,18 @@ var SETDEX_SHOWDOWN={
         "hp": 252,
         "at": 0,
         "df": 0,
-        "sa": 0,
-        "sd": 252,
+        "sa": 252,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Modest",
       "ability": "Volt Absorb",
       "item": "Leftovers",
       "moves": [
-        "Scald",
         "Ice Beam",
+        "Scald",
         "Discharge",
-        "Volt Switch"
+        "Thunderbolt"
       ]
     }
   },
@@ -878,25 +790,25 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 4,
-        "sp": 252
+        "hp": 252,
+        "at": 0,
+        "df": 252,
+        "sa": 4,
+        "sd": 0,
+        "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Relaxed",
       "ability": "Storm Drain",
-      "item": "Life Orb",
+      "item": "Leftovers",
       "moves": [
         "Giga Drain",
-        "Hidden Power Ice",
         "Solar Beam",
+        "Hidden Power Ice",
         "Sucker Punch"
       ]
     }
   },
-  "Electrode": {
+  "Zebstrika": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -908,12 +820,12 @@ var SETDEX_SHOWDOWN={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Soundproof",
-      "item": "Air Balloon",
+      "ability": "Lightning Rod",
+      "item": "",
       "moves": [
-        "Discharge",
-        "Foul Play",
+        "Overheat",
         "Thunderbolt",
+        "Wild Charge",
         "Hidden Power Ice"
       ]
     }
@@ -922,19 +834,19 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 8,
+        "hp": 252,
+        "at": 4,
+        "df": 52,
+        "sa": 68,
+        "sd": 132,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Quiet",
       "ability": "Torrent",
-      "item": "Leftovers",
+      "item": "Assault Vest",
       "moves": [
-        "Flash Cannon",
         "Ice Beam",
+        "Flash Cannon",
         "Scald",
         "Aqua Jet"
       ]
@@ -957,8 +869,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Psychic",
         "Dazzling Gleam",
-        "Energy Ball",
-        "Shadow Ball"
+        "Shadow Ball",
+        "Energy Ball"
       ]
     }
   },
@@ -975,12 +887,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "Adaptability",
-      "item": "Choice Specs",
+      "item": "Life Orb",
       "moves": [
-        "Draco Meteor",
         "Sludge Bomb",
-        "Dragon Pulse",
-        "Sludge Wave"
+        "Draco Meteor",
+        "Scald",
+        "Dragon Pulse"
       ]
     }
   },
@@ -990,39 +902,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 148,
         "sa": 0,
-        "sd": 4,
+        "sd": 108,
         "sp": 0
       },
       "nature": "Bold",
       "ability": "Flower Gift",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Giga Drain",
-        "Solar Beam",
         "Weather Ball",
-        "Energy Ball"
-      ]
-    }
-  },
-  "Seel": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 4,
-        "sp": 0
-      },
-      "nature": "Relaxed",
-      "ability": "Thick Fat",
-      "item": "Eviolite",
-      "moves": [
-        "Fake Out",
-        "Blizzard"
+        "Seed Bomb",
+        "Solar Beam"
       ]
     }
   },
@@ -1041,10 +933,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
+        "Dazzling Gleam",
         "Moonblast",
-        "Explosion",
-        "Rock Slide",
-        "Power Gem"
+        "Power Gem",
+        "Explosion"
       ]
     }
   },
@@ -1086,9 +978,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Psychic",
-        "Shadow Ball",
         "Psyshock",
-        "Focus Blast"
+        "Focus Blast",
+        "Shadow Ball"
       ]
     }
   },
@@ -1096,21 +988,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 8,
-        "df": 252,
+        "hp": 252,
+        "at": 252,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Impish",
-      "ability": "",
-      "item": "",
+      "nature": "Brave",
+      "ability": "Sheer Force",
+      "item": "Life Orb",
       "moves": [
         "Dragon Claw",
-        "Gunk Shot",
         "Rock Slide",
-        "Sucker Punch"
+        "Gunk Shot",
+        "Iron Head"
       ]
     }
   },
@@ -1132,7 +1024,7 @@ var SETDEX_SHOWDOWN={
         "Bullet Seed",
         "Mach Punch",
         "Rock Tomb",
-        "Drain Punch"
+        "Superpower"
       ]
     }
   },
@@ -1140,21 +1032,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
-        "df": 252,
-        "sa": 0,
+        "df": 0,
+        "sa": 196,
         "sd": 252,
-        "sp": 0
+        "sp": 60
       },
-      "nature": "Calm",
+      "nature": "Modest",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
         "Shadow Ball",
-        "Acrobatics",
         "Clear Smog",
-        "Thunderbolt"
+        "Acrobatics",
+        "Knock Off"
       ]
     }
   },
@@ -1171,11 +1063,11 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Calm",
       "ability": "",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Scald",
-        "Icy Wind",
         "Knock Off",
+        "Icy Wind",
         "Aqua Jet"
       ]
     }
@@ -1186,12 +1078,12 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 4,
-        "sd": 252,
-        "sp": 0
+        "df": 84,
+        "sa": 76,
+        "sd": 92,
+        "sp": 4
       },
-      "nature": "Calm",
+      "nature": "Bold",
       "ability": "Levitate",
       "item": "Sitrus Berry",
       "moves": [
@@ -1215,12 +1107,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Quiet",
       "ability": "White Smoke",
-      "item": "Leftovers",
+      "item": "",
       "moves": [
         "Earth Power",
-        "Eruption",
-        "Flamethrower",
-        "Heat Wave"
+        "Heat Wave",
+        "Clear Smog",
+        "Eruption"
       ]
     }
   },
@@ -1229,19 +1121,19 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 0,
-        "at": 0,
+        "at": 4,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Modest",
+      "nature": "Rash",
       "ability": "Chlorophyll",
       "item": "Life Orb",
       "moves": [
         "Weather Ball",
-        "Solar Beam",
         "Sludge Bomb",
+        "Solar Beam",
         "Giga Drain"
       ]
     }
@@ -1250,43 +1142,43 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
+        "hp": 252,
+        "at": 0,
+        "df": 252,
         "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "sd": 4,
+        "sp": 0
       },
-      "nature": "Jolly",
+      "nature": "Bold",
       "ability": "Slow Start",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Drain Punch",
         "Return",
-        "Knock Off",
-        "Earthquake"
+        "Rock Slide",
+        "Icy Wind"
       ]
     }
   },
-  "Regice": {
+  "Tentacruel": {
     "Common Showdown": {
       "level": 50,
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Quiet",
-      "ability": "Clear Body",
-      "item": "Assault Vest",
+      "nature": "Calm",
+      "ability": "",
+      "item": "Black Sludge",
       "moves": [
+        "Sludge Bomb",
+        "Scald",
         "Ice Beam",
-        "Focus Blast",
-        "Thunderbolt",
-        "Blizzard"
+        "Giga Drain"
       ]
     }
   },
@@ -1294,11 +1186,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 8,
         "sp": 0
       },
       "nature": "Adamant",
@@ -1308,7 +1200,7 @@ var SETDEX_SHOWDOWN={
         "Explosion",
         "Knock Off",
         "Hammer Arm",
-        "Earthquake"
+        "Power Whip"
       ]
     }
   },
@@ -1316,21 +1208,43 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Modest",
       "ability": "Sap Sipper",
       "item": "Assault Vest",
       "moves": [
-        "Dragon Pulse",
         "Ice Beam",
         "Draco Meteor",
-        "Flamethrower"
+        "Dragon Pulse",
+        "Fire Blast"
+      ]
+    }
+  },
+  "Trapinch": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Rock Slide",
+        "Earthquake",
+        "Superpower",
+        "Crunch"
       ]
     }
   },
@@ -1360,28 +1274,6 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 252
-      },
-      "nature": "Jolly",
-      "ability": "Swift Swim",
-      "item": "",
-      "moves": [
-        "Waterfall",
-        "Aqua Jet",
-        "Ice Punch",
-        "Ice Beam"
-      ]
-    }
-  },
-  "Zebstrika": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
         "hp": 0,
         "at": 0,
         "df": 0,
@@ -1389,14 +1281,36 @@ var SETDEX_SHOWDOWN={
         "sd": 4,
         "sp": 252
       },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "",
+      "moves": [
+        "Waterfall",
+        "Ice Beam",
+        "Aqua Jet",
+        "Hydro Pump"
+      ]
+    }
+  },
+  "Electrode": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
       "nature": "Timid",
-      "ability": "Lightning Rod",
+      "ability": "Soundproof",
       "item": "Life Orb",
       "moves": [
-        "Overheat",
-        "Wild Charge",
         "Thunderbolt",
-        "Hidden Power Ice"
+        "Hidden Power Ice",
+        "Signal Beam",
+        "Discharge"
       ]
     }
   },
@@ -1405,20 +1319,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
-        "df": 36,
+        "at": 4,
+        "df": 0,
         "sa": 0,
-        "sd": 220,
+        "sd": 252,
         "sp": 0
       },
       "nature": "Careful",
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "Shadow Sneak",
         "Phantom Force",
         "Seed Bomb",
-        "Flame Charge"
+        "Shadow Sneak",
+        "Explosion"
       ]
     }
   },
@@ -1438,9 +1352,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Rock Slide",
-        "Explosion",
         "Zen Headbutt",
-        "Stone Edge"
+        "Earthquake",
+        "Rock Tomb"
       ]
     }
   },
@@ -1457,34 +1371,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "",
-      "item": "",
+      "item": "Choice Scarf",
       "moves": [
-        "Foul Play",
-        "Shadow Sneak",
+        "Phantom Force",
         "Seed Bomb",
-        "Energy Ball"
-      ]
-    }
-  },
-  "Leavanny": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 4,
-        "sp": 252
-      },
-      "nature": "Adamant",
-      "ability": "Chlorophyll",
-      "item": "",
-      "moves": [
-        "Leaf Blade",
-        "X-Scissor",
-        "Knock Off",
-        "Poison Jab"
+        "Shadow Sneak",
+        "Rock Slide"
       ]
     }
   },
@@ -1492,8 +1384,8 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 4,
+        "hp": 248,
+        "at": 8,
         "df": 0,
         "sa": 0,
         "sd": 252,
@@ -1510,47 +1402,47 @@ var SETDEX_SHOWDOWN={
       ]
     }
   },
-  "Clamperl": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 164,
-        "at": 0,
-        "df": 92,
-        "sa": 248,
-        "sd": 4,
-        "sp": 0
-      },
-      "nature": "Quiet",
-      "ability": "Shell Armor",
-      "item": "Deep Sea Tooth",
-      "moves": [
-        "Ice Beam",
-        "Muddy Water",
-        "Hidden Power Grass",
-        "Scald"
-      ]
-    }
-  },
   "Octillery": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Quiet",
       "ability": "Sniper",
-      "item": "",
+      "item": "Mystic Water",
       "moves": [
         "Water Spout",
         "Energy Ball",
         "Ice Beam",
-        "Flamethrower"
+        "Scald"
+      ]
+    }
+  },
+  "Electabuzz": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 248,
+        "sa": 4,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Eviolite",
+      "moves": [
+        "Feint",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Volt Switch"
       ]
     }
   },
@@ -1592,9 +1484,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Flamethrower",
-        "Dark Pulse",
         "Night Daze",
-        "Focus Blast"
+        "Dark Pulse",
+        "Knock Off"
       ]
     }
   },
@@ -1602,21 +1494,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
         "df": 0,
         "sa": 252,
         "sd": 4,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Timid",
-      "ability": "Dry Skin",
+      "nature": "Mild",
+      "ability": "",
       "item": "",
       "moves": [
         "Ice Beam",
-        "Psychic",
         "Fake Out",
-        "Psyshock"
+        "Psychic",
+        "Blizzard"
       ]
     }
   },
@@ -1635,32 +1527,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "Bug Buzz",
         "Thunder",
-        "Volt Switch",
-        "Energy Ball"
-      ]
-    }
-  },
-  "Scraggy": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 28,
-        "at": 244,
-        "df": 236,
-        "sa": 0,
-        "sd": 0,
-        "sp": 0
-      },
-      "nature": "Brave",
-      "ability": "Intimidate",
-      "item": "Eviolite",
-      "moves": [
-        "Fake Out",
-        "High Jump Kick",
-        "Knock Off",
-        "Iron Head"
+        "Bug Buzz",
+        "Energy Ball",
+        "Volt Switch"
       ]
     }
   },
@@ -1668,21 +1538,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 252,
-        "df": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 8,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Adamant",
-      "ability": "Iron Fist",
-      "item": "Assault Vest",
+      "ability": "",
+      "item": "Lum Berry",
       "moves": [
-        "Ice Punch",
-        "Drain Punch",
-        "Mach Punch",
-        "Fake Out"
+        "Fake Out",
+        "Close Combat",
+        "Rock Slide",
+        "Ice Punch"
       ]
     }
   },
@@ -1692,14 +1562,14 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 156,
-        "sa": 28,
-        "sd": 68,
-        "sp": 4
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
       },
       "nature": "Bold",
       "ability": "Magic Guard",
-      "item": "Sitrus Berry",
+      "item": "Leftovers",
       "moves": [
         "Moonblast",
         "Ice Beam",
@@ -1726,7 +1596,7 @@ var SETDEX_SHOWDOWN={
         "Stored Power",
         "Air Slash",
         "Psychic",
-        "Ice Beam"
+        "Heat Wave"
       ]
     }
   },
@@ -1734,16 +1604,16 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Intimidate",
-      "item": "Black Sludge",
+      "item": "Life Orb",
       "moves": [
         "Poison Jab",
         "Waterfall",
@@ -1768,8 +1638,8 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Draco Meteor",
-        "Psyshock",
         "Psychic",
+        "Psyshock",
         "Ice Beam"
       ]
     }
@@ -1778,21 +1648,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 4,
         "at": 0,
         "df": 252,
         "sa": 0,
-        "sd": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Sassy",
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
         "Earth Power",
         "Psychic",
-        "Dazzling Gleam",
-        "Ice Beam"
+        "Ice Beam",
+        "Rapid Spin"
       ]
     }
   },
@@ -1809,12 +1679,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "",
-      "item": "King's Rock",
+      "item": "Assault Vest",
       "moves": [
-        "Sucker Punch",
-        "Rock Slide",
         "Wood Hammer",
-        "Low Kick"
+        "Rock Slide",
+        "Sucker Punch",
+        "Earthquake"
       ]
     }
   },
@@ -1831,7 +1701,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "",
-      "item": "Choice Scarf",
+      "item": "Life Orb",
       "moves": [
         "Ice Beam",
         "Scald",
@@ -1847,18 +1717,18 @@ var SETDEX_SHOWDOWN={
         "hp": 252,
         "at": 0,
         "df": 0,
-        "sa": 140,
-        "sd": 116,
+        "sa": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Quiet",
+      "nature": "Calm",
       "ability": "",
-      "item": "Leftovers",
+      "item": "",
       "moves": [
         "Giga Drain",
-        "Sludge Bomb",
+        "Leaf Storm",
         "Knock Off",
-        "Leaf Storm"
+        "Sludge Bomb"
       ]
     }
   },
@@ -1866,21 +1736,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
       "ability": "Drought",
-      "item": "",
+      "item": "Choice Scarf",
       "moves": [
         "Solar Beam",
         "Heat Wave",
         "Overheat",
-        "Dark Pulse"
+        "Extrasensory"
       ]
     }
   },
@@ -1888,12 +1758,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 196,
         "at": 252,
-        "df": 0,
+        "df": 20,
         "sa": 0,
-        "sd": 8,
-        "sp": 0
+        "sd": 12,
+        "sp": 28
       },
       "nature": "Adamant",
       "ability": "Huge Power",
@@ -1922,9 +1792,9 @@ var SETDEX_SHOWDOWN={
       "item": "Glalitite",
       "moves": [
         "Explosion",
-        "Earthquake",
         "Return",
-        "Ice Shard"
+        "Ice Shard",
+        "Earthquake"
       ]
     }
   },
@@ -2010,9 +1880,9 @@ var SETDEX_SHOWDOWN={
       "item": "Eviolite",
       "moves": [
         "Knock Off",
-        "Thunderbolt",
+        "Discharge",
         "Giga Drain",
-        "Discharge"
+        "Thunderbolt"
       ]
     }
   },
@@ -2033,8 +1903,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Close Combat",
         "Psycho Cut",
-        "Ice Punch",
-        "Drain Punch"
+        "Zen Headbutt",
+        "Ice Punch"
       ]
     }
   },
@@ -2044,19 +1914,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 0,
         "sa": 4,
-        "sd": 0,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Calm",
       "ability": "Levitate",
       "item": "Black Sludge",
       "moves": [
         "Sludge Bomb",
         "Flamethrower",
-        "Fire Blast",
-        "Clear Smog"
+        "Thunderbolt",
+        "Fire Blast"
       ]
     }
   },
@@ -2064,11 +1934,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -2077,8 +1947,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Stored Power",
         "Air Slash",
-        "Heat Wave",
-        "Psychic"
+        "Psychic",
+        "Shadow Ball"
       ]
     }
   },
@@ -2086,21 +1956,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 0,
         "at": 0,
-        "df": 180,
-        "sa": 0,
-        "sd": 76,
+        "df": 252,
+        "sa": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Quiet",
       "ability": "Infiltrator",
       "item": "Leftovers",
       "moves": [
+        "Snarl",
         "Foul Play",
-        "Sucker Punch",
         "Icy Wind",
-        "Shadow Ball"
+        "Dark Pulse"
       ]
     }
   },
@@ -2115,14 +1985,14 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Jolly",
       "ability": "",
       "item": "",
       "moves": [
         "Fake Out",
         "Foul Play",
         "Knock Off",
-        "Sucker Punch"
+        "Dark Pulse"
       ]
     }
   },
@@ -2137,14 +2007,14 @@ var SETDEX_SHOWDOWN={
         "sd": 4,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Brave",
       "ability": "Thick Fat",
-      "item": "Custap Berry",
+      "item": "Chesto Berry",
       "moves": [
-        "Crunch",
         "Self-Destruct",
-        "Body Slam",
-        "Earthquake"
+        "Crunch",
+        "Earthquake",
+        "Rock Slide"
       ]
     }
   },
@@ -2163,8 +2033,8 @@ var SETDEX_SHOWDOWN={
       "ability": "Scrappy",
       "item": "Kangaskhanite",
       "moves": [
-        "Fake Out",
         "Sucker Punch",
+        "Fake Out",
         "Double-Edge",
         "Low Kick"
       ]
@@ -2174,21 +2044,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 4,
         "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 4,
-        "sp": 0
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Bold",
+      "nature": "Timid",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "Air Slash",
-        "Leaf Blade",
         "Giga Drain",
-        "Aerial Ace"
+        "Air Slash",
+        "Leaf Storm",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -2205,12 +2075,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Hardy",
       "ability": "",
-      "item": "Berry Juice",
+      "item": "",
       "moves": [
-        "Iron Head",
+        "Bulldoze",
         "Aerial Ace",
-        "Earthquake",
-        "Rock Tomb"
+        "Hidden Power Rock",
+        "Rock Slide"
       ]
     }
   },
@@ -2218,11 +2088,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Adamant",
@@ -2231,8 +2101,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dynamic Punch",
         "Ice Punch",
-        "Bullet Punch",
-        "Stone Edge"
+        "Knock Off",
+        "Bullet Punch"
       ]
     }
   },
@@ -2240,21 +2110,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 44,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
         "sd": 0,
-        "sp": 212
+        "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
         "Psychic",
+        "Giga Drain",
         "Psyshock",
-        "Leaf Storm",
-        "Solar Beam"
+        "Leaf Storm"
       ]
     }
   },
@@ -2262,21 +2132,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 124,
+        "hp": 188,
+        "at": 4,
+        "df": 252,
         "sa": 0,
-        "sd": 128,
-        "sp": 0
+        "sd": 52,
+        "sp": 12
       },
-      "nature": "Relaxed",
+      "nature": "Impish",
       "ability": "Dry Skin",
       "item": "Sitrus Berry",
       "moves": [
         "Seed Bomb",
-        "X-Scissor",
         "Knock Off",
-        "Giga Drain"
+        "Giga Drain",
+        "X-Scissor"
       ]
     }
   },
@@ -2306,21 +2176,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 0,
+        "hp": 248,
+        "at": 8,
         "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "sa": 0,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Timid",
-      "ability": "Volt Absorb",
-      "item": "Air Balloon",
+      "nature": "Hasty",
+      "ability": "",
+      "item": "Sitrus Berry",
       "moves": [
         "Thunderbolt",
-        "Signal Beam",
         "Discharge",
-        "Grass Knot"
+        "Volt Switch",
+        "Charge Beam"
       ]
     }
   },
@@ -2328,14 +2198,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 8,
-        "sp": 0
+        "hp": 4,
+        "at": 126,
+        "df": 0,
+        "sa": 126,
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Bold",
+      "nature": "Hasty",
       "ability": "",
       "item": "Choice Scarf",
       "moves": []
@@ -2345,11 +2215,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Modest",
@@ -2357,8 +2227,8 @@ var SETDEX_SHOWDOWN={
       "item": "Assault Vest",
       "moves": [
         "Flamethrower",
-        "Giga Drain",
         "Thunderbolt",
+        "Giga Drain",
         "Hidden Power Ice"
       ]
     }
@@ -2389,21 +2259,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 100,
+        "hp": 252,
         "at": 0,
-        "df": 52,
-        "sa": 148,
-        "sd": 72,
-        "sp": 132
+        "df": 68,
+        "sa": 100,
+        "sd": 84,
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Bold",
       "ability": "Levitate",
       "item": "Sitrus Berry",
       "moves": [
+        "Psychic",
         "Ice Beam",
-        "Psyshock",
-        "Shadow Ball",
-        "Psychic"
+        "Thunderbolt",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -2422,8 +2292,8 @@ var SETDEX_SHOWDOWN={
       "ability": "Defiant",
       "item": "Life Orb",
       "moves": [
-        "Sucker Punch",
         "Iron Head",
+        "Sucker Punch",
         "Knock Off",
         "Low Kick"
       ]
@@ -2433,21 +2303,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Toxic Boost",
       "item": "Toxic Orb",
       "moves": [
         "Facade",
         "Close Combat",
-        "Knock Off",
-        "Quick Attack"
+        "Shadow Claw",
+        "Knock Off"
       ]
     }
   },
@@ -2455,12 +2325,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 244,
         "at": 0,
-        "df": 0,
-        "sa": 4,
-        "sd": 252,
-        "sp": 0
+        "df": 164,
+        "sa": 52,
+        "sd": 44,
+        "sp": 4
       },
       "nature": "Calm",
       "ability": "",
@@ -2469,7 +2339,7 @@ var SETDEX_SHOWDOWN={
         "Moonblast",
         "Dazzling Gleam",
         "Psychic",
-        "Energy Ball"
+        "Giga Drain"
       ]
     }
   },
@@ -2489,8 +2359,8 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Earth Power",
-        "Ice Beam",
         "Sludge Bomb",
+        "Ice Beam",
         "Thunderbolt"
       ]
     }
@@ -2499,12 +2369,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
         "df": 0,
-        "sa": 252,
-        "sd": 8,
-        "sp": 0
+        "sa": 196,
+        "sd": 0,
+        "sp": 60
       },
       "nature": "Modest",
       "ability": "Cloud Nine",
@@ -2512,8 +2382,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Hyper Voice",
         "Fire Blast",
-        "Flamethrower",
-        "Draco Meteor"
+        "Draco Meteor",
+        "Flamethrower"
       ]
     }
   },
@@ -2521,21 +2391,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 236,
         "at": 0,
-        "df": 188,
-        "sa": 0,
-        "sd": 68,
-        "sp": 0
+        "df": 196,
+        "sa": 4,
+        "sd": 12,
+        "sp": 60
       },
-      "nature": "Calm",
+      "nature": "Bold",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
         "Air Slash",
         "Dazzling Gleam",
         "Aura Sphere",
-        "Heat Wave"
+        "Flamethrower"
       ]
     }
   },
@@ -2543,21 +2413,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 180,
+        "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 0,
-        "sp": 76
+        "df": 124,
+        "sa": 76,
+        "sd": 52,
+        "sp": 4
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Chlorophyll",
       "item": "Venusaurite",
       "moves": [
         "Sludge Bomb",
         "Giga Drain",
         "Hidden Power Ice",
-        "Hidden Power Fire"
+        "Hidden Power Ground"
       ]
     }
   },
@@ -2600,8 +2470,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Discharge",
         "Volt Switch",
-        "Thunderbolt",
-        "Electro Ball"
+        "Thunder Punch",
+        "Thunderbolt"
       ]
     }
   },
@@ -2622,8 +2492,30 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Foul Play",
         "Dazzling Gleam",
-        "Flash Cannon",
-        "Play Rough"
+        "Draining Kiss",
+        "Flash Cannon"
+      ]
+    }
+  },
+  "Jigglypuff": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 252,
+        "sp": 0
+      },
+      "nature": "Relaxed",
+      "ability": "",
+      "item": "Eviolite",
+      "moves": [
+        "Dazzling Gleam",
+        "Icy Wind",
+        "Knock Off",
+        "Drain Punch"
       ]
     }
   },
@@ -2642,9 +2534,9 @@ var SETDEX_SHOWDOWN={
       "ability": "Protean",
       "item": "Assault Vest",
       "moves": [
-        "Shadow Sneak",
-        "Fake Out",
         "Sucker Punch",
+        "Fake Out",
+        "Shadow Sneak",
         "Drain Punch"
       ]
     }
@@ -2654,20 +2546,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
-        "df": 4,
+        "at": 124,
+        "df": 132,
         "sa": 0,
-        "sd": 252,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Careful",
-      "ability": "Guts",
-      "item": "Leftovers",
+      "nature": "Adamant",
+      "ability": "",
+      "item": "Assault Vest",
       "moves": [
-        "Storm Throw",
         "Knock Off",
-        "Stone Edge",
-        "Ice Punch"
+        "Storm Throw",
+        "Ice Punch",
+        "Rock Slide"
       ]
     }
   },
@@ -2689,7 +2581,7 @@ var SETDEX_SHOWDOWN={
         "Dazzling Gleam",
         "Fire Blast",
         "Thunderbolt",
-        "Hyper Voice"
+        "Ice Beam"
       ]
     }
   },
@@ -2699,19 +2591,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Sassy",
       "ability": "",
       "item": "",
       "moves": [
         "Shadow Sneak",
         "Night Shade",
-        "Shadow Punch",
-        "Ice Punch"
+        "Ice Punch",
+        "Rock Slide"
       ]
     }
   },
@@ -2719,21 +2611,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 236,
+        "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 4,
         "sa": 0,
-        "sd": 20,
-        "sp": 0
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Bold",
+      "nature": "Jolly",
       "ability": "Sap Sipper",
       "item": "",
       "moves": [
-        "Psychic",
-        "Energy Ball",
+        "Hyper Voice",
         "Foul Play",
-        "Psyshock"
+        "Psyshock",
+        "Psychic"
       ]
     }
   },
@@ -2753,9 +2645,9 @@ var SETDEX_SHOWDOWN={
       "item": "Assault Vest",
       "moves": [
         "Play Rough",
-        "Close Combat",
         "Rock Slide",
-        "Ice Punch"
+        "Ice Punch",
+        "Close Combat"
       ]
     }
   },
@@ -2776,8 +2668,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Waterfall",
-        "Aqua Jet",
-        "Knock Off"
+        "Low Kick",
+        "Aqua Jet"
       ]
     }
   },
@@ -2799,7 +2691,7 @@ var SETDEX_SHOWDOWN={
         "Hyper Voice",
         "Psyshock",
         "Shadow Ball",
-        "Hyper Beam"
+        "Hidden Power Ground"
       ]
     }
   },
@@ -2807,11 +2699,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Brave",
@@ -2820,8 +2712,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Rock Slide",
-        "Heavy Slam",
-        "Gyro Ball"
+        "Gyro Ball",
+        "Heavy Slam"
       ]
     }
   },
@@ -2840,10 +2732,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "Play Rough",
-        "Discharge",
         "Volt Switch",
-        "Grass Knot"
+        "Play Rough",
+        "Grass Knot",
+        "Thunder"
       ]
     }
   },
@@ -2860,12 +2752,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Jolly",
       "ability": "",
-      "item": "Choice Band",
+      "item": "Assault Vest",
       "moves": [
-        "Earthquake",
         "Return",
+        "Earthquake",
         "Ice Punch",
-        "Giga Impact"
+        "Gunk Shot"
       ]
     }
   },
@@ -2874,20 +2766,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 0,
-        "at": 4,
-        "df": 252,
+        "at": 124,
+        "df": 116,
         "sa": 0,
-        "sd": 252,
-        "sp": 0
+        "sd": 120,
+        "sp": 144
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Technician",
       "item": "Eviolite",
       "moves": [
         "Aerial Ace",
         "Bug Bite",
         "Knock Off",
-        "Feint"
+        "Quick Attack"
       ]
     }
   },
@@ -2908,30 +2800,30 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sucker Punch",
         "Brave Bird",
-        "Night Slash",
-        "Superpower"
+        "Superpower",
+        "Night Slash"
       ]
     }
   },
-  "Articuno": {
+  "Magnezone": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 248,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
-        "sp": 252
+        "sd": 8,
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "",
-      "item": "Choice Scarf",
+      "item": "Air Balloon",
       "moves": [
-        "Freeze-Dry",
-        "Hurricane",
-        "Ice Beam",
-        "Icy Wind"
+        "Flash Cannon",
+        "Thunderbolt",
+        "Hidden Power Fire",
+        "Volt Switch"
       ]
     }
   },
@@ -2941,8 +2833,8 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 248,
         "at": 0,
-        "df": 4,
-        "sa": 0,
+        "df": 0,
+        "sa": 8,
         "sd": 252,
         "sp": 0
       },
@@ -2952,8 +2844,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dazzling Gleam",
         "Heat Wave",
-        "Ancient Power",
-        "Fire Blast"
+        "Aerial Ace",
+        "Flamethrower"
       ]
     }
   },
@@ -2961,11 +2853,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
@@ -2974,8 +2866,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dark Pulse",
         "Heat Wave",
-        "Solar Beam",
-        "Flamethrower"
+        "Flamethrower",
+        "Solar Beam"
       ]
     }
   },
@@ -2985,19 +2877,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
-        "sa": 252,
+        "df": 252,
+        "sa": 4,
         "sd": 0,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Unaware",
       "item": "Leftovers",
       "moves": [
-        "Earthquake",
         "Scald",
+        "Earthquake",
         "Waterfall",
-        "Ice Beam"
+        "Earth Power"
       ]
     }
   },
@@ -3005,21 +2897,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
         "df": 4,
-        "sa": 252,
+        "sa": 0,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Naive",
+      "nature": "Impish",
       "ability": "Intimidate",
       "item": "",
       "moves": [
-        "Bug Buzz",
         "Air Slash",
-        "Hydro Pump",
-        "Icy Wind"
+        "Ice Beam",
+        "Bug Buzz",
+        "Hydro Pump"
       ]
     }
   },
@@ -3051,9 +2943,9 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Jolly",
@@ -3104,8 +2996,8 @@ var SETDEX_SHOWDOWN={
       "ability": "Iron Fist",
       "item": "Life Orb",
       "moves": [
-        "Knock Off",
         "Drain Punch",
+        "Knock Off",
         "Ice Punch",
         "Gunk Shot"
       ]
@@ -3126,32 +3018,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Guts",
       "item": "Assault Vest",
       "moves": [
-        "Close Combat",
         "Fake Out",
+        "Close Combat",
         "Knock Off",
-        "Ice Punch"
-      ]
-    }
-  },
-  "Ivysaur": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 252,
-        "sp": 4
-      },
-      "nature": "Bold",
-      "ability": "Chlorophyll",
-      "item": "Eviolite",
-      "moves": [
-        "Sludge Bomb",
-        "Giga Drain",
-        "Solar Beam",
-        "Leaf Storm"
+        "Rock Slide"
       ]
     }
   },
@@ -3159,21 +3029,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 112,
-        "at": 144,
-        "df": 0,
+        "hp": 130,
+        "at": 126,
+        "df": 252,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Jolly",
+      "nature": "Impish",
       "ability": "",
-      "item": "Sitrus Berry",
+      "item": "Chesto Berry",
       "moves": [
         "Earthquake",
+        "Ice Beam",
         "Waterfall",
-        "Rock Slide",
-        "Spark"
+        "Scald"
       ]
     }
   },
@@ -3190,11 +3060,11 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Quiet",
       "ability": "",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Scald",
         "Psychic",
-        "Fire Blast",
+        "Ice Beam",
         "Psyshock"
       ]
     }
@@ -3216,30 +3086,30 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Fake Out",
         "Return",
-        "Ice Punch",
-        "High Jump Kick"
+        "Low Kick",
+        "Ice Punch"
       ]
     }
   },
-  "Hawlucha": {
+  "Vanilluxe": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 252,
+        "hp": 248,
+        "at": 0,
         "df": 0,
-        "sa": 0,
-        "sd": 4,
-        "sp": 252
+        "sa": 252,
+        "sd": 8,
+        "sp": 0
       },
-      "nature": "Adamant",
-      "ability": "",
+      "nature": "Modest",
+      "ability": "Ice Body",
       "item": "",
       "moves": [
-        "Acrobatics",
-        "High Jump Kick",
-        "Sky Attack",
-        "Drain Punch"
+        "Freeze-Dry",
+        "Flash Cannon",
+        "Blizzard",
+        "Water Pulse"
       ]
     }
   },
@@ -3247,21 +3117,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 124,
-        "df": 12,
+        "hp": 4,
+        "at": 0,
+        "df": 252,
         "sa": 0,
-        "sd": 120,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Impish",
+      "nature": "Careful",
       "ability": "Fur Coat",
       "item": "Leftovers",
       "moves": [
-        "Snarl",
         "Return",
+        "Snarl",
         "Sucker Punch",
-        "Charge Beam"
+        "Headbutt"
       ]
     }
   },
@@ -3269,21 +3139,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Defiant",
       "item": "Choice Scarf",
       "moves": [
         "Brave Bird",
         "Superpower",
         "Rock Slide",
-        "Return"
+        "U-turn"
       ]
     }
   },
@@ -3299,35 +3169,35 @@ var SETDEX_SHOWDOWN={
         "sp": 252
       },
       "nature": "Modest",
-      "ability": "",
+      "ability": "Tinted Lens",
       "item": "",
       "moves": [
         "Bug Buzz",
         "Sludge Bomb",
-        "Giga Drain",
-        "Psychic"
+        "Psychic",
+        "Giga Drain"
       ]
     }
   },
-  "Vanilluxe": {
+  "Hawlucha": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 0,
+        "hp": 0,
+        "at": 252,
         "df": 0,
-        "sa": 252,
-        "sd": 0,
+        "sa": 0,
+        "sd": 4,
         "sp": 252
       },
-      "nature": "Hardy",
-      "ability": "Ice Body",
-      "item": "Choice Scarf",
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
       "moves": [
-        "Freeze-Dry",
-        "Flash Cannon",
-        "Ice Beam",
-        "Ice Shard"
+        "Acrobatics",
+        "High Jump Kick",
+        "Sky Attack",
+        "Sky Drop"
       ]
     }
   },
@@ -3349,7 +3219,7 @@ var SETDEX_SHOWDOWN={
         "Fake Out",
         "Extreme Speed",
         "Storm Throw",
-        "Icy Wind"
+        "Circle Throw"
       ]
     }
   },
@@ -3375,28 +3245,6 @@ var SETDEX_SHOWDOWN={
       ]
     }
   },
-  "Servine": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 228,
-        "at": 0,
-        "df": 56,
-        "sa": 156,
-        "sd": 60,
-        "sp": 4
-      },
-      "nature": "Modest",
-      "ability": "Contrary",
-      "item": "Eviolite",
-      "moves": [
-        "Leaf Storm",
-        "Giga Drain",
-        "Hidden Power Ice",
-        "Hidden Power Fire"
-      ]
-    }
-  },
   "Medicham": {
     "Common Showdown": {
       "level": 50,
@@ -3412,9 +3260,9 @@ var SETDEX_SHOWDOWN={
       "ability": "Pure Power",
       "item": "Medichamite",
       "moves": [
-        "Drain Punch",
         "Fake Out",
-        "Psycho Cut",
+        "Drain Punch",
+        "Zen Headbutt",
         "Ice Punch"
       ]
     }
@@ -3423,21 +3271,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
-      "nature": "Modest",
+      "nature": "Timid",
       "ability": "Levitate",
       "item": "Choice Scarf",
       "moves": [
         "Blizzard",
         "Thunderbolt",
         "Volt Switch",
-        "Discharge"
+        "Thunder"
       ]
     }
   },
@@ -3447,19 +3295,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
+        "df": 124,
         "sa": 0,
-        "sd": 116,
-        "sp": 140
+        "sd": 132,
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Impish",
       "ability": "",
       "item": "Eviolite",
       "moves": [
         "Brave Bird",
+        "Air Slash",
         "Poison Fang",
-        "U-turn",
-        "Sludge Bomb"
+        "U-turn"
       ]
     }
   },
@@ -3489,11 +3337,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
@@ -3501,9 +3349,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Hyper Voice",
-        "Hidden Power Ice",
         "Heat Wave",
-        "Fire Blast"
+        "Hidden Power Ice",
+        "Dark Pulse"
       ]
     }
   },
@@ -3511,21 +3359,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 0,
-        "df": 0,
-        "sa": 4,
-        "sd": 0,
-        "sp": 252
+        "df": 52,
+        "sa": 44,
+        "sd": 164,
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Calm",
       "ability": "Storm Drain",
       "item": "Sitrus Berry",
       "moves": [
         "Scald",
         "Ice Beam",
-        "Icy Wind",
-        "U-turn"
+        "Signal Beam",
+        "Surf"
       ]
     }
   },
@@ -3533,14 +3381,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
-        "df": 244,
-        "sa": 252,
-        "sd": 0,
-        "sp": 12
+        "df": 76,
+        "sa": 24,
+        "sd": 148,
+        "sp": 4
       },
-      "nature": "Modest",
+      "nature": "Calm",
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
@@ -3555,20 +3403,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 4,
+        "hp": 0,
+        "at": 252,
+        "df": 0,
         "sa": 0,
-        "sd": 252,
-        "sp": 0
+        "sd": 4,
+        "sp": 252
       },
-      "nature": "Sassy",
+      "nature": "Adamant",
       "ability": "",
-      "item": "Sitrus Berry",
+      "item": "Lum Berry",
       "moves": [
-        "Rock Slide",
         "X-Scissor",
-        "Earthquake",
+        "Rock Slide",
+        "Night Slash",
         "Knock Off"
       ]
     }
@@ -3577,11 +3425,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Jolly",
@@ -3591,7 +3439,7 @@ var SETDEX_SHOWDOWN={
         "Fake Out",
         "Knock Off",
         "Low Kick",
-        "Ice Shard"
+        "Icicle Crash"
       ]
     }
   },
@@ -3599,21 +3447,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 132,
         "sa": 0,
-        "sd": 4,
+        "sd": 124,
         "sp": 0
       },
-      "nature": "Impish",
+      "nature": "Careful",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
-        "Sucker Punch",
         "Knock Off",
-        "Quick Attack",
-        "U-turn"
+        "Sucker Punch",
+        "U-turn",
+        "Double-Edge"
       ]
     }
   },
@@ -3621,21 +3469,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 8,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Brave",
       "ability": "",
-      "item": "",
+      "item": "Assault Vest",
       "moves": [
         "Rock Slide",
         "Earthquake",
         "Explosion",
-        "Superpower"
+        "Iron Head"
       ]
     }
   },
@@ -3667,18 +3515,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 148,
+        "df": 124,
         "sa": 0,
-        "sd": 108,
-        "sp": 0
+        "sd": 92,
+        "sp": 36
       },
-      "nature": "Impish",
+      "nature": "Bold",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
         "Bug Buzz",
-        "Fling",
-        "Thunder"
+        "U-turn",
+        "Giga Drain",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -3687,20 +3536,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 252,
-        "df": 4,
+        "at": 0,
+        "df": 92,
         "sa": 0,
-        "sd": 0,
+        "sd": 164,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Impish",
       "ability": "Clear Body",
-      "item": "Leftovers",
+      "item": "Chesto Berry",
       "moves": [
         "Iron Head",
         "Rock Slide",
         "Ice Punch",
-        "Power-Up Punch"
+        "Earthquake"
       ]
     }
   },
@@ -3712,17 +3561,17 @@ var SETDEX_SHOWDOWN={
         "at": 0,
         "df": 0,
         "sa": 4,
-        "sd": 252,
-        "sp": 0
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Calm",
+      "nature": "Timid",
       "ability": "",
-      "item": "Leftovers",
+      "item": "",
       "moves": [
-        "Psychic",
         "Air Slash",
-        "Dazzling Gleam",
-        "Heat Wave"
+        "Psychic",
+        "Psyshock",
+        "Night Shade"
       ]
     }
   },
@@ -3730,21 +3579,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 0,
+        "hp": 4,
+        "at": 252,
         "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "sa": 0,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Adamant",
       "ability": "Levitate",
-      "item": "Life Orb",
+      "item": "Choice Band",
       "moves": [
-        "Psychic",
-        "Explosion",
-        "Dazzling Gleam",
-        "Zen Headbutt"
+        "Zen Headbutt",
+        "Knock Off",
+        "U-turn",
+        "Explosion"
       ]
     }
   },
@@ -3765,8 +3614,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Gyro Ball",
-        "Knock Off",
-        "Earthquake"
+        "Earthquake",
+        "Bug Bite"
       ]
     }
   },
@@ -3774,21 +3623,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 0,
+        "hp": 248,
+        "at": 252,
         "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "sa": 0,
+        "sd": 8,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Adamant",
       "ability": "Lightning Rod",
-      "item": "Assault Vest",
+      "item": "Leftovers",
       "moves": [
-        "Ice Beam",
         "Scald",
-        "Icy Wind",
-        "Knock Off"
+        "Ice Beam",
+        "Knock Off",
+        "Waterfall"
       ]
     }
   },
@@ -3796,21 +3645,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 220,
-        "at": 220,
-        "df": 0,
+        "hp": 0,
+        "at": 252,
+        "df": 4,
         "sa": 0,
-        "sd": 68,
+        "sd": 252,
         "sp": 0
       },
       "nature": "Brave",
       "ability": "Shell Armor",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
         "Earthquake",
         "Wood Hammer",
         "Rock Slide",
-        "Stone Edge"
+        "Seed Bomb"
       ]
     }
   },
@@ -3820,14 +3669,14 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 248,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 8,
+        "df": 188,
+        "sa": 8,
+        "sd": 64,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Mega Launcher",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
         "Aura Sphere",
         "Water Pulse",
@@ -3840,12 +3689,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 92,
+        "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 0,
-        "sp": 164
+        "df": 4,
+        "sa": 108,
+        "sd": 4,
+        "sp": 140
       },
       "nature": "Modest",
       "ability": "Levitate",
@@ -3862,20 +3711,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 252,
+        "hp": 252,
+        "at": 68,
         "df": 0,
         "sa": 0,
-        "sd": 8,
-        "sp": 0
+        "sd": 120,
+        "sp": 68
       },
-      "nature": "Adamant",
+      "nature": "Careful",
       "ability": "Contrary",
       "item": "Lum Berry",
       "moves": [
         "Superpower",
-        "Knock Off",
         "Psycho Cut",
+        "Knock Off",
         "Night Slash"
       ]
     }
@@ -3884,11 +3733,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
@@ -3897,8 +3746,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sacred Fire",
         "Stone Edge",
-        "Iron Head",
-        "Bulldoze"
+        "Bulldoze",
+        "Iron Head"
       ]
     }
   },
@@ -3909,18 +3758,18 @@ var SETDEX_SHOWDOWN={
         "hp": 248,
         "at": 0,
         "df": 0,
-        "sa": 172,
-        "sd": 88,
+        "sa": 252,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Quiet",
-      "ability": "Analytic",
-      "item": "Life Orb",
+      "ability": "",
+      "item": "",
       "moves": [
         "Psychic",
-        "Energy Ball",
         "Psyshock",
-        "Shadow Ball"
+        "Signal Beam",
+        "Energy Ball"
       ]
     }
   },
@@ -3929,24 +3778,46 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
+        "at": 252,
         "df": 4,
         "sa": 0,
-        "sd": 252,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Careful",
+      "nature": "Adamant",
       "ability": "",
       "item": "Leftovers",
       "moves": [
         "Rock Slide",
         "Headbutt",
-        "Bite",
-        "Water Pulse"
+        "Zen Headbutt",
+        "Bite"
       ]
     }
   },
   "Murkrow": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Eviolite",
+      "moves": [
+        "Snarl",
+        "Foul Play",
+        "Sucker Punch",
+        "Brave Bird"
+      ]
+    }
+  },
+  "Dusclops": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -3957,58 +3828,14 @@ var SETDEX_SHOWDOWN={
         "sd": 252,
         "sp": 0
       },
-      "nature": "Calm",
-      "ability": "",
-      "item": "Eviolite",
-      "moves": [
-        "Foul Play",
-        "Snarl",
-        "Brave Bird",
-        "Dark Pulse"
-      ]
-    }
-  },
-  "Dusclops": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 68,
-        "sa": 0,
-        "sd": 188,
-        "sp": 0
-      },
-      "nature": "Impish",
+      "nature": "Sassy",
       "ability": "",
       "item": "Eviolite",
       "moves": [
         "Night Shade",
+        "Shadow Punch",
         "Shadow Sneak",
-        "Hex",
         "Shadow Ball"
-      ]
-    }
-  },
-  "Ariados": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 50,
-        "df": 100,
-        "sa": 0,
-        "sd": 106,
-        "sp": 0
-      },
-      "nature": "Careful",
-      "ability": "",
-      "item": "",
-      "moves": [
-        "Poison Jab",
-        "Bug Bite",
-        "Sucker Punch",
-        "Cross Poison"
       ]
     }
   },
@@ -4025,16 +3852,82 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Life Orb",
+      "item": "",
       "moves": [
-        "Bug Buzz",
         "Air Slash",
+        "Bug Buzz",
         "Giga Drain",
         "Hidden Power Ice"
       ]
     }
   },
   "Sunflora": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Solar Power",
+      "item": "Life Orb",
+      "moves": [
+        "Earth Power",
+        "Sludge Bomb",
+        "Leaf Storm",
+        "Solar Beam"
+      ]
+    }
+  },
+  "Porygon-Z": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "Adaptability",
+      "item": "Choice Scarf",
+      "moves": [
+        "Tri Attack",
+        "Ice Beam",
+        "Dark Pulse",
+        "Thunderbolt"
+      ]
+    }
+  },
+  "Mandibuzz": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 244,
+        "at": 0,
+        "df": 12,
+        "sa": 0,
+        "sd": 252,
+        "sp": 0
+      },
+      "nature": "Bold",
+      "ability": "Overcoat",
+      "item": "Leftovers",
+      "moves": [
+        "Foul Play",
+        "Knock Off",
+        "Brave Bird",
+        "Snarl"
+      ]
+    }
+  },
+  "Volcarona": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -4046,79 +3939,13 @@ var SETDEX_SHOWDOWN={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Solar Power",
-      "item": "",
-      "moves": [
-        "Earth Power",
-        "Solar Beam",
-        "Sludge Bomb",
-        "Giga Drain"
-      ]
-    }
-  },
-  "Porygon-Z": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
-        "sp": 252
-      },
-      "nature": "Timid",
-      "ability": "Adaptability",
-      "item": "Choice Scarf",
-      "moves": [
-        "Tri Attack",
-        "Ice Beam",
-        "Thunderbolt",
-        "Dark Pulse"
-      ]
-    }
-  },
-  "Mandibuzz": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 248,
-        "at": 8,
-        "df": 252,
-        "sa": 0,
-        "sd": 0,
-        "sp": 0
-      },
-      "nature": "Impish",
-      "ability": "Overcoat",
-      "item": "Leftovers",
-      "moves": [
-        "Foul Play",
-        "Knock Off",
-        "Snarl",
-        "Brave Bird"
-      ]
-    }
-  },
-  "Volcarona": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
-        "sp": 252
-      },
-      "nature": "Modest",
       "ability": "",
       "item": "",
       "moves": [
         "Bug Buzz",
         "Heat Wave",
-        "Giga Drain",
-        "Fiery Dance"
+        "Fiery Dance",
+        "Giga Drain"
       ]
     }
   },
@@ -4135,12 +3962,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "Torrent",
-      "item": "Swampertite",
+      "item": "Expert Belt",
       "moves": [
-        "Earthquake",
-        "Waterfall",
-        "Ice Punch",
-        "Earth Power"
+        "Earth Power",
+        "Scald",
+        "Ice Beam",
+        "Earthquake"
       ]
     }
   },
@@ -4159,10 +3986,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Sand Rush",
       "item": "Choice Band",
       "moves": [
+        "Play Rough",
         "Return",
         "Superpower",
-        "Crunch",
-        "Play Rough"
+        "Crunch"
       ]
     }
   },
@@ -4179,12 +4006,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Jolly",
       "ability": "Defiant",
-      "item": "Silk Scarf",
+      "item": "Life Orb",
       "moves": [
         "Fake Out",
         "Return",
         "Sucker Punch",
-        "Knock Off"
+        "Play Rough"
       ]
     }
   },
@@ -4194,19 +4021,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 208,
+        "df": 4,
         "sa": 0,
-        "sd": 44,
-        "sp": 4
+        "sd": 252,
+        "sp": 0
       },
       "nature": "Calm",
       "ability": "Levitate",
       "item": "Leftovers",
       "moves": [
         "Psychic",
-        "U-turn",
+        "Psyshock",
         "Foul Play",
-        "Psyshock"
+        "U-turn"
       ]
     }
   },
@@ -4236,11 +4063,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
@@ -4250,7 +4077,7 @@ var SETDEX_SHOWDOWN={
         "Fake Out",
         "Double Hit",
         "Knock Off",
-        "U-turn"
+        "Low Kick"
       ]
     }
   },
@@ -4291,10 +4118,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Swift Swim",
       "item": "",
       "moves": [
-        "Ice Beam",
         "Surf",
-        "Scald",
-        "Shadow Ball"
+        "Ice Beam",
+        "Shadow Ball",
+        "Psychic"
       ]
     }
   },
@@ -4315,8 +4142,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Sucker Punch",
         "Seed Bomb",
-        "Drain Punch",
-        "Dark Pulse"
+        "Energy Ball",
+        "Drain Punch"
       ]
     }
   },
@@ -4348,19 +4175,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 132,
+        "df": 252,
         "sa": 0,
-        "sd": 120,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Sassy",
       "ability": "",
       "item": "",
       "moves": [
         "Psychic",
+        "Energy Ball",
         "Psyshock",
-        "Dazzling Gleam",
-        "Energy Ball"
+        "Dazzling Gleam"
       ]
     }
   },
@@ -4368,11 +4195,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 252,
+        "hp": 112,
+        "at": 168,
         "df": 0,
-        "sa": 0,
-        "sd": 4,
+        "sa": 228,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Brave",
@@ -4380,8 +4207,8 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Flare Blitz",
-        "Wild Charge",
         "Head Smash",
+        "Wild Charge",
         "Hammer Arm"
       ]
     }
@@ -4404,7 +4231,7 @@ var SETDEX_SHOWDOWN={
         "Flare Blitz",
         "Low Kick",
         "Rock Slide",
-        "Hidden Power Ice"
+        "Superpower"
       ]
     }
   },
@@ -4412,11 +4239,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 236,
+        "hp": 248,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 20,
+        "sd": 8,
         "sp": 0
       },
       "nature": "Adamant",
@@ -4424,31 +4251,31 @@ var SETDEX_SHOWDOWN={
       "item": "Eviolite",
       "moves": [
         "Rock Slide",
-        "Ice Punch",
         "Earthquake",
-        "Drill Run"
+        "Drill Run",
+        "Ice Punch"
       ]
     }
   },
-  "Farfetch'd": {
+  "Heatmor": {
     "Common Showdown": {
       "level": 50,
       "evs": {
         "hp": 252,
         "at": 0,
         "df": 4,
-        "sa": 0,
+        "sa": 252,
         "sd": 0,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Timid",
-      "ability": "",
-      "item": "Stick",
+      "nature": "Quiet",
+      "ability": "Flash Fire",
+      "item": "Life Orb",
       "moves": [
-        "Air Slash",
-        "Feint",
-        "Night Slash",
-        "Leaf Blade"
+        "Heat Wave",
+        "Giga Drain",
+        "Focus Blast",
+        "Sucker Punch"
       ]
     }
   },
@@ -4469,8 +4296,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Play Rough",
         "Drain Punch",
-        "Dazzling Gleam",
-        "Facade"
+        "Return",
+        "Draining Kiss"
       ]
     }
   },
@@ -4478,14 +4305,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 8,
-        "df": 252,
+        "hp": 252,
+        "at": 204,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 52,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Brave",
       "ability": "",
       "item": "",
       "moves": [
@@ -4534,9 +4361,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Rock Slide",
+        "Sky Drop",
         "Ice Fang",
-        "Earthquake",
-        "Iron Head"
+        "Earthquake"
       ]
     }
   },
@@ -4544,21 +4371,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 100,
         "at": 0,
         "df": 4,
-        "sa": 0,
-        "sd": 0,
+        "sa": 100,
+        "sd": 50,
         "sp": 252
       },
       "nature": "Timid",
       "ability": "Lightning Rod",
-      "item": "Air Balloon",
+      "item": "Sitrus Berry",
       "moves": [
-        "Discharge",
         "Thunderbolt",
         "Hidden Power Ice",
-        "Grass Knot"
+        "Grass Knot",
+        "Volt Switch"
       ]
     }
   },
@@ -4575,7 +4402,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "Refrigerate",
-      "item": "Choice Scarf",
+      "item": "Life Orb",
       "moves": [
         "Hyper Voice",
         "Freeze-Dry",
@@ -4590,12 +4417,12 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
-        "sa": 4,
-        "sd": 0,
+        "df": 4,
+        "sa": 0,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Calm",
       "ability": "Water Absorb",
       "item": "Leftovers",
       "moves": [
@@ -4611,8 +4438,8 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
-        "df": 4,
+        "at": 4,
+        "df": 0,
         "sa": 0,
         "sd": 252,
         "sp": 0
@@ -4621,10 +4448,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "Sacred Sword",
-        "Gyro Ball",
         "Shadow Sneak",
-        "Iron Head"
+        "Iron Head",
+        "Sacred Sword",
+        "Shadow Claw"
       ]
     }
   },
@@ -4646,7 +4473,7 @@ var SETDEX_SHOWDOWN={
         "Leaf Blade",
         "Knock Off",
         "X-Scissor",
-        "Natural Gift"
+        "Aerial Ace"
       ]
     }
   },
@@ -4665,9 +4492,9 @@ var SETDEX_SHOWDOWN={
       "ability": "Intimidate",
       "item": "Leftovers",
       "moves": [
+        "Snarl",
         "Flare Blitz",
         "Extreme Speed",
-        "Snarl",
         "Close Combat"
       ]
     }
@@ -4676,14 +4503,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 4,
         "at": 0,
-        "df": 252,
-        "sa": 8,
+        "df": 0,
+        "sa": 252,
         "sd": 0,
-        "sp": 0
+        "sp": 252
       },
-      "nature": "Bold",
+      "nature": "Timid",
       "ability": "Drizzle",
       "item": "Sitrus Berry",
       "moves": [
@@ -4698,10 +4525,10 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 0,
-        "df": 4,
-        "sa": 0,
+        "df": 0,
+        "sa": 8,
         "sd": 252,
         "sp": 0
       },
@@ -4710,9 +4537,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Shadow Ball",
-        "Night Shade",
         "Hex",
-        "Energy Ball"
+        "Night Shade",
+        "Dark Pulse"
       ]
     }
   },
@@ -4720,43 +4547,43 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 44,
         "at": 252,
         "df": 0,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 212
       },
       "nature": "Adamant",
       "ability": "Sand Rush",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Earthquake",
         "Rock Slide",
-        "Poison Jab",
-        "Knock Off"
+        "Knock Off",
+        "Poison Jab"
       ]
     }
   },
-  "Magnezone": {
+  "Articuno": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 212,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 8,
-        "sp": 0
+        "df": 156,
+        "sa": 36,
+        "sd": 44,
+        "sp": 60
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "",
-      "item": "Air Balloon",
+      "item": "Leftovers",
       "moves": [
-        "Flash Cannon",
-        "Thunderbolt",
-        "Volt Switch",
-        "Hidden Power Fire"
+        "Freeze-Dry",
+        "Hurricane",
+        "Ice Shard",
+        "Ice Beam"
       ]
     }
   },
@@ -4764,11 +4591,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 68,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 188,
         "sp": 0
       },
       "nature": "Brave",
@@ -4777,8 +4604,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "Ice Punch",
-        "Drill Run"
+        "Drill Run",
+        "Ice Punch"
       ]
     }
   },
@@ -4795,12 +4622,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Brave",
       "ability": "",
-      "item": "Normal Gem",
+      "item": "",
       "moves": [
-        "Earthquake",
         "Rock Slide",
+        "Earthquake",
         "Explosion",
-        "Heavy Slam"
+        "Thunder Punch"
       ]
     }
   },
@@ -4808,21 +4635,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 20,
         "at": 252,
         "df": 0,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 236
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Hyper Cutter",
       "item": "Pinsirite",
       "moves": [
         "Return",
+        "Feint",
         "Close Combat",
-        "Quick Attack",
-        "Feint"
+        "Earthquake"
       ]
     }
   },
@@ -4839,7 +4666,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Bold",
       "ability": "",
-      "item": "Sitrus Berry",
+      "item": "",
       "moves": [
         "Fake Out",
         "Psychic",
@@ -4853,42 +4680,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 252,
-        "df": 0,
+        "at": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Calm",
       "ability": "",
       "item": "Banettite",
       "moves": [
+        "Shadow Claw",
         "Phantom Force",
         "Shadow Sneak",
-        "Shadow Claw",
-        "Knock Off"
-      ]
-    }
-  },
-  "Purrloin": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 248,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 8,
-        "sp": 0
-      },
-      "nature": "Careful",
-      "ability": "",
-      "item": "Eviolite",
-      "moves": [
-        "Fake Out",
-        "Foul Play",
-        "Dark Pulse",
-        "Shadow Claw"
+        "Sucker Punch"
       ]
     }
   },
@@ -4896,21 +4701,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
       "ability": "",
       "item": "Life Orb",
       "moves": [
-        "Rock Slide",
         "Earthquake",
+        "Rock Slide",
         "Return",
-        "Iron Head"
+        "Zen Headbutt"
       ]
     }
   },
@@ -4927,7 +4732,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "",
-      "item": "Shuca Berry",
+      "item": "Assault Vest",
       "moves": [
         "Thunderbolt",
         "Hidden Power Ice",
@@ -4941,20 +4746,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 0,
-        "df": 252,
+        "at": 8,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 248,
         "sp": 0
       },
-      "nature": "Impish",
+      "nature": "Jolly",
       "ability": "Intimidate",
       "item": "Black Sludge",
       "moves": [
         "Gunk Shot",
-        "Ice Fang",
-        "Bulldoze",
-        "Earthquake"
+        "Earthquake",
+        "Sucker Punch",
+        "Aqua Tail"
       ]
     }
   },
@@ -4964,19 +4769,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
-        "sa": 252,
-        "sd": 0,
+        "df": 156,
+        "sa": 20,
+        "sd": 76,
         "sp": 0
       },
-      "nature": "Quiet",
-      "ability": "",
+      "nature": "Sassy",
+      "ability": "Download",
       "item": "Eviolite",
       "moves": [
         "Ice Beam",
         "Tri Attack",
         "Thunderbolt",
-        "Icy Wind"
+        "Shadow Ball"
       ]
     }
   },
@@ -4991,7 +4796,7 @@ var SETDEX_SHOWDOWN={
         "sd": 4,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Thick Fat",
       "item": "Choice Scarf",
       "moves": [
@@ -5018,8 +4823,8 @@ var SETDEX_SHOWDOWN={
       "item": "Eviolite",
       "moves": [
         "Seismic Toss",
-        "Hyper Voice",
         "Icy Wind",
+        "Hyper Voice",
         "Flamethrower"
       ]
     }
@@ -5042,7 +4847,7 @@ var SETDEX_SHOWDOWN={
         "Close Combat",
         "Fake Out",
         "Overheat",
-        "Mach Punch"
+        "Flare Blitz"
       ]
     }
   },
@@ -5050,11 +4855,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -5062,9 +4867,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Shadow Ball",
-        "Dazzling Gleam",
+        "Icy Wind",
         "Power Gem",
-        "Thunderbolt"
+        "Dazzling Gleam"
       ]
     }
   },
@@ -5079,7 +4884,7 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Defiant",
       "item": "Choice Scarf",
       "moves": [
@@ -5107,30 +4912,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Ice Beam",
         "Dark Pulse",
-        "Gunk Shot",
-        "Scald"
-      ]
-    }
-  },
-  "Relicanth": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 28,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 228
-      },
-      "nature": "Adamant",
-      "ability": "",
-      "item": "Choice Band",
-      "moves": [
-        "Head Smash",
-        "Waterfall",
-        "Zen Headbutt",
-        "Double-Edge"
+        "Scald",
+        "Gunk Shot"
       ]
     }
   },
@@ -5138,11 +4921,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Adamant",
@@ -5150,9 +4933,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Horn Leech",
-        "Double-Edge",
         "Jump Kick",
-        "Wild Charge"
+        "Wild Charge",
+        "Double-Edge"
       ]
     }
   },
@@ -5194,8 +4977,8 @@ var SETDEX_SHOWDOWN={
       "item": "Choice Specs",
       "moves": [
         "Shadow Ball",
-        "Thunderbolt",
         "Hidden Power Ice",
+        "Thunderbolt",
         "Volt Switch"
       ]
     }
@@ -5204,21 +4987,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
       "ability": "Cloud Nine",
       "item": "Choice Scarf",
       "moves": [
-        "Ice Beam",
         "Scald",
-        "Hydro Pump",
-        "Focus Blast"
+        "Ice Beam",
+        "Psychic",
+        "Icy Wind"
       ]
     }
   },
@@ -5240,7 +5023,7 @@ var SETDEX_SHOWDOWN={
         "Hydro Pump",
         "Thunderbolt",
         "Volt Switch",
-        "Discharge"
+        "Hidden Power Ice"
       ]
     }
   },
@@ -5248,21 +5031,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 4,
-        "df": 252,
+        "hp": 224,
+        "at": 60,
+        "df": 44,
         "sa": 0,
-        "sd": 0,
+        "sd": 180,
         "sp": 0
       },
-      "nature": "Impish",
+      "nature": "Sassy",
       "ability": "Bulletproof",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Drain Punch",
         "Wood Hammer",
-        "Seed Bomb",
-        "Hammer Arm"
+        "Feint",
+        "Low Kick"
       ]
     }
   },
@@ -5299,13 +5082,13 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "",
       "item": "Heracronite",
       "moves": [
-        "Close Combat",
         "Pin Missile",
         "Rock Blast",
+        "Close Combat",
         "Bullet Seed"
       ]
     }
@@ -5328,7 +5111,7 @@ var SETDEX_SHOWDOWN={
         "Waterfall",
         "Ice Punch",
         "Crunch",
-        "Aqua Jet"
+        "Rock Slide"
       ]
     }
   },
@@ -5336,21 +5119,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
         "sd": 4,
-        "sp": 0
+        "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Dry Skin",
       "item": "Black Sludge",
       "moves": [
         "Drain Punch",
-        "Sucker Punch",
-        "Poison Jab",
-        "Fake Out"
+        "Fake Out",
+        "Gunk Shot",
+        "Sucker Punch"
       ]
     }
   },
@@ -5358,11 +5141,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Adamant",
@@ -5380,21 +5163,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 228,
+        "hp": 252,
         "at": 0,
-        "df": 140,
+        "df": 252,
         "sa": 0,
-        "sd": 140,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Relaxed",
+      "nature": "Bold",
       "ability": "Storm Drain",
       "item": "Eviolite",
       "moves": [
+        "Giga Drain",
         "Ancient Power",
         "Energy Ball",
-        "Giga Drain",
-        "Sludge Bomb"
+        "Earth Power"
       ]
     }
   },
@@ -5402,21 +5185,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 200,
+        "hp": 148,
         "at": 0,
-        "df": 196,
-        "sa": 52,
-        "sd": 56,
+        "df": 172,
+        "sa": 186,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Modest",
       "ability": "Water Absorb",
       "item": "Leftovers",
       "moves": [
         "Scald",
         "Ice Beam",
         "Icy Wind",
-        "Surf"
+        "Muddy Water"
       ]
     }
   },
@@ -5446,11 +5229,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -5460,7 +5243,7 @@ var SETDEX_SHOWDOWN={
         "Shadow Ball",
         "Ice Beam",
         "Icy Wind",
-        "Frost Breath"
+        "Blizzard"
       ]
     }
   },
@@ -5468,14 +5251,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 108,
+        "hp": 156,
+        "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 150,
-        "sp": 0
+        "sd": 0,
+        "sp": 100
       },
-      "nature": "Brave",
+      "nature": "Adamant",
       "ability": "Clear Body",
       "item": "Leftovers",
       "moves": [
@@ -5503,8 +5286,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Close Combat",
-        "Double Kick",
-        "Earthquake"
+        "Earthquake",
+        "Double Kick"
       ]
     }
   },
@@ -5534,21 +5317,43 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Relaxed",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Psychic",
+        "Psyshock",
+        "Zen Headbutt",
+        "Ice Punch"
+      ]
+    }
+  },
+  "Porygon": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
         "at": 0,
         "df": 4,
         "sa": 0,
         "sd": 252,
         "sp": 0
       },
-      "nature": "Sassy",
+      "nature": "Calm",
       "ability": "",
-      "item": "",
+      "item": "Eviolite",
       "moves": [
-        "Psychic",
-        "Foul Play",
-        "Dazzling Gleam",
-        "Zen Headbutt"
+        "Thunderbolt",
+        "Ice Beam",
+        "Tri Attack",
+        "Foul Play"
       ]
     }
   },
@@ -5569,8 +5374,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dazzling Gleam",
         "Ice Beam",
-        "Hyper Voice",
-        "Flamethrower"
+        "Fire Blast",
+        "Draining Kiss"
       ]
     }
   },
@@ -5590,8 +5395,8 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Giga Drain",
-        "Seed Bomb",
         "Acrobatics",
+        "Energy Ball",
         "U-turn"
       ]
     }
@@ -5601,19 +5406,19 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 76,
-        "at": 228,
-        "df": 172,
+        "at": 252,
+        "df": 180,
         "sa": 0,
-        "sd": 12,
-        "sp": 16
+        "sd": 0,
+        "sp": 0
       },
       "nature": "Adamant",
       "ability": "Sniper",
       "item": "",
       "moves": [
         "Cross Poison",
-        "Night Slash",
         "Knock Off",
+        "Night Slash",
         "Rock Slide"
       ]
     }
@@ -5631,12 +5436,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
         "Power Gem",
-        "Flash Cannon",
         "Earth Power",
-        "Discharge"
+        "Discharge",
+        "Flash Cannon"
       ]
     }
   },
@@ -5655,8 +5460,8 @@ var SETDEX_SHOWDOWN={
       "ability": "Mold Breaker",
       "item": "Life Orb",
       "moves": [
-        "Iron Head",
         "Rock Slide",
+        "Iron Head",
         "Earthquake",
         "Drill Run"
       ]
@@ -5666,20 +5471,18 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 108,
-        "at": 0,
-        "df": 228,
-        "sa": 172,
-        "sd": 0,
-        "sp": 0
+        "hp": 84,
+        "at": 84,
+        "df": 80,
+        "sa": 84,
+        "sd": 84,
+        "sp": 84
       },
-      "nature": "Quiet",
+      "nature": "Sassy",
       "ability": "Overcoat",
       "item": "",
       "moves": [
-        "Psychic",
-        "Psyshock",
-        "Hidden Power Fighting"
+        "Psychic"
       ]
     }
   },
@@ -5709,20 +5512,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
-        "df": 4,
+        "df": 0,
         "sa": 252,
-        "sd": 0,
-        "sp": 252
+        "sd": 4,
+        "sp": 0
       },
       "nature": "Modest",
       "ability": "Shell Armor",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
-        "Ice Beam",
+        "Icy Wind",
         "Scald",
-        "Air Slash",
+        "Ice Beam",
         "Aqua Jet"
       ]
     }
@@ -5731,11 +5534,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -5753,21 +5556,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 0,
+        "hp": 84,
+        "at": 84,
         "df": 0,
-        "sa": 0,
-        "sd": 252,
-        "sp": 0
+        "sa": 84,
+        "sd": 84,
+        "sp": 84
       },
-      "nature": "Sassy",
+      "nature": "Hardy",
       "ability": "",
       "item": "Eviolite",
       "moves": [
+        "Draining Kiss",
         "Moonblast",
-        "Dazzling Gleam",
-        "Flash Cannon",
-        "Energy Ball"
+        "Dazzling Gleam"
       ]
     }
   },
@@ -5777,12 +5579,12 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 4,
         "sa": 0,
-        "sd": 4,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Calm",
       "ability": "",
       "item": "Sablenite",
       "moves": [
@@ -5827,12 +5629,12 @@ var SETDEX_SHOWDOWN={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Blaze",
+      "ability": "Flash Fire",
       "item": "Choice Scarf",
       "moves": [
         "Eruption",
-        "Focus Blast",
         "Heat Wave",
+        "Focus Blast",
         "Extrasensory"
       ]
     }
@@ -5854,8 +5656,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Earthquake",
         "Dynamic Punch",
-        "Shadow Punch",
-        "Ice Punch"
+        "Ice Punch",
+        "Shadow Punch"
       ]
     }
   },
@@ -5863,21 +5665,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 8,
-        "df": 252,
+        "hp": 252,
+        "at": 0,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Impish",
-      "ability": "Soundproof",
-      "item": "Leftovers",
+      "nature": "Relaxed",
+      "ability": "",
+      "item": "Chople Berry",
       "moves": [
         "Rock Slide",
+        "Iron Head",
         "Heavy Slam",
-        "Earthquake",
-        "Iron Head"
+        "Earthquake"
       ]
     }
   },
@@ -5885,11 +5687,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Adamant",
@@ -5914,14 +5716,14 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Technician",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Fake Out",
-        "U-turn",
-        "Icy Wind",
-        "Knock Off"
+        "Knock Off",
+        "Feint",
+        "U-turn"
       ]
     }
   },
@@ -5943,7 +5745,7 @@ var SETDEX_SHOWDOWN={
         "Earth Power",
         "Ice Beam",
         "Sludge Bomb",
-        "Poison Jab"
+        "Thunderbolt"
       ]
     }
   },
@@ -5951,14 +5753,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
         "df": 0,
-        "sa": 252,
-        "sd": 4,
-        "sp": 252
+        "sa": 144,
+        "sd": 0,
+        "sp": 112
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
@@ -5973,21 +5775,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
+        "hp": 248,
+        "at": 0,
+        "df": 220,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 36
       },
-      "nature": "Jolly",
+      "nature": "Impish",
       "ability": "",
       "item": "",
       "moves": [
         "X-Scissor",
-        "U-turn",
         "Aerial Ace",
-        "Night Slash"
+        "U-turn",
+        "Return"
       ]
     }
   },
@@ -5995,11 +5797,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -6008,8 +5810,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Hurricane",
         "Bug Buzz",
-        "Energy Ball",
-        "Giga Drain"
+        "Giga Drain",
+        "Energy Ball"
       ]
     }
   },
@@ -6017,21 +5819,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 80,
         "at": 0,
-        "df": 4,
-        "sa": 252,
-        "sd": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 176,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Thick Fat",
-      "item": "Assault Vest",
+      "item": "Sitrus Berry",
       "moves": [
-        "Psyshock",
+        "Psychic",
         "Icy Wind",
-        "Energy Ball",
-        "Power Gem"
+        "Psyshock",
+        "Energy Ball"
       ]
     }
   },
@@ -6048,12 +5850,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "",
-      "item": "Choice Scarf",
+      "item": "Charti Berry",
       "moves": [
         "Heat Wave",
         "Hurricane",
-        "Overheat",
-        "Air Slash"
+        "Air Slash",
+        "Overheat"
       ]
     }
   },
@@ -6061,21 +5863,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 252,
-        "df": 0,
+        "hp": 212,
+        "at": 156,
+        "df": 100,
         "sa": 0,
-        "sd": 8,
-        "sp": 0
+        "sd": 12,
+        "sp": 28
       },
       "nature": "Adamant",
-      "ability": "Flash Fire",
+      "ability": "Guts",
       "item": "Toxic Orb",
       "moves": [
         "Flare Blitz",
         "Superpower",
-        "Quick Attack",
-        "Facade"
+        "Facade",
+        "Quick Attack"
       ]
     }
   },
@@ -6096,8 +5898,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Hurricane",
         "U-turn",
-        "Focus Blast",
-        "Heat Wave"
+        "Heat Wave",
+        "Hidden Power Ice"
       ]
     }
   },
@@ -6105,21 +5907,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "",
-      "item": "",
+      "item": "Choice Scarf",
       "moves": [
         "Chatter",
+        "Thief",
         "Boomburst",
-        "Heat Wave",
-        "Hyper Voice"
+        "Heat Wave"
       ]
     }
   },
@@ -6131,15 +5933,15 @@ var SETDEX_SHOWDOWN={
         "at": 0,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
       "ability": "Intimidate",
       "item": "",
       "moves": [
-        "Jump Kick",
         "Return",
+        "Psychic",
         "Thunderbolt",
         "Megahorn"
       ]
@@ -6160,8 +5962,8 @@ var SETDEX_SHOWDOWN={
       "ability": "Blaze",
       "item": "Charizardite Y",
       "moves": [
-        "Solar Beam",
         "Heat Wave",
+        "Solar Beam",
         "Overheat",
         "Air Slash"
       ]
@@ -6171,21 +5973,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 196,
         "at": 0,
         "df": 0,
-        "sa": 252,
-        "sd": 8,
-        "sp": 0
+        "sa": 132,
+        "sd": 4,
+        "sp": 172
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Expert Belt",
+      "item": "Assault Vest",
       "moves": [
+        "Flamethrower",
         "Thunderbolt",
         "Focus Blast",
-        "Heat Wave",
-        "Fire Blast"
+        "Heat Wave"
       ]
     }
   },
@@ -6206,8 +6008,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Blizzard",
         "Ice Shard",
-        "Giga Drain",
-        "Energy Ball"
+        "Energy Ball",
+        "Giga Drain"
       ]
     }
   },
@@ -6215,21 +6017,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 252,
-        "df": 4,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "sd": 4,
+        "sp": 0
       },
       "nature": "Adamant",
       "ability": "Intimidate",
       "item": "Sitrus Berry",
       "moves": [
         "Wild Charge",
-        "Superpower",
         "Ice Fang",
-        "Crunch"
+        "Superpower",
+        "Fire Fang"
       ]
     }
   },
@@ -6248,8 +6050,8 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "Water Spout",
         "Scald",
+        "Water Spout",
         "Shadow Ball",
         "Ice Beam"
       ]
@@ -6271,8 +6073,8 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Fake Out",
-        "High Jump Kick",
         "Rock Slide",
+        "High Jump Kick",
         "Drain Punch"
       ]
     }
@@ -6290,12 +6092,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "Sap Sipper",
-      "item": "",
+      "item": "Choice Band",
       "moves": [
         "Horn Leech",
-        "Rock Slide",
         "Earthquake",
-        "Aerial Ace"
+        "Rock Slide",
+        "Wild Charge"
       ]
     }
   },
@@ -6303,21 +6105,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
+        "hp": 0,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Timid",
       "ability": "Levitate",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
         "Earthquake",
-        "Dragon Claw",
-        "Rock Slide",
-        "U-turn"
+        "Earth Power",
+        "Draco Meteor",
+        "Rock Slide"
       ]
     }
   },
@@ -6334,7 +6136,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Brave",
       "ability": "Overcoat",
-      "item": "Assault Vest",
+      "item": "Life Orb",
       "moves": [
         "Iron Head",
         "Megahorn",
@@ -6349,9 +6151,9 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 252,
-        "df": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Brave",
@@ -6359,9 +6161,9 @@ var SETDEX_SHOWDOWN={
       "item": "Choice Band",
       "moves": [
         "Head Charge",
-        "Wild Charge",
-        "Earthquake",
-        "Poison Jab"
+        "Iron Head",
+        "Rock Slide",
+        "Earthquake"
       ]
     }
   },
@@ -6369,11 +6171,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -6381,9 +6183,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Earth Power",
-        "Hidden Power Ice",
         "Rock Slide",
-        "Sludge Bomb"
+        "Hidden Power Ice",
+        "Earthquake"
       ]
     }
   },
@@ -6391,21 +6193,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
-        "sp": 0
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Modest",
-      "ability": "",
+      "nature": "Timid",
+      "ability": "Chlorophyll",
       "item": "Black Sludge",
       "moves": [
         "Sludge Bomb",
         "Giga Drain",
-        "Dazzling Gleam",
-        "Solar Beam"
+        "Solar Beam",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -6427,7 +6229,7 @@ var SETDEX_SHOWDOWN={
         "Moonblast",
         "Icy Wind",
         "Dazzling Gleam",
-        "Fire Blast"
+        "Ice Beam"
       ]
     }
   },
@@ -6437,10 +6239,10 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
+        "df": 108,
+        "sa": 4,
         "sd": 4,
-        "sp": 0
+        "sp": 140
       },
       "nature": "Modest",
       "ability": "",
@@ -6448,8 +6250,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Flash Cannon",
         "Thunderbolt",
-        "Discharge",
-        "Volt Switch"
+        "Volt Switch",
+        "Hidden Power Fire"
       ]
     }
   },
@@ -6457,14 +6259,14 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 4,
+        "hp": 248,
+        "at": 8,
+        "df": 252,
         "sa": 0,
-        "sd": 252,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Relaxed",
       "ability": "",
       "item": "",
       "moves": [
@@ -6501,21 +6303,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 236,
+        "hp": 248,
         "at": 0,
-        "df": 244,
+        "df": 4,
         "sa": 0,
-        "sd": 24,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Calm",
       "ability": "",
-      "item": "Sitrus Berry",
+      "item": "",
       "moves": [
-        "Dazzling Gleam",
         "Bug Buzz",
-        "Seismic Toss",
-        "U-turn"
+        "Dazzling Gleam",
+        "U-turn",
+        "Bug Bite"
       ]
     }
   },
@@ -6523,20 +6325,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
       "ability": "Defeatist",
-      "item": "Sitrus Berry",
+      "item": "Choice Scarf",
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "Knock Off",
+        "U-turn",
         "Acrobatics"
       ]
     }
@@ -6545,43 +6347,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 8,
+        "hp": 244,
+        "at": 0,
         "df": 0,
-        "sa": 0,
-        "sd": 252,
+        "sa": 76,
+        "sd": 188,
         "sp": 0
       },
       "nature": "Sassy",
       "ability": "Levitate",
-      "item": "Leftovers",
-      "moves": [
-        "Gyro Ball",
-        "Zen Headbutt",
-        "Explosion",
-        "Earthquake"
-      ]
-    }
-  },
-  "Delcatty": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 4,
-        "sp": 252
-      },
-      "nature": "Jolly",
-      "ability": "Normalize",
       "item": "",
       "moves": [
-        "Fake Out",
-        "Sucker Punch",
-        "Double-Edge",
-        "Play Rough"
+        "Gyro Ball",
+        "Psychic",
+        "Zen Headbutt",
+        "Earthquake"
       ]
     }
   },
@@ -6589,12 +6369,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 252,
+        "hp": 156,
+        "at": 212,
         "df": 0,
         "sa": 0,
-        "sd": 4,
-        "sp": 252
+        "sd": 140,
+        "sp": 0
       },
       "nature": "Adamant",
       "ability": "Intimidate",
@@ -6603,7 +6383,7 @@ var SETDEX_SHOWDOWN={
         "Sucker Punch",
         "Crunch",
         "Play Rough",
-        "Snarl"
+        "Foul Play"
       ]
     }
   },
@@ -6642,7 +6422,7 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Jolly",
       "ability": "",
-      "item": "",
+      "item": "Lum Berry",
       "moves": [
         "Earthquake",
         "Rock Slide",
@@ -6669,7 +6449,7 @@ var SETDEX_SHOWDOWN={
         "Fake Out",
         "Drain Punch",
         "Knock Off",
-        "Crunch"
+        "Ice Punch"
       ]
     }
   },
@@ -6677,21 +6457,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 240,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
-        "sp": 252
+        "df": 156,
+        "sa": 12,
+        "sd": 48,
+        "sp": 48
       },
       "nature": "Modest",
-      "ability": "Chlorophyll",
+      "ability": "",
       "item": "",
       "moves": [
         "Giga Drain",
         "Petal Dance",
         "Solar Beam",
-        "Hidden Power Ice"
+        "Energy Ball"
       ]
     }
   },
@@ -6721,21 +6501,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 244,
         "at": 0,
-        "df": 180,
-        "sa": 40,
-        "sd": 36,
-        "sp": 0
+        "df": 252,
+        "sa": 4,
+        "sd": 4,
+        "sp": 4
       },
       "nature": "Bold",
       "ability": "",
       "item": "Eviolite",
       "moves": [
-        "Flamethrower",
         "Overheat",
         "Heat Wave",
-        "Low Kick"
+        "Flamethrower",
+        "Psychic"
       ]
     }
   },
@@ -6778,7 +6558,7 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "Fire Punch",
+        "Iron Head",
         "Head Smash"
       ]
     }
@@ -6805,6 +6585,28 @@ var SETDEX_SHOWDOWN={
       ]
     }
   },
+  "Charmeleon": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "Solar Power",
+      "item": "Choice Specs",
+      "moves": [
+        "Heat Wave",
+        "Flamethrower",
+        "Overheat",
+        "Ancient Power"
+      ]
+    }
+  },
   "Scolipede": {
     "Common Showdown": {
       "level": 50,
@@ -6820,8 +6622,8 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "",
       "moves": [
-        "Poison Jab",
         "Megahorn",
+        "Poison Jab",
         "Rock Slide",
         "Earthquake"
       ]
@@ -6840,12 +6642,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "Contrary",
-      "item": "Life Orb",
+      "item": "",
       "moves": [
         "Leaf Storm",
         "Dragon Pulse",
         "Giga Drain",
-        "Hidden Power Rock"
+        "Hidden Power Ice"
       ]
     }
   },
@@ -6853,11 +6655,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
@@ -6886,9 +6688,9 @@ var SETDEX_SHOWDOWN={
       "ability": "Swift Swim",
       "item": "Assault Vest",
       "moves": [
-        "Giga Drain",
-        "Ice Beam",
         "Fake Out",
+        "Ice Beam",
+        "Giga Drain",
         "Scald"
       ]
     }
@@ -6926,12 +6728,12 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Intimidate",
       "item": "Salamencite",
       "moves": [
-        "Earthquake",
         "Double-Edge",
+        "Earthquake",
         "Draco Meteor",
         "Hyper Voice"
       ]
@@ -6950,12 +6752,34 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "Mold Breaker",
-      "item": "Lum Berry",
+      "item": "Choice Scarf",
       "moves": [
-        "Earthquake",
         "Dragon Claw",
+        "Earthquake",
         "Poison Jab",
         "Rock Slide"
+      ]
+    }
+  },
+  "Garbodor": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Gunk Shot",
+        "Drain Punch",
+        "Seed Bomb",
+        "Explosion"
       ]
     }
   },
@@ -6976,7 +6800,7 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Bonemerang",
         "Rock Slide",
-        "Earthquake",
+        "Low Kick",
         "Knock Off"
       ]
     }
@@ -6985,21 +6809,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 244,
+        "hp": 252,
         "at": 0,
-        "df": 172,
-        "sa": 76,
-        "sd": 4,
-        "sp": 12
+        "df": 4,
+        "sa": 248,
+        "sd": 0,
+        "sp": 4
       },
       "nature": "Modest",
       "ability": "Snow Cloak",
       "item": "Choice Specs",
       "moves": [
+        "Blizzard",
         "Ice Beam",
         "Shadow Ball",
-        "Blizzard",
-        "Water Pulse"
+        "Hidden Power Ground"
       ]
     }
   },
@@ -7008,15 +6832,15 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 140,
-        "df": 100,
+        "at": 4,
+        "df": 252,
         "sa": 0,
-        "sd": 16,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Impish",
       "ability": "Sand Stream",
-      "item": "",
+      "item": "Leftovers",
       "moves": [
         "Earthquake",
         "Ice Fang",
@@ -7029,21 +6853,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 4,
         "at": 0,
-        "df": 4,
-        "sa": 0,
-        "sd": 252,
-        "sp": 0
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
       },
-      "nature": "Calm",
+      "nature": "Modest",
       "ability": "Chlorophyll",
-      "item": "Sitrus Berry",
+      "item": "Assault Vest",
       "moves": [
-        "Drain Punch",
         "Giga Drain",
-        "Energy Ball",
-        "Solar Beam"
+        "Sludge Bomb",
+        "Hidden Power Rock",
+        "Dazzling Gleam"
       ]
     }
   },
@@ -7062,10 +6886,10 @@ var SETDEX_SHOWDOWN={
       "ability": "",
       "item": "Leftovers",
       "moves": [
-        "Flamethrower",
         "Seismic Toss",
         "Charge Beam",
-        "Ice Beam"
+        "Flamethrower",
+        "Shadow Ball"
       ]
     }
   },
@@ -7087,7 +6911,7 @@ var SETDEX_SHOWDOWN={
         "Zen Headbutt",
         "Iron Head",
         "Ice Punch",
-        "Meteor Mash"
+        "Bullet Punch"
       ]
     }
   },
@@ -7097,19 +6921,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 252,
+        "df": 68,
         "sa": 0,
-        "sd": 4,
+        "sd": 188,
         "sp": 0
       },
-      "nature": "Bold",
+      "nature": "Calm",
       "ability": "Levitate",
       "item": "Eviolite",
       "moves": [
         "Shadow Ball",
-        "Icy Wind",
+        "Hex",
         "Foul Play",
-        "Hex"
+        "Icy Wind"
       ]
     }
   },
@@ -7117,47 +6941,25 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "",
+      "ability": "Blaze",
       "item": "",
       "moves": [
-        "Heat Wave",
         "Psychic",
+        "Heat Wave",
         "Psyshock",
         "Dazzling Gleam"
       ]
     }
   },
   "Pelipper": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 244,
-        "at": 0,
-        "df": 148,
-        "sa": 112,
-        "sd": 0,
-        "sp": 0
-      },
-      "nature": "Bold",
-      "ability": "Rain Dish",
-      "item": "Leftovers",
-      "moves": [
-        "Scald",
-        "Ice Beam",
-        "Hurricane",
-        "Hydro Pump"
-      ]
-    }
-  },
-  "Avalugg": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -7168,14 +6970,36 @@ var SETDEX_SHOWDOWN={
         "sd": 252,
         "sp": 0
       },
-      "nature": "Careful",
+      "nature": "Calm",
+      "ability": "Rain Dish",
+      "item": "Safety Goggles",
+      "moves": [
+        "Scald",
+        "Hurricane",
+        "Icy Wind",
+        "Air Slash"
+      ]
+    }
+  },
+  "Avalugg": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 84,
+        "at": 84,
+        "df": 84,
+        "sa": 84,
+        "sd": 84,
+        "sp": 84
+      },
+      "nature": "Hardy",
       "ability": "",
-      "item": "Assault Vest",
+      "item": "Leftovers",
       "moves": [
         "Avalanche",
-        "Earthquake",
+        "Gyro Ball",
         "Rock Slide",
-        "Gyro Ball"
+        "Earthquake"
       ]
     }
   },
@@ -7201,51 +7025,7 @@ var SETDEX_SHOWDOWN={
       ]
     }
   },
-  "Swalot": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 0,
-        "at": 252,
-        "df": 4,
-        "sa": 0,
-        "sd": 252,
-        "sp": 0
-      },
-      "nature": "Adamant",
-      "ability": "",
-      "item": "Black Sludge",
-      "moves": [
-        "Gunk Shot",
-        "Acid Spray",
-        "Sludge Bomb",
-        "Giga Drain"
-      ]
-    }
-  },
   "Meganium": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 0,
-        "sa": 4,
-        "sd": 252,
-        "sp": 0
-      },
-      "nature": "Calm",
-      "ability": "Overgrow",
-      "item": "Leftovers",
-      "moves": [
-        "Giga Drain",
-        "Dragon Tail",
-        "Nature Power",
-        "Earthquake"
-      ]
-    }
-  },
-  "Mr. Mime": {
     "Common Showdown": {
       "level": 50,
       "evs": {
@@ -7256,8 +7036,30 @@ var SETDEX_SHOWDOWN={
         "sd": 4,
         "sp": 0
       },
-      "nature": "Bold",
-      "ability": "Soundproof",
+      "nature": "Relaxed",
+      "ability": "",
+      "item": "Leftovers",
+      "moves": [
+        "Giga Drain",
+        "Solar Beam",
+        "Earthquake",
+        "Ancient Power"
+      ]
+    }
+  },
+  "Mr. Mime": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Filter",
       "item": "Sitrus Berry",
       "moves": [
         "Fake Out",
@@ -7285,7 +7087,7 @@ var SETDEX_SHOWDOWN={
         "Razor Shell",
         "Rock Slide",
         "Poison Jab",
-        "Stone Edge"
+        "Earthquake"
       ]
     }
   },
@@ -7293,21 +7095,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
       "ability": "",
-      "item": "Choice Scarf",
+      "item": "Sitrus Berry",
       "moves": [
         "Water Spout",
         "Ice Beam",
-        "Hydro Pump",
-        "Hyper Voice"
+        "Scald",
+        "Hydro Pump"
       ]
     }
   },
@@ -7322,7 +7124,7 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Modest",
+      "nature": "Timid",
       "ability": "Flash Fire",
       "item": "",
       "moves": [
@@ -7351,7 +7153,7 @@ var SETDEX_SHOWDOWN={
         "Facade",
         "Close Combat",
         "Crunch",
-        "Shadow Claw"
+        "Earthquake"
       ]
     }
   },
@@ -7359,11 +7161,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 0,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 0,
+        "sd": 4,
         "sp": 252
       },
       "nature": "Adamant",
@@ -7403,43 +7205,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 4,
         "at": 0,
-        "df": 0,
+        "df": 252,
         "sa": 252,
-        "sd": 8,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Leftovers",
+      "item": "Assault Vest",
       "moves": [
         "Earth Power",
         "Thunderbolt",
-        "Discharge",
-        "Scald"
-      ]
-    }
-  },
-  "Riolu": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 252,
-        "sa": 0,
-        "sd": 4,
-        "sp": 0
-      },
-      "nature": "Impish",
-      "ability": "",
-      "item": "Eviolite",
-      "moves": [
-        "Feint",
-        "Reversal",
-        "Low Kick",
-        "Quick Attack"
+        "Sludge Bomb",
+        "Foul Play"
       ]
     }
   },
@@ -7460,8 +7240,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Moonblast",
         "Dazzling Gleam",
-        "Energy Ball",
-        "Thunderbolt"
+        "Draining Kiss",
+        "Energy Ball"
       ]
     }
   },
@@ -7478,12 +7258,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "Forecast",
-      "item": "Choice Scarf",
+      "item": "Life Orb",
       "moves": [
         "Weather Ball",
         "Hurricane",
         "Thunder",
-        "Scald"
+        "Ice Beam"
       ]
     }
   },
@@ -7493,19 +7273,19 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
-        "sa": 252,
-        "sd": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 4,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Bold",
       "ability": "Storm Drain",
       "item": "Leftovers",
       "moves": [
         "Giga Drain",
         "Ancient Power",
         "Earth Power",
-        "Energy Ball"
+        "Sludge Bomb"
       ]
     }
   },
@@ -7544,12 +7324,34 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "Hyper Cutter",
-      "item": "Choice Scarf",
+      "item": "Sitrus Berry",
       "moves": [
         "Crabhammer",
         "Knock Off",
         "Superpower",
         "Rock Slide"
+      ]
+    }
+  },
+  "Lunatone": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "",
+      "moves": [
+        "Psyshock",
+        "Earth Power",
+        "Hidden Power Rock",
+        "Moonblast"
       ]
     }
   },
@@ -7569,9 +7371,9 @@ var SETDEX_SHOWDOWN={
       "item": "Life Orb",
       "moves": [
         "Sludge Bomb",
+        "Leaf Storm",
         "Giga Drain",
-        "Hidden Power Ice",
-        "Leaf Storm"
+        "Hidden Power Fire"
       ]
     }
   },
@@ -7593,7 +7395,7 @@ var SETDEX_SHOWDOWN={
         "Flare Blitz",
         "Drill Run",
         "Wild Charge",
-        "Megahorn"
+        "Overheat"
       ]
     }
   },
@@ -7610,12 +7412,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "Motor Drive",
-      "item": "Life Orb",
+      "item": "Air Balloon",
       "moves": [
         "Ice Punch",
+        "Thunder Punch",
         "Wild Charge",
-        "Earthquake",
-        "Cross Chop"
+        "Earthquake"
       ]
     }
   },
@@ -7623,12 +7425,12 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 232,
+        "hp": 252,
         "at": 0,
-        "df": 84,
-        "sa": 112,
-        "sd": 80,
-        "sp": 0
+        "df": 100,
+        "sa": 100,
+        "sd": 52,
+        "sp": 4
       },
       "nature": "Bold",
       "ability": "",
@@ -7659,7 +7461,7 @@ var SETDEX_SHOWDOWN={
         "Phantom Force",
         "Seed Bomb",
         "Shadow Sneak",
-        "Explosion"
+        "Bullet Seed"
       ]
     }
   },
@@ -7667,20 +7469,20 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 252,
-        "df": 0,
+        "hp": 252,
+        "at": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 8,
+        "sd": 252,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Careful",
       "ability": "",
       "item": "Assault Vest",
       "moves": [
         "Earthquake",
         "Ice Shard",
-        "Rock Slide",
+        "Play Rough",
         "Knock Off"
       ]
     }
@@ -7689,11 +7491,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 244,
         "at": 0,
-        "df": 252,
-        "sa": 4,
-        "sd": 0,
+        "df": 108,
+        "sa": 68,
+        "sd": 88,
         "sp": 0
       },
       "nature": "Bold",
@@ -7711,11 +7513,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Timid",
@@ -7726,28 +7528,6 @@ var SETDEX_SHOWDOWN={
         "Thunderbolt",
         "Volt Switch",
         "Grass Knot"
-      ]
-    }
-  },
-  "Carnivine": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 252,
-        "at": 0,
-        "df": 92,
-        "sa": 0,
-        "sd": 164,
-        "sp": 0
-      },
-      "nature": "Bold",
-      "ability": "Levitate",
-      "item": "Leftovers",
-      "moves": [
-        "Giga Drain",
-        "Knock Off",
-        "Sludge Bomb",
-        "Power Whip"
       ]
     }
   },
@@ -7764,12 +7544,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Jolly",
       "ability": "Sand Stream",
-      "item": "Choice Scarf",
+      "item": "Tyranitarite",
       "moves": [
         "Rock Slide",
         "Crunch",
-        "Low Kick",
-        "Ice Beam"
+        "Ice Beam",
+        "Low Kick"
       ]
     }
   },
@@ -7777,11 +7557,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
-        "at": 252,
-        "df": 0,
+        "hp": 140,
+        "at": 0,
+        "df": 116,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
       "nature": "Jolly",
@@ -7789,9 +7569,9 @@ var SETDEX_SHOWDOWN={
       "item": "Leftovers",
       "moves": [
         "Body Slam",
-        "Return",
         "Rock Slide",
-        "Earthquake"
+        "Return",
+        "Ice Punch"
       ]
     }
   },
@@ -7811,31 +7591,9 @@ var SETDEX_SHOWDOWN={
       "item": "",
       "moves": [
         "Bug Buzz",
-        "Giga Drain",
-        "Sludge Bomb",
-        "Energy Ball"
-      ]
-    }
-  },
-  "Cranidos": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 140,
-        "at": 252,
-        "df": 116,
-        "sa": 0,
-        "sd": 0,
-        "sp": 0
-      },
-      "nature": "Brave",
-      "ability": "Sheer Force",
-      "item": "Life Orb",
-      "moves": [
-        "Rock Slide",
-        "Head Smash",
-        "Earthquake",
-        "Fire Punch"
+        "Acid Spray",
+        "Energy Ball",
+        "Sludge Bomb"
       ]
     }
   },
@@ -7844,20 +7602,20 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 252,
-        "df": 0,
-        "sa": 4,
-        "sd": 0,
+        "at": 0,
+        "df": 76,
+        "sa": 0,
+        "sd": 180,
         "sp": 0
       },
-      "nature": "Brave",
+      "nature": "Careful",
       "ability": "Thick Fat",
-      "item": "Assault Vest",
+      "item": "Sitrus Berry",
       "moves": [
         "Fake Out",
         "Icy Wind",
-        "Drill Run",
-        "Blizzard"
+        "Ice Beam",
+        "Aqua Jet"
       ]
     }
   },
@@ -7865,11 +7623,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 248,
         "at": 252,
         "df": 0,
         "sa": 0,
-        "sd": 4,
+        "sd": 8,
         "sp": 0
       },
       "nature": "Adamant",
@@ -7877,9 +7635,9 @@ var SETDEX_SHOWDOWN={
       "item": "Black Sludge",
       "moves": [
         "Gunk Shot",
-        "Ice Punch",
-        "Shadow Sneak",
-        "Poison Jab"
+        "Poison Jab",
+        "Fire Punch",
+        "Ice Punch"
       ]
     }
   },
@@ -7898,10 +7656,10 @@ var SETDEX_SHOWDOWN={
       "ability": "Chlorophyll",
       "item": "",
       "moves": [
-        "Knock Off",
         "Fake Out",
+        "Knock Off",
         "Leaf Blade",
-        "Low Kick"
+        "Rock Slide"
       ]
     }
   },
@@ -7909,21 +7667,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
-        "df": 84,
+        "df": 0,
         "sa": 252,
         "sd": 0,
-        "sp": 172
+        "sp": 252
       },
       "nature": "Timid",
       "ability": "Levitate",
-      "item": "Choice Scarf",
+      "item": "",
       "moves": [
         "Freeze-Dry",
+        "Flash Cannon",
         "Ice Beam",
-        "Icy Wind",
-        "Flash Cannon"
+        "Icy Wind"
       ]
     }
   },
@@ -7933,41 +7691,41 @@ var SETDEX_SHOWDOWN={
       "evs": {
         "hp": 0,
         "at": 252,
-        "df": 0,
+        "df": 4,
         "sa": 0,
-        "sd": 4,
+        "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Swift Swim",
       "item": "Life Orb",
       "moves": [
         "Icicle Crash",
-        "Aqua Jet",
         "Superpower",
+        "Aqua Jet",
         "Rock Slide"
       ]
     }
   },
-  "Tentacruel": {
+  "Regice": {
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
-        "df": 0,
+        "df": 4,
         "sa": 252,
-        "sd": 70,
-        "sp": 186
+        "sd": 0,
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Quiet",
       "ability": "Clear Body",
-      "item": "Choice Scarf",
+      "item": "Choice Specs",
       "moves": [
-        "Sludge Bomb",
         "Ice Beam",
-        "Dazzling Gleam",
-        "Scald"
+        "Thunderbolt",
+        "Focus Blast",
+        "Blizzard"
       ]
     }
   },
@@ -7984,12 +7742,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Adamant",
       "ability": "Swift Swim",
-      "item": "Life Orb",
+      "item": "Assault Vest",
       "moves": [
         "X-Scissor",
         "Rock Slide",
-        "Low Kick",
-        "Aqua Jet"
+        "Cross Poison",
+        "Earthquake"
       ]
     }
   },
@@ -8006,34 +7764,12 @@ var SETDEX_SHOWDOWN={
       },
       "nature": "Timid",
       "ability": "",
-      "item": "",
+      "item": "Leftovers",
       "moves": [
         "Psychic",
         "Dazzling Gleam",
         "Psyshock",
         "Shadow Ball"
-      ]
-    }
-  },
-  "Cubone": {
-    "Common Showdown": {
-      "level": 50,
-      "evs": {
-        "hp": 100,
-        "at": 252,
-        "df": 108,
-        "sa": 0,
-        "sd": 48,
-        "sp": 0
-      },
-      "nature": "Brave",
-      "ability": "Lightning Rod",
-      "item": "Thick Club",
-      "moves": [
-        "Rock Slide",
-        "Bonemerang",
-        "Fire Punch",
-        "Earthquake"
       ]
     }
   },
@@ -8048,14 +7784,14 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Wonder Guard",
       "item": "",
       "moves": [
         "X-Scissor",
         "Shadow Sneak",
-        "Shadow Claw",
-        "Phantom Force"
+        "Phantom Force",
+        "Shadow Claw"
       ]
     }
   },
@@ -8063,21 +7799,21 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 20,
-        "at": 0,
-        "df": 252,
+        "hp": 0,
+        "at": 252,
+        "df": 0,
         "sa": 0,
-        "sd": 0,
-        "sp": 236
+        "sd": 4,
+        "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Jolly",
       "ability": "",
-      "item": "Eviolite",
+      "item": "",
       "moves": [
         "Fake Out",
-        "Icy Wind",
         "Knock Off",
-        "Foul Play"
+        "Icicle Crash",
+        "Icy Wind"
       ]
     }
   },
@@ -8086,10 +7822,10 @@ var SETDEX_SHOWDOWN={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 136,
-        "df": 60,
+        "at": 252,
+        "df": 4,
         "sa": 0,
-        "sd": 60,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Adamant",

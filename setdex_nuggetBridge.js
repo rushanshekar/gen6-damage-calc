@@ -1,4 +1,707 @@
 var SETDEX_NUGGETBRIDGE={
+  "Clefable": {
+    "pokebeys14's Spring 2015 Clefable": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "156",
+        "sa": "28",
+        "sd": "68",
+        "sp": "4"
+      },
+      "nature": "Bold",
+      "ability": "Unaware",
+      "item": "Sitrus Berry",
+      "moves": [
+        "",
+        "Ice Beam",
+        "",
+        ""
+      ]
+    }
+  },
+  "Rotom-H": {
+    "pokebeys14's Spring 2015 Rotom-Heat": {
+      "level": 50,
+      "evs": {
+        "hp": "92",
+        "sa": "252",
+        "sp": "164"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Life Orb",
+      "moves": [
+        "Thunderbolt",
+        "Overheat",
+        "Hidden Power Ice",
+        ""
+      ]
+    },
+    "NinjaSyao's Spring 2015 Lunar": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "84",
+        "sa": "20",
+        "sd": "4",
+        "sp": "164"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Safety Goggles",
+      "moves": [
+        "Overheat",
+        "Thunderbolt",
+        "",
+        ""
+      ]
+    },
+    "amr97's Spring 2015 Smile Taisou": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "108",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Safety Goggles",
+      "moves": [
+        "Thunderbolt",
+        "Overheat",
+        "",
+        ""
+      ]
+    }
+  },
+  "Ferrothorn": {
+    "pokebeys14's Spring 2015 Ferrothorn": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "236",
+        "sd": "20"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Power Whip",
+        "",
+        "",
+        "Gyro Ball"
+      ]
+    },
+    "Level 51's Winter 2015 Free Hugs": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "148",
+        "sd": "108"
+      },
+      "ivs": {
+        "sp": "0"
+      },
+      "nature": "Relaxed",
+      "ability": "",
+      "item": "Leftovers",
+      "moves": [
+        "Gyro Ball",
+        "Power Whip",
+        "",
+        ""
+      ]
+    }
+  },
+  "Mawile": {
+    "NinjaSyao's Spring 2015 Marina": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "204",
+        "sp": "52"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Mawilite",
+      "moves": [
+        "Play Rough",
+        "Iron Head",
+        "Sucker Punch",
+        ""
+      ]
+    }
+  },
+  "Trevenant": {
+    "NinjaSyao's Spring 2015 Calina": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "76",
+        "df": "100",
+        "sd": "76",
+        "sp": "4"
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Wood Hammer",
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "Suicune": {
+    "NinjaSyao's Spring 2015 Teran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "108",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Assault Vest",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Icy Wind",
+        "Snarl"
+      ]
+    }
+  },
+  "Zapdos": {
+    "NinjaSyao's Spring 2015 Merco": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "32",
+        "sa": "20",
+        "sd": "148",
+        "sp": "52"
+      },
+      "ivs": {
+        "at": "4",
+        "df": "30"
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "Choice Specs",
+      "moves": [
+        "Thunderbolt",
+        "Heat Wave",
+        "Hidden Power Ice",
+        "Volt Switch"
+      ]
+    }
+  },
+  "Terrakion": {
+    "NinjaSyao's Spring 2015 Tarus": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "at": "124",
+        "df": "100",
+        "sd": "4",
+        "sp": "236"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Rock Slide",
+        "Close Combat",
+        "Double Kick",
+        ""
+      ]
+    },
+    "conan's Spring 2015 Terrakion": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Rock Slide",
+        "",
+        "Earthquake"
+      ]
+    },
+    "rapha's Spring 2015 Terrakion": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Rock Slide",
+        "Double Kick",
+        ""
+      ]
+    },
+    "KellsterCartier's Spring 2015 Terrakion": {
+      "level": 50,
+      "evs": {
+        "hp": "116",
+        "at": "140",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Rock Slide",
+        "",
+        ""
+      ]
+    }
+  },
+  "Metagross": {
+    "MajorBowman's Spring 2015 Metagross": {
+      "level": 50,
+      "evs": {
+        "hp": "44",
+        "at": "164",
+        "df": "44",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Iron Head",
+        "Zen Headbutt",
+        "",
+        ""
+      ]
+    },
+    "rapha's Spring 2015 Metagross": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "at": "36",
+        "df": "4",
+        "sd": "36",
+        "sp": "180"
+      },
+      "nature": "Adamant",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Iron Head",
+        "Zen Headbutt",
+        "",
+        ""
+      ]
+    },
+    "KellsterCartier's Spring 2015 Metagross": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Bullet Punch",
+        "Zen Headbutt",
+        "Ice Punch",
+        ""
+      ]
+    },
+    "Guru Fernandez's Winter 2015 REGIS MK-V": {
+      "level": 50,
+      "evs": {
+        "hp": "156",
+        "at": "156",
+        "sp": "196"
+      },
+      "nature": "Jolly",
+      "ability": "Clear Body",
+      "item": "Metagrossite",
+      "moves": [
+        "Iron Head",
+        "Zen Headbutt",
+        "Ice Punch",
+        ""
+      ]
+    }
+  },
+  "Hydreigon": {
+    "MajorBowman's Spring 2015 Hydreigon": {
+      "level": 50,
+      "evs": {
+        "hp": "60",
+        "df": "180",
+        "sa": "132",
+        "sd": "4",
+        "sp": "132"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Earth Power",
+        "Flamethrower"
+      ]
+    },
+    "rapha's Spring 2015 Oppenheimer": {
+      "level": 50,
+      "evs": {
+        "df": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Flamethrower",
+        "Earth Power"
+      ]
+    },
+    "KellsterCartier's Spring 2015 Hydreigon": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "sa": "252",
+        "sp": "252"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Life Orb",
+      "moves": [
+        "Dark Pulse",
+        "",
+        "Fire Blast",
+        "Draco Meteor"
+      ]
+    },
+    "Guru Fernandez's Winter 2015 Trigun": {
+      "level": 50,
+      "evs": {
+        "hp": "28",
+        "df": "36",
+        "sa": "244",
+        "sd": "4",
+        "sp": "196"
+      },
+      "nature": "Modest",
+      "ability": "Levitate",
+      "item": "Choice Specs",
+      "moves": [
+        "Dark Pulse",
+        "Draco Meteor",
+        "Fire Blast",
+        "Earth Power"
+      ]
+    }
+  },
+  "Landorus-T": {
+    "MajorBowman's Spring 2015 Landorus-Therian": {
+      "level": 50,
+      "evs": {
+        "hp": "164",
+        "at": "60",
+        "df": "4",
+        "sd": "28",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Choice Band",
+      "moves": [
+        "Earthquake",
+        "Superpower",
+        "U-turn",
+        "Rock Slide"
+      ]
+    },
+    "Life Orb's Spring 2015 Landorus-Therian": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "U-turn",
+        "Knock Off",
+        "Rock Slide"
+      ]
+    },
+    "amr97's Spring 2015 BANGxBANG": {
+      "level": 50,
+      "evs": {
+        "hp": "12",
+        "at": "252",
+        "df": "92",
+        "sd": "4",
+        "sp": "148"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Knock Off",
+        "Superpower"
+      ]
+    },
+    "KellsterCartier's Spring 2015 Landorus": {
+      "level": 50,
+      "evs": {
+        "hp": "116",
+        "at": "252",
+        "df": "4",
+        "sd": "4",
+        "sp": "132"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Choice Scarf",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Knock Off",
+        "U-turn"
+      ]
+    }
+  },
+  "Thundurus": {
+    "MajorBowman's Spring 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "212",
+        "df": "104",
+        "sa": "4",
+        "sd": "76",
+        "sp": "108"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "",
+        "",
+        "Hidden Power Ice",
+        "Thunderbolt"
+      ]
+    },
+    "DylanxArsenal's Spring 2015 DatTail": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "108",
+        "sa": "64",
+        "sd": "72",
+        "sp": "20"
+      },
+      "nature": "Calm",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "",
+        "",
+        ""
+      ]
+    },
+    "conan's Spring 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "76",
+        "sa": "4",
+        "sd": "132",
+        "sp": "44"
+      },
+      "nature": "Calm",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "",
+        "",
+        ""
+      ]
+    },
+    "KellsterCartier's Spring 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "116",
+        "sd": "128",
+        "sp": "28"
+      },
+      "nature": "Calm",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "",
+        "Thunderbolt",
+        "",
+        ""
+      ]
+    },
+    "Metatyph6's Winter 2015 Voltergeist": {
+      "level": 50,
+      "evs": {
+        "sa": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "ivs": {
+        "at": "30",
+        "df": "30"
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "Safety Goggles",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "",
+        ""
+      ]
+    },
+    "Guru Fernandez's Winter 2015 Voltolos": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "140",
+        "sa": "36",
+        "sd": "68",
+        "sp": "20"
+      },
+      "ivs": {
+        "sp": "30"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "",
+        ""
+      ]
+    },
+    "Level 51's Winter 2015 Thundurus": {
+      "level": 50,
+      "evs": {
+        "hp": "236",
+        "df": "104",
+        "sa": "60",
+        "sp": "108"
+      },
+      "ivs": {
+        "at": "0",
+        "df": "30"
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Thunderbolt",
+        "",
+        "",
+        "Hidden Power Ice"
+      ]
+    }
+  },
+  "Ludicolo": {
+    "MajorBowman's Spring 2015 Ludicolo": {
+      "level": 50,
+      "evs": {
+        "hp": "156",
+        "df": "52",
+        "sa": "156",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "Assault Vest",
+      "moves": [
+        "Scald",
+        "Giga Drain",
+        "Ice Beam",
+        "Fake Out"
+      ]
+    },
+    "DylanxArsenal's Spring 2015 Icingdeath": {
+      "level": 50,
+      "evs": {
+        "hp": "76",
+        "sa": "236",
+        "sp": "196"
+      },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "Assault Vest",
+      "moves": [
+        "Fake Out",
+        "Giga Drain",
+        "Scald",
+        "Ice Beam"
+      ]
+    },
+    "rapha's Spring 2015 Grapes?": {
+      "level": 50,
+      "evs": {
+        "hp": "108",
+        "sa": "252",
+        "sp": "148"
+      },
+      "nature": "Modest",
+      "ability": "Swift Swim",
+      "item": "Assault Vest",
+      "moves": [
+        "Fake Out",
+        "Scald",
+        "Giga Drain",
+        "Ice Beam"
+      ]
+    }
+  },
   "Cresselia": {
     "IoriYagami's Spring 2015 Luna": {
       "level": 50,
@@ -412,42 +1115,6 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Ludicolo": {
-    "DylanxArsenal's Spring 2015 Icingdeath": {
-      "level": 50,
-      "evs": {
-        "hp": "76",
-        "sa": "236",
-        "sp": "196"
-      },
-      "nature": "Modest",
-      "ability": "Swift Swim",
-      "item": "Assault Vest",
-      "moves": [
-        "Fake Out",
-        "Giga Drain",
-        "Scald",
-        "Ice Beam"
-      ]
-    },
-    "rapha's Spring 2015 Grapes?": {
-      "level": 50,
-      "evs": {
-        "hp": "108",
-        "sa": "252",
-        "sp": "148"
-      },
-      "nature": "Modest",
-      "ability": "Swift Swim",
-      "item": "Assault Vest",
-      "moves": [
-        "Fake Out",
-        "Scald",
-        "Giga Drain",
-        "Ice Beam"
-      ]
-    }
-  },
   "Bisharp": {
     "DylanxArsenal's Spring 2015 Bisharp": {
       "level": 50,
@@ -481,129 +1148,6 @@ var SETDEX_NUGGETBRIDGE={
         "Iron Head",
         "Assurance",
         ""
-      ]
-    }
-  },
-  "Thundurus": {
-    "DylanxArsenal's Spring 2015 DatTail": {
-      "level": 50,
-      "evs": {
-        "hp": "244",
-        "df": "108",
-        "sa": "64",
-        "sd": "72",
-        "sp": "20"
-      },
-      "nature": "Calm",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "",
-        "",
-        ""
-      ]
-    },
-    "conan's Spring 2015 Thundurus": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "76",
-        "sa": "4",
-        "sd": "132",
-        "sp": "44"
-      },
-      "nature": "Calm",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "",
-        "",
-        ""
-      ]
-    },
-    "KellsterCartier's Spring 2015 Thundurus": {
-      "level": 50,
-      "evs": {
-        "hp": "236",
-        "df": "116",
-        "sd": "128",
-        "sp": "28"
-      },
-      "nature": "Calm",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "",
-        "Thunderbolt",
-        "",
-        ""
-      ]
-    },
-    "Metatyph6's Winter 2015 Voltergeist": {
-      "level": 50,
-      "evs": {
-        "sa": "252",
-        "sd": "4",
-        "sp": "252"
-      },
-      "ivs": {
-        "at": "30",
-        "df": "30"
-      },
-      "nature": "Timid",
-      "ability": "",
-      "item": "Safety Goggles",
-      "moves": [
-        "Thunderbolt",
-        "Hidden Power Ice",
-        "",
-        ""
-      ]
-    },
-    "Guru Fernandez's Winter 2015 Voltolos": {
-      "level": 50,
-      "evs": {
-        "hp": "244",
-        "df": "140",
-        "sa": "36",
-        "sd": "68",
-        "sp": "20"
-      },
-      "ivs": {
-        "sp": "30"
-      },
-      "nature": "Bold",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "Hidden Power Ice",
-        "",
-        ""
-      ]
-    },
-    "Level 51's Winter 2015 Thundurus": {
-      "level": 50,
-      "evs": {
-        "hp": "236",
-        "df": "104",
-        "sa": "60",
-        "sp": "108"
-      },
-      "ivs": {
-        "at": "0",
-        "df": "30"
-      },
-      "nature": "Modest",
-      "ability": "",
-      "item": "Sitrus Berry",
-      "moves": [
-        "Thunderbolt",
-        "",
-        "",
-        "Hidden Power Ice"
       ]
     }
   },
@@ -792,76 +1336,6 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Terrakion": {
-    "conan's Spring 2015 Terrakion": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Close Combat",
-        "Rock Slide",
-        "",
-        "Earthquake"
-      ]
-    },
-    "rapha's Spring 2015 Terrakion": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Close Combat",
-        "Rock Slide",
-        "Double Kick",
-        ""
-      ]
-    },
-    "KellsterCartier's Spring 2015 Terrakion": {
-      "level": 50,
-      "evs": {
-        "hp": "116",
-        "at": "140",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Close Combat",
-        "Rock Slide",
-        "",
-        ""
-      ]
-    },
-    "Guru Fernandez's Winter 2015 Oxford": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Rock Slide",
-        "Close Combat",
-        "",
-        ""
-      ]
-    }
-  },
   "Weavile": {
     "conan's Spring 2015 Weavile": {
       "level": 50,
@@ -920,63 +1394,6 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Landorus-T": {
-    "Life Orb's Spring 2015 Landorus-Therian": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Adamant",
-      "ability": "Intimidate",
-      "item": "Choice Scarf",
-      "moves": [
-        "Earthquake",
-        "U-turn",
-        "Knock Off",
-        "Rock Slide"
-      ]
-    },
-    "amr97's Spring 2015 BANGxBANG": {
-      "level": 50,
-      "evs": {
-        "hp": "12",
-        "at": "252",
-        "df": "92",
-        "sd": "4",
-        "sp": "148"
-      },
-      "nature": "Adamant",
-      "ability": "Intimidate",
-      "item": "Choice Scarf",
-      "moves": [
-        "Earthquake",
-        "Rock Slide",
-        "Knock Off",
-        "Superpower"
-      ]
-    },
-    "KellsterCartier's Spring 2015 Landorus": {
-      "level": 50,
-      "evs": {
-        "hp": "116",
-        "at": "252",
-        "df": "4",
-        "sd": "4",
-        "sp": "132"
-      },
-      "nature": "Adamant",
-      "ability": "Intimidate",
-      "item": "Choice Scarf",
-      "moves": [
-        "Earthquake",
-        "Rock Slide",
-        "Knock Off",
-        "U-turn"
-      ]
-    }
-  },
   "Sylveon": {
     "Life Orb's Spring 2015 Sylveon": {
       "level": 50,
@@ -994,133 +1411,6 @@ var SETDEX_NUGGETBRIDGE={
         "Shadow Ball",
         "Psyshock",
         "Moonblast"
-      ]
-    }
-  },
-  "Hydreigon": {
-    "Life Orb's Spring 2015 Hydreigon": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "sa": "252",
-        "sp": "252"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Life Orb",
-      "moves": [
-        "Draco Meteor",
-        "Dark Pulse",
-        "Fire Blast",
-        ""
-      ]
-    },
-    "rapha's Spring 2015 Oppenheimer": {
-      "level": 50,
-      "evs": {
-        "df": "4",
-        "sa": "252",
-        "sp": "252"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Choice Specs",
-      "moves": [
-        "Draco Meteor",
-        "Dark Pulse",
-        "Flamethrower",
-        "Earth Power"
-      ]
-    },
-    "KellsterCartier's Spring 2015 Hydreigon": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "sa": "252",
-        "sp": "252"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Life Orb",
-      "moves": [
-        "Dark Pulse",
-        "",
-        "Fire Blast",
-        "Draco Meteor"
-      ]
-    },
-    "Guru Fernandez's Winter 2015 Trigun": {
-      "level": 50,
-      "evs": {
-        "hp": "28",
-        "df": "36",
-        "sa": "244",
-        "sd": "4",
-        "sp": "196"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Choice Specs",
-      "moves": [
-        "Dark Pulse",
-        "Draco Meteor",
-        "Fire Blast",
-        "Earth Power"
-      ]
-    }
-  },
-  "Metagross": {
-    "rapha's Spring 2015 Metagross": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "at": "36",
-        "df": "4",
-        "sd": "36",
-        "sp": "180"
-      },
-      "nature": "Adamant",
-      "ability": "Clear Body",
-      "item": "Metagrossite",
-      "moves": [
-        "Iron Head",
-        "Zen Headbutt",
-        "",
-        ""
-      ]
-    },
-    "KellsterCartier's Spring 2015 Metagross": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "Clear Body",
-      "item": "Metagrossite",
-      "moves": [
-        "Bullet Punch",
-        "Zen Headbutt",
-        "Ice Punch",
-        ""
-      ]
-    },
-    "Guru Fernandez's Winter 2015 REGIS MK-V": {
-      "level": 50,
-      "evs": {
-        "hp": "156",
-        "at": "156",
-        "sp": "196"
-      },
-      "nature": "Jolly",
-      "ability": "Clear Body",
-      "item": "Metagrossite",
-      "moves": [
-        "Iron Head",
-        "Zen Headbutt",
-        "Ice Punch",
-        ""
       ]
     }
   },
@@ -1180,27 +1470,6 @@ var SETDEX_NUGGETBRIDGE={
       "moves": [
         "Aqua Jet",
         "Play Rough",
-        "",
-        ""
-      ]
-    }
-  },
-  "Rotom-H": {
-    "amr97's Spring 2015 Smile Taisou": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "4",
-        "sa": "108",
-        "sd": "4",
-        "sp": "140"
-      },
-      "nature": "Modest",
-      "ability": "Levitate",
-      "item": "Safety Goggles",
-      "moves": [
-        "Thunderbolt",
-        "Overheat",
         "",
         ""
       ]
@@ -1459,28 +1728,6 @@ var SETDEX_NUGGETBRIDGE={
         "Earthquake",
         "Iron Head",
         "Rock Slide"
-      ]
-    }
-  },
-  "Ferrothorn": {
-    "Level 51's Winter 2015 Free Hugs": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "at": "148",
-        "sd": "108"
-      },
-      "ivs": {
-        "sp": "0"
-      },
-      "nature": "Relaxed",
-      "ability": "",
-      "item": "Leftovers",
-      "moves": [
-        "Gyro Ball",
-        "Power Whip",
-        "",
-        ""
       ]
     }
   }

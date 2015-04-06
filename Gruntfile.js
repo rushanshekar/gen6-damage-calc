@@ -130,7 +130,7 @@ module.exports = function (grunt) {
         http: {
             showdown: {
                 options: {
-                    url: 'http://www.smogon.com/stats/2015-02/chaos/<%= showdown.rawFile %>'
+                    url: 'http://www.smogon.com/stats/2015-03/chaos/<%= showdown.rawFile %>'
                 },
                 dest: process.cwd() + '/<%= showdown.rawFile %>'
             }
