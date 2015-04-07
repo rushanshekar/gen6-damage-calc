@@ -264,7 +264,8 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x1333);
         description.attackerItem = attacker.item;
     } else if (attacker.item === move.type + " Gem") {
-        bpMods.push(gen >= 6 ? 0x14CD : 0x1800);
+        // bpMods.push(gen >= 6 ? 0x14CD : 0x1800);
+        bpMods.push(0x14CD);
         description.attackerItem = attacker.item;
     }
     
@@ -277,7 +278,8 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x800);
         description.moveBP = move.bp / 2;
         description.weather = field.weather;
-    } else if (gen >= 6 && move.name === "Knock Off" && !(defender.item === "" ||
+    // } else if (gen >= 6 && move.name === "Knock Off" && !(defender.item === "" ||
+    } else if (move.name === "Knock Off" && !(defender.item === "" ||
             (defender.name === "Giratina-O" && defender.item === "Griseous Orb") ||
             (defender.name.indexOf("Arceus") !== -1 && defender.item.indexOf("Plate") !== -1))) {
         bpMods.push(0x1800);
@@ -462,7 +464,8 @@ function getDamageResult(attacker, defender, move, field) {
         description.weather = field.weather;
     } else if ((field.weather === "Sun" && move.type === "Water") || (field.weather === "Rain" && move.type === "Fire") ||
                (field.weather === "Strong Winds" && (defender.type1 === "Flying" || defender.type2 === "Flying") &&
-               typeChart[move.type]["Flying"] > 1)) {
+               // typeChart[move.type]["Flying"] > 1)) {
+               TYPE_CHART_XY[move.type]["Flying"] > 1)) {
         baseDamage = pokeRound(baseDamage * 0x800 / 0x1000);
         description.weather = field.weather;
     }
@@ -484,7 +487,8 @@ function getDamageResult(attacker, defender, move, field) {
         }
     }
     if (isCritical) {
-        baseDamage = Math.floor(baseDamage * (gen >= 6 ? 1.5 : 2));
+        // baseDamage = Math.floor(baseDamage * (gen >= 6 ? 1.5 : 2));
+        baseDamage = Math.floor(baseDamage * 1.5);
         description.isCritical = isCritical;
     }
     // the random factor is applied between the crit mod and the stab mod, so don't apply anything below this until we're inside the loop
@@ -685,9 +689,9 @@ function getMoveEffectiveness(move, type, isGhostRevealed, isGravity) {
     } else if (move.name === "Freeze-Dry" && type === "Water") {
         return 2;
     } else if (move.name === "Flying Press") {
-        return typeChart["Fighting"][type] * typeChart["Flying"][type];
+        return TYPE_CHART_XY["Fighting"][type] * TYPE_CHART_XY["Flying"][type];
     } else {
-        return typeChart[move.type][type];
+        return TYPE_CHART_XY[move.type][type];
     }
 }
 

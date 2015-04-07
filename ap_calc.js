@@ -4,7 +4,7 @@ var bounds = {
     "base":[1,255],
     "evs":[0,252],
     "ivs":[0,31],
-    "dvs":[0,15],
+    // "dvs":[0,15],
     "move-bp":[0,999]
 };
 for (var bounded in bounds) {
@@ -13,7 +13,7 @@ for (var bounded in bounds) {
     }
 }
 function attachValidation(clazz, min, max) {
-    $("." + clazz).keyup(function() {
+    $("." + clazz).on("input", function() {
         validate($(this), min, max);
     });
 }
@@ -22,36 +22,26 @@ function validate(obj, min, max) {
 }
 
 // auto-calc stats and current HP on change
-$(".level").keyup(function() {
+$(".level").on("input", function() {
     var poke = $(this).closest(".poke-info");
-    calcHP(poke);
+    CALC_HP_ADV(poke);
     calcStats(poke);
 });
-$(".nature").bind("keyup change", function() {
+$(".nature").on("input", function() {
     calcStats($(this).closest(".poke-info"));
 });
-$(".hp .base, .hp .evs, .hp .ivs").bind("keyup change", function() {
-    calcHP($(this).closest(".poke-info"));
+$(".hp .base, .hp .evs, .hp .ivs").on("input", function() {
+    CALC_HP_ADV($(this).closest(".poke-info"));
 });
-$(".at .base, .at .evs, .at .ivs").bind("keyup change", function() {
-    calcStat($(this).closest(".poke-info"), 'at');
+STATS_GSC.forEach(function(stat) {
+    $("." + stat + " .base, ." + stat + " .evs, ." + stat + " .ivs").on("input", function() {
+        CALC_STAT_ADV($(this).closest(".poke-info"), stat);
+    });
 });
-$(".df .base, .df .evs, .df .ivs").bind("keyup change", function() {
-    calcStat($(this).closest(".poke-info"), 'df');
-});
-$(".sa .base, .sa .evs, .sa .ivs").bind("keyup change", function() {
-    calcStat($(this).closest(".poke-info"), 'sa');
-});
-$(".sd .base, .sd .evs, .sd .ivs").bind("keyup change", function() {
-    calcStat($(this).closest(".poke-info"), 'sd');
-});
-$(".sp .base, .sp .evs, .sp .ivs").bind("keyup change", function() {
-    calcStat($(this).closest(".poke-info"), 'sp');
-});
-$(".evs").bind("keyup change", function() {
+$(".evs").on("input", function() {
     calcEvTotal($(this).closest(".poke-info"));
 });
-$(".sl .base").keyup(function() {
+/* $(".sl .base").keyup(function() {
     calcStat($(this).closest(".poke-info"), 'sl');
 });
 $(".at .dvs").keyup(function() {
@@ -92,11 +82,11 @@ function getHPDVs(poke) {
             (~~poke.find(".df .dvs").val() % 2) * 4 +
             (~~poke.find(gen === 1 ? ".sl .dvs" : ".sa .dvs").val() % 2) * 2 +
             (~~poke.find(".sp .dvs").val() % 2);
-}
+} */
 
 function calcStats(poke) {
-    for (var i = 0; i < STATS.length; i++) {
-        calcStat(poke, STATS[i]);
+    for (var i = 0; i < STATS_GSC.length; i++) {
+        CALC_STAT_ADV(poke, STATS_GSC[i]);
     }
 }
 
@@ -118,27 +108,27 @@ function calcPercentHP(poke, max, current) {
     var percent = Math.floor(100 * current / max);
     poke.find(".percent-hp").val(percent);
 }
-$(".current-hp").keyup(function() {
+$(".current-hp").on("input", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, max);
     var current = $(this).val();
     calcPercentHP($(this).parent(), max, current);
 });
-$(".percent-hp").keyup(function() {
+$(".percent-hp").on("input", function() {
     var max = $(this).parent().children(".max-hp").text();
     validate($(this), 0, 100);
     var percent = $(this).val();
     calcCurrentHP($(this).parent(), max, percent);
 });
 
-$(".ability").bind("keyup change", function() {
+$(".ability").on("change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
 });
 
-$("#p1 .ability").bind("keyup change", function() {
+$("#p1 .ability").on("change", function() {
     autosetWeather($(this).val(), 0);
 });
-$("#p2 .ability").bind("keyup change", function() {
+$("#p2 .ability").on("change", function() {
     autosetWeather($(this).val(), 1);
 });
 
@@ -201,10 +191,10 @@ function autosetWeather(ability, i) {
     $("input:radio[name='weather'][value='" + newWeather + "']").prop("checked", true);
 }
 
-$("#p1 .item").bind("keyup change", function() {
+$("#p1 .item").on("change", function() {
     autosetStatus("#p1", $(this).val());
 });
-$("#p2 .item").bind("keyup change", function() {
+$("#p2 .item").on("change", function() {
     autosetStatus("#p2", $(this).val());
 });
 
@@ -217,22 +207,19 @@ function autosetStatus(p, item) {
     }
     if (item === "Flame Orb") {
         lastAutoStatus[p] = "Burned";
-        $(p + " .status").val("Burned");
-        $(p + " .status").change();
+        $(p + " .status").val("Burned").trigger("input");
     } else if (item === "Toxic Orb") {
         lastAutoStatus[p] = "Badly Poisoned";
-        $(p + " .status").val("Badly Poisoned");
-        $(p + " .status").change();
+        $(p + " .status").val("Badly Poisoned").trigger("input");
     } else {
         lastAutoStatus[p] = "Healthy";
         if (currentStatus !== lastManualStatus[p]) {
-            $(p + " .status").val(lastManualStatus[p]);
-            $(p + " .status").change();
+            $(p + " .status").val(lastManualStatus[p]).trigger("input");
         }
     }
 }
 
-$(".status").bind("keyup change", function() {
+$(".status").on("input", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
     } else {
@@ -240,10 +227,15 @@ $(".status").bind("keyup change", function() {
     }
 });
 
+$(".move-selector, .set-selector").on("change", function (e) {
+    var shouldCalculate = $(this).prop('className').indexOf('set-selector') > -1 || !!e.val;
+    $(this).trigger("select2-change", shouldCalculate);
+});
+
 // auto-update move details on select
-$(".move-selector").change(function() {
+$(".move-selector").on("select2-change", function() {
     var moveName = $(this).val();
-    var move = moves[moveName] || moves['(No Move)'];
+    var move = MOVES_XY[moveName] || MOVES_XY['(No Move)'];
     var moveGroupObj = $(this).parent();
     moveGroupObj.children(".move-bp").val(move.bp);
     moveGroupObj.children(".move-type").val(move.type);
@@ -258,12 +250,12 @@ $(".move-selector").change(function() {
 });
 
 // auto-update set details on select
-$(".set-selector").change(function() {
+$(".set-selector").on("select2-change", function() {
     var fullSetName = $(this).val();
     var pokemonName, setName;
     pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
     setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
-    var pokemon = pokedex[pokemonName];
+    var pokemon = POKEDEX_XY[pokemonName];
     if (pokemon) {
         var pokeObj = $(this).closest(".poke-info");
 
@@ -272,31 +264,30 @@ $(".set-selector").change(function() {
             stickyMoves.clearStickyMove();
         }
 
-        pokeObj.find(".type1").val(pokemon.t1);
-        pokeObj.find(".type2").val(pokemon.t2);
+        pokeObj.find(".type1").val(pokemon.t1).change();
+        pokeObj.find(".type2").val(pokemon.t2).change();
         pokeObj.find(".hp .base").val(pokemon.bs.hp);
         var i;
-        for (i = 0; i < STATS.length; i++) {
-            pokeObj.find("." + STATS[i] + " .base").val(pokemon.bs[STATS[i]]);
+        for (i = 0; i < STATS_GSC.length; i++) {
+            pokeObj.find("." + STATS_GSC[i] + " .base").val(pokemon.bs[STATS_GSC[i]]);
         }
         pokeObj.find(".weight").val(pokemon.w);
         pokeObj.find(".boost").val(0);
         pokeObj.find(".percent-hp").val(100);
-        pokeObj.find(".status").val("Healthy");
-        $(".status").change();
+        pokeObj.find(".status").val("Healthy").trigger("input");
         var moveObj;
         var abilityObj = pokeObj.find(".ability");
         var itemObj = pokeObj.find(".item");
-        if (pokemonName in setdex && setName in setdex[pokemonName]) {
-            var set = setdex[pokemonName][setName];
+        if (pokemonName in SETDEX_XY && setName in SETDEX_XY[pokemonName]) {
+            var set = SETDEX_XY[pokemonName][setName];
             pokeObj.find(".level").val(set.level);
             pokeObj.find(".hp .evs").val((set.evs && typeof set.evs.hp !== "undefined") ? set.evs.hp : 0);
             pokeObj.find(".hp .ivs").val((set.ivs && typeof set.ivs.hp !== "undefined") ? set.ivs.hp : 31);
             pokeObj.find(".hp .dvs").val((set.dvs && typeof set.dvs.hp !== "undefined") ? set.dvs.hp : 15);
-            for (i = 0; i < STATS.length; i++) {
-                pokeObj.find("." + STATS[i] + " .evs").val((set.evs && typeof set.evs[STATS[i]] !== "undefined") ? set.evs[STATS[i]] : 0);
-                pokeObj.find("." + STATS[i] + " .ivs").val((set.ivs && typeof set.ivs[STATS[i]] !== "undefined") ? set.ivs[STATS[i]] : 31);
-                pokeObj.find("." + STATS[i] + " .dvs").val((set.dvs && typeof set.dvs[STATS[i]] !== "undefined") ? set.dvs[STATS[i]] : 15);
+            for (i = 0; i < STATS_GSC.length; i++) {
+                pokeObj.find("." + STATS_GSC[i] + " .evs").val((set.evs && typeof set.evs[STATS_GSC[i]] !== "undefined") ? set.evs[STATS_GSC[i]] : 0);
+                pokeObj.find("." + STATS_GSC[i] + " .ivs").val((set.ivs && typeof set.ivs[STATS_GSC[i]] !== "undefined") ? set.ivs[STATS_GSC[i]] : 31);
+                pokeObj.find("." + STATS_GSC[i] + " .dvs").val((set.dvs && typeof set.dvs[STATS_GSC[i]] !== "undefined") ? set.dvs[STATS_GSC[i]] : 15);
             }
             setSelectValueIfValid(pokeObj.find(".nature"), set.nature, "Hardy");
             setSelectValueIfValid(abilityObj, pokemon.ab ? pokemon.ab : set.ability, "");
@@ -311,10 +302,10 @@ $(".set-selector").change(function() {
             pokeObj.find(".hp .evs").val(0);
             pokeObj.find(".hp .ivs").val(31);
             pokeObj.find(".hp .dvs").val(15);
-            for (i = 0; i < STATS.length; i++) {
-                pokeObj.find("." + STATS[i] + " .evs").val(0);
-                pokeObj.find("." + STATS[i] + " .ivs").val(31);
-                pokeObj.find("." + STATS[i] + " .dvs").val(15);
+            for (i = 0; i < STATS_GSC.length; i++) {
+                pokeObj.find("." + STATS_GSC[i] + " .evs").val(0);
+                pokeObj.find("." + STATS_GSC[i] + " .ivs").val(31);
+                pokeObj.find("." + STATS_GSC[i] + " .dvs").val(15);
             }
             pokeObj.find(".nature").val("Hardy");
             setSelectValueIfValid(abilityObj, pokemon.ab, "");
@@ -325,18 +316,17 @@ $(".set-selector").change(function() {
                 moveObj.change();
             }
         }
-        var formeObj = $(this).siblings().find(".forme").parent();
-        itemObj.prop("disabled", false);
+        var formeObj = pokeObj.find(".forme").parent();
         if (pokemon.formes) {
             showFormes(formeObj, setName, pokemonName, pokemon);
         } else {
             formeObj.hide();
         }
-        calcHP(pokeObj);
+        CALC_HP_ADV(pokeObj);
         calcStats(pokeObj);
         calcEvTotal(pokeObj);
         abilityObj.change();
-        itemObj.change();
+        itemObj.change().prop("disabled", false);
     }
 });
 
@@ -344,7 +334,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
     var defaultForme = 0;
 
     if (setName !== 'Blank Set') {
-        var set = setdex[pokemonName][setName];
+        var set = SETDEX_XY[pokemonName][setName];
 
         // Repurpose the previous filtering code to provide the "different default" logic
         if ((set.item.indexOf('ite') !== -1 && set.item.indexOf('ite Y') === -1) ||
@@ -359,7 +349,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
     }
 
     var formeOptions = getSelectOptions(pokemon.formes, false, defaultForme);
-    formeObj.children("select").find("option").remove().end().append(formeOptions).change();
+    formeObj.children("select").find("option").remove().end().append(formeOptions).trigger("input");
     formeObj.show();
 }
 
@@ -367,75 +357,63 @@ function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
 }
 
-$(".forme").change(function() {
-    var altForme = pokedex[$(this).val()],
-        container = $(this).closest(".info-group").siblings(),
-        fullSetName = container.find(".select2-chosen").first().text(),
+$(".forme").on("input", function() {
+    var pokeObj = $(this).closest(".poke-info"),
+        altFormeName = $(this).val(),
+        altForme = POKEDEX_XY[altFormeName],
+        fullSetName = $(this).closest('.poke-info').find('.set-selector .select2-chosen').text(),
         pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
         setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
 
-    $(this).parent().siblings().find(".type1").val(altForme.t1);
-    $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
-    $(this).parent().siblings().find(".weight").val(altForme.w);
-
-    for (var i = 0; i < STATS.length; i++) {
-        var baseStat = container.find("." + STATS[i]).find(".base");
-        baseStat.val(altForme.bs[STATS[i]]);
-        baseStat.keyup();
+    pokeObj.find(".type1").val(altForme.t1).change();
+    pokeObj.find(".type2").val(altForme.t2).change();
+    pokeObj.find(".weight").val(altForme.w);
+    for (var i = 0; i < STATS_GSC.length; i++) {
+        pokeObj.find("." + STATS_GSC[i] + " .base").val(altForme.bs[STATS_GSC[i]]);
     }
-
-    if (abilities.indexOf(altForme.ab) > -1) {
-        container.find(".ability").val(altForme.ab);
-    } else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) > -1) {
-        container.find(".ability").val(setdex[pokemonName][setName].ability);
+    calcStats(pokeObj);
+    if (ABILITIES_XY.indexOf(altForme.ab) > -1) {
+        pokeObj.find(".ability").val(altForme.ab).change();
+    } else if (setName !== "Blank Set" && ABILITIES_XY.indexOf(SETDEX_XY[pokemonName][setName].ability) > -1) {
+        pokeObj.find(".ability").val(SETDEX_XY[pokemonName][setName].ability).change();
     } else {
-        container.find(".ability").val("");
+        pokeObj.find(".ability").val("").change();
     }
-    container.find(".ability").keyup();
-
-    if ($(this).val().indexOf("Mega") === 0 && $(this).val() !== "Mega Rayquaza") {
-        container.find(".item").val("").keyup();
-        container.find(".item").prop("disabled", true);
+    if (altFormeName.indexOf("Mega") === 0 && altFormeName !== "Mega Rayquaza") {
+        pokeObj.find(".item").val("").change().prop("disabled", true);
     } else {
-        container.find(".item").prop("disabled", false);
+        pokeObj.find(".item").prop("disabled", false);
     }
-
     if (pokemonName === "Darmanitan") {
-        container.find(".percent-hp").val($(this).val() === "Darmanitan-Z" ? "50" : "100").keyup();
+        pokeObj.find(".percent-hp").val(altFormeName === "Darmanitan-Z" ? "50" : "100").trigger("input");
     }
 });
 
-function getTerrainEffects() {
-    var className = $(this).prop("className");
-    className = className.substring(0, className.indexOf(" "));
-    switch (className) {
-        case "type1":
-        case "type2":
-        case "ability":
-        case "item":
-            var id = $(this).closest(".poke-info").prop("id");
-            var terrainValue = $("input:checkbox[name='terrain']:checked").val();
-            if (terrainValue === "Electric") {
-                $("#" + id).find("[value='Asleep']").prop("disabled", isGrounded($("#" + id)));
-            } else if (terrainValue === "Misty") {
-                $("#" + id).find(".status").prop("disabled", isGrounded($("#" + id)));
-            }
-            break;
-        default:
-            $("input:checkbox[name='terrain']").not(this).prop("checked", false);
-            if ($(this).prop("checked") && $(this).val() === "Electric") {
-                $("#p1").find("[value='Asleep']").prop("disabled", isGrounded($("#p1")));
-                $("#p2").find("[value='Asleep']").prop("disabled", isGrounded($("#p2")));
-            } else if ($(this).prop("checked") && $(this).val() === "Misty") {
-                $("#p1").find(".status").prop("disabled", isGrounded($("#p1")));
-                $("#p2").find(".status").prop("disabled", isGrounded($("#p2")));
-            } else {
-                $("#p1").find("[value='Asleep']").prop("disabled", false);
-                $("#p1").find(".status").prop("disabled", false);
-                $("#p2").find("[value='Asleep']").prop("disabled", false);
-                $("#p2").find(".status").prop("disabled", false);
-            }
-            break;
+$("input[name='terrain']").on("change", function () {
+    $("input[name='terrain']").not(this).prop("checked", false);
+});
+
+function applyTerrainEffects() {
+    var terrainType = $("input:checkbox[name='terrain']:checked").val();
+    if (this.id) {
+        if (!terrainType || terrainType === "Grassy") {
+            $(".poke-info").find("[value='Asleep']").prop("disabled", false);
+            $(".poke-info").find(".status").prop("disabled", false);
+        } else if (terrainType === "Electric") {
+            $("#p1").find("[value='Asleep']").prop("disabled", isGrounded($("#p1")));
+            $("#p2").find("[value='Asleep']").prop("disabled", isGrounded($("#p2")));
+            $(".poke-info").find(".status").prop("disabled", false);
+        } else {
+            $("#p1").find(".status").prop("disabled", isGrounded($("#p1")));
+            $("#p2").find(".status").prop("disabled", isGrounded($("#p2")));
+        }
+    } else if (terrainType && terrainType !== "Grassy") {
+        var pokeID = $(this).closest(".poke-info").prop("id");
+        if (terrainType === "Electric") {
+            $("#" + pokeID).find("[value='Asleep']").prop("disabled", isGrounded($("#" + pokeID)));
+        } else {
+            $("#" + pokeID).find(".status").prop("disabled", isGrounded($("#" + pokeID)));
+        }
     }
 }
 
@@ -457,11 +435,14 @@ for (var i = 0; i < 4; i++) {
 }
 
 var damageResults;
-function calculate() {
+function calculate(e, shouldCalculate) {
+    if (e.originalEvent === undefined && !shouldCalculate) {
+        return;
+    }
     var p1 = new Pokemon($("#p1"));
     var p2 = new Pokemon($("#p2"));
     var field = new Field();
-    damageResults = calculateAllMoves(p1, p2, field);
+    damageResults = CALCULATE_ALL_MOVES_BW(p1, p2, field);
     var result, minDamage, maxDamage, minPercent, maxPercent, percentText;
     var highestMaxPercent = -1;
     var bestResult;
@@ -525,7 +506,7 @@ function displayAdjustedStats(/*p1, p2*/) {
     }
 }
 
-$(".result-move").change(function() {
+$(".result-move").on("change", function() {
     if (damageResults) {
         var result = findDamageResult($(this));
         if (result) {
@@ -544,7 +525,7 @@ $(".result-move").change(function() {
 // needlessly polluting the global namespace.
 var stickyMoves = (function () {
     var lastClicked = 'resultMoveL1';
-    $(".result-move").click(function () {
+    $(".result-move").on("click", function () {
         if (this.id === lastClicked) {
             $(this).toggleClass("locked-move");
         } else {
@@ -591,7 +572,7 @@ function Pokemon(pokeInfo) {
         this.name = setName;
     } else {
         var pokemonName = setName.substring(0, setName.indexOf(" ("));
-        this.name = (pokedex[pokemonName].formes) ? pokeInfo.find(".forme").val() : pokemonName;
+        this.name = (POKEDEX_XY[pokemonName].formes) ? pokeInfo.find(".forme").val() : pokemonName;
     }
     this.type1 = pokeInfo.find(".type1").val();
     this.type2 = pokeInfo.find(".type2").val();
@@ -604,10 +585,10 @@ function Pokemon(pokeInfo) {
     this.stats = {};
     this.adjustedStats = {};
     this.evs = {};
-    for (var i = 0; i < STATS.length; i++) {
-        this.rawStats[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .total").text();
-        this.boosts[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .boost").val();
-        this.evs[STATS[i]] = ~~pokeInfo.find("." + STATS[i] + " .evs").val();
+    for (var i = 0; i < STATS_GSC.length; i++) {
+        this.rawStats[STATS_GSC[i]] = ~~pokeInfo.find("." + STATS_GSC[i] + " .total").text();
+        this.boosts[STATS_GSC[i]] = ~~pokeInfo.find("." + STATS_GSC[i] + " .boost").val();
+        this.evs[STATS_GSC[i]] = ~~pokeInfo.find("." + STATS_GSC[i] + " .evs").val();
     }
     this.nature = pokeInfo.find(".nature").val();
     this.ability = pokeInfo.find(".ability").val();
@@ -625,7 +606,7 @@ function Pokemon(pokeInfo) {
 
 function getMoveDetails(moveInfo) {
     var moveName = moveInfo.find("select.move-selector").val();
-    var defaultDetails = moves[moveName];
+    var defaultDetails = MOVES_XY[moveName];
     return $.extend({}, defaultDetails, {
         name: moveName,
         bp: ~~moveInfo.find(".move-bp").val(),
@@ -642,13 +623,13 @@ function Field() {
     var isSR = [$("#srL").prop("checked"), $("#srR").prop("checked")];
     var weather;
     var spikes;
-    if (gen === 2) {
+    /* if (gen === 2) {
         spikes = [$("#gscSpikesL").prop("checked") ? 1 : 0, $("#gscSpikesR").prop("checked") ? 1 : 0];
         weather = $("input:radio[name='gscWeather']:checked").val();
-    } else {
+    } else { */
         weather = $("input:radio[name='weather']:checked").val();
         spikes = [~~$("input:radio[name='spikesL']:checked").val(), ~~$("input:radio[name='spikesR']:checked").val()];
-    }
+    // }
     var terrain = ($("input:checkbox[name='terrain']:checked").val()) ? $("input:checkbox[name='terrain']:checked").val() : "";
     var isReflect = [$("#reflectL").prop("checked"), $("#reflectR").prop("checked")];
     var isLightScreen = [$("#lightScreenL").prop("checked"), $("#lightScreenR").prop("checked")];
@@ -681,10 +662,10 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isFriendGuard = isFriendGuard;
 }
 
-var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
+// var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
 
 $(".gen").change(function () {
-    gen = ~~$(this).val();
+    /* gen = ~~$(this).val();
     switch (gen) {
         case 1:
             pokedex = POKEDEX_RBY;
@@ -757,35 +738,35 @@ $(".gen").change(function () {
             calculateAllMoves = CALCULATE_ALL_MOVES_BW;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
-    }
+    } */
     clearField();
-    $(".gen-specific.g" + gen).show();
-    $(".gen-specific").not(".g" + gen).hide();
-    var typeOptions = getSelectOptions(Object.keys(typeChart));
+    // $(".gen-specific.g" + gen).show();
+    // $(".gen-specific").not(".g" + gen).hide();
+    var typeOptions = getSelectOptions(Object.keys(TYPE_CHART_XY));
     $("select.type1, select.move-type").find("option").remove().end().append(typeOptions);
     $("select.type2").find("option").remove().end().append("<option value=\"\">(none)</option>" + typeOptions);
-    var moveOptions = getSelectOptions(Object.keys(moves), true);
+    var moveOptions = getSelectOptions(Object.keys(MOVES_XY), true);
     $("select.move-selector").find("option").remove().end().append(moveOptions);
-    var abilityOptions = getSelectOptions(abilities, true);
+    var abilityOptions = getSelectOptions(ABILITIES_XY, true);
     $("select.ability").find("option").remove().end().append("<option value=\"\">(other)</option>" + abilityOptions);
-    var itemOptions = getSelectOptions(items, true);
+    var itemOptions = getSelectOptions(ITEMS_XY, true);
     $("select.item").find("option").remove().end().append("<option value=\"\">(none)</option>" + itemOptions);
-    
-    $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
+    // $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
+    $(".set-selector").val(getSetOptions()[1].id);
     $(".set-selector").change();
 });
 
 function clearField() {
     $("#doubles").prop("checked", true);
     $("#clear").prop("checked", true);
-    $("#gscClear").prop("checked", true);
+    // $("#gscClear").prop("checked", true);
     $("#gravity").prop("checked", false);
     $("#srL").prop("checked", false);
     $("#srR").prop("checked", false);
     $("#spikesL0").prop("checked", true);
     $("#spikesR0").prop("checked", true);
-    $("#gscSpikesL").prop("checked", false);
-    $("#gscSpikesR").prop("checked", false);
+    // $("#gscSpikesL").prop("checked", false);
+    // $("#gscSpikesR").prop("checked", false);
     $("#reflectL").prop("checked", false);
     $("#reflectR").prop("checked", false);
     $("#lightScreenL").prop("checked", false);
@@ -800,10 +781,10 @@ function clearField() {
 
 function getSetOptions() {
     var pokeNames, index;
-    pokeNames = Object.keys(pokedex);
+    pokeNames = Object.keys(POKEDEX_XY);
     index = pokeNames.length;
     while (index--) {
-        if (pokedex[pokeNames[index]].isAlternateForme) {
+        if (POKEDEX_XY[pokeNames[index]].isAlternateForme) {
             pokeNames.splice(index, 1);
         }
     }
@@ -816,8 +797,8 @@ function getSetOptions() {
             pokemon: pokeName,
             text: pokeName
         });
-        if (pokeName in setdex) {
-            var setNames = Object.keys(setdex[pokeName]);
+        if (pokeName in SETDEX_XY) {
+            var setNames = Object.keys(SETDEX_XY[pokeName]);
             for (var j = 0; j < setNames.length; j++) {
                 var setName = setNames[j];
                 setOptions.push({
@@ -857,11 +838,12 @@ function getSelectOptions(arr, sort, defaultIdx) {
     return r;
 }
 
-$(document).ready(function() {
+$(document).on("ready", function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
-    $(".terrain-trigger").bind("change keyup", getTerrainEffects);
-    $(".calc-trigger").bind("change keyup", calculate);
+    $(".terrain-trigger").on("change", applyTerrainEffects);
+    $(".radio-calc-trigger, .checkbox-calc-trigger").on("change", calculate);
+    $(".calc-trigger").on("input select2-change", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
             return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
@@ -882,7 +864,8 @@ $(document).ready(function() {
             });
         },
         initSelection: function(element, callback) {
-            var data = getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3];
+            // var data = getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3];
+            var data = getSetOptions()[1];
             callback(data);
         }
     });
@@ -893,6 +876,7 @@ $(document).ready(function() {
             return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
         }
     });
-    $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
+    // $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
+    $(".set-selector").val(getSetOptions()[1].id);
     $(".set-selector").change();
 });
