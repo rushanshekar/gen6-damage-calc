@@ -27,7 +27,7 @@ $(".level").on("input", function() {
     CALC_HP_ADV(poke);
     calcStats(poke);
 });
-$(".nature").on("input", function() {
+$(".nature").on("change", function() {
     calcStats($(this).closest(".poke-info"));
 });
 $(".hp .base, .hp .evs, .hp .ivs").on("input", function() {
@@ -207,19 +207,19 @@ function autosetStatus(p, item) {
     }
     if (item === "Flame Orb") {
         lastAutoStatus[p] = "Burned";
-        $(p + " .status").val("Burned").trigger("input");
+        $(p + " .status").val("Burned").change();
     } else if (item === "Toxic Orb") {
         lastAutoStatus[p] = "Badly Poisoned";
-        $(p + " .status").val("Badly Poisoned").trigger("input");
+        $(p + " .status").val("Badly Poisoned").change();
     } else {
         lastAutoStatus[p] = "Healthy";
         if (currentStatus !== lastManualStatus[p]) {
-            $(p + " .status").val(lastManualStatus[p]).trigger("input");
+            $(p + " .status").val(lastManualStatus[p]).change();
         }
     }
 }
 
-$(".status").on("input", function() {
+$(".status").on("change", function() {
     if ($(this).val() === 'Badly Poisoned') {
         $(this).parent().children(".toxic-counter").show();
     } else {
@@ -274,10 +274,11 @@ $(".set-selector").on("select2-change", function() {
         pokeObj.find(".weight").val(pokemon.w);
         pokeObj.find(".boost").val(0);
         pokeObj.find(".percent-hp").val(100);
-        pokeObj.find(".status").val("Healthy").trigger("input");
+        pokeObj.find(".status").val("Healthy").change();
         var moveObj;
         var abilityObj = pokeObj.find(".ability");
         var itemObj = pokeObj.find(".item");
+        itemObj.prop("disabled", false);
         if (pokemonName in SETDEX_XY && setName in SETDEX_XY[pokemonName]) {
             var set = SETDEX_XY[pokemonName][setName];
             pokeObj.find(".level").val(set.level);
@@ -326,7 +327,7 @@ $(".set-selector").on("select2-change", function() {
         calcStats(pokeObj);
         calcEvTotal(pokeObj);
         abilityObj.change();
-        itemObj.change().prop("disabled", false);
+        itemObj.change();
     }
 });
 
@@ -349,7 +350,7 @@ function showFormes(formeObj, setName, pokemonName, pokemon) {
     }
 
     var formeOptions = getSelectOptions(pokemon.formes, false, defaultForme);
-    formeObj.children("select").find("option").remove().end().append(formeOptions).trigger("input");
+    formeObj.children("select").find("option").remove().end().append(formeOptions).change();
     formeObj.show();
 }
 
@@ -357,7 +358,7 @@ function setSelectValueIfValid(select, value, fallback) {
     select.val(select.children("option[value='" + value + "']").length !== 0 ? value : fallback);
 }
 
-$(".forme").on("input", function() {
+$(".forme").on("change", function() {
     var pokeObj = $(this).closest(".poke-info"),
         altFormeName = $(this).val(),
         altForme = POKEDEX_XY[altFormeName],
@@ -664,7 +665,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
 
 // var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
 
-$(".gen").change(function () {
+$(".gen").on("change", function () {
     /* gen = ~~$(this).val();
     switch (gen) {
         case 1:
@@ -842,7 +843,7 @@ $(document).on("ready", function() {
     $("#gen6").prop("checked", true);
     $("#gen6").change();
     $(".terrain-trigger").on("change", applyTerrainEffects);
-    $(".radio-calc-trigger, .checkbox-calc-trigger").on("change", calculate);
+    $(".select-calc-trigger, .radio-calc-trigger, .checkbox-calc-trigger").on("change", calculate);
     $(".calc-trigger").on("input select2-change", calculate);
     $(".set-selector").select2({
         formatResult: function(object) {
