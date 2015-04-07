@@ -492,12 +492,12 @@ function calculate(e, shouldCalculate) {
 function displayAdjustedStats(/*p1, p2*/) {
     var totalStatObj, adjustedStatObj, i, j;
     for (i = 0; i < arguments.length; i++) {
-        for (j = 0; j < STATS.length; j++) {
-            totalStatObj = $("#p" + (i + 1)).find("." + STATS[j] + " .total");
-            adjustedStatObj = $("#p" + (i + 1)).find("." + STATS[j] + " .adjusted");
-            if (arguments[i].adjustedStats[STATS[j]] && arguments[i].adjustedStats[STATS[j]] !== arguments[i].rawStats[STATS[j]]) {
-                adjustedStatObj.text(arguments[i].adjustedStats[STATS[j]]);
-                adjustedStatObj.css("color", (arguments[i].adjustedStats[STATS[j]] > arguments[i].rawStats[STATS[j]]) ? "red" : "blue");
+        for (j = 0; j < STATS_GSC.length; j++) {
+            totalStatObj = $("#p" + (i + 1)).find("." + STATS_GSC[j] + " .total");
+            adjustedStatObj = $("#p" + (i + 1)).find("." + STATS_GSC[j] + " .adjusted");
+            if (arguments[i].adjustedStats[STATS_GSC[j]] && arguments[i].adjustedStats[STATS_GSC[j]] !== arguments[i].rawStats[STATS_GSC[j]]) {
+                adjustedStatObj.text(arguments[i].adjustedStats[STATS_GSC[j]]);
+                adjustedStatObj.css("color", (arguments[i].adjustedStats[STATS_GSC[j]] > arguments[i].rawStats[STATS_GSC[j]]) ? "red" : "blue");
                 adjustedStatObj.parent().after(totalStatObj.parent().hide()).show();
             } else if (adjustedStatObj.is(":visible")) {
                 adjustedStatObj.parent().before(totalStatObj.parent().show()).hide();
