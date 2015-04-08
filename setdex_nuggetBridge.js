@@ -1,6 +1,49 @@
 var SETDEX_NUGGETBRIDGE={
+  "Happiness: 0": {
+    "DaWoblefet's Winter 2015 Salamence": {
+      "level": 50,
+      "evs": {
+        "hp": "52",
+        "at": "172",
+        "df": "4",
+        "sd": "84",
+        "sp": "196"
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "",
+      "moves": [
+        "Frustration",
+        "",
+        "",
+        ""
+      ]
+    }
+  },
   "Clefable": {
-    "pokebeys14's Spring 2015 Clefable": {
+    "DaWoblefet's Winter 2015 Clefable": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "164",
+        "sa": "28",
+        "sd": "68",
+        "sp": "4"
+      },
+      "ivs": {
+        "at": "1"
+      },
+      "nature": "Bold",
+      "ability": "Unaware",
+      "item": "Sitrus Berry",
+      "moves": [
+        "",
+        "Ice Beam",
+        "",
+        ""
+      ]
+    },
+    "pokebeys14's Winter 2015 Clefable": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -20,8 +63,232 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
+  "Bisharp": {
+    "DaWoblefet's Winter 2015 Bisharp": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "item": "",
+      "moves": [
+        "Sucker Punch",
+        "Knock Off",
+        "Iron Head",
+        ""
+      ]
+    },
+    "DylanxArsenal's Winter 2015 Bisharp": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "sd": "4",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "item": "Life Orb",
+      "moves": [
+        "Sucker Punch",
+        "Iron Head",
+        "Knock Off",
+        ""
+      ]
+    },
+    "amr97's Winter 2015 Smoky Thrill": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "item": "Life Orb",
+      "moves": [
+        "Sucker Punch",
+        "Iron Head",
+        "Assurance",
+        ""
+      ]
+    }
+  },
+  "Virizion": {
+    "DaWoblefet's Winter 2015 Virizion": {
+      "level": 50,
+      "evs": {
+        "at": "252",
+        "df": "4",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Expert Belt",
+      "moves": [
+        "Close Combat",
+        "Leaf Blade",
+        "",
+        ""
+      ]
+    },
+    "IoriYagami's Winter 2015 Midori": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Lum Berry",
+      "moves": [
+        "Close Combat",
+        "Leaf Blade",
+        "",
+        ""
+      ]
+    }
+  },
+  "Heatran": {
+    "DaWoblefet's Winter 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "132",
+        "df": "20",
+        "sa": "132",
+        "sd": "12",
+        "sp": "212"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Chople Berry",
+      "moves": [
+        "Heat Wave",
+        "Earth Power",
+        "",
+        ""
+      ]
+    },
+    "IoriYagami's Winter 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "244",
+        "df": "148",
+        "sa": "44",
+        "sd": "4",
+        "sp": "68"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "",
+        "",
+        "Heat Wave",
+        "Earth Power"
+      ]
+    },
+    "Keonspy's Winter 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "232",
+        "df": "104",
+        "sa": "60",
+        "sd": "112"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Leftovers",
+      "moves": [
+        "Overheat",
+        "Earth Power",
+        "",
+        ""
+      ]
+    },
+    "JoeDaPr0's Winter 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "252"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Life Orb",
+      "moves": [
+        "Flash Cannon",
+        "Heat Wave",
+        "Earth Power",
+        ""
+      ]
+    },
+    "Life Orb's Winter 2015 Heatran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "168",
+        "sa": "68"
+      },
+      "nature": "Modest",
+      "ability": "Flash Fire",
+      "item": "Shuca Berry",
+      "moves": [
+        "Heat Wave",
+        "Flash Cannon",
+        "Earth Power",
+        ""
+      ]
+    }
+  },
+  "Suicune": {
+    "DaWoblefet's Winter 2015 Suicune": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "132",
+        "sd": "60",
+        "sp": "60"
+      },
+      "ivs": {
+        "at": "0"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "",
+        ""
+      ]
+    },
+    "NinjaSyao's Winter 2015 Teran": {
+      "level": 50,
+      "evs": {
+        "hp": "252",
+        "df": "4",
+        "sa": "108",
+        "sd": "4",
+        "sp": "140"
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "Assault Vest",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Icy Wind",
+        "Snarl"
+      ]
+    }
+  },
   "Rotom-H": {
-    "pokebeys14's Spring 2015 Rotom-Heat": {
+    "pokebeys14's Winter 2015 Rotom-Heat": {
       "level": 50,
       "evs": {
         "hp": "92",
@@ -38,7 +305,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "NinjaSyao's Spring 2015 Lunar": {
+    "NinjaSyao's Winter 2015 Lunar": {
       "level": 50,
       "evs": {
         "hp": "236",
@@ -57,7 +324,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "amr97's Spring 2015 Smile Taisou": {
+    "amr97's Winter 2015 Smile Taisou": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -78,7 +345,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Ferrothorn": {
-    "pokebeys14's Spring 2015 Ferrothorn": {
+    "pokebeys14's Winter 2015 Ferrothorn": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -120,7 +387,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Mawile": {
-    "NinjaSyao's Spring 2015 Marina": {
+    "NinjaSyao's Winter 2015 Marina": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -139,7 +406,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Trevenant": {
-    "NinjaSyao's Spring 2015 Calina": {
+    "NinjaSyao's Winter 2015 Calina": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -159,29 +426,8 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Suicune": {
-    "NinjaSyao's Spring 2015 Teran": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "4",
-        "sa": "108",
-        "sd": "4",
-        "sp": "140"
-      },
-      "nature": "Bold",
-      "ability": "",
-      "item": "Assault Vest",
-      "moves": [
-        "Scald",
-        "Ice Beam",
-        "Icy Wind",
-        "Snarl"
-      ]
-    }
-  },
   "Zapdos": {
-    "NinjaSyao's Spring 2015 Merco": {
+    "NinjaSyao's Winter 2015 Merco": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -206,7 +452,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Terrakion": {
-    "NinjaSyao's Spring 2015 Tarus": {
+    "NinjaSyao's Winter 2015 Tarus": {
       "level": 50,
       "evs": {
         "hp": "44",
@@ -225,7 +471,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "conan's Spring 2015 Terrakion": {
+    "conan's Winter 2015 Terrakion": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -242,7 +488,7 @@ var SETDEX_NUGGETBRIDGE={
         "Earthquake"
       ]
     },
-    "rapha's Spring 2015 Terrakion": {
+    "rapha's Winter 2015 Terrakion": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -259,7 +505,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "KellsterCartier's Spring 2015 Terrakion": {
+    "KellsterCartier's Winter 2015 Terrakion": {
       "level": 50,
       "evs": {
         "hp": "116",
@@ -278,7 +524,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Metagross": {
-    "MajorBowman's Spring 2015 Metagross": {
+    "MajorBowman's Winter 2015 Metagross": {
       "level": 50,
       "evs": {
         "hp": "44",
@@ -297,7 +543,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "rapha's Spring 2015 Metagross": {
+    "rapha's Winter 2015 Metagross": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -316,7 +562,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "KellsterCartier's Spring 2015 Metagross": {
+    "KellsterCartier's Winter 2015 Metagross": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -352,7 +598,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Hydreigon": {
-    "MajorBowman's Spring 2015 Hydreigon": {
+    "MajorBowman's Winter 2015 Hydreigon": {
       "level": 50,
       "evs": {
         "hp": "60",
@@ -371,7 +617,7 @@ var SETDEX_NUGGETBRIDGE={
         "Flamethrower"
       ]
     },
-    "rapha's Spring 2015 Oppenheimer": {
+    "rapha's Winter 2015 Oppenheimer": {
       "level": 50,
       "evs": {
         "df": "4",
@@ -388,7 +634,7 @@ var SETDEX_NUGGETBRIDGE={
         "Earth Power"
       ]
     },
-    "KellsterCartier's Spring 2015 Hydreigon": {
+    "KellsterCartier's Winter 2015 Hydreigon": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -426,7 +672,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Landorus-T": {
-    "MajorBowman's Spring 2015 Landorus-Therian": {
+    "MajorBowman's Winter 2015 Landorus-Therian": {
       "level": 50,
       "evs": {
         "hp": "164",
@@ -445,7 +691,7 @@ var SETDEX_NUGGETBRIDGE={
         "Rock Slide"
       ]
     },
-    "Life Orb's Spring 2015 Landorus-Therian": {
+    "Life Orb's Winter 2015 Landorus-Therian": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -462,7 +708,7 @@ var SETDEX_NUGGETBRIDGE={
         "Rock Slide"
       ]
     },
-    "amr97's Spring 2015 BANGxBANG": {
+    "amr97's Winter 2015 BANGxBANG": {
       "level": 50,
       "evs": {
         "hp": "12",
@@ -481,7 +727,7 @@ var SETDEX_NUGGETBRIDGE={
         "Superpower"
       ]
     },
-    "KellsterCartier's Spring 2015 Landorus": {
+    "KellsterCartier's Winter 2015 Landorus": {
       "level": 50,
       "evs": {
         "hp": "116",
@@ -502,7 +748,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Thundurus": {
-    "MajorBowman's Spring 2015 Thundurus": {
+    "MajorBowman's Winter 2015 Thundurus": {
       "level": 50,
       "evs": {
         "hp": "212",
@@ -525,7 +771,7 @@ var SETDEX_NUGGETBRIDGE={
         "Thunderbolt"
       ]
     },
-    "DylanxArsenal's Spring 2015 DatTail": {
+    "DylanxArsenal's Winter 2015 DatTail": {
       "level": 50,
       "evs": {
         "hp": "244",
@@ -544,7 +790,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "conan's Spring 2015 Thundurus": {
+    "conan's Winter 2015 Thundurus": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -563,7 +809,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "KellsterCartier's Spring 2015 Thundurus": {
+    "KellsterCartier's Winter 2015 Thundurus": {
       "level": 50,
       "evs": {
         "hp": "236",
@@ -648,7 +894,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Ludicolo": {
-    "MajorBowman's Spring 2015 Ludicolo": {
+    "MajorBowman's Winter 2015 Ludicolo": {
       "level": 50,
       "evs": {
         "hp": "156",
@@ -667,7 +913,7 @@ var SETDEX_NUGGETBRIDGE={
         "Fake Out"
       ]
     },
-    "DylanxArsenal's Spring 2015 Icingdeath": {
+    "DylanxArsenal's Winter 2015 Icingdeath": {
       "level": 50,
       "evs": {
         "hp": "76",
@@ -684,7 +930,7 @@ var SETDEX_NUGGETBRIDGE={
         "Ice Beam"
       ]
     },
-    "rapha's Spring 2015 Grapes?": {
+    "rapha's Winter 2015 Grapes?": {
       "level": 50,
       "evs": {
         "hp": "108",
@@ -703,7 +949,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Cresselia": {
-    "IoriYagami's Spring 2015 Luna": {
+    "IoriYagami's Winter 2015 Luna": {
       "level": 50,
       "evs": {
         "hp": "216",
@@ -722,7 +968,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "DylanxArsenal's Spring 2015 Cresselia": {
+    "DylanxArsenal's Winter 2015 Cresselia": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -739,7 +985,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "JoeDaPr0's Spring 2015 Cresselia": {
+    "JoeDaPr0's Winter 2015 Cresselia": {
       "level": 50,
       "evs": {
         "hp": "236",
@@ -757,7 +1003,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "conan's Spring 2015 Cresselia": {
+    "conan's Winter 2015 Cresselia": {
       "level": 50,
       "evs": {
         "hp": "220",
@@ -776,7 +1022,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "Life Orb's Spring 2015 Cresselia": {
+    "Life Orb's Winter 2015 Cresselia": {
       "level": 50,
       "evs": {
         "hp": "220",
@@ -813,81 +1059,8 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Heatran": {
-    "IoriYagami's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "244",
-        "df": "148",
-        "sa": "44",
-        "sd": "4",
-        "sp": "68"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Leftovers",
-      "moves": [
-        "",
-        "",
-        "Heat Wave",
-        "Earth Power"
-      ]
-    },
-    "Keonspy's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "232",
-        "df": "104",
-        "sa": "60",
-        "sd": "112"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Leftovers",
-      "moves": [
-        "Overheat",
-        "Earth Power",
-        "",
-        ""
-      ]
-    },
-    "JoeDaPr0's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "4",
-        "sa": "252"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Life Orb",
-      "moves": [
-        "Flash Cannon",
-        "Heat Wave",
-        "Earth Power",
-        ""
-      ]
-    },
-    "Life Orb's Spring 2015 Heatran": {
-      "level": 50,
-      "evs": {
-        "hp": "252",
-        "df": "168",
-        "sa": "68"
-      },
-      "nature": "Modest",
-      "ability": "Flash Fire",
-      "item": "Shuca Berry",
-      "moves": [
-        "Heat Wave",
-        "Flash Cannon",
-        "Earth Power",
-        ""
-      ]
-    }
-  },
   "Gastrodon": {
-    "IoriYagami's Spring 2015 Gastrodon": {
+    "IoriYagami's Winter 2015 Gastrodon": {
       "level": 50,
       "evs": {
         "hp": "244",
@@ -907,7 +1080,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Lopunny": {
-    "IoriYagami's Spring 2015 Praline": {
+    "IoriYagami's Winter 2015 Praline": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -926,7 +1099,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Granbull": {
-    "IoriYagami's Spring 2015 Spike": {
+    "IoriYagami's Winter 2015 Spike": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -944,27 +1117,8 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Virizion": {
-    "IoriYagami's Spring 2015 Midori": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Lum Berry",
-      "moves": [
-        "Close Combat",
-        "Leaf Blade",
-        "",
-        ""
-      ]
-    }
-  },
   "Heliolisk": {
-    "Keonspy's Spring 2015 Heliolisk": {
+    "Keonspy's Winter 2015 Heliolisk": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -983,7 +1137,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Sceptile": {
-    "Keonspy's Spring 2015 Sceptile": {
+    "Keonspy's Winter 2015 Sceptile": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1002,7 +1156,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Thundurus-T": {
-    "Keonspy's Spring 2015 Thundurus-Therian": {
+    "Keonspy's Winter 2015 Thundurus-Therian": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -1020,7 +1174,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Gyarados": {
-    "Keonspy's Spring 2015 Gyarados": {
+    "Keonspy's Winter 2015 Gyarados": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1039,7 +1193,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Amoonguss": {
-    "Keonspy's Spring 2015 Amoonguss": {
+    "Keonspy's Winter 2015 Amoonguss": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -1056,7 +1210,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "amr97's Spring 2015 Flower Girl": {
+    "amr97's Winter 2015 Flower Girl": {
       "level": 50,
       "evs": {
         "hp": "188",
@@ -1078,7 +1232,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Politoed": {
-    "DylanxArsenal's Spring 2015 Twinkle": {
+    "DylanxArsenal's Winter 2015 Twinkle": {
       "level": 50,
       "evs": {
         "sa": "252",
@@ -1095,7 +1249,7 @@ var SETDEX_NUGGETBRIDGE={
         ""
       ]
     },
-    "rapha's Spring 2015 Elmo": {
+    "rapha's Winter 2015 Elmo": {
       "level": 50,
       "evs": {
         "hp": "212",
@@ -1115,44 +1269,8 @@ var SETDEX_NUGGETBRIDGE={
       ]
     }
   },
-  "Bisharp": {
-    "DylanxArsenal's Spring 2015 Bisharp": {
-      "level": 50,
-      "evs": {
-        "at": "252",
-        "sd": "4",
-        "sp": "252"
-      },
-      "nature": "Adamant",
-      "ability": "Defiant",
-      "item": "Life Orb",
-      "moves": [
-        "Sucker Punch",
-        "Iron Head",
-        "Knock Off",
-        ""
-      ]
-    },
-    "amr97's Spring 2015 Smoky Thrill": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Adamant",
-      "ability": "Defiant",
-      "item": "Life Orb",
-      "moves": [
-        "Sucker Punch",
-        "Iron Head",
-        "Assurance",
-        ""
-      ]
-    }
-  },
   "Kangaskhan": {
-    "DylanxArsenal's Spring 2015 Kangaskhan": {
+    "DylanxArsenal's Winter 2015 Kangaskhan": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1169,7 +1287,7 @@ var SETDEX_NUGGETBRIDGE={
         "Facade"
       ]
     },
-    "Life Orb's Spring 2015 Kangaskhan": {
+    "Life Orb's Winter 2015 Kangaskhan": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1186,7 +1304,7 @@ var SETDEX_NUGGETBRIDGE={
         "Sucker Punch"
       ]
     },
-    "amr97's Spring 2015 My Song": {
+    "amr97's Winter 2015 My Song": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1224,7 +1342,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Chesnaught": {
-    "JoeDaPr0's Spring 2015 Chesnaught": {
+    "JoeDaPr0's Winter 2015 Chesnaught": {
       "level": 50,
       "evs": {
         "hp": "224",
@@ -1244,7 +1362,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Salamence": {
-    "JoeDaPr0's Spring 2015 Salamence": {
+    "JoeDaPr0's Winter 2015 Salamence": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1261,7 +1379,7 @@ var SETDEX_NUGGETBRIDGE={
         "Rock Slide"
       ]
     },
-    "conan's Spring 2015 Salamence": {
+    "conan's Winter 2015 Salamence": {
       "level": 50,
       "evs": {
         "hp": "76",
@@ -1297,7 +1415,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Swampert": {
-    "JoeDaPr0's Spring 2015 Swampert": {
+    "JoeDaPr0's Winter 2015 Swampert": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -1318,7 +1436,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Raikou": {
-    "JoeDaPr0's Spring 2015 Raikou": {
+    "JoeDaPr0's Winter 2015 Raikou": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1337,7 +1455,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Weavile": {
-    "conan's Spring 2015 Weavile": {
+    "conan's Winter 2015 Weavile": {
       "level": 50,
       "evs": {
         "hp": "4",
@@ -1356,7 +1474,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Aegislash": {
-    "conan's Spring 2015 Aegislash": {
+    "conan's Winter 2015 Aegislash": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -1395,7 +1513,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Sylveon": {
-    "Life Orb's Spring 2015 Sylveon": {
+    "Life Orb's Winter 2015 Sylveon": {
       "level": 50,
       "evs": {
         "hp": "92",
@@ -1415,7 +1533,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Togekiss": {
-    "rapha's Spring 2015 such toge": {
+    "rapha's Winter 2015 such toge": {
       "level": 50,
       "evs": {
         "hp": "252",
@@ -1455,7 +1573,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Azumarill": {
-    "amr97's Spring 2015 Trial Dance": {
+    "amr97's Winter 2015 Trial Dance": {
       "level": 50,
       "evs": {
         "hp": "196",
@@ -1476,7 +1594,7 @@ var SETDEX_NUGGETBRIDGE={
     }
   },
   "Lapras": {
-    "KellsterCartier's Spring 2015 Lapras": {
+    "KellsterCartier's Winter 2015 Lapras": {
       "level": 50,
       "evs": {
         "hp": "228",
