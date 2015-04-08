@@ -4,15 +4,16 @@ module.exports = function (grunt) {
 
     var showdown_parser = (function() {
 
-        var nameLinePat = /^== (.*)'s (.*) ==$/
+        var nameLinePat        = /^== (.*)'s (.*) ==$/
         var pokeAndItemLinePat = /^(.+?)\s?(\([^\)]*\))?\s?(?:\([MF]\))?(?: @ (.*))?$/;
-        var abilityLinePat = /^Ability: (.*)$/;
-        var natureLinePat = /^(.*) Nature$/;
-        var levelLinePat = /^Level: (.*)$/;
-        var evsLinePat = /^EVs:/;
-        var ivsLinePat = /^IVs:/;
-        var moveLinePat = /^-\s?(.*)$/;
-        var commentLinePat = /^(\/\/)/;
+        var abilityLinePat     = /^Ability: (.*)$/;
+        var natureLinePat      = /^(.*) Nature$/;
+        var levelLinePat       = /^Level: (.*)$/;
+        var evsLinePat         = /^EVs:/;
+        var ivsLinePat         = /^IVs:/;
+        var happinessLinePat   = /^Happiness: ([0-9]+)$/;
+        var moveLinePat        = /^-\s?(.*)$/;
+        var commentLinePat     = /^(\/\/)/;
 
         function parseValues(line) {
             // line looks like:
@@ -119,6 +120,8 @@ module.exports = function (grunt) {
                         } else {
                             curPoke.moves = [bits[1]];
                         }
+                    } else if (happinessLinePat.test(curLine)) {
+                        // Frustration and Return are always treated as full-strength, so we don't handle happiness
                     } else if (pokeAndItemLinePat.test(curLine)) {
                         bits = pokeAndItemLinePat.exec(curLine);
 

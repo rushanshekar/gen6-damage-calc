@@ -1,5 +1,5 @@
 var SETDEX_NUGGETBRIDGE={
-  "Happiness: 0": {
+  "Salamence": {
     "DaWoblefet's Winter 2015 Salamence": {
       "level": 50,
       "evs": {
@@ -11,10 +11,61 @@ var SETDEX_NUGGETBRIDGE={
       },
       "nature": "Jolly",
       "ability": "Intimidate",
-      "item": "",
+      "item": "Salamencite",
       "moves": [
         "Frustration",
         "",
+        "",
+        ""
+      ]
+    },
+    "JoeDaPr0's Winter 2015 Salamence": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "",
+        "Double-Edge",
+        "",
+        "Rock Slide"
+      ]
+    },
+    "conan's Winter 2015 Salamence": {
+      "level": 50,
+      "evs": {
+        "hp": "76",
+        "at": "244",
+        "sp": "188"
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Double-Edge",
+        "",
+        "",
+        ""
+      ]
+    },
+    "Fatum's Winter 2015 Aschenputtel": {
+      "level": 50,
+      "evs": {
+        "hp": "4",
+        "at": "252",
+        "sp": "252"
+      },
+      "nature": "Jolly",
+      "ability": "Intimidate",
+      "item": "Salamencite",
+      "moves": [
+        "Double-Edge",
+        "Earthquake",
         "",
         ""
       ]
@@ -1358,59 +1409,6 @@ var SETDEX_NUGGETBRIDGE={
         "Feint",
         "",
         "Low Kick"
-      ]
-    }
-  },
-  "Salamence": {
-    "JoeDaPr0's Winter 2015 Salamence": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Adamant",
-      "ability": "Intimidate",
-      "item": "Salamencite",
-      "moves": [
-        "",
-        "Double-Edge",
-        "",
-        "Rock Slide"
-      ]
-    },
-    "conan's Winter 2015 Salamence": {
-      "level": 50,
-      "evs": {
-        "hp": "76",
-        "at": "244",
-        "sp": "188"
-      },
-      "nature": "Jolly",
-      "ability": "Intimidate",
-      "item": "Salamencite",
-      "moves": [
-        "Double-Edge",
-        "",
-        "",
-        ""
-      ]
-    },
-    "Fatum's Winter 2015 Aschenputtel": {
-      "level": 50,
-      "evs": {
-        "hp": "4",
-        "at": "252",
-        "sp": "252"
-      },
-      "nature": "Jolly",
-      "ability": "Intimidate",
-      "item": "Salamencite",
-      "moves": [
-        "Double-Edge",
-        "Earthquake",
-        "",
-        ""
       ]
     }
   },
