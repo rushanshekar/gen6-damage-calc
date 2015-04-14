@@ -1,3 +1,179 @@
+== Unreality's Winter 2015 No Wifing ==
+No Wifing (Kangaskhan) @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Fake Out
+- Return
+- Power-Up Punch
+- Sucker Punch
+
+== Unreality's Winter 2015 Boogeyman ==
+Boogeyman (Clefable) @ Leftovers
+Ability: Unaware
+Level: 50
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Protect
+- Minimize
+- Follow Me
+- Moonblast
+
+== Unreality's Winter 2015 BIG DATA ==
+BIG DATA (Conkeldurr) @ Sitrus Berry
+Ability: Guts
+Level: 50
+EVs: 84 HP / 192 Atk / 68 Def / 164 SpD
+Adamant Nature
+- Wide Guard
+- Mach Punch
+- Drain Punch
+- Ice Punch
+
+== Unreality's Winter 2015 Cybertran ==
+Cybertran (Heatran) @ Shuca Berry
+Ability: Flash Fire
+Level: 50
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Protect
+- Overheat
+- Heat Wave
+- Earth Power
+
+== Unreality's Winter 2015 Garmfielfd ==
+Garmfielfd (Landorus-Therian) @ Assault Vest
+Ability: Intimidate
+Level: 50
+EVs: 140 HP / 140 Atk / 12 Def / 108 SpD / 108 Spe
+Adamant Nature
+- Earthquake
+- Rock Slide
+- Superpower
+- Knock Off
+
+== Dorian06's Winter 2015 Breloom ==
+Breloom @ Focus Sash
+Ability: Technician
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Spore
+- Mach Punch
+- Protect
+- Bullet Seed
+
+== Dorian06's Winter 2015 Kingdra ==
+Kingdra @ Choice Scarf
+Ability: Swift Swim
+Level: 50
+EVs: 252 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Muddy Water
+- Ice Beam
+- Draco Meteor
+- Icy Wind
+
+== Dorian06's Winter 2015 Sylveon ==
+Sylveon @ Choice Specs
+Ability: Pixilate
+Level: 50
+EVs: 104 HP / 52 Def / 244 SpA / 4 SpD / 104 Spe
+Modest Nature
+- Hyper Voice
+- Hyper Beam
+- Psyshock
+- Hidden Power [Fire]
+
+== Dorian06's Winter 2015 Bisharp ==
+Bisharp @ Choice Band
+Ability: Defiant
+Level: 50
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Sucker Punch
+- Iron Head
+- Knock Off
+- Low Kick
+
+== Dorian06's Winter 2015 Talonflame ==
+Talonflame @ Life Orb
+Ability: Gale Wings
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Brave Bird
+- Flare Blitz
+- Will-O-Wisp
+- Tailwind
+
+== Dorian06's Winter 2015 Kangaskhan ==
+Kangaskhan @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Low Kick
+- Double-Edge
+- Protect
+- Sucker Punch
+
+== Biosci's Winter 2015 Zapdos ==
+Zapdos @ Sitrus Berry
+Ability: Pressure
+Level: 50
+EVs: 228 HP / 4 Def / 36 SpA / 84 SpD / 156 Spe
+Modest Nature
+- Tailwind
+- Thunderbolt
+- Heat Wave
+- Roost
+
+== Biosci's Winter 2015 Scizor ==
+Scizor (M) @ Life Orb
+Ability: Technician
+Level: 50
+EVs: 20 HP / 252 Atk / 4 Def / 4 SpD / 228 Spe
+Adamant Nature
+- Bullet Punch
+- Bug Bite
+- Feint
+- Protect
+
+== Biosci's Winter 2015 Gardevoir ==
+Gardevoir (F) @ Gardevoirite
+Ability: Trace
+Level: 50
+EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Hyper Voice
+- Psychic
+- Protect
+- Substitute
+
+== Biosci's Winter 2015 Gengar ==
+Gengar @ Gengarite
+Ability: Levitate
+Level: 50
+EVs: 188 HP / 20 Def / 44 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Sludge Bomb
+- Shadow Ball
+- Will-O-Wisp
+- Protect
+
+== Biosci's Winter 2015 Talonflame ==
+Talonflame @ Choice Band
+Ability: Gale Wings
+Level: 50
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Brave Bird
+- Flare Blitz
+- U-turn
+- Tailwind
+
 == DaWoblefet's Winter 2015 Salamence ==
 Salamence @ Salamencite
 Ability: Intimidate
