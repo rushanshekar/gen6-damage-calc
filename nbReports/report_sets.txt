@@ -1,3 +1,472 @@
+== Red Striker's Winter 2015 ♣Measure♣91♣ ==
+♣Measure♣91♣ (Venusaur) @ Venusaurite
+Ability: Chlorophyll
+Level: 50
+EVs: 204 HP / 100 Def / 36 SpA / 164 SpD / 4 Spe
+Bold Nature
+- Giga Drain
+- Sludge Bomb
+- Protect
+- Sleep Powder
+
+== Red Striker's Winter 2015 Zapdos ==
+Zapdos @ Expert Belt
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 112 Def / 140 SpA / 4 Spe
+Modest Nature
+IVs: 30 Def
+- Thunderbolt
+- Hidden Power [Ice]
+- Roost
+- Tailwind
+
+== Red Striker's Winter 2015 BrooklynRAGE ==
+BrooklynRAGE (Gyarados) @ Sitrus Berry
+Ability: Intimidate
+Level: 50
+EVs: 244 HP / 20 Atk / 4 Def / 28 SpD / 212 Spe
+Jolly Nature
+IVs: 30 SpA
+- Waterfall
+- Icy Wind
+- Protect
+- Taunt
+
+== Red Striker's Winter 2015 Krookodile ==
+Krookodile @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Earthquake
+- Knock Off
+- Stone Edge
+- Superpower
+
+== Red Striker's Winter 2015 GOTTAGOFAST ==
+GOTTAGOFAST (Blaziken) @ Life Orb
+Ability: Speed Boost
+Level: 50
+EVs: 52 Atk / 204 SpA / 252 Spe
+Naive Nature
+IVs: 30 HP / 30 Def
+- Overheat
+- Superpower
+- Protect
+- Hidden Power
+
+== Red Striker's Winter 2015 RStriker ==
+RStriker (Scizor) @ Lum Berry
+Ability: Technician
+Level: 50
+EVs: 252 HP / 172 Atk / 84 Spe
+Adamant Nature
+- Bullet Punch
+- Bug Bite
+- Protect
+- Feint
+
+== peng's Spring 2015 Venusaur ==
+Venusaur @ Life Orb
+Ability: Chlorophyll
+Level: 50
+EVs: 12 HP / 244 SpA / 252 Spe
+Modest Nature
+- Protect
+- Giga Drain
+- Sludge Bomb
+- Hidden Power [Ice]
+
+== peng's Spring 2015 Cresselia ==
+Cresselia (F) @ Rocky Helmet
+Ability: Levitate
+Level: 50
+EVs: 220 HP / 100 Def / 184 SpA / 4 Spe
+Bold Nature
+- Moonlight
+- Ice Beam
+- Hidden Power [Ground]
+- Thunder Wave
+
+== peng's Spring 2015 Hydreigon ==
+Hydreigon @ Choice Specs
+Ability: Levitate
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Draco Meteor
+- Dark Pulse
+- Flamethrower
+- Earth Power
+
+== peng's Spring 2015 Aegislash ==
+Aegislash @ Leftovers
+Ability: Stance Change
+Level: 50
+EVs: 252 HP / 180 SpA / 76 SpD
+Quiet Nature
+- King’s Shield
+- Wide Guard
+- Flash Cannon
+- Shadow Ball
+
+== Braverius's Winter 2015 Metagross ==
+Metagross @ Metagrossite
+Ability: Clear Body
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Iron Head
+- Zen Headbutt
+- Substitute
+- Protect
+
+== Braverius's Winter 2015 Hydreigon ==
+Hydreigon @ Life Orb
+Ability: Levitate
+Level: 50
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Draco Meteor
+- Dark Pulse
+- Earth Power
+- Protect
+
+== Braverius's Winter 2015 Jellicent ==
+Jellicent (M) @ Leftovers
+Ability: Cursed Body
+Level: 50
+EVs: 252 HP / 140 Def / 116 SpD
+Sassy Nature
+IVs: 0 Spe
+- Scald
+- Recover
+- Will-O-Wisp
+- Taunt
+
+== Braverius's Winter 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 188 HP / 192 Def / 92 SpD / 36 Spe
+Bold Nature
+- Thunderbolt
+- Hidden Power [Ice]
+- Swagger
+- Thunder Wave
+
+== Braverius's Winter 2015 Landorus-Therian ==
+Landorus-Therian @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 164 HP / 124 Atk / 12 Def / 28 SpD / 180 Spe
+Adamant Nature
+- Earthquake
+- U-turn
+- Rock Slide
+- Superpower
+
+== corsolafan's Winter 2015 Friendly ==
+Friendly (Salamence) @ Salamencite
+Ability: Intimidate
+Level: 50
+EVs: 108 HP / 148 SpA / 252 Spe
+Naive Nature
+- Double-Edge
+- Protect
+- Hyper Voice
+- Flamethrower
+
+== corsolafan's Winter 2015 Turtle Lion ==
+Turtle Lion (Torterra) @ Yache Berry
+Ability: Overgrow
+Level: 50
+EVs: 252 HP / 60 Atk / 196 Def
+Relaxed Nature
+- Wide Guard
+- Wood Hammer
+- Earthquake
+- Stone Edge
+
+== corsolafan's Winter 2015 Wan ==
+Wan (Entei) @ Safety Goggles
+Ability: Pressure
+Level: 50
+EVs: 4 HP / 120 Atk / 28 Def / 104 SpD / 252 Spe
+Jolly Nature
+- Sacred Fire
+- Stone Edge
+- Reflect
+- Protect
+
+== corsolafan's Winter 2015 TYsomuch ==
+TYsomuch (Tyranitar) @ Life Orb
+Ability: Sand Stream
+Level: 50
+EVs: 196 HP / 220 Atk / 16 SpA / 76 SpD
+Brave Nature
+IVs: 15 Spe
+- Ice Beam
+- Rock Slide
+- Focus Punch
+- Protect
+
+== corsolafan's Winter 2015 BFFF ==
+BFFF (Stoutland) @ Focus Sash
+Ability: Sand Rush
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- After You
+- Protect
+- Return
+- Crunch
+
+== corsolafan's Winter 2015 NP Man ==
+NP Man (Cradily) @ Leftovers
+Ability: Storm Drain
+Level: 50
+EVs: 252 HP / 188 Def / 68 SpA
+Sassy Nature
+- Ancient Power
+- Giga Drain
+- Mirror Coat
+- Recover
+
+== shrop05's Winter 2015 Rotom-Wash ==
+Rotom-Wash @ Sitrus Berry
+Ability: Levitate
+Level: 50
+EVs: 252 HP / 124 Def / 76 SpA / 36 SpD / 20 Spe
+Calm Nature
+- Hydro Pump
+- Thunderbolt
+- Will-O-Wisp
+- Protect
+
+== shrop05's Winter 2015 Aegislash ==
+Aegislash @ Safety Goggles
+Ability: Stance Change
+Level: 50
+EVs: 236 HP / 252 SpA / 20 Spe
+Modest Nature
+- Shadow Ball
+- Flash Cannon
+- Substitute
+- King’s Shield
+
+== shrop05's Winter 2015 Sylveon ==
+Sylveon @ Choice Specs
+Ability: Pixilate
+Level: 50
+EVs: 184 Def / 252 SpA / 72 Spe
+Modest Nature
+- Hyper Voice
+- Psyshock
+- Hyper Beam
+- Helping Hand
+
+== shrop05's Winter 2015 Landorus-Therian ==
+Landorus-Therian (M) @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Earthquake
+- Rock Slide
+- Stone Edge
+- Superpower
+
+== LithiumAcid's Spring 2015 HeavenlyBlue~ ==
+HeavenlyBlue~ (Suicune) @ Leftovers
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 36 Def / 92 SpA / 44 SpD / 84 Spe
+Bold Nature
+- Scald
+- Ice Beam
+- Protect
+- Tailwind
+
+== LithiumAcid's Spring 2015 Dear My Friend~ ==
+Dear My Friend~ (Thundurus) @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 236 HP / 116 Def / 4 SpA / 76 SpD / 68 Spe
+Bold Nature
+- Thunderbolt
+- Hidden Power [Ice]
+- Taunt
+- Thunder Wave
+
+== LithiumAcid's Spring 2015 *Synre* ==
+*Synre* (Arcanine) @ Safety Goggles
+Ability: Intimidate
+Level: 50
+EVs: 204 HP / 156 Def / 44 SpA / 28 SpD / 76 Spe
+Bold Nature
+- Flamethrower
+- Will-O-Wisp
+- Snarl
+- Morning Sun
+
+== LithiumAcid's Spring 2015 ShadowWORLD ==
+ShadowWORLD (Aegislash) @ Weakness Policy
+Ability: Stance Change
+Level: 50
+EVs: 252 HP / 4 Def / 92 SpA / 156 SpD / 4 Spe
+Modest Nature
+- Shadow Ball
+- Flash Cannon
+- King’s Shield
+- Wide Guard
+
+== Primitive's Winter 2015 Steeznuts ==
+Steeznuts (Thundurus) (M) @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 100 HP / 116 Def / 4 SpA / 132 SpD / 156 Spe
+Calm Nature
+- Thunderbolt
+- Hidden Power [Ice]
+- Thunder Wave
+- Taunt
+
+== Primitive's Winter 2015 Bruh ==
+Bruh (Suicune) @ Leftovers
+Ability: Pressure
+Level: 50
+EVs: 252 HP / 20 Def / 100 SpA / 108 SpD / 28 Spe
+Calm Nature
+- Scald
+- Ice Beam
+- Tailwind
+- Protect
+
+== Primitive's Winter 2015 TheGr8 ==
+TheGr8 (Arcanine) @ Rocky Helmet
+Ability: Intimidate
+Level: 50
+EVs: 252 HP / 196 Def / 60 Spe
+Bold Nature
+- Flamethrower
+- Snarl
+- Will-O-Wisp
+- Protect
+
+== kunx990's Winter 2015 Kangaskhan ==
+Kangaskhan @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Protect
+- Low Kick
+- Sucker Punch
+- Return
+
+== kunx990's Winter 2015 Suicune ==
+Suicune @ Leftovers
+Ability: Pressure
+Level: 50
+EVs: 232 HP / 84 Def / 112 SpA / 80 SpD
+Bold Nature
+- Ice Beam
+- Scald
+- Tailwind
+- Protect
+
+== kunx990's Winter 2015 Heatran ==
+Heatran @ Shuca Berry
+Ability: Flash Fire
+Level: 50
+EVs: 156 HP / 252 SpA / 100 Spe
+Modest Nature
+- Heat Wave
+- Earth Power
+- Flash Cannon
+- Protect
+
+== kunx990's Winter 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 252 HP / 116 Def / 46 SpA / 68 SpD / 28 Spe
+Bold Nature
+- Thunder Wave
+- Taunt
+- Hidden Power [Ice]
+- Thunderbolt
+
+== kunx990's Winter 2015 Terrakion ==
+Terrakion @ Lum Berry
+Ability: Justified
+Level: 50
+EVs: 20 HP / 228 Atk / 4 Def / 4 SpD / 252 Spe
+Jolly Nature
+- Rock Slide
+- Quick Guard
+- Close Combat
+- Protect
+
+== Daydreaming Ninja's Winter 2015 Mawile ==
+Mawile (M) @ Mawilite
+Ability: Intimidate
+Level: 50
+EVs: 252 HP / 60 Atk / 4 Def / 172 SpD / 20 Spe
+Adamant Nature
+- Play Rough
+- Iron Head
+- Sucker Punch
+- Protect
+
+== Daydreaming Ninja's Winter 2015 Hydreigon ==
+Hydreigon (M) @ Draco Plate
+Ability: Levitate
+Level: 50
+EVs: 188 HP / 76 Def / 204 SpA / 36 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Draco Meteor
+- Dark Pulse
+- Tailwind
+- Protect
+
+== Daydreaming Ninja's Winter 2015 Thundurus ==
+Thundurus @ Sitrus Berry
+Ability: Prankster
+Level: 50
+EVs: 164 HP / 76 Def / 36 SpA / 196 SpD / 36 Spe
+Bold Nature
+IVs: 0 Atk / 30 Def
+- Thunderbolt
+- Hidden Power [Ice]
+- Thunder Wave
+- Swagger
+
+== Daydreaming Ninja's Winter 2015 Aegislash ==
+Aegislash (M) @ Weakness Policy
+Ability: Stance Change
+Level: 50
+EVs: 204 HP / 228 SpA / 76 SpD
+Quiet Nature
+- Shadow Ball
+- Sacred Sword
+- Wide Guard
+- King’s Shield
+
+== Daydreaming Ninja's Winter 2015 Heatran ==
+Heatran (F) @ Leftovers
+Ability: Flash Fire
+Level: 50
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Heat Wave
+- Earth Power
+- Substitute
+- Protect
+
 == Unreality's Winter 2015 No Wifing ==
 No Wifing (Kangaskhan) @ Kangaskhanite
 Ability: Scrappy
