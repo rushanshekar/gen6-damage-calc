@@ -524,7 +524,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerItem = attacker.item;
     }
     if (getBerryResistType(defender.item) === move.type && (typeEffectiveness > 1 || move.type === "Normal") &&
-            attacker.ability !== "Unnerve") {
+            !attacker.isChild && attacker.ability !== "Unnerve") {
         finalMods.push(0x800);
         description.defenderItem = defender.item;
     }
