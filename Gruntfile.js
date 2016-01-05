@@ -130,13 +130,13 @@ module.exports = function (grunt) {
         http: {
             showdown: {
                 options: {
-                    url: 'http://www.smogon.com/stats/2015-03/chaos/<%= showdown.rawFile %>'
+                    url: 'http://www.smogon.com/stats/2015-12/chaos/<%= showdown.rawFile %>'
                 },
                 dest: process.cwd() + '/<%= showdown.rawFile %>'
             }
         },
         showdown: {
-            rawFile: 'vgc2015-1500.json',
+            rawFile: 'vgc2016-1500.json',
             genFile: 'setdex_showdown.js'
 
         },
