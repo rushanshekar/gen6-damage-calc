@@ -16,8 +16,8 @@ module.exports = function (grunt) {
         var commentLinePat     = /^(\/\/)/;
 
         function parseValues(line) {
-            // line looks like:
-            //  EVS: 108 HP / 252 Atk / 40 Spe
+            // line looks like:Spe
+            //  EVS: 108 HP / 252 Atk / 40 
             // ...so let's chop off the first part (which isn't guaranteed to be 'EVs'), then split on '/'
             var postfix = line.split(':');
             var bits = postfix[postfix.length-1].split('/');
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             for (var i=0; i<bits.length; i++) {
                 var bit = bits[i].trim();
                 var spl = bit.split(' ');
-                
+
                 if (spl.length !== 2) {
                     continue;
                 }
@@ -172,7 +172,6 @@ module.exports = function (grunt) {
                 return 'Rotom-W';
             case 'Rotom-Mow':
                 return 'Rotom-C';
-            
             case 'Landorus-Therian':
                 return 'Landorus-T';
             case 'Tornadus-Therian':
