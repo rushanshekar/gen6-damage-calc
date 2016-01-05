@@ -82,7 +82,6 @@ module.exports = function (grunt) {
                 return 'Rotom-W';
             case 'Rotom-Mow':
                 return 'Rotom-C';
-            
             case 'Landorus-Therian':
                 return 'Landorus-T';
             case 'Tornadus-Therian':
@@ -125,7 +124,7 @@ module.exports = function (grunt) {
         grunt.log.ok('Writing output to ' + trueOutf);
         grunt.file.write(trueOutf, outText);
     }
-    
+
     grunt.registerTask('showdown', 'Generate Showdown Dex', function () {
         generateShowdownDex(grunt.config([this.name, 'rawFile']), grunt.config([this.name, 'genFile']));
     });
