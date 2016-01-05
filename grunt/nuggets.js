@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             for (var i=0; i<bits.length; i++) {
                 var bit = bits[i].trim();
                 var spl = bit.split(' ');
-                
+
                 if (spl.length !== 2) {
                     continue;
                 }
@@ -172,7 +172,6 @@ module.exports = function (grunt) {
                 return 'Rotom-W';
             case 'Rotom-Mow':
                 return 'Rotom-C';
-            
             case 'Landorus-Therian':
                 return 'Landorus-T';
             case 'Tornadus-Therian':
