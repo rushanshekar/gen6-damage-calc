@@ -16,8 +16,8 @@ module.exports = function (grunt) {
         var commentLinePat     = /^(\/\/)/;
 
         function parseValues(line) {
-            // line looks like:Spe
-            //  EVS: 108 HP / 252 Atk / 40 
+            // line looks like:
+            //  EVS: 108 HP / 252 Atk / 40 Spe
             // ...so let's chop off the first part (which isn't guaranteed to be 'EVs'), then split on '/'
             var postfix = line.split(':');
             var bits = postfix[postfix.length-1].split('/');
